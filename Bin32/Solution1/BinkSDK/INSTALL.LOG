@@ -1,0 +1,227 @@
+***  Installation Started 02/13/20 15:58  ***
+Title: Bink Video SDK Installation
+Source: C:\Users\Данил\Downloads\CryGame\Tools\Bink SDK.exe
+Made Dir: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\UNWISE.EXE
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\Bink Video SDK
+RegDB Val: Bink Video SDK
+RegDB Name: DisplayName
+RegDB Root: 2
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\Bink Video SDK
+RegDB Val: C:\PROGRA~2\Crytek\CRYENG~1\Sources\CRYGAM~1\BinkSDK\UNWISE.EXE C:\PROGRA~2\Crytek\CRYENG~1\Sources\CRYGAM~1\BinkSDK\INSTALL.LOG
+RegDB Name: UninstallString
+RegDB Root: 2
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\bink.h
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\binkw32.dll
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\binkw32.lib
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\binkw32.pdb
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\dx7rad3d.cpp
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\dx8rad3d.cpp
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\dx9rad3d.cpp
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\examalph.c
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\examddp.c
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\exammss.c
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\examw32.c
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\examwinsdl.c
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\glrad3d.c
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\rad3d.h
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\radbase.h
+Made Dir: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Acknowledgments.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Alpha Planes.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Audio Tracks in Bink.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Background Concepts.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Basic Types.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Bink API.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Bink Example for GNU9zjdaa.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Bink Examples for MacOS.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Bink Examples for th19saaa.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Bink Examples for th43an3m.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Bink Examples for Win32.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Bink Overview.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Bink Playback on the Xbox.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Bink Playback on the43an3m.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Bink Playback under MacOS.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Bink Playback under Win32.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Bink Playback under xuvhla.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Bink Video Playback.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINK.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\bink.jpg
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkBuffer API.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINKBUFFER.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkBufferBlit.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkBufferCheckWinPos.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkBufferClose.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkBufferGetDescription.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkBufferGetError.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkBufferLock.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkBufferOpen.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkBuffers to the Rescue.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkBufferSetDirectDraw.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkBufferSetOffset.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkBufferSetResolution.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkBufferSetScale.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkBufferUnlock.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINKBUFFER_OPEN_FLAGS.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkCheckCursor.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkClose.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkCloseTrack.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkCopyToBuffer.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkCopyToBufferRect.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkDDSurfaceType.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkDoFrame.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkDX8SurfaceType.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkDX9SurfaceType.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkGDSurfaceType.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkGetError.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkGetKeyFrame.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkGetLogoAddress.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkGetRealtime.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkGetRects.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkGetSummary.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkGetTrackData.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkGetTrackID.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkGoto.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkIsSoftwareCursor.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkLoad.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkLoadConverter.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkMacOpen.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkNextFrame.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkOpen.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkOpenTrack.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkPause.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINKREALTIME.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINKRECT.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINKRECT_ARRAY.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkRestoreCursor.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkService.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSetFrameRate.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSetIO.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSetIOSize.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSetMemory.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSetMixBins.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSetMixBinVolumes.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSetPan.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSetSimulate.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSetSoundOnOff.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSetSoundSystem.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSetSoundTrack.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSetVideoOnOff.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSetVolume.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSoundUseAX.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSoundUseDirectSound.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSoundUseMiles.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSoundUseMusyX.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSoundUseSDLMixer.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkSoundUseSoundManager.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINKSUMMARY.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINKTRACK.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkUnload.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkUnloadConverter.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BinkWait.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINK_CONVERTER_FLAGS.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINK_COPY_FLAGS.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINK_GETKEY_FLAGS.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINK_GETRECTS_FLAGS.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINK_GOTO_FLAGS.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINK_OPEN_FLAGS.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\BINK_STRING.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Changes.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Colorspace - RGB vs. YUV.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Compressing with Bink.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Critical File I-O haq3ylyt.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Direct3D.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Distributing Bink on5sjx6b.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Distributing Bink on8uyiaz.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Distributing Bink onxuuiga.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Distributing the Binbatocy.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Distributing the Bindt3i85.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\F32.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\F64.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\FSSpec_PTR.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Gamma on the Nintendyrr8cb.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Gamma on the Xbox.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\GDHandle.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Handling the Reset Bkw9663.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\HBINK.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\HBINKBUFFER.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\HBINKTRACK.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\HCURSOR.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\index.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Installation for GNU9zjdaa.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Installation for MacOS.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Installation for the Xbox.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Installation for the43an3m.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Installation for Win32.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Integrating Bink int3valph.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Integrating Bink int5dcu9k.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Integrating Bink intrv9x5q.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Integrating Bink intxe7rf5.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Integrating Bink intxf3d73.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Introduction.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Locking and Unlocking.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\LPDIRECT3DSURFACE8.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\LPDIRECT3DSURFACE9.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\LPDIRECTDRAW.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\LPDIRECTDRAWSURFACE.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\LPDIRECTSOUND.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Memory management on8uyiaz.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Memory management onxuuiga.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Memory management un1cdaca.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Memory management undr7scs.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Memory management uni4hsaa.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Mouse Cursors.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\NTSC and PAL on the cadb3m.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\NTSC and PAL on the Xbox.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\NULL.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Open and Close.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\OpenGL.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\OS_WND.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Pros and Cons of Dire7y86m.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Pros and Cons of GWo8mm2u3.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Pros and Cons of Sofv5ld0h.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Pros and Cons of YUV65hg5x.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Pros and Cons of YUVkjct5t.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\RADARAMALLOC.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\RADARAMCALLBACKS.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\RADARAMFREE.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\RADMEMALLOC.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\RADMEMFREE.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\reference.css
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\S16.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\S32.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\s32_ptr.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\S64.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\S8.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Scaling.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Sections on the Xbox.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Sharing the CPU on t86r93m.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Sharing the CPU on t9jibaa.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Sharing the CPU unde2nabaa.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Sharing the CPU unde5sjx6b.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Sharing the CPU unde9ijdaa.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Simplifying MacOS Blrzu5pt.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Sound on the Nintendyrr8cb.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Sound on the Xbox.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Sound under GNU-Linux.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Sound under MacOS.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\Sound under Win32.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\The GNU-Linux Platform.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\The MacOS Platform.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\The Nintendo GameCubm0rzpb.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\The Win32 Platform.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\The Xbox Platform.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\U16.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\U32.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\u32_ptr.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\U64.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\U8.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\void.html
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\htmlhelp\VOID_PTR.html
+Made Dir: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\winhelp
+File Copy: C:\Program Files (x86)\Crytek\CryENGINE_MOD_SDK\Sources\CryGame C++\BinkSDK\winhelp\bink.chm
+Made Dir: C:\Users\Данил\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Bink Video SDK
+Shell Link: C:\Users\Данил\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Bink Video SDK\Bink SDK Windows Help.lnk
+Shell Link: C:\Users\Данил\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Bink Video SDK\Bink SDK HTML Help.lnk
+Shell Link: C:\Users\Данил\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Bink Video SDK\Uninstall the Bink SDK for Windows.lnk
+User Rights: Admin
