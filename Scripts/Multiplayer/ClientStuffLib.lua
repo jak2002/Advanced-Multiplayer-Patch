@@ -338,6 +338,12 @@ ClientStuff.ServerCommandTable["MBB"]=function (String,TokTable)
 			BasicPlayer.Client_OnDamage(_localplayer,hit)
 		end
 	end
+
+	if TokTable[3] then
+		if _localplayer.id == tonumber(TokTable[3]) then
+			Hud:PlayMultiplayerHitSound(TokTable[4]);
+		end
+	end
 end
 
 -- Synched Server Mark

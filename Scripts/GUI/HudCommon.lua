@@ -1002,7 +1002,8 @@ function Hud:CommonInit()
 	Game:CreateVariable("g_ConcentrationFadeInTime",3);
 	Game:CreateVariable("g_ConcentrationFadeOutTime",5);
 
-	self.SndIdMPHit=Sound:LoadSound("Sounds/Multiplayer/hit.wav");	
+	self.SndIdMPHit=Sound:LoadSound("Sounds/Multiplayer/hit.wav");
+	self.SndIdMPHitHead=Sound:LoadSound("Sounds/Multiplayer/head_hit.wav");		
 	self.ProgressPreviousState=-1;
 	self.ProgressStateTime=0;
 	self.ProgressCurrentState=-1;
@@ -1024,9 +1025,13 @@ end
 -- plays some mp specific sound
 -------------------------------------------------------------------------
 
-function Hud:PlayMultiplayerHitSound()
-	--temporary disabled
-	if (self.SndIdMPHit and Sound:IsPlaying(self.SndIdMPHit) == nil) then
+function Hud:PlayMultiplayerHitSound(hitpos)
+	--temporary enabled
+	if (tonumber(hud_hitsound) == 0 and (hitpos or _localplayer.fireparams.fire_mode_type == FireMode_Melee)) then return end
+
+	if (self.SndIdMPHitHead and Sound:IsPlaying(self.SndIdMPHitHead) == nil and hitpos == "h") then
+		Sound:PlaySound(self.SndIdMPHitHead);
+	elseif (self.SndIdMPHit and Sound:IsPlaying(self.SndIdMPHit) == nil) then
 		Sound:PlaySound(self.SndIdMPHit);
 	end
 end

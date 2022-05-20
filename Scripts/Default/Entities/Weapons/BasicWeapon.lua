@@ -1010,34 +1010,34 @@ end
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function BasicWeapon.Server:OnHit( hit )
 	-- augment hit table with damage type
-	if (Game:IsMultiplayer() == nil or (hit.target and hit.target.type ~= "Player")) then
-		if (hit.shooter.fireparams.damage_type) then
-			hit.damage_type = hit.shooter.fireparams.damage_type;
-		else
-			hit.damage_type = "normal";
-		end
-	end
+-- 	if (Game:IsMultiplayer() == nil or (hit.target and hit.target.type ~= "Player")) then
+-- 		if (hit.shooter.fireparams.damage_type) then
+-- 			hit.damage_type = hit.shooter.fireparams.damage_type;
+-- 		else
+-- 			hit.damage_type = "normal";
+-- 		end
+-- 	end
 
-	if (hit.target_material) then
-		-- spawn client side effect
-		if( hit.target and hit.target.type == "Player" and hit.damage_type == "normal" and hit.target.invulnerabilityTimer==nil) then
-			if (Game:IsMultiplayer()) then
-			local ss=MPStatistics:_GetServerSlotOfResponsiblePlayer(hit.shooter);
-			if ss then
-				SVplayerTrack:SetBySs(ss,"bulletshit", 1 ,1);
-				end
-			end
-			if BasicPlayer.IsAlive(hit.target) then
-				Server:BroadcastCommand("FX", hit.pos, hit.normal, hit.shooter.id, 3);
---			else
---				Server:BroadcastCommand("FX", hit.pos, hit.normal, hit.shooter.id, 4);
-			end
-		end
-    
-		if ((hit.target_material.AI) and (hit.shooter~=nil)) then
-			AI:FreeSignal(1,"OnBulletRain",hit.pos, hit.target_material.AI.fImpactRadius,hit.shooter.id);	
-		end
-	end
+	-- if (hit.target_material) then
+	-- 	-- spawn client side effect
+	-- 	if( hit.target and hit.target.type == "Player" and hit.damage_type == "normal" and hit.target.invulnerabilityTimer==nil) then
+	-- 		if (Game:IsMultiplayer()) then
+	-- 		local ss=MPStatistics:_GetServerSlotOfResponsiblePlayer(hit.shooter);
+	-- 		if ss then
+	-- 			SVplayerTrack:SetBySs(ss,"bulletshit", 1 ,1);
+	-- 			end
+	-- 		end
+	-- 		-- if BasicPlayer.IsAlive(hit.target) then
+	-- 			-- Server:BroadcastCommand("FX", hit.pos, hit.normal, hit.shooter.id, 3);
+	-- 		-- else
+	-- 			-- Server:BroadcastCommand("FX", hit.pos, hit.normal, hit.shooter.id, 4);
+	-- 		-- end
+	-- 	end
+
+	-- 	if ((hit.target_material.AI) and (hit.shooter~=nil)) then
+	-- 		AI:FreeSignal(1,"OnBulletRain",hit.pos, hit.target_material.AI.fImpactRadius,hit.shooter.id);	
+	-- 	end
+	-- end
 end
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function BasicWeapon.Client:OnHit( hit )
@@ -1051,7 +1051,6 @@ function BasicWeapon.Client:OnHit( hit )
 		if hit.target_material and hit.target_material.type == "head" then
 			headshot = "h"
 		end
-		Hud:PlayMultiplayerHitSound();
 		Client:SendCommand("CSD "..hit.shooter.id.." "..hit.target.id.." "..hit.damage.." "..headshot)
 	end
 	-- augment hit table with damage type
@@ -1305,17 +1304,26 @@ function BasicWeapon:DrawCrosshair(r,g,b,accuracy, xpos, ypos)
 	if(hud_fadeamount and tonumber(hud_fadeamount)~=1) then
 	  fValue=tonumber(hud_fadeamount);	
 	end
-	
-	%System:Draw2DLine(xcent-7-shift,ycent,xcent-2-shift,ycent,r,g,b, fValue);
-	%System:Draw2DLine(xcent+2+shift,ycent,xcent+7+shift,ycent,r,g,b, fValue);
-	%System:Draw2DLine(xcent,ycent-2-shift,xcent,ycent-7-shift,r,g,b, fValue);
-	%System:Draw2DLine(xcent,ycent+2+shift,xcent,ycent+7+shift,r,g,b, fValue);
-	--small dot in the centre of screen.
-	%System:Draw2DLine(xcent,ycent-0.5,xcent,ycent+0.5,r,g,b, fValue);
-	--System:Log("Lines have been drawn for crosshair at line 1303");
-	
-	
 
+	local bDot = tonumber(hud_crosshair_dot);
+	
+	--%System:Draw2DLine(xcent-7-shift,ycent,xcent-2-shift,ycent,r,g,b, fValue);
+	--%System:Draw2DLine(xcent+2+shift,ycent,xcent+7+shift,ycent,r,g,b, fValue);
+	--%System:Draw2DLine(xcent,ycent-2-shift,xcent,ycent-7-shift,r,g,b, fValue);
+	--%System:Draw2DLine(xcent,ycent+2+shift,xcent,ycent+7+shift,r,g,b, fValue);
+
+	local crosshairTexture = System:LoadImage("Textures/white.dds");
+
+	if (crosshairTexture) then
+		%System:DrawImageColor(crosshairTexture, xcent-2-shift, ycent, -7, 0.3, 4, r, g, b, fValue);
+		%System:DrawImageColor(crosshairTexture, xcent+2+shift, ycent, 7, 0.3, 4, r, g, b, fValue);
+		%System:DrawImageColor(crosshairTexture, xcent, ycent-2-shift, 0.3, -7, 4, r, g, b, fValue);
+		%System:DrawImageColor(crosshairTexture, xcent, ycent+2+shift, 0.3, 7, 4, r, g, b, fValue);
+	end
+
+	if (bDot ~= 0) then
+		%System:DrawImageColor(crosshairTexture, xcent, ycent, 0.5, 0.5, 4, r, g, b, fValue);
+	end
 	
 	BasicWeapon.prevShift = shift;
 end
@@ -1342,6 +1350,7 @@ function BasicWeapon.Client:OnEnhanceHUD(scale, bhit, xpos, ypos)
 			if ((not ClientStuff.vlayers:IsActive("Binoculars")) and (((not ClientStuff.vlayers:IsActive("WeaponScope")) or (self.AimMode)) or self.ZoomForceCrosshair)) then
 				if(bhit and bhit>0)then
 					BasicWeapon.DrawCrosshair(self,1,0,0,stats.accuracy*scale, xpos, ypos);
+
 					--System:Log("Drawcrosshair called line 1332");
 				elseif (stats.reloading or (stats.ammo_in_clip == 0 and stats.ammo == 0 and myplayer.fireparams.AmmoType ~= "Unlimited")) then
 					BasicWeapon.DrawCrosshair(self,0.25,0.25,0,stats.accuracy*scale, xpos, ypos);

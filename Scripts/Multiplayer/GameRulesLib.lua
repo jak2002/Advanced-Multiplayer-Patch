@@ -1515,7 +1515,7 @@ GameRules.ClientCommandTable["CSD"]=function(String,ServerSlot,TokTable)
 	GameRules:INPROGRESS_OnDamage(hit)
 	local bloodpos = target:GetBonePos("Bip01 Pelvis") if TokTable[5] and TokTable[5] == "h" then bloodpos = target:GetBonePos("Bip01 Head") end
 	Server:BroadcastCommand("FX", bloodpos, hit.dir, hit.shooter.id, 3);
-	Server:BroadcastCommand("MBB "..hit.target.id.." "..hit.shooter.id)
+	Server:BroadcastCommand("MBB "..hit.target.id.." "..hit.shooter.id.." "..TokTable[5]);
 end
 
 -- Team Based Binocular

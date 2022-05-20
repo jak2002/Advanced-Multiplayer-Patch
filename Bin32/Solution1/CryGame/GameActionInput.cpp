@@ -1006,10 +1006,20 @@ void CXGame::InitConsoleVars()
 			g_first_person_spectator = pConsole->CreateVariable("gr_first_person_spectator","0",VF_REQUIRE_NET_SYNC);
 
 			// sm1le: New Vars
-			p_fov =pConsole->CreateVariable("p_fov","90",0,
+			p_fov = pConsole->CreateVariable("p_fov","90",0,
 				"Changes player's fov.\n"
 				"Usage: p_fov 120.\n"
 				"Default value is 90.\n");
+
+			hud_crosshair_dot = pConsole->CreateVariable("hud_crosshair_dot","1",0,
+				"Hide or shows the crosshair's middle dot.\n"
+				"Usage: hud_crosshair_dot 0.\n"
+				"Default value is 1.\n");
+
+			hud_hitsound = pConsole->CreateVariable("hud_hitsound","0",0,
+				"Whether the hit sound will play.\n"
+				"Usage: hud_hitsound 1.\n"
+				"Default value is 0.\n");
 }
 
 void CXGame::ResetInputMap()

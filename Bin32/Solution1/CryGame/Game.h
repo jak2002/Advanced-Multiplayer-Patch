@@ -609,6 +609,8 @@ public:
 
 	// sm1le: New Vars
 	ICVar* p_fov;
+	ICVar* hud_crosshair_dot;
+	ICVar* hud_hitsound;
 
 	ICVar* g_language;
 	ICVar* g_playerprofile;

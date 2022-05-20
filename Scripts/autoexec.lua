@@ -3,3 +3,5 @@ if (getglobal("g_language")) == "russian" then
 else
     Language:LoadStringTable("../Languages/english.xml");
 end
+
+modfolder = "Mods/"..tostring(Game:GetCurrentModName()).."/";
