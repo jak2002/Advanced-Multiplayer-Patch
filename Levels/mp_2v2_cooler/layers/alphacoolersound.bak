@@ -1,0 +1,18 @@
+<ObjectLayer>
+ <Layer Exportable="1" External="1" Frozen="0" GUID="{D94D5496-9732-4ECC-86CF-F9E1DE9EE2FA}" Hidden="0" Name="alphacoolersound" >
+  <LayerObjects>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="817" HiddenInGame="0" Id="{245AF56C-9819-4C5A-9DF2-88CCA6881FB1}" Layer="alphacoolersound" LodRatio="100" Name="hitechmachine1" Pos="332.97672,1042.054,35.839268" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="7" iVolume="255" OuterRadius="15" sndSource="Sounds\building\resonentlp.wav" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="819" HiddenInGame="0" Id="{5851C271-DE9C-4095-9A56-F6DB293BCAAA}" Layer="alphacoolersound" LodRatio="100" Name="hitechmachine3" Pos="310.93793,1063.9824,35.5658" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="7" iVolume="255" OuterRadius="15" sndSource="Sounds\building\resonentlp.wav" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="818" HiddenInGame="0" Id="{6FA2EEF3-EB3D-4B9F-94E0-1CAF067577B1}" Layer="alphacoolersound" LodRatio="100" Name="hitechmachine2" Pos="311.01352,1041.9579,35.810001" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="7" iVolume="255" OuterRadius="15" sndSource="Sounds\building\resonentlp.wav" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="820" HiddenInGame="0" Id="{27914EF6-3EFA-43EA-8548-19CC802CF983}" Layer="alphacoolersound" LodRatio="100" Name="hitechmachine4" Pos="333.03482,1063.9939,35.518112" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="7" iVolume="255" OuterRadius="15" sndSource="Sounds\building\resonentlp.wav" />
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

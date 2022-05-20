@@ -1,0 +1,34 @@
+<ObjectLayer>
+ <Layer Exportable="1" External="1" Frozen="0" GUID="{F174FB05-F962-4C6A-A3A0-D51651254F49}" Hidden="0" Name="mp_damsound" >
+  <LayerObjects>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="180" HiddenInGame="0" Id="{33361100-0CF5-4224-8128-642EECBBF4D1}" Layer="mp_damsound" LodRatio="100" Name="SeagullsPreset" Pos="661.5,1424.125,64.875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="0.5" sndpresetSoundPreset="m3seagulls" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="181" HiddenInGame="0" Id="{7DBD4843-49AB-4675-8FFA-52590D3400E9}" Layer="mp_damsound" LodRatio="100" Name="oceanPreset" Pos="802.75,1485.75,46.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="1.5" sndpresetSoundPreset="M3shoreline" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="183" HiddenInGame="0" Id="{44E5B490-E799-41F3-B714-7CA986CBBBBF}" Layer="mp_damsound" LodRatio="100" Name="basicwindPreset" Pos="662.125,1425.875,64.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="2" sndpresetSoundPreset="m3streamingwind" />
+   </Object>
+   <Object AreaId="0" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="0" Height="0" Id="{4ACD4F9A-B921-478E-AEDB-36A8130E3F9A}" Layer="mp_damsound" Name="wholeisland" Pos="2056.125,2069.75,0.1" Type="Shape" Width="0" >
+    <Points>
+     <Point Pos="0,0,0" />
+     <Point Pos="-2084.625,-10.25,0" />
+     <Point Pos="-2084.625,-2089.625,0" />
+     <Point Pos="0,-2089.625,0" />
+    </Points>
+    <Entities>
+     <Entity Id="{44E5B490-E799-41F3-B714-7CA986CBBBBF}" />
+     <Entity Id="{33361100-0CF5-4224-8128-642EECBBF4D1}" />
+     <Entity Id="{4C9249AF-ADF3-455C-A87C-294905CAC0EF}" />
+    </Entities>
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="184" HiddenInGame="0" Id="{4C9249AF-ADF3-455C-A87C-294905CAC0EF}" Layer="mp_damsound" LodRatio="100" Name="basiccricketsPreset" Pos="671.5,1420.875,64.625" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="0.5" sndpresetSoundPreset="coolinsects1" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="185" HiddenInGame="0" Id="{7F1EC2EF-B5EC-485C-9657-80EEA90E0C1B}" Layer="mp_damsound" LodRatio="100" Name="highwindPreset" Pos="741,1433.75,64.875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="0.75" sndpresetSoundPreset="cliffwind" />
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

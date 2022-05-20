@@ -769,7 +769,10 @@ function Hud:CommonInit()
 		FWDVehicle = { 345, 63, 76, 34 }, -- vehicle damage		
 		InflatableBoat = { 260, 142, 81, 32 }, -- vehicle damage		
 		BoatPatrol = { 260, 142, 81, 32 }, -- vehicle damage	
-		Boat = { 260, 142, 81, 32 }, -- vehicle damage							
+		Boat = { 260, 142, 81, 32 }, -- vehicle damage		
+		
+		
+		Headshot = {110, 193, 24, 24},  -- Headshot
 	}
 		
 						
@@ -1027,7 +1030,7 @@ end
 
 function Hud:PlayMultiplayerHitSound(hitpos)
 	--temporary enabled
-	if (tonumber(hud_hitsound) == 0 and (hitpos or _localplayer.fireparams.fire_mode_type == FireMode_Melee)) then return end
+	if (tonumber(hud_hitsound) == 0 and (not hitpos or _localplayer.fireparams.fire_mode_type == FireMode_Melee)) then return end
 
 	if (self.SndIdMPHitHead and Sound:IsPlaying(self.SndIdMPHitHead) == nil and hitpos == "h") then
 		Sound:PlaySound(self.SndIdMPHitHead);
@@ -2392,13 +2395,20 @@ function Hud:DrawMessagesBox(tMsgList, xpos, ypos, killmsg)
 					end
 					
 					Game:WriteHudString(xpos, ypos-msg.curr_ypos, txtKiller, currColor.r, currColor.g, currColor.b, textalpha, 12, 12, 0);					
-					self:DrawKillIcon(xpos+strsizex+10, ypos-msg.curr_ypos+1, wpn, textalpha);											
+					self:DrawKillIcon(xpos+strsizex+10, ypos-msg.curr_ypos+1, wpn, textalpha);
+
+									
 
 					if(txtKilled) then						
 						local sx,sy=0, 0;					
 						if(wpn and self.mpKills[wpn]) then
 							sy=self.mpKills[wpn].size.h;
 							sx=self.mpKills[wpn].size.w*(14/sy);												
+						end
+
+						if (sit=="3") then
+							self:DrawKillIcon(xpos+strsizex+10+sx+3, ypos-msg.curr_ypos+1,"Headshot", textalpha);
+							sx = sx + 12;
 						end
 
 						Game:WriteHudString(xpos+strsizex+10+sx+10, ypos-msg.curr_ypos, txtKilled, currColor.r, currColor.g, currColor.b, textalpha, 12, 12, 0);

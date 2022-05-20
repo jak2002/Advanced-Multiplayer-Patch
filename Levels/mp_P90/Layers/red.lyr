@@ -1,0 +1,10 @@
+<ObjectLayer>
+ <Layer Exportable="1" External="1" Frozen="0" GUID="{C9211CF6-F733-4150-9560-6478C2B7B9FA}" Hidden="0" Name="red" >
+  <LayerObjects>
+   <Object Angles="0,0,149.99998" ColorRGB="16711680" Id="{E2F795A2-D53F-4897-B93E-90C87BF7765E}" Layer="red" Name="red" Pos="992.5,1051.5,29.664063" Type="Respawn" />
+   <Object Angles="0,0,-154" ColorRGB="16711680" Id="{17D279A7-18D0-4206-B314-29B779A48A06}" Layer="red" Name="red" Pos="1029.5,1050.25,29.625" Type="Respawn" />
+   <Object Angles="0,0,149.99998" ColorRGB="16711680" Id="{A31EC2CC-5733-4144-BE2D-6C8292482F54}" Layer="red" Name="red" Pos="995,1049.375,29.464844" Type="Respawn" />
+   <Object Angles="0,0,173.99997" ColorRGB="16711680" Id="{171459D7-207F-4B74-9CF4-7EF5C23B7BEE}" Layer="red" Name="red" Pos="1016.375,1047.875,27.813965" Type="Respawn" />
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

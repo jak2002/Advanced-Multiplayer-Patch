@@ -1,0 +1,170 @@
+<ObjectLayer>
+ <Layer Exportable="1" External="1" Frozen="0" GUID="{4E983117-0A56-4EEB-B15A-343A2A1630DC}" Hidden="0" Name="mp_dunesound" >
+  <LayerObjects>
+   <Object AreaId="0" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="0" Height="0" Id="{13BC0E0F-394D-4215-8174-1822C0509602}" Layer="mp_dunesound" Name="Shape2" Pos="1096.7339,732.0672,15.944815" Type="Shape" Width="75" >
+    <Points>
+     <Point Pos="0,0,0" />
+     <Point Pos="51.903442,-7.1160889,-0.28959274" />
+     <Point Pos="102.88269,-17.33844,1.0856743" />
+     <Point Pos="126.70789,9.7398071,-0.87633705" />
+     <Point Pos="124.83435,87.364563,0.01993084" />
+     <Point Pos="143.89929,136.94836,-1.1061554" />
+     <Point Pos="111.90857,253.43256,-0.2330513" />
+     <Point Pos="44.370239,303.36761,-0.4251976" />
+     <Point Pos="7.6779785,253.52704,-0.023574829" />
+     <Point Pos="-15.568848,242.53247,-0.13537884" />
+     <Point Pos="-47.734375,269.11328,-2.4185944" />
+     <Point Pos="-74.899841,265.31732,-15.153928" />
+     <Point Pos="-101.49084,219.2912,-0.79496861" />
+     <Point Pos="-137.32874,185.81573,-0.41403008" />
+     <Point Pos="-116.22363,127.55963,0.1551857" />
+     <Point Pos="-83.90979,39.662048,-0.021092415" />
+     <Point Pos="-53.260986,0.84527588,0.56124496" />
+    </Points>
+    <Entities>
+     <Entity Id="{11D13195-D620-47F3-A8CC-96493D80356E}" />
+     <Entity Id="{B940DFA9-4362-486B-B642-045E2843173F}" />
+    </Entities>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Birds" EntityId="52" HiddenInGame="0" Id="{9A013B42-7319-4EC3-8C08-B6D162F3D251}" Layer="mp_dunesound" LodRatio="100" Name="Birds2" Pos="1225.5,750.75,44.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActivateOnStart="1" bFollowPlayer="0" bNoLanding="1" bObstacleAvoidance="0" boid_mass="10" boid_radius="0.5" BoidFOV="60" BoidSize="1" FactorAlign="1" FactorAvoidLand="10" FactorCohesion="1" FactorHeight="0.4" FactorOrigin="0.1" FactorSeparation="10" gravity_at_death="-9.81" InnerRadius="10" MaxAnimSpeed="1.7" MaxAttractDist="20" MaxHeight="40" MaxSpeed="15" MinAttractDist="5" MinHeight="5" MinSpeed="2.5" nNumBirds="10" objModel="Objects\characters\animals\Seagull\Seagull.cgf" OuterRadius="20" VisibilityDist="300" />
+   </Object>
+   <Object AreaId="2" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="1" Height="0" Id="{C4EA5343-2336-44FC-ADFB-1EA2022E2667}" Layer="mp_dunesound" Name="no oncea1" Pos="1036.1235,963.9082,22.349646" Type="Shape" Width="20" >
+    <Points>
+     <Point Pos="0,0,0" />
+     <Point Pos="57.512573,-6.694519,9.8194599" />
+     <Point Pos="82.606689,9.8591309,10.549261" />
+     <Point Pos="117.09241,21.706665,2.1672058" />
+     <Point Pos="151.70386,12.830688,-4.2918396" />
+     <Point Pos="157.31042,-51.151367,6.3650284" />
+     <Point Pos="147.51721,-58.1297,11.868982" />
+     <Point Pos="150.47717,-73.738098,11.214041" />
+     <Point Pos="160.44775,-72.470703,-2.5202751" />
+     <Point Pos="183.16113,-92.284424,8.8002472" />
+     <Point Pos="166.79871,-120.75922,-1.9356289" />
+     <Point Pos="154.05762,-130.06464,-2.5891342" />
+     <Point Pos="152.83228,-175.32153,-1.758007" />
+     <Point Pos="123.30054,-210.62433,-3.9919033" />
+     <Point Pos="89.339722,-205.22827,-5.1917381" />
+     <Point Pos="43.020508,-190.1958,-4.3395195" />
+     <Point Pos="9.8792725,-160.66882,-2.3439121" />
+     <Point Pos="-11.751221,-141.24133,-1.0268135" />
+     <Point Pos="-18.021423,-53.199524,-0.12464523" />
+    </Points>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Birds" EntityId="54" HiddenInGame="0" Id="{C8D0D25F-94FB-4851-92FE-40FF0E52651C}" Layer="mp_dunesound" LodRatio="100" Name="Birds3" Pos="1160.625,951,66.25" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActivateOnStart="1" bFollowPlayer="0" bNoLanding="1" bObstacleAvoidance="0" boid_mass="10" boid_radius="0.5" BoidFOV="60" BoidSize="1" FactorAlign="1" FactorAvoidLand="10" FactorCohesion="1" FactorHeight="0.4" FactorOrigin="0.1" FactorSeparation="10" gravity_at_death="-9.81" InnerRadius="10" MaxAnimSpeed="1.7" MaxAttractDist="20" MaxHeight="40" MaxSpeed="15" MinAttractDist="5" MinHeight="5" MinSpeed="2.5" nNumBirds="10" objModel="Objects\characters\animals\Seagull\Seagull.cgf" OuterRadius="20" VisibilityDist="300" />
+   </Object>
+   <Object AreaId="0" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="0" Height="0" Id="{2078826F-2D62-49EE-BA52-7F7EBB37C246}" Layer="mp_dunesound" Name="windarea" Pos="2487.5435,2101.9153,0.1" Type="Shape" Width="0" >
+    <Points>
+     <Point Pos="0,0,0" />
+     <Point Pos="-2609.1965,0,0" />
+     <Point Pos="-2589.7249,-2239.2358,0" />
+     <Point Pos="35.048828,-2169.1379,0" />
+    </Points>
+    <Entities>
+     <Entity Id="{2B213B9B-A40D-4D2F-A351-E26B11BFD783}" />
+    </Entities>
+   </Object>
+   <Object Angles="0,0,103.00002" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="InflatableBoat" EntityId="171" HiddenInGame="0" Id="{C7F76978-E301-4CE2-B063-0FF639F712BB}" Layer="mp_dunesound" LodRatio="100" Name="Zodiac4" Pos="877.94128,906.99854,15.519784" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties accuracy="0.6" aggression="1" aicharacter_character="InflatableBoat" attackrange="70" bActive="1" bDrawDriver="0" bNoDamage="0" bodypos="0" bTrackable="1" bUserPassanger="0" cohesion="5" commrange="100" damping="0.1" eye_height="2.1" fAbandonedTime="20" fAISoundRadius="30" fGroupHostility="0" fLimitLRAngles="150" fLimitUDMaxAngles="40" fLimitUDMinAngles="-45" forward_speed="1" fPersistence="0" fSpeciesHostility="2" horizontal_fov="160" max_health="70" pathname="none" pathstart="0" pathsteps="0" pointBackOff="Base" pointReinforce="Drop" ReinforcePoint="none" responsiveness="7" species="1" vertical_fov="90" water_damping="1.5" water_resistance="0" >
+     <ExplosionParams fImpulsivePressure="350" fRadius="10" fRadiusMax="10" fRadiusMin="5" nDamage="800" />
+    </Properties>
+    <Properties2 aibehavior_behaviour="Boat_idle" groupid="154" sightrange="180" soundrange="10" />
+    <EventTargets>
+     <EventTarget Event="Reset" SourceEvent="Abandoned" TargetId="{5C5660A8-EE80-42C6-9368-E73EFE8BCB33}" />
+     <EventTarget Event="Reset" SourceEvent="OnDeath" TargetId="{5C5660A8-EE80-42C6-9368-E73EFE8BCB33}" />
+    </EventTargets>
+   </Object>
+   <Object Angles="9,-7.1765008e-008,-17.999996" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="InflatableBoat" EntityId="56" HiddenInGame="0" Id="{32835C7A-E2E9-4822-9299-4028A2B45A49}" Layer="mp_dunesound" LodRatio="100" Name="Zodiac6" Pos="1084.6548,700.34515,15.774145" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties accuracy="0.6" aggression="1" aicharacter_character="InflatableBoat" attackrange="70" bActive="1" bDrawDriver="0" bNoDamage="0" bodypos="0" bTrackable="1" bUserPassanger="0" cohesion="5" commrange="100" damping="0.1" eye_height="2.1" fAbandonedTime="20" fAISoundRadius="30" fGroupHostility="0" fLimitLRAngles="150" fLimitUDMaxAngles="40" fLimitUDMinAngles="-45" forward_speed="1" fPersistence="0" fSpeciesHostility="2" horizontal_fov="160" max_health="70" pathname="none" pathstart="0" pathsteps="0" pointBackOff="Base" pointReinforce="Drop" ReinforcePoint="none" responsiveness="7" species="1" vertical_fov="90" water_damping="1.5" water_resistance="0" >
+     <ExplosionParams fImpulsivePressure="350" fRadius="10" fRadiusMax="10" fRadiusMin="5" nDamage="800" />
+    </Properties>
+    <Properties2 aibehavior_behaviour="Boat_idle" groupid="154" sightrange="180" soundrange="10" />
+    <EventTargets>
+     <EventTarget Event="Reset" SourceEvent="Abandoned" TargetId="{EBDC5AB8-9DE6-4764-B1A3-65A3B7B897CB}" />
+     <EventTarget Event="Reset" SourceEvent="OnDeath" TargetId="{EBDC5AB8-9DE6-4764-B1A3-65A3B7B897CB}" />
+    </EventTargets>
+   </Object>
+   <Object Angles="0,0,33.000011" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="InflatableBoat" EntityId="172" HiddenInGame="0" Id="{A02F3E91-F536-49B1-84EE-638B2EE7A6B5}" Layer="mp_dunesound" LodRatio="100" Name="Zodiac5" Pos="891.06281,918.1366,16.115541" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties accuracy="0.6" aggression="1" aicharacter_character="InflatableBoat" attackrange="70" bActive="1" bDrawDriver="0" bNoDamage="0" bodypos="0" bTrackable="1" bUserPassanger="0" cohesion="5" commrange="100" damping="0.1" eye_height="2.1" fAbandonedTime="20" fAISoundRadius="30" fGroupHostility="0" fLimitLRAngles="150" fLimitUDMaxAngles="40" fLimitUDMinAngles="-45" forward_speed="1" fPersistence="0" fSpeciesHostility="2" horizontal_fov="160" max_health="70" pathname="none" pathstart="0" pathsteps="0" pointBackOff="Base" pointReinforce="Drop" ReinforcePoint="none" responsiveness="7" species="1" vertical_fov="90" water_damping="1.5" water_resistance="0" >
+     <ExplosionParams fImpulsivePressure="350" fRadius="10" fRadiusMax="10" fRadiusMin="5" nDamage="800" />
+    </Properties>
+    <Properties2 aibehavior_behaviour="Boat_idle" groupid="154" sightrange="180" soundrange="10" />
+    <EventTargets>
+     <EventTarget Event="Reset" SourceEvent="Abandoned" TargetId="{5C5660A8-EE80-42C6-9368-E73EFE8BCB33}" />
+     <EventTarget Event="Reset" SourceEvent="OnDeath" TargetId="{5C5660A8-EE80-42C6-9368-E73EFE8BCB33}" />
+    </EventTargets>
+   </Object>
+   <Object Angles="0,0,161" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="InflatableBoat" EntityId="63" HiddenInGame="0" Id="{F179CF91-14C7-4693-835C-1AEF41EA0CBB}" Layer="mp_dunesound" LodRatio="100" Name="Zodiac2" Pos="998.49396,798.68695,15.553303" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties accuracy="0.6" aggression="1" aicharacter_character="InflatableBoat" attackrange="70" bActive="1" bDrawDriver="0" bNoDamage="0" bodypos="0" bTrackable="1" bUserPassanger="0" cohesion="5" commrange="100" damping="0.1" eye_height="2.1" fAbandonedTime="20" fAISoundRadius="30" fGroupHostility="0" fLimitLRAngles="150" fLimitUDMaxAngles="40" fLimitUDMinAngles="-45" forward_speed="1" fPersistence="0" fSpeciesHostility="2" horizontal_fov="160" max_health="70" pathname="none" pathstart="0" pathsteps="0" pointBackOff="Base" pointReinforce="Drop" ReinforcePoint="none" responsiveness="7" species="1" vertical_fov="90" water_damping="1.5" water_resistance="0" >
+     <ExplosionParams fImpulsivePressure="350" fRadius="10" fRadiusMax="10" fRadiusMin="5" nDamage="800" />
+    </Properties>
+    <Properties2 aibehavior_behaviour="Boat_idle" groupid="154" sightrange="180" soundrange="10" />
+    <EventTargets>
+     <EventTarget Event="Reset" SourceEvent="Abandoned" TargetId="{EBDC5AB8-9DE6-4764-B1A3-65A3B7B897CB}" />
+     <EventTarget Event="Reset" SourceEvent="OnDeath" TargetId="{EBDC5AB8-9DE6-4764-B1A3-65A3B7B897CB}" />
+    </EventTargets>
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="1" HiddenInGame="0" Id="{11D13195-D620-47F3-A8CC-96493D80356E}" Layer="mp_dunesound" LodRatio="100" Name="islandbugs" Pos="1202.2761,710.39136,14.834559" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="1" bOnce="0" bPlayFromCenter="0" fScale="1" sndpresetSoundPreset="m03bugs1" />
+   </Object>
+   <Object ColorRGB="41215" Comment="" Fixed="0" Id="{1FA2CF99-9900-4193-8CFF-05ECB777D0F3}" Layer="mp_dunesound" Name="Comment2" Pos="869,742,17" Type="Comment" />
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="2" HiddenInGame="0" Id="{2B213B9B-A40D-4D2F-A351-E26B11BFD783}" Layer="mp_dunesound" LodRatio="100" Name="windpreset" Pos="1197.4215,722.92041,16.281319" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="1" bOnce="0" bPlayFromCenter="0" fScale="2" sndpresetSoundPreset="m3streamingwind" />
+   </Object>
+   <Object Angles="0,0,91" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Phoenix" EntityId="153" HiddenInGame="0" Id="{5C5660A8-EE80-42C6-9368-E73EFE8BCB33}" Layer="mp_dunesound" LodRatio="100" Name="Phoenix2" Pos="877.55988,886.59247,20.585859" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bWithRespawnCycle="0" fRespawnTime="20" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="3" HiddenInGame="0" Id="{B940DFA9-4362-486B-B642-045E2843173F}" Layer="mp_dunesound" LodRatio="100" Name="island birdies" Pos="963.87018,857.83728,19.887226" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="1" bOnce="0" bPlayFromCenter="0" fScale="0.15" sndpresetSoundPreset="m3happybirds" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Phoenix" EntityId="67" HiddenInGame="0" Id="{EBDC5AB8-9DE6-4764-B1A3-65A3B7B897CB}" Layer="mp_dunesound" LodRatio="100" Name="Phoenix1" Pos="1001,801.375,20.503906" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bWithRespawnCycle="0" fRespawnTime="20" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="4" HiddenInGame="0" Id="{2A815EC5-0120-43D4-9799-64544BED7D61}" Layer="mp_dunesound" LodRatio="100" Name="oceanpreset" Pos="1150.3551,744.76282,18.375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="1" bOnce="0" bPlayFromCenter="0" fScale="2" sndpresetSoundPreset="M3shoreline" />
+   </Object>
+   <Object AreaId="0" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="0" Height="0" Id="{6595AEC5-9FEB-4879-A886-FA48127A675F}" Layer="mp_dunesound" Name="Shape3" Pos="1479.3379,538.16553,15.624335" Type="Shape" Width="75" >
+    <Points>
+     <Point Pos="0,0,0" />
+     <Point Pos="-100.67175,50.693787,2.0126991" />
+     <Point Pos="-176.76575,42.280884,1.9742107" />
+     <Point Pos="-256.30591,-20.496155,2.0126991" />
+     <Point Pos="-260.63013,-148.74005,1.7626991" />
+     <Point Pos="-261.07605,-218.26944,-15.237301" />
+     <Point Pos="-182.37415,-303.56403,-15.237301" />
+     <Point Pos="-28.954956,-314.96249,-15.237301" />
+     <Point Pos="49.5896,-229.13855,-14.237004" />
+     <Point Pos="58.222534,-114.66901,-13.92329" />
+     <Point Pos="43.875854,-36.624878,-4.6338921" />
+    </Points>
+    <Entities>
+     <Entity Id="{11D13195-D620-47F3-A8CC-96493D80356E}" />
+     <Entity Id="{B940DFA9-4362-486B-B642-045E2843173F}" />
+    </Entities>
+   </Object>
+   <Object AreaId="1" BoxMax="1250,1250,50" BoxMin="-1250,-1250,0" ColorRGB="16711680" FadeInZone="25" GroupId="1" Height="50" Id="{1A0604C9-1DC7-47CC-B2F9-B3D4DB4A7858}" Layer="mp_dunesound" Length="2500" Name="oceanbox" Pos="1115.27,764.84998,-29.940001" Type="AreaBox" Width="2500" >
+    <Entities>
+     <Entity Id="{2A815EC5-0120-43D4-9799-64544BED7D61}" />
+    </Entities>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Birds" EntityId="50" HiddenInGame="0" Id="{FC9BB4CD-FCD4-42C2-A2F4-1773E8D15D44}" Layer="mp_dunesound" LodRatio="100" Name="Birds1" Pos="1298.75,498.875,44.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActivateOnStart="1" bFollowPlayer="0" bNoLanding="1" bObstacleAvoidance="0" boid_mass="10" boid_radius="0.5" BoidFOV="60" BoidSize="1" FactorAlign="1" FactorAvoidLand="10" FactorCohesion="1" FactorHeight="0.4" FactorOrigin="0.1" FactorSeparation="10" gravity_at_death="-9.81" InnerRadius="10" MaxAnimSpeed="1.7" MaxAttractDist="20" MaxHeight="40" MaxSpeed="15" MinAttractDist="5" MinHeight="5" MinSpeed="2.5" nNumBirds="10" objModel="Objects\characters\animals\Seagull\Seagull.cgf" OuterRadius="20" VisibilityDist="300" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Birds" EntityId="55" HiddenInGame="0" Id="{9FBC0CD3-8D25-4BE4-A723-3E00FC41799F}" Layer="mp_dunesound" LodRatio="100" Name="Birds5" Pos="964.53448,938.91522,53.662109" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActivateOnStart="1" bFollowPlayer="0" bNoLanding="1" bObstacleAvoidance="0" boid_mass="10" boid_radius="0.5" BoidFOV="60" BoidSize="1" FactorAlign="1" FactorAvoidLand="10" FactorCohesion="1" FactorHeight="0.4" FactorOrigin="0.1" FactorSeparation="10" gravity_at_death="-9.81" InnerRadius="10" MaxAnimSpeed="1.7" MaxAttractDist="20" MaxHeight="40" MaxSpeed="15" MinAttractDist="5" MinHeight="5" MinSpeed="2.5" nNumBirds="10" objModel="Objects\characters\animals\Seagull\Seagull.cgf" OuterRadius="20" VisibilityDist="300" />
+   </Object>
+   <Object Angles="0,0,-172.99998" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="InflatableBoat" EntityId="79" HiddenInGame="0" Id="{0DEA72DC-6ACB-434B-8A6C-9996C630BCBF}" Layer="mp_dunesound" LodRatio="100" Name="Zodiac3" Pos="1003.0225,798.98859,15.605865" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties accuracy="0.6" aggression="1" aicharacter_character="InflatableBoat" attackrange="70" bActive="1" bDrawDriver="0" bNoDamage="0" bodypos="0" bTrackable="1" bUserPassanger="0" cohesion="5" commrange="100" damping="0.1" eye_height="2.1" fAbandonedTime="20" fAISoundRadius="30" fGroupHostility="0" fLimitLRAngles="150" fLimitUDMaxAngles="40" fLimitUDMinAngles="-45" forward_speed="1" fPersistence="0" fSpeciesHostility="2" horizontal_fov="160" max_health="70" pathname="none" pathstart="0" pathsteps="0" pointBackOff="Base" pointReinforce="Drop" ReinforcePoint="none" responsiveness="7" species="1" vertical_fov="90" water_damping="1.5" water_resistance="0" >
+     <ExplosionParams fImpulsivePressure="350" fRadius="10" fRadiusMax="10" fRadiusMin="5" nDamage="800" />
+    </Properties>
+    <Properties2 aibehavior_behaviour="Boat_idle" groupid="154" sightrange="180" soundrange="10" />
+    <EventTargets>
+     <EventTarget Event="Reset" SourceEvent="Abandoned" TargetId="{EBDC5AB8-9DE6-4764-B1A3-65A3B7B897CB}" />
+     <EventTarget Event="Reset" SourceEvent="OnDeath" TargetId="{EBDC5AB8-9DE6-4764-B1A3-65A3B7B897CB}" />
+    </EventTargets>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

@@ -1611,6 +1611,8 @@ function GameRules:UsualScoreCalculation( hit, damage_ret )
 		if(hit.target_material and hit.target_material.type=="head") then					-- HEAD SHOT
 			MPStatistics:AddStatisticsDataSSId(ss_shooter:GetId(),"nHeadshot",1);	-- successfully killed by headshot
 			SVplayerTrack:SetBySs(ss_shooter,"headshots", 1, 1);
+
+			situation = 3; -- Headshot
 			--[new] headshot message
 			if toNumberOrZero(getglobal("gr_announce_headshot")) == 1 then
 				if toNumberOrZero(getglobal("gr_headshot_message_private")) == 1 then

@@ -1,0 +1,113 @@
+<ObjectLayer>
+ <Layer Exportable="1" External="1" Frozen="0" GUID="{2EE15CFF-D88D-446C-834A-3E76B0B361F5}" Hidden="0" Name="mp_surfsound" >
+  <LayerObjects>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="261" HiddenInGame="0" Id="{20259F03-0F6E-4B2F-B966-0C00691666FF}" Layer="mp_surfsound" LodRatio="100" Name="nighttime animals" Pos="1225.4542,1577.6499,43" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="1" bOnce="0" bPlayFromCenter="0" fScale="0.65" sndpresetSoundPreset="m5nighttimesounds1" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="353" HiddenInGame="0" Id="{3C98E737-9CD5-4FD0-A43E-D8B8D6627A01}" Layer="mp_surfsound" LodRatio="100" Name="m5treewildlife" Pos="1310.1232,925.12457,85.061035" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="1" sndpresetSoundPreset="coolinsects1" />
+   </Object>
+   <Object AreaId="2" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="2" Height="0" Id="{98362840-933D-4C53-AF80-0E9A9F5A6FE4}" Layer="mp_surfsound" Name="tree1" Pos="1009.125,979.875,16.725" Type="Shape" Width="35" >
+    <Points>
+     <Point Pos="0,0,0" />
+     <Point Pos="25.5,-4.625,0.25" />
+     <Point Pos="45.900757,-30.520325,0.4967804" />
+     <Point Pos="36,-45.625,0.375" />
+     <Point Pos="18.5,-54.75,0.5" />
+     <Point Pos="3.125,-55.75,1.125" />
+     <Point Pos="-13.125,-26.375,0.5" />
+     <Point Pos="-6.4901733,-37.712158,-0.62182617" />
+     <Point Pos="-8,-44.5,0.625" />
+     <Point Pos="-18.25,-4.875,0.125" />
+     <Point Pos="-30.25,28.875,0.25" />
+     <Point Pos="-43.25,39,0.25" />
+     <Point Pos="-55.75,44,0.375" />
+     <Point Pos="-65.375,53.75,0.5" />
+     <Point Pos="-64.783447,67.920532,0.82900238" />
+     <Point Pos="-59.875,74.125,0.75" />
+     <Point Pos="-50.5,82.875,0.625" />
+     <Point Pos="-44.625,88.5,0.375" />
+     <Point Pos="-29.5,86.125,0.125" />
+     <Point Pos="-28.75,60.625,0.25" />
+     <Point Pos="-18.125,33.25,0.25" />
+     <Point Pos="-13.025085,7.4647827,0.12248993" />
+    </Points>
+    <Entities>
+     <Entity Id="{2E7BECC0-72CB-411C-9297-15327B9539FB}" />
+    </Entities>
+   </Object>
+   <Object AreaId="-1" BoxMax="500,500,50" BoxMin="-500,-500,0" ColorRGB="16711680" FadeInZone="25" GroupId="0" Height="50" Id="{3E74B345-453E-4D11-81A2-81E4DC2ECE18}" Layer="mp_surfsound" Length="1000" Name="ocean box" Pos="1033.75,1022.62,-28.17" Type="AreaBox" Width="1000" >
+    <Entities>
+     <Entity Id="{D09B00E3-4952-4BF7-9C69-E5DA8FE2D5A4}" />
+    </Entities>
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="575" HiddenInGame="0" Id="{F38A5E77-96E1-487F-AA30-1285BA3ED007}" Layer="mp_surfsound" LodRatio="100" Name="m3wind" Pos="1220.39,1574.36,43.847717" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="1" bOnce="0" bPlayFromCenter="0" fScale="1.5" sndpresetSoundPreset="m3streamingwind2" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="577" HiddenInGame="0" Id="{04A4BE7B-588F-4AA7-AB03-68352235F1B2}" Layer="mp_surfsound" LodRatio="100" Name="m5 island ambient" Pos="1220.5658,1577.5986,43.177643" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="1" bOnce="0" bPlayFromCenter="0" fScale="0.5" sndpresetSoundPreset="m5basiccrickets" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="83" HiddenInGame="0" Id="{3145118A-02D0-459A-A58A-D9153A32636F}" Layer="mp_surfsound" LodRatio="100" Name="wind" Pos="890.75,997.625,18.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="2" sndpresetSoundPreset="m3streamingwind" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="581" HiddenInGame="0" Id="{2D711F8B-8941-4BAB-92F1-9F4D17EA9F22}" Layer="mp_surfsound" LodRatio="100" Name="treewind" Pos="1310.2006,923.83142,85.061035" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="1.15" sndpresetSoundPreset="treewind" />
+   </Object>
+   <Object AreaId="0" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="0" Height="0" Id="{E524579D-78B2-4035-9C25-82BAB0FAD259}" Layer="mp_surfsound" Name="Shape2" Pos="903.625,1002.5,17.225" Type="Shape" Width="0" >
+    <Points>
+     <Point Pos="0,0,0" />
+     <Point Pos="-2.75,9.75,-0.375" />
+     <Point Pos="-11.75,18.375,-0.25" />
+     <Point Pos="-17.5,21.125,-0.25" />
+     <Point Pos="-22.75,19,-0.375" />
+     <Point Pos="-25.375,10.5,-0.375" />
+     <Point Pos="-25.875,3,-0.375" />
+     <Point Pos="-23,-5.375,-0.125" />
+     <Point Pos="-16,-10.25,-0.125" />
+     <Point Pos="-7.875,-9.75,0" />
+     <Point Pos="-2.75,-5.75,0" />
+    </Points>
+   </Object>
+   <Object AreaId="2" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="2" Height="0" Id="{E3D4C9AA-DDFC-48FF-89A5-6E1FB80BF958}" Layer="mp_surfsound" Name="tree2" Pos="1174.5,1037.875,16.975" Type="Shape" Width="35" >
+    <Points>
+     <Point Pos="0,0,0" />
+     <Point Pos="-3.375,-26.75,-0.625" />
+     <Point Pos="-15.75,-45.25,-0.25" />
+     <Point Pos="-39.5,-46.875,0.625" />
+     <Point Pos="-40.297302,-35.549866,-0.87182617" />
+     <Point Pos="-53.25,-19.25,-0.5" />
+     <Point Pos="-58.5,-6.125,0" />
+     <Point Pos="-51.5,6.625,-0.125" />
+     <Point Pos="-51.5,22.5,-0.25" />
+     <Point Pos="-46.625,36.125,0" />
+     <Point Pos="-35.75,42,0" />
+     <Point Pos="-20.375,39.25,0" />
+     <Point Pos="-12.40686,25.91272,0.16087341" />
+    </Points>
+   </Object>
+   <Object AreaId="0" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="0" Height="0" Id="{A965B2B0-FF3F-491E-B633-DF2AA3E5B63A}" Layer="mp_surfsound" Name="M5islandwind" Pos="1983.5819,1515.3336,0.1" Type="Shape" Width="0" >
+    <Points>
+     <Point Pos="0,0,0" />
+     <Point Pos="-1389.6195,3.3647461,0" />
+     <Point Pos="-1386.2549,-1389.6195,0" />
+     <Point Pos="-3.3647461,-1392.9841,0" />
+    </Points>
+    <Entities>
+     <Entity Id="{3145118A-02D0-459A-A58A-D9153A32636F}" />
+    </Entities>
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="596" HiddenInGame="0" Id="{269752C0-D27D-497A-A29F-BDEEF487DC36}" Layer="mp_surfsound" LodRatio="100" Name="M3ambient2" Pos="1218.6625,1576.28,43" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="1" bOnce="0" bPlayFromCenter="0" fScale="0.5" sndpresetSoundPreset="m5basiccricket2" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="84" HiddenInGame="0" Id="{2E7BECC0-72CB-411C-9297-15327B9539FB}" Layer="mp_surfsound" LodRatio="100" Name="RandomAmbientSoundPreset3" Pos="973.75,1028.75,18.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="1" sndpresetSoundPreset="coolinsects1" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="598" HiddenInGame="0" Id="{24DB8DCF-0F12-4A00-B97C-0B5B0C84955E}" Layer="mp_surfsound" LodRatio="100" Name="m5treecricket" Pos="1309.533,926.49127,85.140923" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="1" sndpresetSoundPreset="coolinsects1" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="82" HiddenInGame="0" Id="{D09B00E3-4952-4BF7-9C69-E5DA8FE2D5A4}" Layer="mp_surfsound" LodRatio="100" Name="ocean sounds" Pos="893.125,997,18.625" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="2" sndpresetSoundPreset="M3shoreline" />
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

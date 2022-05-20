@@ -1,0 +1,10 @@
+<ObjectLayer>
+ <Layer Exportable="1" External="0" Frozen="0" GUID="{E87B712C-2175-4073-B285-B01BB4EFF70B}" Hidden="0" Name="cameras" >
+  <LayerObjects>
+   <Object Angles="-0.59999728,-5.3382041e-007,-120.39816" CastShadowMaps="0" CastShadows="0" ColorRGB="16776960" EntityClass="CameraSource" EntityId="563" FOV="2.0944" HiddenInGame="0" Id="{83890732-9AFA-434C-A29C-36A8B59BCB8E}" Layer="cameras" LodRatio="100" Name="Camera0" Pos="368.95984,999.966,73.08754" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Camera" ViewDistRatio="100" />
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="ProximityTrigger" EntityId="303" HiddenInGame="0" Id="{20D1D88E-C740-496C-BF1E-AEC01EA1E262}" Layer="cameras" LodRatio="100" Name="ProximityTrigger107" Pos="316.625,1139.375,71.68779" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties aianchorAIAction="" bActivateWithUseButton="0" bEnabled="1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="1" bOnlyPlayer="0" bOnlySpecialAI="0" bTriggerOnce="1" DimX="3" DimY="3" DimZ="1" EnterDelay="0" ExitDelay="0" PlaySequence="fly" ScriptCommand="" TextInstruction="" />
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

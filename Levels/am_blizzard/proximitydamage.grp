@@ -1,0 +1,16 @@
+<Objects>
+ <Object ColorRGB="65280" Id="{EAA698E3-C2D7-4A6F-BBB8-0B4C5EB251F3}" Layer="mp_dunesound" MergeGeom="0" Name="Group29" Opened="0" Pos="1154.8914,761.10669,30.941168" Type="Group" >
+  <Objects>
+   <Object CastLightmap="1" CastShadowMaps="0" CastShadows="0" ColorRGB="16777215" Hideable="0" Id="{3DAD2564-8D0C-4BC9-B51D-5F7F0A796034}" Layer="mp_dunesound" LightmapQuality="1" LodRatio="100" Name="burned_ground10" NotTriangulate="0" OutdoorOnly="0" Parent="{EAA698E3-C2D7-4A6F-BBB8-0B4C5EB251F3}" Pos="-1.3590088,-0.80145264,0.69659805" Prefab="Objects\outdoor\human_camp\burned_ground.cgf" ReceiveLightmap="1" RecvShadowMaps="1" RndFlags="548" Scale="5.4243002,5.4243002,5.4243002" SelfShadowing="0" Type="Brush" ViewDistRatio="100" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="ProximityDamage" EntityId="121" HiddenInGame="0" Id="{19EADBDE-4E92-4E92-B332-787C358028C0}" Layer="Main" LodRatio="100" Name="ProximityDamage8" Parent="{EAA698E3-C2D7-4A6F-BBB8-0B4C5EB251F3}" Pos="0.52185059,0.79296875,0.69806099" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bEnabled="1" bShakeOnly="0" bSkipAI="0" bSkipPlayer="0" bTriggerOnce="0" fDamageRate="70" fHeight="4" fRadius="2" nDamageType="0" nShakeType="0" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="76" HiddenInGame="0" Id="{A59E1BD0-ECC9-4CBE-9155-409811B8BA57}" Layer="mp_dunesound" LodRatio="100" Name="SoundSpot26" Parent="{EAA698E3-C2D7-4A6F-BBB8-0B4C5EB251F3}" Pos="0.77832031,0.29638672,1.555151" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="SoundSpot" ViewDistRatio="100" >
+    <Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="5" iVolume="400" OuterRadius="20" sndSource="sounds\explosions\firelp4.wav" />
+   </Object>
+   <Object Angles="90,0,0" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="ParticleEffect" EntityId="148" HiddenInGame="0" Id="{6846549A-1614-427D-912C-926DEC18DD4D}" Layer="Main" LodRatio="100" Name="ParticleEffect20" Parent="{EAA698E3-C2D7-4A6F-BBB8-0B4C5EB251F3}" Pos="0.058959961,-0.28771973,-2.9498138" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" Scale="2.3377411,2.3377411,2.3377411" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="200" ParticleEffect="fire.camp_fire.a" Scale="5" SpawnPeriod="0.1" />
+   </Object>
+  </Objects>
+ </Object>
+</Objects>

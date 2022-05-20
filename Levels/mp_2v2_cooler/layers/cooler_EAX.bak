@@ -1,0 +1,11 @@
+<ObjectLayer>
+ <Layer Exportable="1" External="1" Frozen="0" GUID="{4778AC42-48EC-4D9A-91BF-966AE28A81CD}" Hidden="0" Name="cooler_EAX" >
+  <LayerObjects>
+   <Object Angles="0,0,90" AreaId="-1" BoxMax="2,0.050000001,2.97" BoxMin="-2,-0.050000001,0" ColorRGB="16711680" FadeInZone="1" GroupId="0" Height="2.97" Id="{57C0D1FD-D540-46BA-B378-334899B3C959}" Layer="cooler_EAX" Length="0.1" Name="AreaBox32" Pos="313.77695,1015.9988,43" Type="AreaBox" Width="4" >
+    <Entities>
+     <Entity Id="{19069442-B83F-437B-86E1-FBD787F6BF4C}" />
+    </Entities>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

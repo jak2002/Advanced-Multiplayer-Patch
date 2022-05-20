@@ -1,0 +1,14 @@
+<ObjectLayer>
+ <Layer Exportable="1" External="1" Frozen="0" GUID="{7F6BAD6E-48F4-44B6-B2C3-3D213B646BAE}" Hidden="0" Name="lab_elevator_new" >
+  <LayerObjects>
+   <Object AffectedBySun="0" AmbientColor="0.184314,0,0.00392157" AreaId="0" Closed="1" ColorRGB="33023" DisplayFilled="0" DynAmbientColor="0.894118,0.647059,0.647059" Flags="4" GroupId="0" Height="110" Id="{B5F3185D-67D0-44A0-8733-153FF6D9BBDD}" Layer="lab_elevator_new" Name="VisArea434" Pos="342.875,964.25,25.849998" SkyOnly="0" Type="VisArea" ViewDistRatio="100" Width="0" >
+    <Points>
+     <Point Pos="0,0,0" />
+     <Point Pos="12,0,0" />
+     <Point Pos="12,9.75,0" />
+     <Point Pos="0,9.75,0" />
+    </Points>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

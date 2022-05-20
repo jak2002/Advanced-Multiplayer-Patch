@@ -1,0 +1,597 @@
+<MaterialLibrary Name="Levell" SandboxVersion="1.1.1.1" >
+ <Material AlphaTest="0" Ambient="0.031372551,0.21960786,0.21568629" Diffuse="0.10588236,0.67058825,0.65098041" Emissive="0,0,0" GenMask="0" Id="{8BDF5177-0F1D-4DF3-8705-92FFE156611D}" MtlFlags="16" Name="lake0" Opacity="1" Shader="TemplLake" Shininess="10" Specular="0,0,0" >
+  <Textures>  </Textures>
+  <PublicParams animspeed="0.5" bumpamountx="0.015" bumpamounty="0.02" colorb="0.36" colorg="0.35" colorr="0.1" lowspecopacity="1" opacity="0" reflectamount="0" refrbumpamount="0.05" refrbumpamountx="0.01" refrbumpamounty="0.01" refrtillingamount="2.5" waveamplitude="0.01" />
+ </Material>
+ <Material GenMask="0" Id="{54E1B273-E6E3-48AA-9BCE-2F31385B688B}" MtlFlags="0" Name="floorc4x4y0" Shader="" >
+  <SubMaterials>
+   <Material GenMask="0" Id="{892E6644-FE5E-485F-8278-96AB972980EF}" MtlFlags="0" Name="[1]" Shader="" />
+   <Material GenMask="0" Id="{0CBB3972-8094-497C-9716-57A626CB9112}" MtlFlags="0" Name="[2]" Shader="" />
+   <Material GenMask="0" Id="{9397D7B4-2D99-4C9E-B52A-5112AE21EDD5}" MtlFlags="0" Name="[3]" Shader="" />
+   <Material AlphaTest="0" Ambient="0.0078431377,0.0078431377,0.0078431377" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{44E673E1-1271-4082-82E9-8ECE6C60176E}" MtlFlags="18" Name="[4] grate" Opacity="1" Shader="TemplBumpSpec" Shininess="25" Specular="0.44901964,0.44901964,0.44901964" >
+    <Textures>
+     <Texture File="textures\ww2style\asphalt.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="textures\ww2style\floormetal_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="textures\ww2style\floormetal_ddn.dds" Map="Normalmap" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+    <PublicParams specularexp="32" />
+   </Material>
+   <Material GenMask="0" Id="{AE1285FD-FD7C-41B7-BD01-6F0635704A8C}" MtlFlags="16" Name="[5] nodraw" Shader="nodraw" />
+  </SubMaterials>
+ </Material>
+ <Material GenMask="0" Id="{87FF354E-A335-4020-AE6F-9AE68C17D932}" MtlFlags="0" Name="floor_toilet4x4y0" Shader="" >
+  <SubMaterials>
+   <Material GenMask="0" Id="{649271CE-39C3-4132-98C3-EC2932E4C79E}" MtlFlags="0" Name="[1]" Shader="" />
+   <Material GenMask="0" Id="{9DA4CC28-8D60-42B0-A9CF-CED5ED7840D3}" MtlFlags="0" Name="[2]" Shader="" />
+   <Material AlphaTest="0" Ambient="0,0,0" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{C90E459D-1D50-432D-BB1A-2DDA98C83BD4}" MtlFlags="16" Name="[3] 3" Opacity="1" Shader="TemplBumpSpec_Offset_PS20" Shininess="29.999998" Specular="0.21552943,0.21552943,0.21552943" >
+    <Textures>
+     <Texture File="Textures\modern\floortil.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="Textures\glm\ww2style\outdoor\od_gk_ct01_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="Textures\glm\ww2style\outdoor\od_gk_ct01_ddn.dds" Map="Normalmap" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+    <PublicParams bumpoffset="0.02" specularexp="100" />
+   </Material>
+   <Material GenMask="0" Id="{1796A567-17FD-4E54-BCA7-95B059109AFA}" MtlFlags="0" Name="[4]" Shader="" />
+   <Material GenMask="0" Id="{AE21453C-8151-48DD-96B2-4C8ABF39746D}" MtlFlags="16" Name="[5] 5" Shader="nodraw" />
+   <Material GenMask="0" Id="{965321E8-DC51-4318-95D5-3B5A408A3E88}" MtlFlags="0" Name="[6]" Shader="" />
+   <Material GenMask="0" Id="{036C6528-1DFF-4D39-853D-62003CC82897}" MtlFlags="0" Name="[7]" Shader="" />
+   <Material GenMask="0" Id="{C941E1CA-6DFC-444A-962E-E5080BA16FC4}" MtlFlags="0" Name="[8]" Shader="" />
+  </SubMaterials>
+ </Material>
+ <Material AlphaTest="0.0099999998" Ambient="0.0078431377,0.0078431377,0.0078431377" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{521C69EC-AFBD-47E8-AC94-D3B13C4BAC28}" MtlFlags="18" Name="floor_gratex_4x4y0" Opacity="1" Shader="TemplBumpSpec_PS20" Shininess="25" Specular="0.44901964,0.44901964,0.44901964" >
+  <Textures>
+   <Texture File="textures\ww2style\grateold12.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\grateold12_ddn.dds" Map="Bumpmap" TexType="3" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\grateold12_ddn.dds" Map="Normalmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material GenMask="0" Id="{39430AB4-8C4E-4F86-B5DA-BB8287CF065F}" MtlFlags="16" Name="[1] Material #131" Shader="nodraw" />
+   <Material GenMask="0" Id="{31A7838D-C5DF-440C-A1B0-CFF2182B2C54}" MtlFlags="0" Name="[2]" Shader="" />
+  </SubMaterials>
+  <PublicParams specularexp="32" />
+ </Material>
+ <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{4BCB87DC-AE73-4ED1-8703-9F95AF0A0A84}" MtlFlags="16" Name="wall_c2_400x250z0" Opacity="1" Shader="templbumpdiffuse" Shininess="38" Specular="0.34125492,0.34125492,0.34125492" >
+  <Textures>
+   <Texture File="textures\ww2style\concrhar12.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\brickverydirty_ddn.dds" Map="Bumpmap" TexType="3" >
+    <TexMod TileU="2" TileV="2" />
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\brickverydirty_ddn.dds" Map="Normalmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material AlphaTest="0" Ambient="0,0,0" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{D75E0353-E80F-4570-BD9A-3108C74B8243}" MtlFlags="16" Name="[1] unh" Opacity="1" Shader="TemplBumpSpec_Offset_PS20" Shininess="38" Specular="0.15294118,0.15294118,0.15294118" >
+    <Textures>
+     <Texture File="textures\glm\corporate_buildings\wall\concr_d91.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="textures\glm\corporate_buildings\wall\concr_d9_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+    <PublicParams bumpoffset="0.02" specularexp="60" />
+   </Material>
+   <Material GenMask="0" Id="{747DC066-F036-470C-971C-902008105C95}" MtlFlags="16" Name="[2] nodraw" Shader="nodraw" />
+   <Material GenMask="0" Id="{A326480B-1E3E-4C6F-AEE4-CF02E60E27B4}" MtlFlags="16" Name="[3] s_nodraw" Shader="nodraw" />
+  </SubMaterials>
+ </Material>
+ <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{811453DF-5901-4517-ABF8-CD060888548A}" MtlFlags="16" Name="column_metal50x50y_b0" Opacity="1" Shader="templbumpspec_glossalpha_ps20" Shininess="37" Specular="0.62862748,0.62862748,0.62862748" >
+  <Textures>
+   <Texture File="Textures\glm\corporate_buildings\wall\baseconcr_s9_2.dds" Map="Diffuse" >
+    <TexMod TileU="0.5" TileV="0.5" />
+   </Texture>
+   <Texture Amount="50" File="Textures\glm\corporate_buildings\pipe\cb_gk_pipe_v01_ddn.dds" Map="Bumpmap" TexType="3" >
+    <TexMod TileU="0.5" TileV="0.5" />
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material GenMask="0" Id="{C67D6875-B48E-4F6F-833B-B7CEA62379A7}" MtlFlags="0" Name="[1]" Shader="" />
+   <Material GenMask="0" Id="{960358B6-9BCC-459F-9BA8-BD1AA85585A1}" MtlFlags="16" Name="[2] Material #11" Shader="nodraw" />
+  </SubMaterials>
+  <PublicParams specularexp="32" />
+ </Material>
+ <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{1828EBF7-F9C2-4EA2-BDDC-3645638E3AEB}" MtlFlags="16" Name="walla_cornerout0" Opacity="1" Shader="templbumpdiffuse" Shininess="9.999999" Specular="0,0,0" >
+  <Textures>
+   <Texture File="Textures\glm\corporate_buildings\wall\basicwall21.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="Textures\glm\corporate_buildings\wall\basicwall21_ddn.dds" Map="Bumpmap" TexType="3" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="Textures\glm\corporate_buildings\wall\basicwall21_ddn.dds" Map="Normalmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{2D9FB2E8-E98E-44CD-AE20-5E0E2526F073}" MtlFlags="16" Name="[1] 1" Opacity="1" Shader="templbumpspec_glossalpha_ps20" Shininess="44" Specular="0.76333338,0.76333338,0.76333332" >
+    <Textures>
+     <Texture File="Textures\ww2style\concrete_old_bot.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="Textures\ww2style\brickverydirty_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod TileU="2" TileV="2" />
+     </Texture>
+     <Texture Amount="50" File="Textures\ww2style\brickverydirty_ddn.dds" Map="Normalmap" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+    <PublicParams specularexp="32" />
+   </Material>
+   <Material GenMask="0" Id="{AA09CD60-CA16-4619-8631-3AC21C36A290}" MtlFlags="0" Name="[2]" Shader="" />
+   <Material GenMask="0" Id="{2AC88368-0BF6-4DED-9117-E9C02BBEF3D3}" MtlFlags="16" Name="[3] 3" Shader="nodraw" />
+   <Material GenMask="0" Id="{B196FC67-0163-406E-9584-6C0E4A886812}" MtlFlags="16" Name="[4] s_nodraw" Shader="nodraw" />
+  </SubMaterials>
+ </Material>
+ <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{BE3F7DBE-6E67-44A8-A3CF-54BC95878C3C}" MtlFlags="16" Name="wall_c2_400x250z1" Opacity="1" Shader="templbumpdiffuse" Shininess="38" Specular="0.34125492,0.34125492,0.34125492" >
+  <Textures>
+   <Texture File="textures\ww2style\concrhar12.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\brickverydirty_ddn.dds" Map="Bumpmap" TexType="3" >
+    <TexMod TileU="2" TileV="2" />
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\brickverydirty_ddn.dds" Map="Normalmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material AlphaTest="0" Ambient="0,0,0" Diffuse="0.77647066,0.92549026,0.89019614" Emissive="0,0,0" GenMask="0" Id="{AF9A4D6D-0FAC-4EF4-9442-EDC714D22305}" MtlFlags="16" Name="[1] unh1" Opacity="1" Shader="TemplBumpSpec_Offset_PS20" Shininess="38" Specular="0.45800003,0.45800003,0.458" >
+    <Textures>
+     <Texture File="textures\glm\corporate_buildings\wall\basicwall21.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="textures\glm\corporate_buildings\wall\basicwall21_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+    <PublicParams bumpoffset="0.02" specularexp="60" />
+   </Material>
+   <Material GenMask="0" Id="{CEC18F54-7EFE-4133-A8AB-A959ADC0FB78}" MtlFlags="16" Name="[2] nodraw1" Shader="nodraw" />
+   <Material GenMask="0" Id="{ECCFD002-B015-4286-858A-5294572BE261}" MtlFlags="16" Name="[3] s_nodraw1" Shader="nodraw" />
+  </SubMaterials>
+ </Material>
+ <Material AlphaTest="0" Ambient="0.85490203,0.91372555,0.91372555" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{1220B06A-84FF-4DC1-9C1A-6B7C85B106A0}" MtlFlags="112" Name="flareproc4x8_a0" Opacity="1" Shader="FlareProc 1.5" Shininess="25" Specular="0.44901964,0.44901964,0.44901964" >
+  <Textures>  </Textures>
+ </Material>
+ <Material AlphaTest="0" Ambient="0,0,0" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{9E48458E-F487-4DB3-AD2D-A0672ED2B58A}" MtlFlags="16" Name="indust_doorframe150x0" Opacity="1" Shader="templbumpspec_glossalpha_ps20" Shininess="44" Specular="0.547804,0.547804,0.54780394" >
+  <Textures>
+   <Texture File="textures/glm/ww2_indust_set1/doorways/doorframe_indust.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures\glm\ww2_indust_set1\doorways\doorframe_indust_ddn.dds" Map="Bumpmap" TexType="3" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures\glm\ww2_indust_set1\doorways\doorframe_indust_ddn.dds" Map="Normalmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material GenMask="0" Id="{397245EC-3659-4B38-9071-12D79D29D091}" MtlFlags="16" Name="[1] s_no_draw" Shader="nodraw" />
+   <Material GenMask="0" Id="{51FC4E08-6145-48D7-B6D4-FF747241FBE4}" MtlFlags="16" Name="[2] s_nodraw" Shader="nodraw" />
+   <Material AlphaTest="0" Ambient="0,0,0" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{C7115EF6-947B-4DDF-9281-709EFF8648C3}" MtlFlags="16" Name="[3] doorframe_long" Opacity="1" Shader="templbumpspec_glossalpha_ps20" Shininess="44" Specular="0.547804,0.547804,0.54780394" >
+    <Textures>
+     <Texture File="textures/glm/ww2_indust_set1/doorways/doorframe_indust_midp.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="textures\glm\ww2_indust_set1\doorways\doorframe_indust_midp_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="textures\glm\ww2_indust_set1\doorways\doorframe_indust_midp_ddn.dds" Map="Normalmap" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+    <PublicParams specularexp="32" />
+   </Material>
+   <Material GenMask="0" Id="{27FAA2C2-D6B9-464F-BC3B-341309FD3950}" MtlFlags="16" Name="[4] Material #73" Shader="nodraw" />
+  </SubMaterials>
+  <PublicParams specularexp="32" />
+ </Material>
+ <Material AlphaTest="0" Ambient="1,1,1" Diffuse="0.81568635,0.79215693,0.75686282" Emissive="0,0,0" GenMask="0" Id="{8D123818-C3B9-407D-BCE9-0529E4EFBA47}" MtlFlags="16" Name="wall_c2_400x250z2" Opacity="1" Shader="templbumpdiffuse" Shininess="38" Specular="0.34125492,0.34125492,0.34125492" >
+  <Textures>
+   <Texture File="textures\ww2style\concrete_old_floor.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\brickverydirty_ddn.dds" Map="Bumpmap" TexType="3" >
+    <TexMod TileU="2" TileV="2" />
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\brickverydirty_ddn.dds" Map="Normalmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material AlphaTest="0" Ambient="0,0,0" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{A45AADB1-1444-4292-9836-FC19D1285CA8}" MtlFlags="16" Name="[1] unh2" Opacity="1" Shader="TemplBumpSpec_Offset_PS20" Shininess="38" Specular="0.15294118,0.15294118,0.15294118" >
+    <Textures>
+     <Texture File="textures\glm\corporate_buildings\wall\concr_d91.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="textures\glm\corporate_buildings\wall\concr_d9_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+    <PublicParams bumpoffset="0.02" specularexp="60" />
+   </Material>
+   <Material GenMask="0" Id="{BADE77E2-FD3C-4C7E-8ECE-91D1728D1AD3}" MtlFlags="16" Name="[2] nodraw2" Shader="nodraw" />
+   <Material GenMask="0" Id="{3E4F97C7-8B24-4DE9-9640-0B74C37DD320}" MtlFlags="16" Name="[3] s_nodraw2" Shader="nodraw" />
+  </SubMaterials>
+ </Material>
+ <Material AlphaTest="0" Ambient="1,0.86666673,0.4666667" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{E0B371BE-4C7E-438A-AFFB-97BFD99C56AE}" MtlFlags="112" Name="flareproc4x8_a1" Opacity="1" Shader="FlareProc 1.5" Shininess="25" Specular="0.44901964,0.44901964,0.44901964" >
+  <Textures>  </Textures>
+ </Material>
+ <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{35C86AF0-8B42-4AA1-99FF-AA206023ACDF}" MtlFlags="16" Name="crate_covered0" Opacity="1" Shader="TemplBumpSpec_Offset_PS20" Shininess="9.999999" Specular="0.44901964,0.44901964,0.44901964" >
+  <Textures>
+   <Texture File="objects/indoor/boxes/crates/cratecc1b.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="objects\indoor\boxes\crates\cratecc1b_ddn.dds" Map="Bumpmap" TexType="3" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="objects\indoor\boxes\crates\cratecc1b_ddn.dds" Map="Normalmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{5E350EFA-80C3-4638-B7C6-D100D7A11A5D}" MtlFlags="16" Name="[1] c2" Opacity="1" Shader="TemplBumpSpec_Offset_PS20" Shininess="9.999999" Specular="0.44901964,0.44901964,0.44901964" >
+    <Textures>
+     <Texture File="objects/indoor/boxes/crates/cratecc1b_top.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="objects/indoor/boxes/crates/cratecc1b_top_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="objects\indoor\boxes\crates\cratecc1b_top_ddn.dds" Map="Normalmap" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+    <PublicParams bumpoffset="0.01" specularexp="200" />
+   </Material>
+   <Material GenMask="0" Id="{4D8E42D3-59C7-4E8E-9122-717257455468}" MtlFlags="0" Name="[2]" Shader="" />
+   <Material GenMask="0" Id="{525C8AFF-A1E8-4164-BC13-7E0EC4783041}" MtlFlags="0" Name="[3]" Shader="" />
+   <Material AlphaTest="0" Ambient="0,0,0" Diffuse="0.85490203,0.85490203,0.85490203" Emissive="0,0,0" GenMask="0" Id="{DD1BE1F7-79AC-4D89-9197-395F09BB8E1B}" MtlFlags="16" Name="[4] Material #1" Opacity="1" Shader="templbumpspec_glossalpha_ps20" Shininess="9.999999" Specular="0.44901964,0.44901964,0.44901964" >
+    <Textures>
+     <Texture File="objects/indoor/boxes/crates/container.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="textures/white_ddn.dds" Map="Bumpmap" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+    <PublicParams specularexp="32" />
+   </Material>
+  </SubMaterials>
+  <PublicParams bumpoffset="0.01" specularexp="200" />
+ </Material>
+ <Material GenMask="0" Id="{E914F862-2FAE-402A-B02E-0AB9C6ACCB80}" MtlFlags="16" Name="ladder_3m0" Shader="nodraw" >
+  <SubMaterials>
+   <Material AlphaTest="0" Ambient="0,0,0" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{4195A04D-287B-421A-95BE-CED68651D08A}" MtlFlags="16" Name="[1] ladderframe" Opacity="1" Shader="templbumpspec_glossalpha_ps20" Shininess="0" Specular="0.44901964,0.44901964,0.44901964" >
+    <Textures>
+     <Texture File="objects\outdoor\merc_structures\concr2.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="textures/glm/ww2_indust_set1/vertcorner_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+    <PublicParams specularexp="32" />
+   </Material>
+   <Material GenMask="0" Id="{59959529-52D7-495B-907C-F86118CD19C4}" MtlFlags="16" Name="[2] s_nodraw" Shader="nodraw" />
+  </SubMaterials>
+ </Material>
+ <Material AlphaTest="0" Ambient="0.58823532,0.58823532,0.58823532" Diffuse="0.58823532,0.58823532,0.58823532" Emissive="0,0,0" GenMask="0" Id="{C8FF30E5-1ED5-4032-BCD9-F6CAF7447EC4}" MtlFlags="16" Name="cratewoodbevel0" Opacity="1" Shader="templplantsbark_bump" Shininess="9.999999" Specular="0,0,0" >
+  <Textures>
+   <Texture File="Objects\Buildings\bluebase\brown.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures/white_ddn.dds" Map="Bumpmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material AlphaTest="0" Ambient="1,1,1" Diffuse="0,0,0" Emissive="0,0,0" GenMask="0" Id="{30C8D4D5-11DA-4A62-8668-578CEC49B8BA}" MtlFlags="16" Name="[1] s_crateFrag_a1" Opacity="1" Shader="templbumpdiffuse" Shininess="9.999999" Specular="0,0,0" >
+    <Textures>
+     <Texture File="objects\indoor\boxes\crates\crate2.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="30" File="objects\indoor\boxes\crates\cratefragile_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="objects\indoor\boxes\crates\cratefragile_ddn.dds" Map="Normalmap" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+   </Material>
+  </SubMaterials>
+ </Material>
+ <Material AlphaTest="0" Ambient="1,1,1" Diffuse="0,0,0" Emissive="0,0,0" GenMask="0" Id="{9845073E-932E-4FAD-8A4F-9B069382F2C2}" MtlFlags="16" Name="barrel_beer_large0" Opacity="1" Shader="templbumpspec_glossalpha_ps20" Shininess="48.999996" Specular="0.79925495,0.79925495,0.79925495" >
+  <Textures>
+   <Texture File="objects/indoor/boxes/barrel/barrel_beer_large.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures/white_ddn.dds" Map="Bumpmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material GenMask="0" Id="{6780A036-A793-472B-972A-7C4425057F02}" MtlFlags="16" Name="[1] colllision" Shader="nodraw" />
+  </SubMaterials>
+  <PublicParams specularexp="32" />
+ </Material>
+ <Material AlphaTest="0" Ambient="0,0,0" Diffuse="0,0,0" Emissive="0,0,0" GenMask="0" Id="{E111DD31-CE4B-4EAD-8D9D-ECE4FD272330}" MtlFlags="16" Name="palette0" Opacity="1" Shader="templmodelcommon" Shininess="9.999999" Specular="0,0,0" >
+  <Textures>
+   <Texture File="objects/indoor/boxes/crates/palette.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures/white_ddn.dds" Map="Bumpmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+ </Material>
+ <Material AlphaTest="0" Ambient="1,1,1" Diffuse="0,0,0" Emissive="0,0,0" GenMask="0" Id="{7669EF16-5A2B-495D-B0CF-6D0A965FF9D8}" MtlFlags="16" Name="barrel_beer_small0" Opacity="1" Shader="templbumpspec_glossalpha_ps20" Shininess="53.999996" Specular="0.97999996,0.97999996,0.98000002" >
+  <Textures>
+   <Texture File="objects/indoor/boxes/barrel/barrel_beer_small.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures/white_ddn.dds" Map="Bumpmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material GenMask="0" Id="{E99B9D11-623A-4D08-B74E-85C8924C3EB7}" MtlFlags="16" Name="[1] bbshull" Shader="nodraw" />
+  </SubMaterials>
+  <PublicParams specularexp="32" />
+ </Material>
+ <Material AlphaTest="0" Ambient="0.0078431377,0.0078431377,0.0078431377" Diffuse="0,0,0" Emissive="0,0,0" GenMask="0" Id="{E0B66233-6CFC-4B5C-AD01-F1C9866975C1}" MtlFlags="16" Name="grimea_4x4y0" Opacity="1" Shader="TemplBumpReflCM" Shininess="25" Specular="0.44901964,0.44901964,0.44901964" >
+  <Textures>
+   <Texture File="textures/decal/noalpha/02wall.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture File="Levels\mp_avp_reservoir\lol_posx.jpg" Map="Cubemap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <PublicParams bumpscale="0.1" />
+ </Material>
+ <Material AlphaTest="0" Ambient="1,1,1" Diffuse="0.92156869,0.92156869,0.92156869" Emissive="0,0,0" GenMask="0" Id="{DAEF537B-AAF2-495C-A094-C31F7AE01492}" MtlFlags="16" Name="water.waterA19" Opacity="1" Shader="WaterVolumeBumpReflCM" Shininess="0" Specular="0,0,0" >
+  <Textures>
+   <Texture Amount="50" File="Textures\ANIMATED\WATER\caust04_ddn.dds" Map="Bumpmap" >
+    <TexMod TileU="2" TileV="2" />
+   </Texture>
+  </Textures>
+  <PublicParams animspeed="0.2" bumpscale="1" lowspecopacity="1" reflamount="0" refrbumpamount="0" refrtillingamount="2" />
+ </Material>
+ <Material AlphaTest="0" Ambient="0,0,0" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{924E7264-1869-46DB-B3D2-5CF3789ABC7F}" MtlFlags="16" Name="ceiling8x8y_arc_destroyed0" Opacity="1" Shader="templbumpdiffuse" Shininess="9.999999" Specular="0.26941177,0.26941177,0.26941177" >
+  <Textures>
+   <Texture File="textures/ww2style/concrbrick012.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures/ww2style/concrbrick012_ddn.dds" Map="Bumpmap" TexType="3" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material GenMask="0" Id="{3223FBF8-81EF-4A05-99BC-2DD1C800A471}" MtlFlags="16" Name="[1] Material #25" Shader="nodraw" />
+   <Material AlphaTest="0" Ambient="0,0,0" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{DD205944-9B9C-4AC6-BEE1-6FCF0553B725}" MtlFlags="16" Name="[2] Material #92" Opacity="1" Shader="templbumpdiffuse" Shininess="9.999999" Specular="0.26941177,0.26941177,0.26941177" >
+    <Textures>
+     <Texture File="textures\ww2style\concrete_old_floor.dds" Map="Diffuse" >
+      <TexMod TileU="2" TileV="2" />
+     </Texture>
+     <Texture Amount="50" File="textures/ww2style/oldconcrete015c_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod TileU="2" TileV="2" />
+     </Texture>
+    </Textures>
+   </Material>
+   <Material AlphaTest="0" Ambient="0,0,0" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{D74A195D-D703-475E-9A03-80F1A491AE9C}" MtlFlags="16" Name="[3] Material #29" Opacity="1" Shader="templbumpspec_glossalpha_ps20" Shininess="9.999999" Specular="0.88905883,0.88905883,0.88905883" >
+    <Textures>
+     <Texture File="Textures\ww2style\indusbase.dds" Map="Diffuse" >
+      <TexMod TileU="2" TileV="2" />
+     </Texture>
+     <Texture Amount="50" File="Textures\ww2style\indusbase_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod TileU="2" TileV="2" />
+     </Texture>
+     <Texture Amount="50" File="Textures\ww2style\indusbase_ddn.dds" Map="Normalmap" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+    <PublicParams specularexp="32" />
+   </Material>
+   <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{AC22670E-C162-4847-AF66-272B18D56787}" MtlFlags="16" Name="[4] Material #72" Opacity="1" Shader="templbumpspec_glossalpha_ps20" Shininess="39.999996" Specular="0.53882354,0.53882354,0.53882354" >
+    <Textures>
+     <Texture File="Textures\ww2style\base047b.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="Textures\ww2style\base047d_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+    <PublicParams specularexp="32" />
+   </Material>
+   <Material GenMask="0" Id="{7FE99F18-FF66-42D4-B85A-95BB14F1FCC8}" MtlFlags="16" Name="[5] Material #73" Shader="nodraw" />
+   <Material GenMask="0" Id="{5C0F9571-84BE-4E48-9BC3-2A28D9575427}" MtlFlags="0" Name="[6]" Shader="" />
+   <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{EFD170A3-EE08-4B9F-AAF0-83855EC25FB4}" MtlFlags="16" Name="[7] Material #107" Opacity="1" Shader="templbumpspec_glossalpha_ps20" Shininess="39.999996" Specular="0.53882354,0.53882354,0.53882354" >
+    <Textures>
+     <Texture File="textures/glm/shipwreck/support_s.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="textures/glm/shipwreck/support_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+    <PublicParams specularexp="32" />
+   </Material>
+  </SubMaterials>
+ </Material>
+ <Material AlphaTest="0" Ambient="0,0,0" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{6DA2D8AA-6201-445B-83DE-79C32124785B}" MtlFlags="16" Name="airduct_corner_c0" Opacity="1" Shader="TemplBumpSpec_Offset_PS20" Shininess="37" Specular="0.35921568,0.35921568,0.35921568" >
+  <Textures>
+   <Texture File="textures/ww2style/airduct.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\airduct_ddn.dds" Map="Bumpmap" TexType="3" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\airduct_ddn.dds" Map="Normalmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material GenMask="0" Id="{4B3A87E0-90E5-4939-9141-F608A15966E8}" MtlFlags="16" Name="[1] s_nodraw" Shader="nodraw" />
+  </SubMaterials>
+  <PublicParams bumpoffset="0.01" specularexp="32" />
+ </Material>
+ <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{34EFA643-E8D1-400A-AA28-1815F7712DC3}" MtlFlags="16" Name="floor2x2y0" Opacity="1" Shader="TemplBumpSpec_Offset_PS20" Shininess="50" Specular="0.070588239,0.070588239,0.070588239" >
+  <Textures>
+   <Texture File="textures/ww2style/base113b.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\base113b_ddn.dds" Map="Bumpmap" TexType="3" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\base113b_ddn.dds" Map="Normalmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material GenMask="0" Id="{971E69C3-7305-4AE3-8CA8-1C628FE4F29E}" MtlFlags="16" Name="[1] Material #129" Shader="nodraw" />
+  </SubMaterials>
+  <PublicParams bumpoffset="0.02" specularexp="32" />
+ </Material>
+ <Material AlphaTest="0" Ambient="0,0,0" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{EBFD12E2-3E66-4C74-9805-4CE4929DFB57}" MtlFlags="16" Name="ww2_gk_p4_800_end0" Opacity="1" Shader="TemplBumpSpec" Shininess="24" Specular="0.023529414,0.023529414,0.023529414" >
+  <Textures>
+   <Texture File="textures\ww2style\concrete_old_floor.dds" Map="Diffuse" >
+    <TexMod TileU="3" TileV="3" />
+   </Texture>
+   <Texture Amount="25" File="textures\ww2style\concrhar17_ddn.dds" Map="Bumpmap" TexType="3" >
+    <TexMod TileU="3" TileV="3" />
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\concrhar17_ddn.dds" Map="Normalmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{AF3FC93D-42CE-4B73-AE4A-1F16B3665639}" MtlFlags="16" Name="[1] Material #18" Opacity="1" Shader="templbumpspec_glossalpha_ps20" Shininess="24" Specular="0.31431374,0.31431374,0.31431374" >
+    <Textures>
+     <Texture File="textures\glm\shipwreck\floorbase_s.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="textures\glm\shipwreck\floorbase_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+    <PublicParams specularexp="32" />
+   </Material>
+   <Material GenMask="0" Id="{33B272E2-06CE-4A38-AF20-75F3B766AF5E}" MtlFlags="0" Name="[2]" Shader="" />
+   <Material GenMask="0" Id="{004AB0E0-6C13-4EAF-89C1-1927EB9F9F0E}" MtlFlags="0" Name="[3]" Shader="" />
+   <Material GenMask="0" Id="{13804655-8328-4453-9F3C-6B1A1FA1F95A}" MtlFlags="0" Name="[4]" Shader="" />
+   <Material GenMask="0" Id="{C58FA5BD-B346-400E-B946-B77BB4D6256D}" MtlFlags="0" Name="[5]" Shader="" />
+   <Material GenMask="0" Id="{4BC00FF9-05B9-45F0-9BC2-28A83914FCF0}" MtlFlags="0" Name="[6]" Shader="" />
+   <Material GenMask="0" Id="{D532EDA5-CF00-4C0C-9646-42470D46AA42}" MtlFlags="0" Name="[7]" Shader="" />
+   <Material GenMask="0" Id="{6A164FE2-8C83-49C6-8D3A-0FFEB935982C}" MtlFlags="0" Name="[8]" Shader="" />
+   <Material GenMask="0" Id="{4367BA22-603F-4233-A967-1CEB27060A3D}" MtlFlags="0" Name="[9]" Shader="" />
+  </SubMaterials>
+  <PublicParams specularexp="32" />
+ </Material>
+ <Material GenMask="0" Id="{CD2F1CF2-2F11-424B-A413-1CBB572934DD}" MtlFlags="0" Name="wall200x250z_vert_o0" Shader="" >
+  <SubMaterials>
+   <Material GenMask="0" Id="{7D5C80F6-92C9-4D66-8C4A-C9824065F018}" MtlFlags="16" Name="[1] nodraw" Shader="nodraw" />
+   <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{70321633-2BF1-407E-98A8-01716FCA5646}" MtlFlags="16" Name="[2] metalbeam" Opacity="1" Shader="templbumpdiffuse" Shininess="9.999999" Specular="0,0,0" >
+    <Textures>
+     <Texture File="textures/ww2style/metalsupport_2.dds" Map="Diffuse" >
+      <TexMod>      </TexMod>
+     </Texture>
+     <Texture Amount="50" File="textures/ww2style/metalsupport_2_ddn.dds" Map="Bumpmap" >
+      <TexMod>      </TexMod>
+     </Texture>
+    </Textures>
+   </Material>
+   <Material GenMask="0" Id="{49BDA91E-E446-47F5-9C95-F5439DE0BDD8}" MtlFlags="0" Name="[3]" Shader="" />
+   <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{C210EB36-B2FC-42E2-B054-676CC2BD3D6C}" MtlFlags="16" Name="[4] concrete_verticaltile" Opacity="1" Shader="templbumpdiffuse" Shininess="39" Specular="0.37717649,0.37717649,0.37717649" >
+    <Textures>
+     <Texture File="textures\ww2style\concrete_old_floor.dds" Map="Diffuse" >
+      <TexMod TileV="1.5" />
+     </Texture>
+     <Texture Amount="50" File="textures\ww2style\concrhar17_ddn.dds" Map="Bumpmap" TexType="3" >
+      <TexMod TileV="1.5" />
+     </Texture>
+     <Texture Amount="50" File="textures\ww2style\concrhar17_ddn.dds" Map="Normalmap" >
+      <TexMod TileU="2" TileV="2" />
+     </Texture>
+    </Textures>
+   </Material>
+  </SubMaterials>
+ </Material>
+ <Material AlphaTest="0.0099999998" Ambient="0,0,0" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{E5DC6D7C-690F-4008-979F-C17EFD575FFB}" MtlFlags="18" Name="fan2mgrate0" Opacity="1" Shader="TemplBumpSpec_PS20" Shininess="42" Specular="0.547804,0.547804,0.54780394" >
+  <Textures>
+   <Texture File="textures/glm/3d_misc/fan2mgrate.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures/glm/3d_misc/fan2mgrate_ddn.dds" Map="Bumpmap" TexType="3" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <PublicParams specularexp="32" />
+ </Material>
+ <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{4029EFB7-D849-400F-A21B-99C3754EBCDD}" MtlFlags="16" Name="wall_concrete_ind_400x100_var3_0" Opacity="1" Shader="templbumpdiffuse" Shininess="9.999999" Specular="0,0,0" >
+  <Textures>
+   <Texture File="textures\ww2style\concroldbase2.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\concrhar17_ddn.dds" Map="Bumpmap" TexType="3" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="50" File="textures\ww2style\concrhar17_ddn.dds" Map="Normalmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <SubMaterials>
+   <Material GenMask="0" Id="{40F2A7D8-FE39-4A32-A70A-6E7812D41150}" MtlFlags="0" Name="[1]" Shader="" />
+   <Material GenMask="0" Id="{328DDA4A-7BC5-448C-9607-5BEBD1D2F540}" MtlFlags="16" Name="[2] 2" Shader="nodraw" />
+  </SubMaterials>
+ </Material>
+ <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{82D4708D-C1B9-403A-A164-1BFE04E65FC4}" MtlFlags="18" Name="sun_rays0" Opacity="1" Shader="templdecalalphablend" Shininess="0" Specular="0,0,0" >
+  <Textures>
+   <Texture File="Levels\mp_avp_reservoir\Textures\sun_rays\sun_rays_texture_evening.dds" Map="Diffuse" >
+    <TexMod>    </TexMod>
+   </Texture>
+  </Textures>
+  <PublicParams offset="0.01" />
+ </Material>
+ <Material AlphaTest="0" Ambient="0.54901963,0.47450984,0.22352943" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{01451C8B-74AA-485E-B753-3B2DAAF5BD25}" MtlFlags="112" Name="flareproc4x8_a2" Opacity="1" Shader="FlareProc 0.75" Shininess="25" Specular="0.44901964,0.44901964,0.44901964" >
+  <Textures>  </Textures>
+ </Material>
+ <Material AlphaTest="0" Ambient="1,1,1" Diffuse="1,1,1" Emissive="0,0,0" GenMask="0" Id="{19093C1A-735B-475F-8C4C-0BB8952F77C7}" MtlFlags="16" Name="cst_square_rock_a0" Opacity="1" Shader="TemplBumpSpec" Shininess="9.999999" Specular="0,0,0" >
+  <Textures>
+   <Texture File="objects\natural\coastal_objects\cst_square_rock_a.dds" Map="Diffuse" >
+    <TexMod TileU="2" TileV="2" />
+   </Texture>
+   <Texture Amount="50" File="objects\natural\coastal_objects\cst_square_rock_a_ddn.dds" Map="Bumpmap" >
+    <TexMod TileU="2" TileV="2" />
+   </Texture>
+   <Texture Amount="50" File="objects\natural\coastal_objects\cst_square_rock_a_ddn.dds" Map="Normalmap" >
+    <TexMod>    </TexMod>
+   </Texture>
+   <Texture Amount="0" File="objects/natural/coastal_objects/cst_detail_stone.dds" Map="Detail" >
+    <TexMod TileU="20" TileV="20" />
+   </Texture>
+  </Textures>
+  <PublicParams specularexp="32" />
+ </Material>
+</MaterialLibrary>

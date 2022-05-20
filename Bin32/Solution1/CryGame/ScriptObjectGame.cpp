@@ -999,7 +999,7 @@ int CScriptObjectGame::Connect(IFunctionHandler *pH)
 	m_pGame->StartupClient();
 
 	// if bDoLateSwitch is true then it does the 3 lines below but after the connection is completed.
-	m_pGame->m_pClient->XConnect((char *)sServer, bDoLateSwitch, bDoCDAuthorization);
+	m_pGame->m_pClient->XConnect((char *)sServer, bDoLateSwitch, 0);
 
 	return pH->EndFunction();
 }

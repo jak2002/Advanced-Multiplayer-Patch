@@ -1,0 +1,970 @@
+<ObjectLayer>
+ <Layer Exportable="1" External="1" Frozen="0" GUID="{F174FB05-F962-4C6A-A3A0-D51651254F49}" Hidden="0" Name="mp_damsound" >
+  <LayerObjects>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="180" HiddenInGame="0" Id="{33361100-0CF5-4224-8128-642EECBBF4D1}" Layer="mp_damsound" LodRatio="100" Name="SeagullsPreset" Pos="661.5,1424.125,64.875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="0.5" sndpresetSoundPreset="m3seagulls" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="237" HiddenInGame="0" Id="{42967A00-4131-470F-AB4E-A5D280F75404}" Layer="mp_damsound" LodRatio="100" Name="rain_drop261" Pos="1015,1078.125,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="14.118052,-0.40255728,100.31263" ColorRGB="16711680" Id="{36129800-BD84-431E-8D20-0E273431CC4B}" Layer="mp_damsound" Name="BLUE9" Pos="1001.875,1086,28.728516" Type="Respawn" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="157" HiddenInGame="0" Id="{D5F71901-224F-4BDF-B39F-A037575854C3}" Layer="mp_damsound" LodRatio="100" Name="rain_drop198" Pos="1008.125,1067.875,31.681641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="125" HiddenInGame="0" Id="{7844AB01-7C2C-4D8A-8860-CA2D677F6B85}" Layer="mp_damsound" LodRatio="100" Name="rain_drop166" Pos="994.5,1083.875,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="122" HiddenInGame="0" Id="{3AD76D02-0BFF-4A4D-8351-F0FAB48E33B9}" Layer="mp_damsound" LodRatio="100" Name="rain_drop163" Pos="997,1083.625,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,16.999998,0" CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="253" HiddenInGame="0" Id="{0CCBB503-4A38-460D-85A2-26F69E2D19C6}" Layer="mp_damsound" LodRatio="100" Name="rain_drop273" Pos="1030.375,1055.875,31.431641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="92" HiddenInGame="0" Id="{7F205A05-2069-4433-AD48-28BF021B3727}" Layer="mp_damsound" LodRatio="100" Name="rain_drop134" Pos="994.875,1078.875,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,16.999998,0" CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="250" HiddenInGame="0" Id="{80082106-404A-4D4C-8911-C2EE93E785A5}" Layer="mp_damsound" LodRatio="100" Name="rain_drop270" Pos="1019.375,1051.625,31.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoSMG" EntityId="263" HiddenInGame="0" Id="{972ED406-B42C-4295-A6CE-D9D9831A4DF5}" Layer="mp_damsound" LodRatio="100" Name="AmmoSMG2" Pos="1013.375,1066.125,27.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="20" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="119" HiddenInGame="0" Id="{B23E0B07-30D1-45DA-9124-38745DFEE909}" Layer="mp_damsound" LodRatio="100" Name="rain_drop160" Pos="999.875,1083.5,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,16.999998,0" CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="248" HiddenInGame="0" Id="{36727307-1593-4238-852B-AC518E6385FA}" Layer="mp_damsound" LodRatio="100" Name="rain_drop268" Pos="1014.75,1051.875,29.681641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundExclusivePreset" EntityId="274" HiddenInGame="0" Id="{FA79AE07-E593-44C1-89D2-DE78CD983B74}" Layer="mp_damsound" LodRatio="100" Name="SOUNDZ2" Pos="1011.875,1071.75,33.875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties AreaId="1" bPlayFromCenter="1" fScale="0.9" sndpresetSoundPreset="rainonmetal" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="172" HiddenInGame="0" Id="{FF7C4A08-92A7-4F14-9558-BB20A420DBF0}" Layer="mp_damsound" LodRatio="100" Name="rain_drop213" Pos="1017.125,1065.25,31.681641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="116" HiddenInGame="0" Id="{90921E09-9D22-4355-AF4D-8315DF4C022E}" Layer="mp_damsound" LodRatio="100" Name="rain_drop157" Pos="1002.75,1083.25,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="146" HiddenInGame="0" Id="{165C1F09-79C4-45A9-996F-9A5D0BCEDB2F}" Layer="mp_damsound" LodRatio="100" Name="rain_drop187" Pos="996.75,1062.25,32.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="77" HiddenInGame="0" Id="{CC53F609-4B35-4B30-A002-9FE79B6EABA5}" Layer="mp_damsound" LodRatio="100" Name="rain_drop119" Pos="997.75,1046.375,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,16.999998,0" CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="252" HiddenInGame="0" Id="{F717340A-3F48-475E-86EE-6EA4A7B4187A}" Layer="mp_damsound" LodRatio="100" Name="rain_drop272" Pos="1028,1054.375,31.681641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="227" HiddenInGame="0" Id="{2CA8D50A-B9F7-4325-B1F3-543D2C966760}" Layer="mp_damsound" LodRatio="100" Name="rain_drop257" Pos="1015.25,1076.25,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="112" HiddenInGame="0" Id="{EC58390B-C92C-4FE1-9E86-A679C167F239}" Layer="mp_damsound" LodRatio="100" Name="rain_drop153" Pos="1022.5,1098.875,29.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="167" HiddenInGame="0" Id="{CA30EF0B-9CCA-49B8-A448-6901BF2001AD}" Layer="mp_damsound" LodRatio="100" Name="rain_drop208" Pos="1014.5,1064.625,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="ClassAmmoPickup" EntityId="9" HiddenInGame="0" Id="{7D02A70C-04F7-49E6-A672-131777659427}" Layer="mp_damsound" LodRatio="100" Name="ClassAmmoPickup3" Pos="1019.125,1049.75,28.875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties AlwaysPhysicalize="1" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" object_Model="Objects/Pickups/universal_ammo/universal_ammo.cgf" RespawnTime="20" sound_Sound="Sounds/Weapons/M4/M4_33.wav" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="120" HiddenInGame="0" Id="{8BE2060E-9191-4E78-A7C2-82C904749A08}" Layer="mp_damsound" LodRatio="100" Name="rain_drop161" Pos="999.75,1082.75,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object AreaId="1" Closed="1" ColorRGB="16763904" DisplayFilled="1" GroupId="1" Height="0" Id="{0479790E-5547-455B-9AC6-A1102EE5BF96}" Layer="mp_damsound" Name="Shape1" Pos="926,981.375,33.849998" Type="Shape" Width="0" >
+    <Points>
+     <Point Pos="0,0,0" />
+     <Point Pos="235.375,-2.375,-19.749998" />
+     <Point Pos="222,146.25,-19.249998" />
+     <Point Pos="-43.75,161,-19.749998" />
+     <Point Pos="-1.375,-0.25,-0.25" />
+    </Points>
+    <Entities>
+     <Entity Id="{FA79AE07-E593-44C1-89D2-DE78CD983B74}" />
+     <Entity Id="{FCBBE768-8180-4F7A-B708-79703031F840}" />
+     <Entity Id="{A8589EF7-9FAB-433F-89F3-92E6BEE51820}" />
+    </Entities>
+   </Object>
+   <Object Angles="0,16.999998,0" CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="45" HiddenInGame="0" Id="{0D2DD80E-D61A-4E20-B189-055A877C9CC4}" Layer="mp_damsound" LodRatio="100" Name="rain_drop263" Pos="1004,1054.25,30.681641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoSMG" EntityId="268" HiddenInGame="0" Id="{3E10DC0E-7D2E-489B-A94A-5470F49F7DA0}" Layer="mp_damsound" LodRatio="100" Name="AmmoSMG7" Pos="1013,1076.75,27.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="20" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="93" HiddenInGame="0" Id="{F503010F-5474-41D6-A36F-E44BFD45B8BF}" Layer="mp_damsound" LodRatio="100" Name="rain_drop135" Pos="996.375,1077.375,29.210938" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="104" HiddenInGame="0" Id="{CA46AF0F-3F72-4C23-8C13-DBF15570794E}" Layer="mp_damsound" LodRatio="100" Name="rain_drop145" Pos="1025.375,1090.875,30.578125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="174" HiddenInGame="0" Id="{34F86E10-0DCE-41B5-83C7-427604540E8E}" Layer="mp_damsound" LodRatio="100" Name="rain_drop215" Pos="1016.875,1067.75,31.681641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="72" HiddenInGame="0" Id="{F32A2011-4617-40A6-9461-8E8A607FC2E4}" Layer="mp_damsound" LodRatio="100" Name="rain_drop114" Pos="1030.75,1057.125,29.362305" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,-92.999985" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="15" HiddenInGame="0" Id="{2A0FA211-75E4-472F-BE0C-3F932E195199}" Layer="mp_damsound" LodRatio="255" Name="AnimObject4" Pos="1033.6174,1080.3754,35.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="61" HiddenInGame="0" Id="{9753CB11-F8F6-4EAC-B38C-847C42FE3A11}" Layer="mp_damsound" LodRatio="100" Name="rain_drop103" Pos="1025.75,1075.375,29.21875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,-92.999985" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="22" HiddenInGame="0" Id="{F8543914-346E-47D1-A68B-D2FA3CE77F97}" Layer="mp_damsound" LodRatio="255" Name="AnimObject10" Pos="1032.9363,1067.3783,35.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoSMG" EntityId="265" HiddenInGame="0" Id="{49B17715-720E-4218-981D-D1BD6C55A1B6}" Layer="mp_damsound" LodRatio="100" Name="AmmoSMG4" Pos="1009.875,1073.5,27.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="20" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="97" HiddenInGame="0" Id="{612B7D15-0A84-4E7E-B30D-F6CB2F4EFBF3}" Layer="mp_damsound" LodRatio="100" Name="rain_drop139" Pos="992.5,1080,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="166" HiddenInGame="0" Id="{D8B37717-A796-42DC-9042-952CD764306A}" Layer="mp_damsound" LodRatio="100" Name="rain_drop207" Pos="1016,1064.875,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="-13.999999,-4.1300567e-009,178.99997" CastLightmap="1" CastShadowMaps="0" CastShadows="0" ColorRGB="16777215" Hideable="0" Id="{3361181B-FA48-4CD1-93B9-202C9649A131}" Layer="mp_damsound" LightmapQuality="1" LodRatio="100" Name="P90_bind2" NotTriangulate="0" OutdoorOnly="0" Pos="1008.25,1104.75,36.25" Prefab="Objects\Weapons\P90\P90_bind.cgf" ReceiveLightmap="1" RecvShadowMaps="1" RndFlags="548" Scale="24.309614,24.309614,24.309614" SelfShadowing="0" Type="Brush" ViewDistRatio="100" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="47" HiddenInGame="0" Id="{C927B71B-7C30-4F23-A8DE-86376F52F57B}" Layer="mp_damsound" LodRatio="100" Name="rain_drop" Pos="1020.125,1057.125,29.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="85" HiddenInGame="0" Id="{A3B34B1C-7461-4398-BEF8-786C4D9536A5}" Layer="mp_damsound" LodRatio="100" Name="rain_drop127" Pos="992,1060.75,29.359375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="80" HiddenInGame="0" Id="{A89D561C-A055-4455-9B0C-7A38DBCEC2B8}" Layer="mp_damsound" LodRatio="100" Name="rain_drop122" Pos="995.25,1048.875,29.254883" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="215" HiddenInGame="0" Id="{AA79241D-EE92-46C5-8D9E-4DF49E403A37}" Layer="mp_damsound" LodRatio="100" Name="rain_drop245" Pos="1015.75,1071,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="140" HiddenInGame="0" Id="{35083F1E-5B9A-4CB0-9B43-064A4A1AF899}" Layer="mp_damsound" LodRatio="100" Name="rain_drop181" Pos="1028.5,1063.375,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="82" HiddenInGame="0" Id="{B784711E-6486-4F21-A56E-5C0FBF562452}" Layer="mp_damsound" LodRatio="100" Name="rain_drop124" Pos="995.25,1057.75,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,16.999998,0" CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="244" HiddenInGame="0" Id="{19817520-F838-4A89-9033-247CEB9715B7}" Layer="mp_damsound" LodRatio="100" Name="rain_drop266" Pos="1010.625,1057.5,29.556641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="160" HiddenInGame="0" Id="{B2D7B821-0450-4BA8-811C-8CEB47ECDFFB}" Layer="mp_damsound" LodRatio="100" Name="rain_drop201" Pos="1010.375,1063.625,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="202" HiddenInGame="0" Id="{5DEB5722-9B5A-4686-9482-8497D044ABEB}" Layer="mp_damsound" LodRatio="100" Name="rain_drop238" Pos="1009.75,1076.5,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="170" HiddenInGame="0" Id="{7B052124-B9E6-4745-8735-75C2C7AFDCFB}" Layer="mp_damsound" LodRatio="100" Name="rain_drop211" Pos="1013.75,1066.125,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="84.980995,4.9809246,-0.43688026" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="280" HiddenInGame="0" Id="{74FAA624-A1A0-4E0E-BC93-047C4B991229}" Layer="mp_damsound" LodRatio="100" Name="PickupP4" Pos="1010.25,1089.125,27" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="121" HiddenInGame="0" Id="{566C0326-1AA6-4992-85B9-A384FB1A2937}" Layer="mp_damsound" LodRatio="100" Name="rain_drop162" Pos="997.625,1082.625,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="188" HiddenInGame="0" Id="{24342126-F2E4-4D2D-9635-FB99AB458407}" Layer="mp_damsound" LodRatio="100" Name="rain_drop224" Pos="1010.625,1072.875,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="56" HiddenInGame="0" Id="{DE6ED02A-78B2-4FD9-BB97-079FB519CACF}" Layer="mp_damsound" LodRatio="100" Name="rain_drop97" Pos="1025,1064.375,29.472656" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="105" HiddenInGame="0" Id="{866B002B-3765-4A68-A2DC-7BD2B60DAC38}" Layer="mp_damsound" LodRatio="100" Name="rain_drop146" Pos="1026.375,1088.75,30.670898" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="94" HiddenInGame="0" Id="{5579BA2B-D490-4494-ADB7-9E5DBD84C277}" Layer="mp_damsound" LodRatio="100" Name="rain_drop136" Pos="992.75,1077.875,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="158" HiddenInGame="0" Id="{93FE0E2C-0183-4A44-A488-EA51D437A695}" Layer="mp_damsound" LodRatio="100" Name="rain_drop199" Pos="1010,1068,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="226" HiddenInGame="0" Id="{98932A2C-E841-4EF9-911C-237333F26586}" Layer="mp_damsound" LodRatio="100" Name="rain_drop256" Pos="1016.125,1073.5,31.681641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="12110389" EntityClass="ParticleEffect" EntityId="40" HiddenInGame="0" Id="{DB7DA02C-29DE-4C04-B6BF-6E0EF41763CF}" Layer="mp_damsound" LodRatio="100" Name="RAIN1" Pos="1007.375,1043,34.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="200" ParticleEffect="Level.Rain.Rain_fcr" Scale="0.5" SpawnPeriod="0.1" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="96" HiddenInGame="0" Id="{37A8CD2C-31CE-4016-8AB2-EC93754A80DE}" Layer="mp_damsound" LodRatio="100" Name="rain_drop138" Pos="993.125,1081.25,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="58" HiddenInGame="0" Id="{7532A22D-29BD-490E-849A-10B2EA2AA022}" Layer="mp_damsound" LodRatio="100" Name="rain_drop100" Pos="1026.5,1049.125,29.515625" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="84.980995,4.9809246,-0.43688026" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="288" HiddenInGame="0" Id="{7007A32D-D9B1-40F4-946D-A92AA6F6A370}" Layer="mp_damsound" LodRatio="100" Name="PickupP9" Pos="1012.75,1050.75,27" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="142" HiddenInGame="0" Id="{6ABCD32D-4F93-4E0F-B1B6-9A3E1996607F}" Layer="mp_damsound" LodRatio="100" Name="rain_drop183" Pos="1029.875,1063.375,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="84" HiddenInGame="0" Id="{094D252E-BB39-4856-8B5D-EF4B5F54EED3}" Layer="mp_damsound" LodRatio="100" Name="rain_drop126" Pos="992.625,1054.875,29.40625" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="207" HiddenInGame="0" Id="{CE601732-9415-46F2-9273-7882318B473F}" Layer="mp_damsound" LodRatio="100" Name="rain_drop243" Pos="1013.875,1069.875,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="109" HiddenInGame="0" Id="{894D2A33-FA20-4794-860E-E3CA31814484}" Layer="mp_damsound" LodRatio="100" Name="rain_drop150" Pos="1025,1087.875,30.140625" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="203" HiddenInGame="0" Id="{AF1B7033-1CE7-45DC-ACBA-570CC45EC5BA}" Layer="mp_damsound" LodRatio="100" Name="rain_drop239" Pos="1009.5,1078.125,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="49" HiddenInGame="0" Id="{5AA97433-05E6-4ABA-8A98-4B514CCA0A3F}" Layer="mp_damsound" LodRatio="100" Name="rain_drop91" Pos="1024.375,1055.5,29.484375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="230" HiddenInGame="0" Id="{2E930A35-7E96-465E-87A4-CED27A0C9A56}" Layer="mp_damsound" LodRatio="100" Name="rain_drop258" Pos="1013.75,1078.5,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="173" HiddenInGame="0" Id="{1D907336-2D3D-4BD7-9FA3-EDC7045BD61C}" Layer="mp_damsound" LodRatio="100" Name="rain_drop214" Pos="1016.75,1063.75,31.681641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="176" HiddenInGame="0" Id="{3F378836-630D-43DF-9751-60A8EA04E2E1}" Layer="mp_damsound" LodRatio="100" Name="rain_drop217" Pos="1011.25,1069,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,-90.999977" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="26" HiddenInGame="0" Id="{DB879737-60D3-44A9-9008-9EF22849A31B}" Layer="mp_damsound" LodRatio="255" Name="AnimObject14" Pos="1033.4553,1055.7522,35.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object Angles="0,0,-92.999985" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="20" HiddenInGame="0" Id="{AC46B037-96BA-4FB2-969B-2CE72A4C871C}" Layer="mp_damsound" LodRatio="255" Name="AnimObject8" Pos="1033.1591,1071.6298,35.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="12110389" EntityClass="ParticleEffect" EntityId="41" HiddenInGame="0" Id="{739EA338-7A89-463A-9A13-E2A8DC047BAF}" Layer="mp_damsound" LodRatio="100" Name="RAIN2" Pos="1026.25,1050.125,34.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="200" ParticleEffect="Level.Rain.Rain_fcr" Scale="0.5" SpawnPeriod="0.1" />
+   </Object>
+   <Object Angles="0,0,-90.999977" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="24" HiddenInGame="0" Id="{50145039-77F2-47A7-92AB-BAFC33F7152F}" Layer="mp_damsound" LodRatio="255" Name="AnimObject12" Pos="1033.3319,1063.0022,35.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Health" EntityId="255" HiddenInGame="0" Id="{22F07439-07D1-40C4-90FD-5CDF5AB8DEEE}" Layer="mp_damsound" LodRatio="100" Name="Health2" Pos="1013.625,1063.625,27.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="1" FadeTime="0" RespawnTime="35" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="117" HiddenInGame="0" Id="{07E38739-EA92-45F5-8942-B9A9BB051E41}" Layer="mp_damsound" LodRatio="100" Name="rain_drop158" Pos="1001.125,1082.5,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="69" HiddenInGame="0" Id="{80EBAD3B-C599-4BC5-821C-E57109083CDB}" Layer="mp_damsound" LodRatio="100" Name="rain_drop111" Pos="1030.25,1071,29.25" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="168" HiddenInGame="0" Id="{B1322C41-9D44-431B-8CF4-F3714B7D7AC6}" Layer="mp_damsound" LodRatio="100" Name="rain_drop209" Pos="1014.125,1067.625,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="181" HiddenInGame="0" Id="{7DBD4843-49AB-4675-8FFA-52590D3400E9}" Layer="mp_damsound" LodRatio="100" Name="oceanPreset" Pos="802.75,1485.75,46.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="1.5" sndpresetSoundPreset="M3shoreline" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoSMG" EntityId="262" HiddenInGame="0" Id="{BDD35445-71EA-4386-9177-3BF7E7DCC9BC}" Layer="mp_damsound" LodRatio="100" Name="AmmoSMG1" Pos="1012.125,1064.625,27.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="20" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0,0,89.000023" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="28" HiddenInGame="0" Id="{576B0446-CFF3-4E75-9DB3-616781EC3A61}" Layer="mp_damsound" LodRatio="255" Name="AnimObject16" Pos="989.36407,1055.6268,36.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object Angles="0,0,89.000023" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="29" HiddenInGame="0" Id="{F0481548-1005-4F65-84C2-7E9A5AAFAD17}" Layer="mp_damsound" LodRatio="255" Name="AnimObject17" Pos="989.42078,1058.8759,36.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="54" HiddenInGame="0" Id="{6745FF48-CC94-468F-9574-C436CB6CA9E7}" Layer="mp_damsound" LodRatio="100" Name="rain_drop95" Pos="1027.5,1058.75,29.484375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="118" HiddenInGame="0" Id="{F9AA5C49-1BE3-4AA7-84D7-A7110DD862D2}" Layer="mp_damsound" LodRatio="100" Name="rain_drop159" Pos="1001.375,1083.5,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupM249" EntityId="273" HiddenInGame="0" Id="{99BE174A-83F9-4E48-927E-5EADD8D9975C}" Layer="mp_damsound" LodRatio="100" Name="PickupM1" Pos="1012.75,1069.625,32" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="100" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="500" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="102" HiddenInGame="0" Id="{CBEF604B-44DD-429E-A285-4926FA8E9022}" Layer="mp_damsound" LodRatio="100" Name="rain_drop143" Pos="993.625,1089.375,29.257813" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="133" HiddenInGame="0" Id="{743F684B-BFFC-4FD4-9165-D8D1A95D7B35}" Layer="mp_damsound" LodRatio="100" Name="rain_drop174" Pos="1025.25,1084,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="161" HiddenInGame="0" Id="{2DE89C4B-DA63-488E-9A15-2BC85F8DCF1E}" Layer="mp_damsound" LodRatio="100" Name="rain_drop202" Pos="1010.625,1066,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="55" HiddenInGame="0" Id="{BE54144C-A095-48C6-A823-71DF7A13B6E2}" Layer="mp_damsound" LodRatio="100" Name="rain_drop96" Pos="1026.125,1061.125,29.484375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="150" HiddenInGame="0" Id="{E135CE4E-E548-4312-BC7F-A20EA1F26947}" Layer="mp_damsound" LodRatio="100" Name="rain_drop191" Pos="994.5,1062.375,32.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="130" HiddenInGame="0" Id="{9B27A550-9BEF-4234-B994-40AF9A7386F5}" Layer="mp_damsound" LodRatio="100" Name="rain_drop171" Pos="1019.75,1083.375,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="134" HiddenInGame="0" Id="{4C6DEB51-BEA7-4FF0-BDFA-8E64EF756BFB}" Layer="mp_damsound" LodRatio="100" Name="rain_drop175" Pos="1025.625,1083.25,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="193" HiddenInGame="0" Id="{D8806A53-A4A1-4B2B-AEA5-A980033B7D16}" Layer="mp_damsound" LodRatio="100" Name="rain_drop229" Pos="1009.125,1074.875,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="141" HiddenInGame="0" Id="{00A75A54-87CF-4DCB-BAF4-566C8BE661AE}" Layer="mp_damsound" LodRatio="100" Name="rain_drop182" Pos="1029,1062.5,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="135" HiddenInGame="0" Id="{9D2D5B54-466A-4048-BB9C-18D574313278}" Layer="mp_damsound" LodRatio="100" Name="rain_drop176" Pos="1029.25,1083.625,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,-90.999977" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="23" HiddenInGame="0" Id="{AB2A6155-109D-4337-B729-A657CF17E8F2}" Layer="mp_damsound" LodRatio="255" Name="AnimObject11" Pos="1033.6998,1065.2526,35.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="126" HiddenInGame="0" Id="{085CE555-AF21-42D8-BD35-72523B1EA7A0}" Layer="mp_damsound" LodRatio="100" Name="rain_drop167" Pos="992.125,1082.875,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="12110389" EntityClass="ParticleEffect" EntityId="239" HiddenInGame="0" Id="{A602E955-BCEF-4838-88E6-0DE8484DEF17}" Layer="mp_damsound" LodRatio="100" Name="RAIN9" Pos="1013.125,1071.75,46.875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="200" ParticleEffect="Level.Rain.Rain_fcr" Scale="0.5" SpawnPeriod="0.1" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="224" HiddenInGame="0" Id="{4E6C2D56-7E59-441B-A216-DA67A9835863}" Layer="mp_damsound" LodRatio="100" Name="rain_drop254" Pos="1013.875,1075,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="194" HiddenInGame="0" Id="{AAAA5158-CB35-4D08-A554-5E8A1D04E7B2}" Layer="mp_damsound" LodRatio="100" Name="rain_drop230" Pos="1009.625,1073.5,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoSMG" EntityId="272" HiddenInGame="0" Id="{AB237A59-379A-43AE-A515-C7DBA3DDE742}" Layer="mp_damsound" LodRatio="100" Name="AmmoSMG11" Pos="1012.625,1078.5,31.875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="20" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="50" HiddenInGame="0" Id="{2F595E5C-79DD-4BE8-9085-5E1F5088CF97}" Layer="mp_damsound" LodRatio="100" Name="rain_drop99" Pos="1025.75,1055.375,29.484375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="143" HiddenInGame="0" Id="{713FCF5C-09C0-4AA6-BFE6-FFF95FEBD21B}" Layer="mp_damsound" LodRatio="100" Name="rain_drop184" Pos="1030,1062.5,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="84.980995,4.9809246,-0.43688026" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="292" HiddenInGame="0" Id="{20036E5D-AECE-46FD-BE27-FA1EEBA773AC}" Layer="mp_damsound" LodRatio="100" Name="PickupP13" Pos="1012,1049.125,27" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Armor" EntityId="260" HiddenInGame="0" Id="{C9FED45D-F855-4F17-98F0-297A812A9242}" Layer="mp_damsound" LodRatio="100" Name="Armor1" Pos="1010.25,1066.375,28.625" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="100" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="100" />
+   </Object>
+   <Object Angles="0,0,-92.999985" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="16" HiddenInGame="0" Id="{43A8165E-738C-4ED3-9425-23F9D657A0F6}" Layer="mp_damsound" LodRatio="255" Name="AnimObject5" Pos="1033.9712,1087.1265,35.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="100" HiddenInGame="0" Id="{08D2F15E-41E5-4B19-A019-957427B78C55}" Layer="mp_damsound" LodRatio="100" Name="rain_drop141" Pos="998.25,1091.5,29.09375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="98" HiddenInGame="0" Id="{F5121D5F-CA5C-4F65-BE1C-7D23C0E173DB}" Layer="mp_damsound" LodRatio="100" Name="rain_drop140" Pos="997.625,1080.75,29.132813" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,89.000023" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="36" HiddenInGame="0" Id="{6637435F-20C2-487E-973E-1C7932334C1E}" Layer="mp_damsound" LodRatio="255" Name="AnimObject24" Pos="989.80035,1080.6213,36.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="76" HiddenInGame="0" Id="{6078A95F-2756-4B25-8E48-CFF43D09FE60}" Layer="mp_damsound" LodRatio="100" Name="rain_drop118" Pos="998,1048,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,89.000023" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="37" HiddenInGame="0" Id="{0D2F8561-D772-4DB8-A36C-D99F4426C796}" Layer="mp_damsound" LodRatio="255" Name="AnimObject25" Pos="989.87891,1085.1222,36.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object Angles="0,0,-92.999985" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="18" HiddenInGame="0" Id="{9AF89961-E8B7-459C-A51A-9B0D920B5183}" Layer="mp_damsound" LodRatio="255" Name="AnimObject6" Pos="1033.8533,1084.8761,35.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object Angles="0,0,89.000023" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="35" HiddenInGame="0" Id="{A2B4DC61-2885-43F1-88A8-59BED6C072A0}" Layer="mp_damsound" LodRatio="255" Name="AnimObject23" Pos="989.75238,1077.8722,36.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="235" HiddenInGame="0" Id="{63D70864-79B9-4021-83A4-EF0CE035FDE1}" Layer="mp_damsound" LodRatio="100" Name="rain_drop260" Pos="1017.25,1077.625,31.681641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="114" HiddenInGame="0" Id="{647E8E65-F5D8-4032-A18F-CFBB2E44FA60}" Layer="mp_damsound" LodRatio="100" Name="rain_drop155" Pos="1004.5,1083.375,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="177" HiddenInGame="0" Id="{63852A66-8E99-43AC-AC5D-F0D6C79513C2}" Layer="mp_damsound" LodRatio="100" Name="rain_drop218" Pos="1011.25,1067.75,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="124" HiddenInGame="0" Id="{55445167-FB7D-4BBC-8F87-A5E7C0575C3D}" Layer="mp_damsound" LodRatio="100" Name="rain_drop165" Pos="994.25,1082.875,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="ClassAmmoPickup" EntityId="8" HiddenInGame="0" Id="{40C9CB67-E0CB-49FC-B86F-D2A2266AAC3F}" Layer="mp_damsound" LodRatio="100" Name="ClassAmmoPickup2" Pos="1010.625,1049.75,27.25" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties AlwaysPhysicalize="1" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" object_Model="Objects/Pickups/universal_ammo/universal_ammo.cgf" RespawnTime="20" sound_Sound="Sounds/Weapons/M4/M4_33.wav" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="12609087" EntityClass="SoundExclusivePreset" EntityId="275" HiddenInGame="0" Id="{FCBBE768-8180-4F7A-B708-79703031F840}" Layer="mp_damsound" LodRatio="100" Name="SOUNDZ3" Pos="1001.875,1066.5,53.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties AreaId="1" bPlayFromCenter="0" fScale="2" sndpresetSoundPreset="rainwater" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="ClassAmmoPickup" EntityId="1" HiddenInGame="0" Id="{9AFA6969-8974-4370-9ED3-F3283B320362}" Layer="mp_damsound" LodRatio="100" Name="ClassAmmoPickup1" Pos="1002.625,1050.375,28.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties AlwaysPhysicalize="1" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" object_Model="Objects/Pickups/universal_ammo/universal_ammo.cgf" RespawnTime="20" sound_Sound="Sounds/Weapons/M4/M4_33.wav" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="221" HiddenInGame="0" Id="{9E35EB69-DBA2-45C1-B19A-541F485FBDC4}" Layer="mp_damsound" LodRatio="100" Name="rain_drop251" Pos="1015.5,1074.375,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="52" HiddenInGame="0" Id="{6FBA3A6D-251C-49B4-BE02-A971A2F95197}" Layer="mp_damsound" LodRatio="100" Name="rain_drop93" Pos="1030.25,1058.625,29.515625" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,-92.999985" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="21" HiddenInGame="0" Id="{081CAF6E-38C5-44CA-AF40-79BCAB80E0AA}" Layer="mp_damsound" LodRatio="255" Name="AnimObject9" Pos="1033.0542,1069.6287,35.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Health" EntityId="257" HiddenInGame="0" Id="{5B99C66E-39F1-4AC3-9535-BF1BE48D2139}" Layer="mp_damsound" LodRatio="100" Name="Health4" Pos="1012,1079.5,27.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="1" FadeTime="0" RespawnTime="35" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="66" HiddenInGame="0" Id="{E5C8FA6E-FF0B-4148-A708-D236C0620E8E}" Layer="mp_damsound" LodRatio="100" Name="rain_drop108" Pos="1029.125,1080.75,29.701172" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="103" HiddenInGame="0" Id="{328BEF70-FAA8-40C8-92BD-B7DBA2A7DFE9}" Layer="mp_damsound" LodRatio="100" Name="rain_drop144" Pos="992.625,1085.75,29.30957" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="190" HiddenInGame="0" Id="{9AFC0371-1D0E-4875-85B2-38B4271848A4}" Layer="mp_damsound" LodRatio="100" Name="rain_drop226" Pos="1009.25,1071.375,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="204" HiddenInGame="0" Id="{C158AD72-FABA-483D-8603-DE074E289408}" Layer="mp_damsound" LodRatio="100" Name="rain_drop240" Pos="1012.75,1077.875,32.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,-92.999985" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="19" HiddenInGame="0" Id="{755F7B74-B1DF-4A2F-B83E-8312ADF4F44B}" Layer="mp_damsound" LodRatio="255" Name="AnimObject7" Pos="1033.777,1073.8801,35.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="195" HiddenInGame="0" Id="{E11FFC75-4B83-4B6E-8EBD-CC9FEA76E8C3}" Layer="mp_damsound" LodRatio="100" Name="rain_drop231" Pos="1010.25,1074.75,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="192" HiddenInGame="0" Id="{C88D7977-2AE1-48C2-B137-807DA6E4913A}" Layer="mp_damsound" LodRatio="100" Name="rain_drop228" Pos="1011,1075,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="86" HiddenInGame="0" Id="{DD3B2678-7707-4E3F-8606-FA59A2C55986}" Layer="mp_damsound" LodRatio="100" Name="rain_drop128" Pos="995.875,1065.75,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="179" HiddenInGame="0" Id="{A494A978-9930-4C8C-B6A0-83333C0317E1}" Layer="mp_damsound" LodRatio="100" Name="rain_drop220" Pos="1010.125,1070.625,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="132" HiddenInGame="0" Id="{7390CB7A-E9ED-4750-9505-E9B5ED34D6F2}" Layer="mp_damsound" LodRatio="100" Name="rain_drop173" Pos="1022.75,1083.875,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="175" HiddenInGame="0" Id="{7229597B-B6D6-4835-9A26-057CC2D7D62F}" Layer="mp_damsound" LodRatio="100" Name="rain_drop216" Pos="1015,1068.125,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="57" HiddenInGame="0" Id="{44505C7B-97C5-401B-B55B-6FF4181D8410}" Layer="mp_damsound" LodRatio="100" Name="rain_drop98" Pos="1026.375,1065.75,29.484375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Health" EntityId="256" HiddenInGame="0" Id="{A34D097C-AAD8-419D-BD67-1BB2D44A0B43}" Layer="mp_damsound" LodRatio="100" Name="Health3" Pos="1010,1065.25,27.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="1" FadeTime="0" RespawnTime="35" />
+   </Object>
+   <Object Angles="0,16.999998,0" CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="44" HiddenInGame="0" Id="{C010D47C-3F30-41EB-AE0E-CF45D836601B}" Layer="mp_damsound" LodRatio="100" Name="rain_drop262" Pos="1006.625,1054.375,29.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="189" HiddenInGame="0" Id="{10BC2A7D-3533-4C52-8566-341B6C7EAD5E}" Layer="mp_damsound" LodRatio="100" Name="rain_drop225" Pos="1008.75,1072.75,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="84.980995,4.9809246,-0.43688026" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="279" HiddenInGame="0" Id="{942BD57D-A2E0-40C5-B624-D514EEBAD2ED}" Layer="mp_damsound" LodRatio="100" Name="PickupP3" Pos="1012.875,1089.5,27.068359" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object Angles="84.980995,4.9809246,-0.43688026" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="293" HiddenInGame="0" Id="{94E55B7E-B74F-4F70-AEC6-8F9AFBCA08E7}" Layer="mp_damsound" LodRatio="100" Name="PickupP14" Pos="1007.625,1048.25,27.023438" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoSMG" EntityId="270" HiddenInGame="0" Id="{C4EDE880-8FDF-4374-B183-AFAF2AFE44C0}" Layer="mp_damsound" LodRatio="100" Name="AmmoSMG9" Pos="1014,1070.625,31.875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="20" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="111" HiddenInGame="0" Id="{7321D281-2672-48D0-88EE-F440C4D9B0BB}" Layer="mp_damsound" LodRatio="100" Name="rain_drop152" Pos="1024.5,1095,29.625" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="84.980995,4.9809246,-0.43688026" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="286" HiddenInGame="0" Id="{1B4D2884-369E-485B-8EE0-FF89B8CF1640}" Layer="mp_damsound" LodRatio="100" Name="PickupP8" Pos="1008.125,1050.875,27" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object Angles="84.980995,4.9809246,-0.43688026" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="277" HiddenInGame="0" Id="{1AA89685-8E54-4CFA-BB93-B76E6882BA2D}" Layer="mp_damsound" LodRatio="100" Name="PickupP1" Pos="1008.375,1090.375,27" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Health" EntityId="254" HiddenInGame="0" Id="{17C2E186-4628-4AE5-B9B4-3293E6FE7634}" Layer="mp_damsound" LodRatio="100" Name="Health1" Pos="1009.375,1063.875,27.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="1" FadeTime="0" RespawnTime="35" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="60" HiddenInGame="0" Id="{B612FA86-75FD-4C7A-A3F8-162FB3FDE106}" Layer="mp_damsound" LodRatio="100" Name="rain_drop102" Pos="1028.5,1072.75,29.496094" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="208" HiddenInGame="0" Id="{05390987-8D6B-4B31-A4A4-BEAD07F2FA37}" Layer="mp_damsound" LodRatio="100" Name="rain_drop244" Pos="1015.375,1070.125,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="206" HiddenInGame="0" Id="{2EC4B187-A6DE-457E-9ED0-2B07B69120EC}" Layer="mp_damsound" LodRatio="100" Name="rain_drop242" Pos="1013.625,1072.375,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,16.999998,0" CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="46" HiddenInGame="0" Id="{A962DD8A-EEA2-4564-8D36-22D5BDD646A2}" Layer="mp_damsound" LodRatio="100" Name="rain_drop264" Pos="1008.875,1054.25,29.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoSMG" EntityId="267" HiddenInGame="0" Id="{CAE8278E-D914-4B0A-8F87-6B898E8D1A1A}" Layer="mp_damsound" LodRatio="100" Name="AmmoSMG6" Pos="1011.75,1072.625,27.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="20" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="108" HiddenInGame="0" Id="{2F3FF18E-6867-410F-A556-32918BA16E03}" Layer="mp_damsound" LodRatio="100" Name="rain_drop149" Pos="1024.125,1086.375,29.47168" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="159" HiddenInGame="0" Id="{88D2CE8F-5788-4F83-BCAF-15682C95B398}" Layer="mp_damsound" LodRatio="100" Name="rain_drop200" Pos="1009.375,1064.75,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="178" HiddenInGame="0" Id="{0F031190-A381-42D9-B283-FFD6D5183965}" Layer="mp_damsound" LodRatio="100" Name="rain_drop219" Pos="1011.375,1070.375,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="183" HiddenInGame="0" Id="{44E5B490-E799-41F3-B714-7CA986CBBBBF}" Layer="mp_damsound" LodRatio="100" Name="basicwindPreset" Pos="662.125,1425.875,64.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="2" sndpresetSoundPreset="m3streamingwind" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="83" HiddenInGame="0" Id="{822D1991-036F-4DDA-89CC-F66524302028}" Layer="mp_damsound" LodRatio="100" Name="rain_drop125" Pos="995.125,1060.75,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="81" HiddenInGame="0" Id="{09690792-B62C-497A-BD24-43D9CEE99519}" Layer="mp_damsound" LodRatio="100" Name="rain_drop123" Pos="996.375,1051.625,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,89.000023" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="31" HiddenInGame="0" Id="{062B9093-0747-47F1-99F2-0BF68DCE25A7}" Layer="mp_damsound" LodRatio="255" Name="AnimObject19" Pos="989.52551,1064.8762,36.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object Angles="0,0,89.000023" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="34" HiddenInGame="0" Id="{60B4DD94-3A93-418C-B88E-D3FE6F1944BE}" Layer="mp_damsound" LodRatio="255" Name="AnimObject22" Pos="989.69128,1074.3733,36.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="220" HiddenInGame="0" Id="{7AA32895-B7CE-4A3C-A124-81A2F26DB909}" Layer="mp_damsound" LodRatio="100" Name="rain_drop250" Pos="1014.875,1074,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="200" HiddenInGame="0" Id="{89F71496-2E68-45E7-AC61-B0906A24EC82}" Layer="mp_damsound" LodRatio="100" Name="rain_drop236" Pos="1011.625,1076.75,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="74" HiddenInGame="0" Id="{55441E96-A03A-4BBB-BD29-F36FBFB46602}" Layer="mp_damsound" LodRatio="100" Name="rain_drop116" Pos="1023.125,1042.375,29.507813" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="89" HiddenInGame="0" Id="{2F7B0A97-CBCD-4404-ADF8-9A5D1EE537C0}" Layer="mp_damsound" LodRatio="100" Name="rain_drop131" Pos="994.625,1066.25,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="71" HiddenInGame="0" Id="{5836E497-E43E-4DF6-9400-DA1EA17642A1}" Layer="mp_damsound" LodRatio="100" Name="rain_drop113" Pos="1027,1071.625,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="123" HiddenInGame="0" Id="{30F4ED97-DD3E-4948-8639-CB0E763C16EF}" Layer="mp_damsound" LodRatio="100" Name="rain_drop164" Pos="995.25,1082.625,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundSpot" EntityId="276" HiddenInGame="0" Id="{BADD0298-A3C0-4525-890C-4380236BB27E}" Layer="mp_damsound" LodRatio="100" Name="SoundSpot1" Pos="1010.125,1075.375,49" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bEnabled="1" bLoop="1" bOnce="0" bPlay="1" fFadeValue="1" InnerRadius="40" iVolume="255" OuterRadius="80" sndSource="Levels\mp_P90\rain_fcr.wav" />
+   </Object>
+   <Object AreaId="0" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="0" Height="0" Id="{4ACD4F9A-B921-478E-AEDB-36A8130E3F9A}" Layer="mp_damsound" Name="wholeisland" Pos="2056.125,2069.75,0.1" Type="Shape" Width="0" >
+    <Points>
+     <Point Pos="0,0,0" />
+     <Point Pos="-2084.625,-10.25,0" />
+     <Point Pos="-2084.625,-2089.625,0" />
+     <Point Pos="0,-2089.625,0" />
+    </Points>
+    <Entities>
+     <Entity Id="{44E5B490-E799-41F3-B714-7CA986CBBBBF}" />
+     <Entity Id="{33361100-0CF5-4224-8128-642EECBBF4D1}" />
+     <Entity Id="{4C9249AF-ADF3-455C-A87C-294905CAC0EF}" />
+    </Entities>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="145" HiddenInGame="0" Id="{6238F79A-7140-44FA-90F4-4BE0ED45578C}" Layer="mp_damsound" LodRatio="100" Name="rain_drop186" Pos="1031.25,1062.5,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,-92.999985" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="14" HiddenInGame="0" Id="{37BE819C-103A-4FC0-9FF4-D1CB2DA69B8D}" Layer="mp_damsound" LodRatio="255" Name="AnimObject3" Pos="1033.7354,1082.6257,35.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="217" HiddenInGame="0" Id="{1070029E-168F-40AA-BFC8-28513E84E171}" Layer="mp_damsound" LodRatio="100" Name="rain_drop247" Pos="1015.5,1071.625,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="187" HiddenInGame="0" Id="{42B70C9F-4366-4571-946D-620173F49263}" Layer="mp_damsound" LodRatio="100" Name="rain_drop223" Pos="1011.875,1072.625,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="65" HiddenInGame="0" Id="{788F4D9F-8775-4B5A-BF43-188D3014714A}" Layer="mp_damsound" LodRatio="100" Name="rain_drop107" Pos="1026.75,1081,29.414063" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoSMG" EntityId="271" HiddenInGame="0" Id="{C5E3589F-1850-4B64-B7DF-F33FD2248C83}" Layer="mp_damsound" LodRatio="100" Name="AmmoSMG10" Pos="1012.75,1065.75,31.875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="20" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="87" HiddenInGame="0" Id="{7E9AB39F-E179-4E79-AB17-9CFBF0D01901}" Layer="mp_damsound" LodRatio="100" Name="rain_drop129" Pos="992.375,1065.25,29.335938" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="165" HiddenInGame="0" Id="{ABF92AA0-52FF-4CAE-ACB1-9A1AF2C741BC}" Layer="mp_damsound" LodRatio="100" Name="rain_drop206" Pos="1015.125,1063.625,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="127" HiddenInGame="0" Id="{EC22D4A0-1A1D-49E9-9A53-6815997D24E0}" Layer="mp_damsound" LodRatio="100" Name="rain_drop168" Pos="991.5,1083.75,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="62" HiddenInGame="0" Id="{276F74A1-B14B-4C25-86D4-5B61E5003B10}" Layer="mp_damsound" LodRatio="100" Name="rain_drop104" Pos="1030.5,1077.875,29.541016" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoSMG" EntityId="264" HiddenInGame="0" Id="{F45F82A1-816C-441C-9AA1-927B8E9E0324}" Layer="mp_damsound" LodRatio="100" Name="AmmoSMG3" Pos="1011.625,1066,27.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="20" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="84.980995,4.9809246,-0.43688026" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="283" HiddenInGame="0" Id="{033F58A3-0985-4B0B-8869-ECBEC59EA717}" Layer="mp_damsound" LodRatio="100" Name="PickupP6" Pos="1008,1088.25,27" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object ColorRGB="16711680" Id="{6D075FA6-C29A-4827-9497-31E0884EAFB8}" Layer="mp_damsound" Name="Blues" Pos="1002,1091,29" Type="Respawn" />
+   <Object Angles="84.980995,4.9809246,-0.43688026" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="289" HiddenInGame="0" Id="{4DE476A7-2F0D-493D-A7C2-F96ACF3C0B8E}" Layer="mp_damsound" LodRatio="100" Name="PickupP10" Pos="1012.5,1054.125,27" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="101" HiddenInGame="0" Id="{F3ABA3A7-25A9-4834-BA0C-51576E22EDDD}" Layer="mp_damsound" LodRatio="100" Name="rain_drop142" Pos="995,1087.75,29.226563" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="153" HiddenInGame="0" Id="{0C0E4AA8-BD41-43B0-9FC9-662C5EEBBB5E}" Layer="mp_damsound" LodRatio="100" Name="rain_drop194" Pos="992.75,1063.625,32.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="223" HiddenInGame="0" Id="{07B081A9-120F-46D1-90FF-3EFF0EA0FB00}" Layer="mp_damsound" LodRatio="100" Name="rain_drop253" Pos="1014.375,1076.625,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Health" EntityId="259" HiddenInGame="0" Id="{FE962FAA-8F91-45ED-9E4A-EE0DAD0AEA2E}" Layer="mp_damsound" LodRatio="100" Name="Health6" Pos="1009.75,1077.5,27.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="1" FadeTime="0" RespawnTime="35" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="90" HiddenInGame="0" Id="{B18C03AB-1471-43F1-A0F2-FF7A3F206948}" Layer="mp_damsound" LodRatio="100" Name="rain_drop132" Pos="998,1076.75,29.109375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="107" HiddenInGame="0" Id="{51A111AE-44E1-44D8-97F4-8F0E248E9D1F}" Layer="mp_damsound" LodRatio="100" Name="rain_drop148" Pos="1029.75,1089,30.734375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="219" HiddenInGame="0" Id="{89D208AF-EF45-44F5-BFB5-6C97F7311C7F}" Layer="mp_damsound" LodRatio="100" Name="rain_drop249" Pos="1016.75,1072.125,31.681641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="184" HiddenInGame="0" Id="{4C9249AF-ADF3-455C-A87C-294905CAC0EF}" Layer="mp_damsound" LodRatio="100" Name="basiccricketsPreset" Pos="671.5,1420.875,64.625" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="0.5" sndpresetSoundPreset="coolinsects1" />
+   </Object>
+   <Object Angles="0,0,89.000023" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="27" HiddenInGame="0" Id="{9F909DAF-DEB2-4857-B01D-F1C23133DB29}" Layer="mp_damsound" LodRatio="255" Name="AnimObject15" Pos="989.32483,1053.3776,36.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="106" HiddenInGame="0" Id="{21C2E9B1-7E4F-4134-9700-4BB15300D960}" Layer="mp_damsound" LodRatio="100" Name="rain_drop147" Pos="1028.375,1086.125,30.661133" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="12110389" EntityClass="ParticleEffect" EntityId="43" HiddenInGame="0" Id="{0FAA14B2-D3C5-4C2B-A95A-75AF7AE7BF11}" Layer="mp_damsound" LodRatio="100" Name="RAIN4" Pos="1012.125,1094.625,34.738281" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="150" ParticleEffect="Level.Rain.Rain_fcr" Scale="0.5" SpawnPeriod="0.1" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="138" HiddenInGame="0" Id="{F8AC23B2-F4AE-45D6-8862-E17F2DB28DE4}" Layer="mp_damsound" LodRatio="100" Name="rain_drop179" Pos="1027.75,1063.25,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="149" HiddenInGame="0" Id="{392F28B2-34FF-4208-A02F-91EDDF44BCE6}" Layer="mp_damsound" LodRatio="100" Name="rain_drop190" Pos="995.5,1063.5,32.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="95" HiddenInGame="0" Id="{E4AF24B3-A03E-466B-87F4-91831C87B319}" Layer="mp_damsound" LodRatio="100" Name="rain_drop137" Pos="996.875,1079.625,29.179688" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="162" HiddenInGame="0" Id="{8F841EB4-E29A-4C52-ACBC-98F49EC8D165}" Layer="mp_damsound" LodRatio="100" Name="rain_drop203" Pos="1012.125,1065.875,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,89.000023" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="32" HiddenInGame="0" Id="{DE16F9B4-662A-4290-8BE6-38E18C70B6A0}" Layer="mp_damsound" LodRatio="255" Name="AnimObject20" Pos="989.58002,1067.998,36.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="144" HiddenInGame="0" Id="{5FFA19B9-E28E-46E6-BFC0-B715B35AB1E9}" Layer="mp_damsound" LodRatio="100" Name="rain_drop185" Pos="1031.25,1063.25,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="169" HiddenInGame="0" Id="{824F65B9-ACE6-47F6-BBE8-8541C686A390}" Layer="mp_damsound" LodRatio="100" Name="rain_drop210" Pos="1015.5,1066.75,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="128" HiddenInGame="0" Id="{B48F4BBB-E1DD-4F01-B4A8-AC17E8D84C77}" Layer="mp_damsound" LodRatio="100" Name="rain_drop169" Pos="990.5,1083,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="196" HiddenInGame="0" Id="{10895CBB-D38C-4D8C-8055-DA516E47BCA9}" Layer="mp_damsound" LodRatio="100" Name="rain_drop232" Pos="1008.75,1076.5,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="147" HiddenInGame="0" Id="{3D3967BB-AFE7-4579-990D-A02D566ECE66}" Layer="mp_damsound" LodRatio="100" Name="rain_drop188" Pos="996.75,1063.375,32.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="197" HiddenInGame="0" Id="{6521A0BC-9FB0-4682-81B7-92053C0751E8}" Layer="mp_damsound" LodRatio="100" Name="rain_drop233" Pos="1008.625,1077.625,31.681641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="48" HiddenInGame="0" Id="{DAF995BD-BB2F-43FC-8684-6C85CA98F22F}" Layer="mp_damsound" LodRatio="100" Name="rain_drop90" Pos="1023.25,1052,29.4375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="78" HiddenInGame="0" Id="{7A074ABE-BD58-4C76-B24B-C256B42002A9}" Layer="mp_damsound" LodRatio="100" Name="rain_drop120" Pos="998.375,1050.5,29.210938" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="199" HiddenInGame="0" Id="{7E188DC0-57B2-49C5-A882-C6AC0BB1D005}" Layer="mp_damsound" LodRatio="100" Name="rain_drop235" Pos="1012,1077.5,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="51" HiddenInGame="0" Id="{11A64DC1-0352-40EB-8402-76669709FFE1}" Layer="mp_damsound" LodRatio="100" Name="rain_drop92" Pos="1025,1058.75,29.484375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="84.980995,4.9809246,-0.43688026" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="278" HiddenInGame="0" Id="{62B1CFC1-F39B-4540-B2EA-BB25BE4881F6}" Layer="mp_damsound" LodRatio="100" Name="PickupP2" Pos="1011.5,1091.5,27" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="64" HiddenInGame="0" Id="{795C86C2-D67C-44B2-99C3-1D938FDD7089}" Layer="mp_damsound" LodRatio="100" Name="rain_drop106" Pos="1027.375,1077.75,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="201" HiddenInGame="0" Id="{90787AC3-0BB6-4697-9ADA-6F3932A3A09A}" Layer="mp_damsound" LodRatio="100" Name="rain_drop237" Pos="1010.5,1076.75,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="155" HiddenInGame="0" Id="{29F092C3-4D09-42EB-87DD-407D2169C492}" Layer="mp_damsound" LodRatio="100" Name="rain_drop196" Pos="1008.25,1064.25,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="84.980995,4.9809246,-0.43688026" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="290" HiddenInGame="0" Id="{27A0A3C3-1675-4080-B375-F3EBFF9B184C}" Layer="mp_damsound" LodRatio="100" Name="PickupP11" Pos="1009,1056.125,27.0625" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object Angles="0,16.999998,0" CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="249" HiddenInGame="0" Id="{52EB31C4-229E-46BB-BDF3-A5F6A658A734}" Layer="mp_damsound" LodRatio="100" Name="rain_drop269" Pos="1017.125,1051.75,30.306641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="70" HiddenInGame="0" Id="{9D3E7EC4-ED43-4321-BF31-1CF125DCCA64}" Layer="mp_damsound" LodRatio="100" Name="rain_drop112" Pos="1030.5,1068.5,29.265625" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="12110389" EntityClass="ParticleEffect" EntityId="99" HiddenInGame="0" Id="{F3ABDAC4-94F3-467E-8B03-82F3C5A5CD9D}" Layer="mp_damsound" LodRatio="100" Name="RAIN8" Pos="990.375,1091.875,37.874023" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="200" ParticleEffect="Level.Rain.Rain_fcr" Scale="0.5" SpawnPeriod="0.1" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="164" HiddenInGame="0" Id="{DA3C8DC5-EBCB-4D35-BB2D-5A9345E69B6A}" Layer="mp_damsound" LodRatio="100" Name="rain_drop205" Pos="1013.625,1063.625,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="115" HiddenInGame="0" Id="{6CEBCDC5-CA34-487F-9C75-8DFC7C1BCF21}" Layer="mp_damsound" LodRatio="100" Name="rain_drop156" Pos="1004,1082.625,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="113" HiddenInGame="0" Id="{FE2E6FC6-6489-4701-B19E-726F396775C4}" Layer="mp_damsound" LodRatio="100" Name="rain_drop154" Pos="1005.25,1082.5,31.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="218" HiddenInGame="0" Id="{6B1A92C7-A25D-43D9-9D93-759AF45AA6C8}" Layer="mp_damsound" LodRatio="100" Name="rain_drop248" Pos="1016.5,1070.375,31.681641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="84.980995,4.9809246,-0.43688026" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="291" HiddenInGame="0" Id="{3B2BA0C9-60B7-40A4-ACB6-A56FC7DCB337}" Layer="mp_damsound" LodRatio="100" Name="PickupP12" Pos="1016.625,1055.125,27.445313" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="131" HiddenInGame="0" Id="{22E0C1C9-2B28-408B-A3B2-8F97840D918D}" Layer="mp_damsound" LodRatio="100" Name="rain_drop172" Pos="1021.625,1083.625,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="68" HiddenInGame="0" Id="{19B014CA-6D35-4640-BC0A-B7FD7E8C8577}" Layer="mp_damsound" LodRatio="100" Name="rain_drop110" Pos="1021.375,1081,29.03125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="171" HiddenInGame="0" Id="{17F865CA-A211-4994-B439-9BC755ABCEE8}" Layer="mp_damsound" LodRatio="100" Name="rain_drop212" Pos="1016.375,1066.375,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="BasicEntity" EntityId="11" HiddenInGame="0" Id="{C07199CB-25BE-4C91-A620-C7C91CA0ECD0}" Layer="mp_damsound" LodRatio="100" Name="BasicEntity1" Pos="1011.625,1097.5,26.875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="SimpleEntity" ViewDistRatio="100" >
+    <Properties aianchorAIAction="" damage_players="0" fAnchorRadius="0" object_Model="Objects\Editor\colllision_50x50.cgf" sndAnimStart="" sndAnimStop="" >
+     <Animation Animation="Default" bLoop="0" bPlaying="0" Speed="1" />
+     <Physics bActivateOnDamage="0" bFixedDamping="0" bResting="0" bRigidBody="0" bRigidBodyActive="1" bUseSimpleSolver="0" damping="0" Density="-1" Mass="700" max_time_step="0.01" sleep_speed="0.04" Type="Unknown" vector_Impulse="1,2,3" water_damping="0" water_density="1000" water_resistance="1000" >
+      <LowSpec bKeepMassAndWater="1" bKeepRigidBody="1" bRigidBody="0" Density="-1" Mass="700" max_time_step="0.025" sleep_speed="0.04" water_density="1000" water_resistance="1000" />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Armor" EntityId="261" HiddenInGame="0" Id="{E0E89DCB-DA11-44C8-B77C-BEAF2BEC342A}" Layer="mp_damsound" LodRatio="100" Name="Armor2" Pos="1010,1076.25,28.625" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="100" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="100" />
+   </Object>
+   <Object Angles="84.980995,4.9809246,-0.43688026" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="282" HiddenInGame="0" Id="{F893DCCB-9EB0-49AE-91B9-E626F08E3466}" Layer="mp_damsound" LodRatio="100" Name="PickupP5" Pos="1012.125,1087.75,27.014648" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="75" HiddenInGame="0" Id="{BEBA01CD-42A5-479E-B4D6-9277FC4FA4A5}" Layer="mp_damsound" LodRatio="100" Name="rain_drop117" Pos="1000.375,1046.5,29.0625" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="156" HiddenInGame="0" Id="{5C9591CE-F403-4AF8-909E-A9F677ACEDC3}" Layer="mp_damsound" LodRatio="100" Name="rain_drop197" Pos="1008.625,1066.5,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="73" HiddenInGame="0" Id="{AA0EF7CF-6C2B-4F0A-9956-A0D8EE04D782}" Layer="mp_damsound" LodRatio="100" Name="rain_drop115" Pos="1023.25,1045.25,29.263672" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,89.000023" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="30" HiddenInGame="0" Id="{24E60AD1-64BF-4C3F-939F-704A3F4137C0}" Layer="mp_damsound" LodRatio="255" Name="AnimObject18" Pos="989.47534,1062.0021,36.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="67" HiddenInGame="0" Id="{62FF1DD3-EFF7-413C-A659-483F556FAA9B}" Layer="mp_damsound" LodRatio="100" Name="rain_drop109" Pos="1023.5,1079.375,29.109375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,16.999998,0" CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="246" HiddenInGame="0" Id="{8A9607D4-C0A7-4472-B038-75C1D16494EA}" Layer="mp_damsound" LodRatio="100" Name="rain_drop267" Pos="1015.125,1056.625,29.306641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="186" HiddenInGame="0" Id="{3B0EA2D6-A638-43C9-B108-0522CF812141}" Layer="mp_damsound" LodRatio="100" Name="rain_drop222" Pos="1008.75,1069.125,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="110" HiddenInGame="0" Id="{33D311D8-BF21-4FB7-AAE5-6FE1F98C3299}" Layer="mp_damsound" LodRatio="100" Name="rain_drop151" Pos="1030.375,1087,30.84375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="53" HiddenInGame="0" Id="{26DD57DD-F972-49F9-A4E9-A51A8574006D}" Layer="mp_damsound" LodRatio="100" Name="rain_drop94" Pos="1026.375,1057.625,29.484375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="233" HiddenInGame="0" Id="{74EE6EDD-04EC-447F-9FB8-2086486DD1EB}" Layer="mp_damsound" LodRatio="100" Name="rain_drop259" Pos="1016.375,1077.875,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="139" HiddenInGame="0" Id="{DDD911DE-DD36-4611-AAD3-150BCA99052C}" Layer="mp_damsound" LodRatio="100" Name="rain_drop180" Pos="1027.375,1062.625,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="59" HiddenInGame="0" Id="{7D80B1DF-480E-48AC-B28D-9570A7B8CA60}" Layer="mp_damsound" LodRatio="100" Name="rain_drop101" Pos="1026.25,1066.75,29.484375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="12110389" EntityClass="ParticleEffect" EntityId="42" HiddenInGame="0" Id="{24AA96E1-EA7F-4068-8DCF-75B2B72403C6}" Layer="mp_damsound" LodRatio="100" Name="RAIN3" Pos="1029.625,1070.625,34.735352" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="100" ParticleEffect="Level.Rain.Rain_fcr" Scale="0.5" SpawnPeriod="0.1" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="182" HiddenInGame="0" Id="{888ACBE2-9CC6-434C-8D06-54F354F1A418}" Layer="mp_damsound" LodRatio="100" Name="rain_drop221" Pos="1008.25,1070.5,31.806641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="79" HiddenInGame="0" Id="{C4B012E3-1951-4988-8979-0F0E55B0FDB3}" Layer="mp_damsound" LodRatio="100" Name="rain_drop121" Pos="993.5,1050,29.421875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="-5.9999986,0,0" CastLightmap="1" CastShadowMaps="0" CastShadows="0" ColorRGB="16777215" Hideable="0" Id="{ECE75CE3-9FE9-47DD-8854-AC76B5728B48}" Layer="mp_damsound" LightmapQuality="1" LodRatio="100" Name="P90_bind1" NotTriangulate="0" OutdoorOnly="0" Pos="1014,1037,36.25" Prefab="Objects\Weapons\P90\P90_bind.cgf" ReceiveLightmap="1" RecvShadowMaps="1" RndFlags="548" Scale="24.309614,24.309614,24.309614" SelfShadowing="0" Type="Brush" ViewDistRatio="100" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="ClassAmmoPickup" EntityId="10" HiddenInGame="0" Id="{9F92B6E3-6626-4584-8019-0114E06D1260}" Layer="mp_damsound" LodRatio="100" Name="ClassAmmoPickup4" Pos="1024.375,1049.75,29.25" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties AlwaysPhysicalize="1" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" object_Model="Objects/Pickups/universal_ammo/universal_ammo.cgf" RespawnTime="20" sound_Sound="Sounds/Weapons/M4/M4_33.wav" />
+   </Object>
+   <Object Angles="0,0,89.000023" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="33" HiddenInGame="0" Id="{A0932CE4-4DF3-4794-9302-2C1A697AC451}" Layer="mp_damsound" LodRatio="255" Name="AnimObject21" Pos="989.63892,1071.3721,36.5" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="91" HiddenInGame="0" Id="{765C67E4-0BD8-43FE-9101-5CFCAC950BF0}" Layer="mp_damsound" LodRatio="100" Name="rain_drop133" Pos="994.375,1076.375,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,-92.999985" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="2" HiddenInGame="0" Id="{1B97F9E5-6A06-4216-89B1-F444E0FA747E}" Layer="mp_damsound" LodRatio="255" Name="AnimObject1" Pos="1033.375,1075.75,35.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object Angles="0,16.999998,0" CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="240" HiddenInGame="0" Id="{1580BBE7-8342-4F93-95E3-B4C35FDF53A8}" Layer="mp_damsound" LodRatio="100" Name="rain_drop265" Pos="1012.875,1057.125,29.556641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="152" HiddenInGame="0" Id="{072ADCE9-6111-4BFA-9080-EA6CD82F7ECE}" Layer="mp_damsound" LodRatio="100" Name="rain_drop193" Pos="993,1062.375,32.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="205" HiddenInGame="0" Id="{865C84EA-7D1A-429C-AEAE-930164DABD10}" Layer="mp_damsound" LodRatio="100" Name="rain_drop241" Pos="1013.375,1074.5,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="137" HiddenInGame="0" Id="{2E2A2EEC-1593-464F-B3E7-0278351594F9}" Layer="mp_damsound" LodRatio="100" Name="rain_drop178" Pos="1027.5,1083.75,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="163" HiddenInGame="0" Id="{8C91A0EC-4362-435D-8BC9-8198BB3C18A2}" Layer="mp_damsound" LodRatio="100" Name="rain_drop204" Pos="1011.625,1063.625,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="BasicEntity" EntityId="12" Flags="4" HiddenInGame="0" Id="{CB0C82ED-3633-49F4-8C24-5D9AE718CABB}" Layer="mp_damsound" LodRatio="100" Name="BasicEntity2" Pos="1011.625,1046.125,26.875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="SimpleEntity" ViewDistRatio="100" >
+    <Properties aianchorAIAction="" damage_players="0" fAnchorRadius="0" object_Model="Objects\Editor\colllision_50x50.cgf" sndAnimStart="" sndAnimStop="" >
+     <Animation Animation="Default" bLoop="0" bPlaying="0" Speed="1" />
+     <Physics bActivateOnDamage="0" bFixedDamping="0" bResting="0" bRigidBody="0" bRigidBodyActive="1" bUseSimpleSolver="0" damping="0" Density="-1" Mass="700" max_time_step="0.01" sleep_speed="0.04" Type="Unknown" vector_Impulse="1,2,3" water_damping="0" water_density="1000" water_resistance="1000" >
+      <LowSpec bKeepMassAndWater="1" bKeepRigidBody="1" bRigidBody="0" Density="-1" Mass="700" max_time_step="0.025" sleep_speed="0.04" water_density="1000" water_resistance="1000" />
+     </Physics>
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Health" EntityId="258" HiddenInGame="0" Id="{54C482ED-D8C5-4A56-AB1A-2A4B564524D5}" Layer="mp_damsound" LodRatio="100" Name="Health5" Pos="1008.125,1079.5,27.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="1" FadeTime="0" RespawnTime="35" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoSMG" EntityId="269" HiddenInGame="0" Id="{03D061EE-CD49-4DD7-BAE2-47732BF370E2}" Layer="mp_damsound" LodRatio="100" Name="AmmoSMG8" Pos="1010.625,1071.125,31.875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="20" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="84.980995,4.9809246,-0.43688026" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="284" HiddenInGame="0" Id="{172751EF-B292-4DD1-9692-8E7C02E7BBF2}" Layer="mp_damsound" LodRatio="100" Name="PickupP7" Pos="1010.5,1052.625,27" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="185" HiddenInGame="0" Id="{7F1EC2EF-B5EC-485C-9657-80EEA90E0C1B}" Layer="mp_damsound" LodRatio="100" Name="highwindPreset" Pos="741,1433.75,64.875" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="0.75" sndpresetSoundPreset="cliffwind" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="198" HiddenInGame="0" Id="{F796E7F1-1F7D-4E6F-85A2-601F3C3D2FC1}" Layer="mp_damsound" LodRatio="100" Name="rain_drop234" Pos="1010.75,1078.25,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="12110389" EntityClass="ParticleEffect" EntityId="39" HiddenInGame="0" Id="{63293EF3-90F2-4522-8AAE-8D112BA73582}" Layer="mp_damsound" LodRatio="100" Name="RAIN" Pos="996.625,1062.125,34.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="100" ParticleEffect="Level.Rain.Rain_fcr" Scale="0.5" SpawnPeriod="0.1" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="151" HiddenInGame="0" Id="{8AD5EEF3-04CE-42C0-9BAF-AEB6FA7C0068}" Layer="mp_damsound" LodRatio="100" Name="rain_drop192" Pos="994.125,1063.25,32.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="154" HiddenInGame="0" Id="{D7B5ADF4-93EE-43D2-8132-4B365AF238AD}" Layer="mp_damsound" LodRatio="100" Name="rain_drop195" Pos="991.625,1062.875,32.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,-90.999977" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="25" HiddenInGame="0" Id="{DB8F62F5-3103-401F-93FB-DE7D4A7B2557}" Layer="mp_damsound" LodRatio="255" Name="AnimObject13" Pos="1033.2751,1059.751,35.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="222" HiddenInGame="0" Id="{4BD233F6-0E19-4AED-BDDB-9ECEB148CDFE}" Layer="mp_damsound" LodRatio="100" Name="rain_drop252" Pos="1014.125,1076.375,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="225" HiddenInGame="0" Id="{7921F8F6-6422-4F86-A81D-B3E67BA428B4}" Layer="mp_damsound" LodRatio="100" Name="rain_drop255" Pos="1016.625,1075.375,31.681641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="129" HiddenInGame="0" Id="{42E029F7-EAA0-4FB7-A268-A9F5AA4DCF55}" Layer="mp_damsound" LodRatio="100" Name="rain_drop170" Pos="1019.5,1084.5,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,16.999998,0" CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="251" HiddenInGame="0" Id="{05D571F7-D064-4D48-BC32-7F8A780F4E11}" Layer="mp_damsound" LodRatio="100" Name="rain_drop271" Pos="1025.5,1052.125,31.681641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="SoundExclusivePreset" EntityId="38" HiddenInGame="0" Id="{A8589EF7-9FAB-433F-89F3-92E6BEE51820}" Layer="mp_damsound" LodRatio="100" Name="SOUNDZ1" Pos="1001.875,1066.5,54.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties AreaId="1" bPlayFromCenter="0" fScale="1.3" sndpresetSoundPreset="thunderSEX" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="63" HiddenInGame="0" Id="{04C5A5F9-9488-4F09-8B8A-BEEAEF48BA46}" Layer="mp_damsound" LodRatio="100" Name="rain_drop105" Pos="1028.625,1078.875,29.404785" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="136" HiddenInGame="0" Id="{E8CEC4F9-E178-483B-B88D-FC1E8E2EBA5E}" Layer="mp_damsound" LodRatio="100" Name="rain_drop177" Pos="1029.25,1083,32.056641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="148" HiddenInGame="0" Id="{1A9B0AFA-71EB-4BED-8DE0-EE9A8686CD1A}" Layer="mp_damsound" LodRatio="100" Name="rain_drop189" Pos="995.875,1062.625,32.181641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object Angles="0,0,-92.999985" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AnimObject" EntityId="13" HiddenInGame="0" Id="{3529E3FB-C5B8-42C6-AE32-19B6A6600532}" Layer="mp_damsound" LodRatio="255" Name="AnimObject2" Pos="1033.4929,1078.0004,35.75" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="255" >
+    <Properties Animation="sidle" bAlwaysUpdate="1" bPhysicalize="1" bPlaying="1" fileModel="Objects\characters\mercenaries\indoor_merc\indoor_merc_elite.cgf" >
+     <attachmet1 boneName="hat_bone" fileObject="Objects\characters\mercenaries\accessories\helmet_nightvis.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="88" HiddenInGame="0" Id="{64CBC9FC-13B0-4DBA-9CAD-8EB09B9CB0D0}" Layer="mp_damsound" LodRatio="100" Name="rain_drop130" Pos="995,1064.75,29.234375" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="216" HiddenInGame="0" Id="{C5975EFD-01B0-4134-A47A-67A53E1C562F}" Layer="mp_damsound" LodRatio="100" Name="rain_drop246" Pos="1014.25,1071.625,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoSMG" EntityId="266" HiddenInGame="0" Id="{16C8ACFD-83FC-4416-A2F5-35901116E6D3}" Layer="mp_damsound" LodRatio="100" Name="AmmoSMG5" Pos="1013.25,1074.25,27.125" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="20" Amount2="1" Availability="0" bAwakePhysics="0" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="9614411" EntityClass="ParticleEffect" EntityId="191" HiddenInGame="0" Id="{E34E56FF-724E-4117-AE77-F3930CF0BEAB}" Layer="mp_damsound" LodRatio="100" Name="rain_drop227" Pos="1012.25,1074.75,31.931641" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bActive="1" fUpdateRadius="15" ParticleEffect="water.a1" Scale="0.05" SpawnPeriod="0.6" />
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

@@ -1,0 +1,34 @@
+<ObjectLayer>
+ <Layer Exportable="1" External="1" Frozen="0" GUID="{2EE15CFF-D88D-446C-834A-3E76B0B361F5}" Hidden="0" Name="mp_jungle" >
+  <LayerObjects>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="101" HiddenInGame="0" Id="{43C8E677-50B9-44A6-8F7D-5831DFA8F3F9}" Layer="mp_jungle" LodRatio="100" Name="wind" Pos="1094.9,991.04999,49.350002" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="2" sndpresetSoundPreset="m3streamingwind" />
+   </Object>
+   <Object ColorRGB="41215" Comment="" Fixed="0" Id="{99F6EB8B-CF54-4C6B-A1C4-4A84D21AB036}" Layer="mp_jungle" Name="Comment2" Pos="880,863,43" Type="Comment" />
+   <Object ColorRGB="41215" Comment="" Fixed="0" Id="{250F3BA0-28F0-4E51-8E45-C0F8B52BBA05}" Layer="mp_jungle" Name="Comment3" Pos="1075,923,43.599998" Type="Comment" />
+   <Object AreaId="0" Closed="1" ColorRGB="16763904" DisplayFilled="0" GroupId="0" Height="0" Id="{F35052B2-24F8-4E7E-AE49-AA6FAF81446D}" Layer="mp_jungle" Name="entire island" Pos="2130.2,2095,0.1" Type="Shape" Width="0" >
+    <Points>
+     <Point Pos="0,0,0" />
+     <Point Pos="-2167.8,0,0" />
+     <Point Pos="-2173.8,-2155.8999,0" />
+     <Point Pos="-35.799805,-2138,0" />
+    </Points>
+    <Entities>
+     <Entity Id="{43C8E677-50B9-44A6-8F7D-5831DFA8F3F9}" />
+     <Entity Id="{817B9CB2-07A5-441F-914A-31443BF7429E}" />
+     <Entity Id="{8110D9BF-0538-4B1D-951F-15A9D1A35EF6}" />
+     <Entity Id="{FA61A5EA-739A-42FF-9A0C-6D013916C324}" />
+    </Entities>
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="111" HiddenInGame="0" Id="{817B9CB2-07A5-441F-914A-31443BF7429E}" Layer="mp_jungle" LodRatio="100" Name="ambient1" Pos="1095.05,988.45001,49.350002" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="1" sndpresetSoundPreset="jungleday5lp2" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="170" HiddenInGame="0" Id="{8110D9BF-0538-4B1D-951F-15A9D1A35EF6}" Layer="mp_jungle" LodRatio="100" Name="ambient bugs" Pos="1095.4,987,49.350002" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="0.75" sndpresetSoundPreset="m5nighttimeanimals2" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="RandomAmbientSoundPreset" EntityId="171" HiddenInGame="0" Id="{FA61A5EA-739A-42FF-9A0C-6D013916C324}" Layer="mp_jungle" LodRatio="100" Name="monkeys" Pos="1092.9501,987.79999,49.350002" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties bLIndoorOnly="0" bLOutdoorOnly="0" bOnce="0" bPlayFromCenter="0" fScale="1" sndpresetSoundPreset="monkeys" />
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

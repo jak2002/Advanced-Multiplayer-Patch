@@ -1,0 +1,29 @@
+<ObjectLayer>
+ <Layer Exportable="1" External="0" Frozen="0" GUID="{590E487D-BFEA-4974-A892-34AEF16183B3}" Hidden="0" Name="jack_meets_val_cs" >
+  <LayerObjects>
+   <Object CastShadowMaps="0" CastShadows="0" ColorRGB="65535" EntityClass="DynamicLight" EntityId="495" HiddenInGame="1" Id="{7797B659-C2EE-4A67-91E5-52064582526D}" Layer="jack_meets_val_cs" LodRatio="100" Name="DynamicLight3131" Pos="284.72903,1055.8868,62.019962" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties AnimationSpeed="0" AnimName="default" bActive="0" bAffectsThisAreaOnly="1" bFakeLight="0" bHeatSource="0" bIgnoreTerrain="0" bProjectInAllDirs="0" bUseAnimation="1" bUsedInRealTime="1" clrDiffuse="0.545098,0.521569,0.878431" clrSpecular="1,1,1" CoronaScale="1" damping="0.5" DiffuseMultiplier="1" fileModel01="Objects/Editor/invisiblebox.cgf" fileModel2="Objects/glm/ww2_indust_set1/lights/LIGHT_INDUST2/light_indust2.cgf" fileModel3="Objects/Indoor/lights/light6phys.cgf" LightStyle="0" lighttype="0" max_time_step="0.02" OuterRadius="2" ProjectorFov="90" RndPosFreq="0.5" shader_lightShader="" shakeAmount="100" shakeRefreshTime="0" sleep_speed="0.01" SpecularMultiplier="1" texture_ProjectorTexture="" vector_LightDir="0,90,0" weight="5" />
+   </Object>
+   <Object Angles="-11.799922,-3.3551558e-005,52.198532" CastShadowMaps="0" CastShadows="0" ColorRGB="16776960" EntityClass="CameraSource" EntityId="563" FOV="0.785398" HiddenInGame="0" Id="{250AF366-A870-4074-846E-C9A9FDC6296E}" Layer="jack_meets_val_cs" LodRatio="100" Name="Camera3" Pos="283.27109,1056.8973,61.92046" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Camera" ViewDistRatio="100" />
+   <Object Angles="-10.19998,2.5085497e-005,31.998568" CastShadowMaps="0" CastShadows="0" ColorRGB="16776960" EntityClass="CameraSource" EntityId="77" FOV="1.0472" HiddenInGame="0" Id="{D8195278-0162-49F7-8B10-C5B9F74F790E}" Layer="jack_meets_val_cs" LodRatio="100" Name="Camera2" Pos="283.86502,1056.9657,62.01833" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Camera" ViewDistRatio="100" />
+   <Object Angles="0,0,-129.58998" CastShadowMaps="0" CastShadows="1" ColorRGB="65535" EntityClass="AnimObject" EntityId="806" HiddenInGame="1" Id="{B3014EB0-DE36-47C1-A0D4-A35A9AC4B693}" Layer="jack_meets_val_cs" LodRatio="100" Name="val" Pos="284.40784,1055.4407,60.619999" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="1" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Animation="default" bAlwaysUpdate="0" bPlaying="0" fileModel="Objects/characters/story_characters/valerie/valeri.cgf" >
+     <attachmet1 boneName="weapon_bone" fileObject="Objects\Weapons\mp5\mp5_bind.cgf" />
+     <attachmet2 boneName="" fileObject="" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object Angles="0,0,-89.999992" CastShadowMaps="0" CastShadows="1" ColorRGB="65535" EntityClass="AnimObject" EntityId="805" HiddenInGame="1" Id="{0548DDB6-9B29-4477-A057-B0CA0EE4357A}" Layer="jack_meets_val_cs" LodRatio="100" Name="jack" Pos="284.625,1056.25,60.625" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="1" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Animation="default" bAlwaysUpdate="0" bPlaying="0" fileModel="Objects\characters\pmodels\hero\hero.cgf" >
+     <attachmet1 boneName="weapon_bone" fileObject="" />
+     <attachmet2 boneName="Bip01 L Hand" fileObject="Objects\characters\mercenaries\accessories\player_radio_doyle.cgf" />
+     <attachmet3 boneName="" fileObject="" />
+     <attachmet4 boneName="" fileObject="" />
+    </Properties>
+   </Object>
+   <Object Angles="19.198059,-7.8079747e-006,-1.0115607" CastShadowMaps="0" CastShadows="0" ColorRGB="16776960" EntityClass="CameraSource" EntityId="603" FOV="0.785398" HiddenInGame="0" Id="{47D41FC3-18E5-4ADF-AAFE-49C3AA5E4B2E}" Layer="jack_meets_val_cs" LodRatio="100" Name="Camera4" Pos="286.28809,1062.5109,64.188042" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Camera" ViewDistRatio="100" />
+   <Object Angles="-0.40004653,4.3896722e-005,112.39323" CastShadowMaps="0" CastShadows="0" ColorRGB="16776960" EntityClass="CameraSource" EntityId="807" FOV="1.5708" HiddenInGame="0" Id="{55B7D5C6-D06F-42F5-9D55-725E7555DF99}" Layer="jack_meets_val_cs" LodRatio="100" Name="Camera1" Pos="283.7056,1055.5627,62.238865" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="0" SelfShadowing="0" SkipOnLowSpec="0" Type="Camera" ViewDistRatio="100" />
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

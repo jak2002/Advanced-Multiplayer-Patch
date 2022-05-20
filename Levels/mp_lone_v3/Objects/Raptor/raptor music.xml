@@ -1,0 +1,21 @@
+<MaterialLibrary Name="Level" SandboxVersion="1.1.1.1" >
+ <Theme DefaultMood="" DefaultMoodTimeout="0" Id="{5E45F850-C5EC-4A69-9E82-6D3D7B194012}" Name="RaptorA" >
+  <Moods>
+   <Mood FadeOutTime="3" Name="Mood0" PlaySingle="0" Priority="0" >
+    <PatternSet IncidentalLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1" MaxTimeout="120" MinTimeout="60" RhythmicLayerProbability="20" >
+     <MainLayer>
+      <Pattern Filename="music\factory01\mainperco01.ogg" LayeringVolume="255" Name="Pattern0" Probability="20" />
+      <Pattern Filename="music\factory01\noiser01.ogg" LayeringVolume="255" Name="Pattern1" Probability="15" />
+      <Pattern Filename="music\factory01\sneakfx01+.ogg" LayeringVolume="255" Name="Pattern4" Probability="15" />
+      <Pattern Filename="music\factory01\orchestral\susp01.ogg" LayeringVolume="255" Name="Pattern5" Probability="18" />
+     </MainLayer>
+     <RhythmicLayer>
+      <Pattern Filename="music\catacombs\munkfx01.ogg" LayeringVolume="255" Name="Pattern2" Probability="15" />
+      <Pattern Filename="music\catacombs\mutantnoise01.ogg" LayeringVolume="255" Name="Pattern3" Probability="15" />
+     </RhythmicLayer>
+     <IncidentalLayer>     </IncidentalLayer>
+    </PatternSet>
+   </Mood>
+  </Moods>
+ </Theme>
+</MaterialLibrary>

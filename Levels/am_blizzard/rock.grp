@@ -1,0 +1,3 @@
+<Objects>
+ <Object Angles="-87.764633,16.5261,-65.947853" CastLightmap="1" CastShadowMaps="0" CastShadows="0" ColorRGB="16777215" Hideable="0" Id="{2E4A5201-A7CD-441B-A003-F47CDC138958}" Layer="mp_dunesound" LightmapQuality="1" LodRatio="100" MaterialGUID="{782631E6-BC5C-4E73-A79F-64AEA00BFFED}" Name="overhanging_rock4" NotTriangulate="0" OutdoorOnly="0" Pos="1199.0912,618.00073,37.833214" Prefab="Objects\natural\rocks\cliffs\overhanging_rock.cgf" ReceiveLightmap="1" RecvShadowMaps="1" RndFlags="804" Scale="9.2341137,9.2341146,9.2341146" SelfShadowing="0" Type="Brush" ViewDistRatio="100" />
+</Objects>

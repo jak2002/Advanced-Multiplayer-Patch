@@ -1,0 +1,152 @@
+<ObjectLayer>
+ <Layer Exportable="1" External="1" Frozen="0" GUID="{69854FB0-6489-4953-9545-7B2D47C73813}" Hidden="0" Name="jj_tdm_spawn" >
+  <LayerObjects>
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{77DCF403-D261-4615-9FB2-36442A81163D}" Layer="jj_tdm_spawn" Name="players" Pos="828.28607,1005.6406,42.781033" Type="Respawn" />
+   <Object Angles="0,0,63.999977" ColorRGB="16711680" Id="{029A9D06-2CA1-4F3E-85A8-B8F81BF78B8E}" Layer="jj_tdm_spawn" Name="players9" Pos="259.98178,158.94699,22.421917" Type="Respawn" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoAssault" EntityId="5" HiddenInGame="0" Id="{5E0AD20C-695A-4E8A-88F3-B86E4BB74F6C}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoAssault3" Pos="246.10754,260.06955,35.649555" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="25" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0.69469458,0.71932185,-104.99565" ColorRGB="16711680" Id="{25D19E0D-988C-49CF-98F1-05984B1A7318}" Layer="jj_tdm_spawn" Name="players18" Pos="297.96771,198.52847,31.483057" Type="Respawn" />
+   <Object Angles="0,0,156.99998" ColorRGB="16711680" Id="{4DC14B10-C3A7-4FF1-BAFA-421D53FC8CC5}" Layer="jj_tdm_spawn" Name="players1" Pos="235,136.52213,18.184904" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{5FE21C13-7A87-4361-A10E-8CFC18EF85DE}" Layer="jj_tdm_spawn" Name="players" Pos="957.33636,1152.6881,23.890009" Type="Respawn" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoPistol" EntityId="136" HiddenInGame="0" Id="{79AE9D14-1270-4D49-88D4-488578AB1FF1}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoPistol2" Pos="252.98137,186.85408,27.366085" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="25" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object Angles="0,0,-19.999996" CastLightmap="1" CastShadowMaps="0" CastShadows="0" ColorRGB="16777215" Hideable="0" Id="{D1954716-FB23-4E23-AC50-EFABA8CD72FB}" Layer="jj_tdm_spawn" LightmapQuality="1" LodRatio="100" Name="rail_b_pole1" NotTriangulate="0" OutdoorOnly="0" Pos="236.10991,191.22568,30.440723" Prefab="Objects\glm\ww2_indust_set1\railings\rail_b_pole.cgf" ReceiveLightmap="1" RecvShadowMaps="1" RndFlags="548" SelfShadowing="0" Type="Brush" ViewDistRatio="100" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoSmokeGrenades" EntityId="134" HiddenInGame="0" Id="{7076C617-8B6F-4E7C-8E51-EF8B7327B1EF}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoSmokeGrenades2" Pos="252.41786,186.8871,27.369501" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="3" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object ColorRGB="16711680" Id="{326F6518-6279-4189-88FD-875C24E78DB4}" Layer="jj_tdm_spawn" Name="players" Pos="844.32245,1132.1949,20.260246" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{43AB2F19-48C0-4879-ACF5-856EFC2588B7}" Layer="jj_tdm_spawn" Name="players" Pos="879.74792,990.81635,32.875" Type="Respawn" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoPistol" EntityId="131" HiddenInGame="0" Id="{3232171F-8B5C-4F7E-8C42-7798F9982002}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoPistol1" Pos="243.35973,206.71442,27.36804" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="25" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0,0,-135.99998" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoAssault" EntityId="122" HiddenInGame="0" Id="{67206F1F-682C-45BD-8DFB-2AD8846775CD}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoAssault4" Pos="232.15746,249.05214,35.643726" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="25" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0,0,-19.999996" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityId="141" HiddenInGame="0" Id="{E9039021-F03A-424C-A266-6CB0DF7C675F}" Layer="jj_tdm_spawn" LodRatio="100" Name="Cloth.Kriegers_banner_1" Pos="231.33499,179.9433,31.156918" PreCalcShadows="0" Prototype="{FE5C8D90-4E21-4C7C-AF5A-F81FB4185E6E}" ReceiveLightmap="0" RecvShadowMaps="1" Scale="0.49000001,0.49000001,0.49000001" SelfShadowing="0" SkipOnLowSpec="0" Type="PrototypeEntity" ViewDistRatio="100" />
+   <Object ColorRGB="16711680" Id="{65352E24-B18F-4FB4-B27C-5C758205BE90}" Layer="jj_tdm_spawn" Name="players" Pos="927.13794,1144.8413,24.768692" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{EEF6B224-01B8-4712-9146-A5BFCA062A6C}" Layer="jj_tdm_spawn" Name="players" Pos="821.86859,949.21606,33.125" Type="Respawn" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoHandGrenades" EntityId="132" HiddenInGame="0" Id="{BFFA3E26-97C9-4EF5-8BA0-7FB5B8E7ACE2}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoHandGrenades4" Pos="242.80997,206.87526,27.35895" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="3" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0.13982506,-3.9975584,152.9951" ColorRGB="16711680" Id="{ACFA3728-8419-41FF-94E7-15E56E202C31}" Layer="jj_tdm_spawn" Name="players11" Pos="222.25276,160.68069,22.381189" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{46EFD428-1C16-4E44-AB62-5E60FE0BE727}" Layer="jj_tdm_spawn" Name="players" Pos="819.06567,974.16351,40.25" Type="Respawn" />
+   <Object Angles="0,0,-61.999992" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupMP5" EntityId="124" HiddenInGame="0" Id="{EC0FE029-6990-49F4-A094-B349A8D0B84E}" Layer="jj_tdm_spawn" LodRatio="100" Name="PickupMP1" Pos="228.60158,281.41159,35.757111" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="30" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object Angles="0,0,45.000023" ColorRGB="16711680" Id="{6B68F229-FD1A-42A9-97E1-11B938708E94}" Layer="jj_tdm_spawn" Name="spectators" Pos="909.3175,1144.5657,54.13625" Type="TagPoint" />
+   <Object Angles="0,0,45.000023" ColorRGB="16711680" Id="{73C6D92A-1F44-43ED-8860-A5D0C676F7EF}" Layer="jj_tdm_spawn" Name="spectators" Pos="869.41156,1074.2246,54.13625" Type="TagPoint" />
+   <Object Angles="0,0,156.99998" ColorRGB="16711680" Id="{0857E42B-2BDB-4D6C-AFBF-ECC93AACF8BD}" Layer="jj_tdm_spawn" Name="players8" Pos="260.58011,146.22885,22.421917" Type="Respawn" />
+   <Object Angles="-0.819179,-0.5735566,86.004082" ColorRGB="16711680" Id="{B17C0F2D-DBD2-489A-927C-E192FBB7F1CE}" Layer="jj_tdm_spawn" Name="players20" Pos="221.73061,225.56328,26.972393" Type="Respawn" />
+   <Object Angles="0,0,-115.00002" ColorRGB="16711680" Id="{85348131-B47C-4070-BAC2-FFAE1BCA91B0}" Layer="jj_tdm_spawn" Name="players10" Pos="229.07207,169.33415,22.421917" Type="Respawn" />
+   <Object Angles="0,0,135" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoAssault" EntityId="135" HiddenInGame="0" Id="{BD214632-FF01-4488-AA2F-05D2003350B7}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoAssault8" Pos="252.6579,186.70349,27.361776" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="25" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{0D45D832-B8F2-4B00-8495-2441FE0960D0}" Layer="jj_tdm_spawn" Name="players" Pos="857.14117,982.38428,32.875008" Type="Respawn" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupM249" EntityId="129" HiddenInGame="0" Id="{40B5E632-C405-4588-97AD-928489ABE64F}" Layer="jj_tdm_spawn" LodRatio="100" Name="PickupM3" Pos="242.55098,207.2175,27.477659" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="100" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{39AF1B33-2266-46DB-9B65-7848904D67A7}" Layer="jj_tdm_spawn" Name="players" Pos="817.21564,987.60455,40.424023" Type="Respawn" />
+   <Object Angles="86.579063,-0.59304518,29.601336" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="120" HiddenInGame="0" Id="{DF22BF36-E6B8-4AE9-B050-499C6ED05097}" Layer="jj_tdm_spawn" LodRatio="100" Name="PickupP2" Pos="232.42868,249.84306,35.711044" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0,0,-62.999996" ColorRGB="16711680" Id="{5D7F713C-DB78-4633-B382-802C6D22B671}" Layer="jj_tdm_spawn" Name="players3" Pos="337.1019,113.3427,54.409695" Type="Respawn" />
+   <Object Angles="0.91356003,-0.40671918,-35.003262" ColorRGB="16711680" Id="{F4F5B13C-9C84-4720-AB65-034F94818C90}" Layer="jj_tdm_spawn" Name="players24" Pos="242.39156,270.77625,35.264" Type="Respawn" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoAssault" EntityId="130" HiddenInGame="0" Id="{0D178D40-B476-447D-B587-BAB7440283E1}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoAssault7" Pos="243.18294,207.07587,27.361708" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="25" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="-0.79866403,-0.60179478,84.00415" ColorRGB="16711680" Id="{28D9EB44-2B20-4666-8207-3A7B12F4B3F3}" Layer="jj_tdm_spawn" Name="players27" Pos="209.83693,207.48166,34.965096" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{B05BA146-8A6A-4188-A279-FCFFA8359658}" Layer="jj_tdm_spawn" Name="players" Pos="958.4118,1130.6223,23.890009" Type="Respawn" />
+   <Object Angles="0,0,45.000023" ColorRGB="16711680" Id="{5DCF6748-32B6-40C8-AD08-AFD32EF6E88B}" Layer="jj_tdm_spawn" Name="spectators" Pos="839.95667,1170.1862,54.13625" Type="TagPoint" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{18592250-46EE-410C-80E4-E03B7FC365A8}" Layer="jj_tdm_spawn" Name="players" Pos="863.547,963.23236,33.125" Type="Respawn" />
+   <Object Angles="0,0,-89.999992" ColorRGB="16711680" Id="{A39C2B50-9BA0-43CD-B698-DA5F0EE94DC8}" Layer="jj_tdm_spawn" Name="players" Pos="951.86774,1121.8575,23.890009" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{D9401F52-016A-4C11-932D-6FD6E5139076}" Layer="jj_tdm_spawn" Name="players" Pos="827.12939,969.20459,41.023373" Type="Respawn" />
+   <Object Angles="0,0,-89.999992" ColorRGB="16711680" Id="{402CA854-7874-4090-AB4A-D382DDAA5E53}" Layer="jj_tdm_spawn" Name="players" Pos="966.26678,1134.5145,23.890009" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{8BEF7A55-A7CF-491A-ADF7-64513EB96766}" Layer="jj_tdm_spawn" Name="players" Pos="887.04907,969.16614,34.246029" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{14ADC556-A873-4290-8637-17A0AC1ADED7}" Layer="jj_tdm_spawn" Name="players" Pos="934.96967,1152.1638,24.698484" Type="Respawn" />
+   <Object Angles="0,0,-62.999996" ColorRGB="16711680" Id="{ED6FCC58-546B-4405-8E5E-85FD2196DC9F}" Layer="jj_tdm_spawn" Name="players2" Pos="340.45697,135.75038,54.090309" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{1C4E395A-702C-4AE7-8A4A-A63A0DDF5890}" Layer="jj_tdm_spawn" Name="players" Pos="845.86267,1124.306,20.260246" Type="Respawn" />
+   <Object Angles="0.69469458,0.71932185,-104.99565" ColorRGB="16711680" Id="{8C2D295B-7CC1-4D32-A3A7-2832D76303BA}" Layer="jj_tdm_spawn" Name="players19" Pos="300.48535,205.25925,31.866291" Type="Respawn" />
+   <Object Angles="0.069763452,-0.99756318,26.999372" ColorRGB="16711680" Id="{7D07015C-DDF5-4433-AE89-A5499A17843F}" Layer="jj_tdm_spawn" Name="players21" Pos="218.26265,220.42915,26.86322" Type="Respawn" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoOICWGrenade" EntityId="128" HiddenInGame="0" Id="{D1F78A61-20E7-4EB5-97F0-DC22D4E1B4C5}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoOICWGrenade1" Pos="298.32855,190.41655,31.773621" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="5" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0,0,54.999996" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Health" EntityId="119" HiddenInGame="0" Id="{1564F466-4BC4-4A8F-AA88-F1F564BF602E}" Layer="jj_tdm_spawn" LodRatio="100" Name="Health3" Pos="238.05185,249.07959,36.304337" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{BF37B767-8737-404D-AADF-8F5520255DA6}" Layer="jj_tdm_spawn" Name="players" Pos="890.08429,982.07977,32.875008" Type="Respawn" />
+   <Object Angles="0.40677097,-0.91353762,6.9967384" ColorRGB="16711680" Id="{E2531568-6400-4BFC-BFA1-5875AE17ADF4}" Layer="jj_tdm_spawn" Name="players14" Pos="264.11646,175.65198,27.18885" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{ECA7576C-F3FA-4CCB-BBFF-C18D65258D71}" Layer="jj_tdm_spawn" Name="players" Pos="835.94037,1141.958,20.260246" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{F9E13E6E-B81F-4AA5-8221-88126F58B912}" Layer="jj_tdm_spawn" Name="players" Pos="943.43091,1153.0802,23.890009" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{C2824373-242A-4A64-8ECE-CCFD23BE105C}" Layer="jj_tdm_spawn" Name="players" Pos="828.36499,1120.7415,20.260246" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{2BDBDD73-3040-4D29-AAAD-5961F4498FBA}" Layer="jj_tdm_spawn" Name="players" Pos="833.45728,1132.4287,20.260246" Type="Respawn" />
+   <Object Angles="0,0,-7.9999952" ColorRGB="16711680" Id="{75A5A475-3F30-4DF8-AA0E-A047A7761CFE}" Layer="jj_tdm_spawn" Name="players5" Pos="289.36951,161.42728,37.364304" Type="Respawn" />
+   <Object Angles="0,0,89" ColorRGB="16711680" Id="{6C9BD775-1F13-43AB-B573-4F76D8B2E476}" Layer="jj_tdm_spawn" Name="players4" Pos="308.45834,120.58547,54.69418" Type="Respawn" />
+   <Object Angles="0,0,-118.99995" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoAssault" EntityId="125" HiddenInGame="0" Id="{69EAEE77-7506-4FDF-8843-B9564049D10F}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoAssault5" Pos="228.79839,280.8475,35.677452" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="25" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0,0,-89.999992" ColorRGB="16711680" Id="{631BCA85-6F50-4A7A-98B1-CEADF9B0C89A}" Layer="jj_tdm_spawn" Name="players" Pos="966.02783,1139.2628,23.890009" Type="Respawn" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoHandGrenades" EntityId="140" HiddenInGame="0" Id="{56460987-B685-4271-A354-465E04D7B7C0}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoHandGrenades5" Pos="244.67493,174.62383,31.172712" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="5" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{4B81D188-04FB-4037-9E5D-63ECFC9EF3F3}" Layer="jj_tdm_spawn" Name="players" Pos="867.98328,990.87244,32.875" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{8EC8088E-67AB-491E-AC68-501DAB72806B}" Layer="jj_tdm_spawn" Name="players" Pos="953.25739,1142.2219,24.548042" Type="Respawn" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoAssault" EntityId="127" HiddenInGame="0" Id="{02D9A48E-85DB-4279-8A12-054F0B1C7145}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoAssault6" Pos="298.32855,190.74586,31.765665" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="25" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0,0,-30" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoAssault" EntityId="139" HiddenInGame="0" Id="{5E3E5190-DCB8-48EC-B7CC-C47C96B6DBD1}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoAssault9" Pos="244.21158,174.89015,31.200308" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="25" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object Angles="0.48484665,-0.87460816,1.996258" ColorRGB="16711680" Id="{D17CE998-9822-4CE7-9DA4-BC59AA88E623}" Layer="jj_tdm_spawn" Name="players28" Pos="220.15289,279.47244,35.343582" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{2CFDC29F-6F32-4272-917D-96D3025EFE8B}" Layer="jj_tdm_spawn" Name="players" Pos="917.78497,1149.5304,24.768692" Type="Respawn" />
+   <Object Angles="0,0,-115.00002" ColorRGB="16711680" Id="{2E281DA6-8C40-41A1-81B6-90D1B30B5427}" Layer="jj_tdm_spawn" Name="players12" Pos="240.61816,179.36475,26.97287" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{F864E6A8-A37C-44E3-82BC-8849B92FB74D}" Layer="jj_tdm_spawn" Name="players" Pos="962.32446,1130.2909,23.890009" Type="Respawn" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoPistol" EntityId="138" HiddenInGame="0" Id="{ED783DA9-8A23-4B28-AA83-EFCF292A1425}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoPistol3" Pos="244.63171,174.82858,31.200539" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="25" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupMP5" EntityId="133" HiddenInGame="0" Id="{B28D47A9-6057-4F7A-985E-A061AC478222}" Layer="jj_tdm_spawn" LodRatio="100" Name="PickupMP2" Pos="253.21198,186.59807,27.416353" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="30" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="30" RespawnTime="0" />
+   </Object>
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoSmokeGrenades" EntityId="123" HiddenInGame="0" Id="{55B8E4A9-A699-4953-B96E-52EA64AD0F49}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoSmokeGrenades1" Pos="242.9507,262.56964,35.995037" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="3" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0,0,-113.99999" ColorRGB="16711680" Id="{93DB77AD-6EFF-4F4E-B38E-49433C1D19E7}" Layer="jj_tdm_spawn" Name="players6" Pos="293.82974,142.99623,44.327499" Type="Respawn" />
+   <Object Angles="0,0,-59.000019" ColorRGB="16711680" Id="{C20EEAB7-BB1C-436C-A035-0F706FACC755}" Layer="jj_tdm_spawn" Name="players13" Pos="262.07477,183.46941,26.960253" Type="Respawn" />
+   <Object Angles="-0.087164477,0.99619371,-154.00076" ColorRGB="16711680" Id="{D803C8BC-5449-4C10-8FC2-E7F33A519A5F}" Layer="jj_tdm_spawn" Name="players17" Pos="245.33748,179.38339,30.562685" Type="Respawn" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="AmmoHandGrenades" EntityId="121" HiddenInGame="0" Id="{0101F3C1-8CF1-4846-8A8C-DF3B5914C11E}" Layer="jj_tdm_spawn" LodRatio="100" Name="AmmoHandGrenades3" Pos="232.52611,249.47743,35.652298" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="3" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0,0,70" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupOICW" EntityId="126" HiddenInGame="0" Id="{4486FAC6-D874-4126-8EEE-E6ECDFB309CE}" Layer="jj_tdm_spawn" LodRatio="100" Name="PickupOICW1" Pos="298.30206,191.42104,31.903086" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="40" Amount2="2" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object ColorRGB="16711680" Id="{F9D2FCC6-F77C-4F1E-84BA-B68639FAD7BC}" Layer="jj_tdm_spawn" Name="players" Pos="823.11188,1128.2993,20.260246" Type="Respawn" />
+   <Object Angles="0.5150761,-0.85715526,-0.0038717177" ColorRGB="16711680" Id="{A6DC09C9-D787-4940-9C96-CA052A81EF87}" Layer="jj_tdm_spawn" Name="players23" Pos="249.26701,270.77438,35.52132" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{D28529CA-CC5A-4AD9-AFD0-7781B76C0465}" Layer="jj_tdm_spawn" Name="players" Pos="948.42169,1152.8019,23.890009" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{40C9A9CA-DE3D-4B50-8BE9-753B8909FDBA}" Layer="jj_tdm_spawn" Name="players" Pos="816.93372,1005.8213,40.25" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{9BE2F3CB-1762-4C47-A434-40462444DEF6}" Layer="jj_tdm_spawn" Name="players" Pos="946.08356,1173.2017,33.048042" Type="Respawn" />
+   <Object Angles="0.069763452,-0.99756318,26.999372" ColorRGB="16711680" Id="{F22F24CD-08DB-4541-BF10-5A1C3693AA98}" Layer="jj_tdm_spawn" Name="players22" Pos="241.93243,194.6373,26.797415" Type="Respawn" />
+   <Object Angles="-0.99254668,0.1218632,127.99891" ColorRGB="16711680" Id="{1ACDD6D3-EEDC-45A9-9010-C355B3E07931}" Layer="jj_tdm_spawn" Name="players26" Pos="217.77512,235.75514,35.433304" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{3EDFF0D4-C9D6-4174-AE68-103A0C68CF8C}" Layer="jj_tdm_spawn" Name="players" Pos="828.21381,945.27771,33.125" Type="Respawn" />
+   <Object Angles="0.94552791,0.325553,-77.99733" ColorRGB="16711680" Id="{3576FDD6-9D28-4740-81F3-132497C4182C}" Layer="jj_tdm_spawn" Name="players25" Pos="263.57388,255.94853,35.133518" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{FC4D26D7-A17E-48C6-9CAD-CD7D3DC63A5E}" Layer="jj_tdm_spawn" Name="players" Pos="957.75165,1159.1472,24.816444" Type="Respawn" />
+   <Object Angles="0.88296688,-0.46945271,-31.003628" ColorRGB="16711680" Id="{F4BA3FD7-1340-48C7-8299-69429C0D0B02}" Layer="jj_tdm_spawn" Name="players16" Pos="254.36417,184.74284,30.756796" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{B20077DB-C9C1-41CA-97EC-69BB2C96D0B3}" Layer="jj_tdm_spawn" Name="players" Pos="821.25519,1139.78,20.260246" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{5DFC66DE-136F-4EDD-8075-8733D8542EE1}" Layer="jj_tdm_spawn" Name="players" Pos="881.1355,965.03406,32.27161" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{B90AD0DE-6B6D-4AD6-9053-32E62616C75B}" Layer="jj_tdm_spawn" Name="players" Pos="950.54474,1158.6097,24.946774" Type="Respawn" />
+   <Object Angles="-3.2369819e-005,89.000046,-21.000084" CastLightmap="1" CastShadowMaps="0" CastShadows="0" ColorRGB="16777215" Hideable="0" Id="{99DA44E0-B7BB-4E16-975A-0D80D9723F47}" Layer="jj_tdm_spawn" LightmapQuality="1" LodRatio="100" Name="rail_b_pole2" NotTriangulate="0" OutdoorOnly="0" Pos="230.50999,180.23,34.049999" Prefab="Objects\glm\ww2_indust_set1\railings\rail_b_pole.cgf" ReceiveLightmap="1" RecvShadowMaps="1" RndFlags="804" SelfShadowing="0" Type="Brush" ViewDistRatio="100" />
+   <Object Angles="0.69469458,0.71932185,-104.99565" ColorRGB="16711680" Id="{9A14CDE1-3C58-47F8-8249-F5163AC3D140}" Layer="jj_tdm_spawn" Name="players15" Pos="280.33032,176.93509,27.020666" Type="Respawn" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupP90" EntityId="137" HiddenInGame="0" Id="{2678B4E9-8EA6-4FE7-B003-C00C76D47F54}" Layer="jj_tdm_spawn" LodRatio="100" Name="PickupP4" Pos="243.91753,175.15994,31.191778" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0,0,164.99998" ColorRGB="16711680" Id="{51FB1DF4-260A-4684-BC0A-78DBA78A7B73}" Layer="jj_tdm_spawn" Name="players7" Pos="227.29791,112.59968,18.348965" Type="Respawn" />
+   <Object Angles="-89.999985,-4.055411e-006,18" CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="PickupM4" EntityId="3" HiddenInGame="0" Id="{C76598F8-3969-4E3C-A449-B34F876AB8AB}" Layer="jj_tdm_spawn" LodRatio="100" Name="PickupM1" Pos="245.53482,260.03674,35.695705" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="30" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="30" />
+   </Object>
+   <Object Angles="0,0,45.000023" ColorRGB="16711680" Id="{341FD2FD-D9DD-4E26-A529-6327FDCCA474}" Layer="jj_tdm_spawn" Name="spectators" Pos="802.74536,1058.7776,54.13625" Type="TagPoint" />
+   <Object CastShadowMaps="1" CastShadows="0" ColorRGB="65535" EntityClass="Health" EntityId="6" HiddenInGame="0" Id="{2006E3FD-F128-4246-A7DC-D5B9921829BE}" Layer="jj_tdm_spawn" LodRatio="100" Name="Health2" Pos="238.42911,248.59726,36.272026" PreCalcShadows="0" ReceiveLightmap="0" RecvShadowMaps="1" SelfShadowing="0" SkipOnLowSpec="0" Type="Entity" ViewDistRatio="100" >
+    <Properties Amount="50" Amount2="1" Availability="0" bAwakePhysics="1" bPlayerOnly="1" bShowFloatingIcon="0" FadeTime="0" RespawnTime="0" />
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

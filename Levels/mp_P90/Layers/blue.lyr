@@ -1,0 +1,11 @@
+<ObjectLayer>
+ <Layer Exportable="1" External="1" Frozen="0" GUID="{AD0003C0-D5A5-4017-8F54-FEC68C29E16C}" Hidden="0" Name="blue" >
+  <LayerObjects>
+   <Object Angles="14.118052,-0.40255728,100.31263" ColorRGB="16711680" Id="{36129800-BD84-431E-8D20-0E273431CC4B}" Layer="blue" Name="BLUE9" Pos="1001.875,1086,28.728516" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{C7A1D819-46C2-4394-A319-318D3FAD811B}" Layer="blue" Name="blue" Pos="1029.5,1089.75,31.125" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{6D075FA6-C29A-4827-9497-31E0884EAFB8}" Layer="blue" Name="blue" Pos="1002,1091,29" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{D2CB99D6-2C53-4501-964A-361401F571AE}" Layer="blue" Name="blue" Pos="995.875,1091.625,29.625" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{31C7A0DE-F4CC-4F2C-8C7C-38330CF0F144}" Layer="blue" Name="blue" Pos="1024.5,1089.25,30.597656" Type="Respawn" />
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

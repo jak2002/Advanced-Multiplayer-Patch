@@ -1,0 +1,46 @@
+<ObjectLayer>
+ <Layer Exportable="1" External="1" Frozen="0" GUID="{69854FB0-6489-4953-9545-7B2D47C73813}" Hidden="0" Name="mbay_tdm_spawn" >
+  <LayerObjects>
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{77DCF403-D261-4615-9FB2-36442A81163D}" Layer="mbay_tdm_spawn" Name="players" Pos="828.28607,1005.6406,42.781033" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{5FE21C13-7A87-4361-A10E-8CFC18EF85DE}" Layer="mbay_tdm_spawn" Name="players" Pos="957.33636,1152.6881,23.890009" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{326F6518-6279-4189-88FD-875C24E78DB4}" Layer="mbay_tdm_spawn" Name="players" Pos="844.32245,1132.1949,20.260246" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{43AB2F19-48C0-4879-ACF5-856EFC2588B7}" Layer="mbay_tdm_spawn" Name="players" Pos="879.74792,990.81635,32.875" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{65352E24-B18F-4FB4-B27C-5C758205BE90}" Layer="mbay_tdm_spawn" Name="players" Pos="927.13794,1144.8413,24.768692" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{EEF6B224-01B8-4712-9146-A5BFCA062A6C}" Layer="mbay_tdm_spawn" Name="players" Pos="821.86859,949.21606,33.125" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{46EFD428-1C16-4E44-AB62-5E60FE0BE727}" Layer="mbay_tdm_spawn" Name="players" Pos="819.06567,974.16351,40.25" Type="Respawn" />
+   <Object Angles="0,0,45.000023" ColorRGB="16711680" Id="{6B68F229-FD1A-42A9-97E1-11B938708E94}" Layer="mbay_tdm_spawn" Name="spectators" Pos="909.3175,1144.5657,54.13625" Type="TagPoint" />
+   <Object Angles="0,0,45.000023" ColorRGB="16711680" Id="{73C6D92A-1F44-43ED-8860-A5D0C676F7EF}" Layer="mbay_tdm_spawn" Name="spectators" Pos="869.41156,1074.2246,54.13625" Type="TagPoint" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{0D45D832-B8F2-4B00-8495-2441FE0960D0}" Layer="mbay_tdm_spawn" Name="players" Pos="857.14117,982.38428,32.875008" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{39AF1B33-2266-46DB-9B65-7848904D67A7}" Layer="mbay_tdm_spawn" Name="players" Pos="817.21564,987.60455,40.424023" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{B05BA146-8A6A-4188-A279-FCFFA8359658}" Layer="mbay_tdm_spawn" Name="players" Pos="958.4118,1130.6223,23.890009" Type="Respawn" />
+   <Object Angles="0,0,45.000023" ColorRGB="16711680" Id="{5DCF6748-32B6-40C8-AD08-AFD32EF6E88B}" Layer="mbay_tdm_spawn" Name="spectators" Pos="839.95667,1170.1862,54.13625" Type="TagPoint" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{18592250-46EE-410C-80E4-E03B7FC365A8}" Layer="mbay_tdm_spawn" Name="players" Pos="863.547,963.23236,33.125" Type="Respawn" />
+   <Object Angles="0,0,-89.999992" ColorRGB="16711680" Id="{A39C2B50-9BA0-43CD-B698-DA5F0EE94DC8}" Layer="mbay_tdm_spawn" Name="players" Pos="951.86774,1121.8575,23.890009" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{D9401F52-016A-4C11-932D-6FD6E5139076}" Layer="mbay_tdm_spawn" Name="players" Pos="827.12939,969.20459,41.023373" Type="Respawn" />
+   <Object Angles="0,0,-89.999992" ColorRGB="16711680" Id="{402CA854-7874-4090-AB4A-D382DDAA5E53}" Layer="mbay_tdm_spawn" Name="players" Pos="966.26678,1134.5145,23.890009" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{8BEF7A55-A7CF-491A-ADF7-64513EB96766}" Layer="mbay_tdm_spawn" Name="players" Pos="887.04907,969.16614,34.246029" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{14ADC556-A873-4290-8637-17A0AC1ADED7}" Layer="mbay_tdm_spawn" Name="players" Pos="934.96967,1152.1638,24.698484" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{1C4E395A-702C-4AE7-8A4A-A63A0DDF5890}" Layer="mbay_tdm_spawn" Name="players" Pos="845.86267,1124.306,20.260246" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{BF37B767-8737-404D-AADF-8F5520255DA6}" Layer="mbay_tdm_spawn" Name="players" Pos="890.08429,982.07977,32.875008" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{ECA7576C-F3FA-4CCB-BBFF-C18D65258D71}" Layer="mbay_tdm_spawn" Name="players" Pos="835.94037,1141.958,20.260246" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{F9E13E6E-B81F-4AA5-8221-88126F58B912}" Layer="mbay_tdm_spawn" Name="players" Pos="943.43091,1153.0802,23.890009" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{C2824373-242A-4A64-8ECE-CCFD23BE105C}" Layer="mbay_tdm_spawn" Name="players" Pos="828.36499,1120.7415,20.260246" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{2BDBDD73-3040-4D29-AAAD-5961F4498FBA}" Layer="mbay_tdm_spawn" Name="players" Pos="833.45728,1132.4287,20.260246" Type="Respawn" />
+   <Object Angles="0,0,-89.999992" ColorRGB="16711680" Id="{631BCA85-6F50-4A7A-98B1-CEADF9B0C89A}" Layer="mbay_tdm_spawn" Name="players" Pos="966.02783,1139.2628,23.890009" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{4B81D188-04FB-4037-9E5D-63ECFC9EF3F3}" Layer="mbay_tdm_spawn" Name="players" Pos="867.98328,990.87244,32.875" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{8EC8088E-67AB-491E-AC68-501DAB72806B}" Layer="mbay_tdm_spawn" Name="players" Pos="953.25739,1142.2219,24.548042" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{2CFDC29F-6F32-4272-917D-96D3025EFE8B}" Layer="mbay_tdm_spawn" Name="players" Pos="917.78497,1149.5304,24.768692" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{F864E6A8-A37C-44E3-82BC-8849B92FB74D}" Layer="mbay_tdm_spawn" Name="players" Pos="962.32446,1130.2909,23.890009" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{F9D2FCC6-F77C-4F1E-84BA-B68639FAD7BC}" Layer="mbay_tdm_spawn" Name="players" Pos="823.11188,1128.2993,20.260246" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{D28529CA-CC5A-4AD9-AFD0-7781B76C0465}" Layer="mbay_tdm_spawn" Name="players" Pos="948.42169,1152.8019,23.890009" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{40C9A9CA-DE3D-4B50-8BE9-753B8909FDBA}" Layer="mbay_tdm_spawn" Name="players" Pos="816.93372,1005.8213,40.25" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{9BE2F3CB-1762-4C47-A434-40462444DEF6}" Layer="mbay_tdm_spawn" Name="players" Pos="946.08356,1173.2017,33.048042" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{3EDFF0D4-C9D6-4174-AE68-103A0C68CF8C}" Layer="mbay_tdm_spawn" Name="players" Pos="828.21381,945.27771,33.125" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{FC4D26D7-A17E-48C6-9CAD-CD7D3DC63A5E}" Layer="mbay_tdm_spawn" Name="players" Pos="957.75165,1159.1472,24.816444" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{B20077DB-C9C1-41CA-97EC-69BB2C96D0B3}" Layer="mbay_tdm_spawn" Name="players" Pos="821.25519,1139.78,20.260246" Type="Respawn" />
+   <Object Angles="0,0,-179.99998" ColorRGB="16711680" Id="{5DFC66DE-136F-4EDD-8075-8733D8542EE1}" Layer="mbay_tdm_spawn" Name="players" Pos="881.1355,965.03406,32.27161" Type="Respawn" />
+   <Object ColorRGB="16711680" Id="{B90AD0DE-6B6D-4AD6-9053-32E62616C75B}" Layer="mbay_tdm_spawn" Name="players" Pos="950.54474,1158.6097,24.946774" Type="Respawn" />
+   <Object Angles="0,0,45.000023" ColorRGB="16711680" Id="{341FD2FD-D9DD-4E26-A529-6327FDCCA474}" Layer="mbay_tdm_spawn" Name="spectators" Pos="802.74536,1058.7776,54.13625" Type="TagPoint" />
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>
