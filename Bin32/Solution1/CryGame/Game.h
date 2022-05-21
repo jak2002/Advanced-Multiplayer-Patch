@@ -609,8 +609,20 @@ public:
 
 	// sm1le: New Vars
 	ICVar* p_fov;
-	ICVar* hud_crosshair_dot;
 	ICVar* hud_hitsound;
+
+	ICVar* hud_crosshair_smooth;
+	ICVar* hud_crosshair_color_r;
+	ICVar* hud_crosshair_color_g;
+	ICVar* hud_crosshair_color_b;
+	ICVar* hud_crosshair_hit_color_r;
+	ICVar* hud_crosshair_hit_color_g;
+	ICVar* hud_crosshair_hit_color_b;
+	ICVar* hud_crosshair_tlike;
+	ICVar* hud_crosshair_thickness;
+	ICVar* hud_crosshair_length;
+	ICVar* hud_crosshair_spacing;
+	ICVar* hud_crosshair_dot;
 
 	ICVar* g_language;
 	ICVar* g_playerprofile;

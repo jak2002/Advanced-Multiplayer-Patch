@@ -5,7 +5,7 @@
 -- Now you can walk in the sight [BasicWeapon]
 -- You can't pick up weapons if you already have them or all the slots are full. [BasePickup]
 
--- Version 0.2
+-- Version 0.2a
 -- Cosmetics:
 -- Changable FOV [HudCommon, ClientStuff]
 -- Added Hit and Headshot Sounds [HudCommon, GameRulesLib, ClientStuffLib]
@@ -21,16 +21,3 @@
 -- CD Authorisation Check Disabled [ScriptObjectGame]
 -- Enhanced CSD System [ClientStuffLib, GameRulesLib, BasicWeapon]
 -- Following variables have been updated: gr_HeadshotMultiplier = 4; gr_max_average_ping = 0; gr_RespawnTime = 10; gr_headshot_message_private = 0; [CreateVariable] 
-
--- TEMP move these to C++
-Game:CreateVariable("hud_crosshair_smooth",1)
-Game:CreateVariable("hud_crosshair_color_r",1)
-Game:CreateVariable("hud_crosshair_color_g",1)
-Game:CreateVariable("hud_crosshair_color_b",0)
-Game:CreateVariable("hud_crosshair_hit_color_r",1)
-Game:CreateVariable("hud_crosshair_hit_color_g",0)
-Game:CreateVariable("hud_crosshair_hit_color_b",0)
-Game:CreateVariable("hud_crosshair_tlike",0)
-Game:CreateVariable("hud_crosshair_thickness",1)
-Game:CreateVariable("hud_crosshair_length",7)
-Game:CreateVariable("hud_crosshair_spacing",2)

@@ -1,3 +1,3 @@
 @echo off
-start ..\..\Bin32\FarCry.exe -DEVMODE -MOD:Oxxy
+start ..\..\Bin32\FarCry.exe -MOD:Oxxy -DEVMODE
 exit

@@ -1010,16 +1010,59 @@ void CXGame::InitConsoleVars()
 				"Changes player's fov.\n"
 				"Usage: p_fov 120.\n"
 				"Default value is 90.\n");
-
-			hud_crosshair_dot = pConsole->CreateVariable("hud_crosshair_dot","1",0,
-				"Hide or shows the crosshair's middle dot.\n"
-				"Usage: hud_crosshair_dot 0.\n"
-				"Default value is 1.\n");
-
 			hud_hitsound = pConsole->CreateVariable("hud_hitsound","0",0,
 				"Whether the hit sound will play.\n"
 				"Usage: hud_hitsound 1.\n"
 				"Default value is 0.\n");
+
+			hud_crosshair_smooth = pConsole->CreateVariable("hud_crosshair_smooth","1",0,
+				"Smooth transition between sprinting and walking.\n"
+				"Usage: hud_crosshair_smooth 0.\n"
+				"Default value is 1.\n");
+			hud_crosshair_color_r = pConsole->CreateVariable("hud_crosshair_color_r","1",0,
+				"Crosshair color [red].\n"
+				"Usage: hud_crosshair_color_r 0.5.\n"
+				"Default value is 1.\n");
+			hud_crosshair_color_g = pConsole->CreateVariable("hud_crosshair_color_g","1",0,
+				"Crosshair color [green].\n"
+				"Usage: hud_crosshair_color_r 0.5.\n"
+				"Default value is 1.\n");
+			hud_crosshair_color_b = pConsole->CreateVariable("hud_crosshair_color_b","0",0,
+				"Crosshair color [blue].\n"
+				"Usage: hud_crosshair_color_r 0.5.\n"
+				"Default value is 0.\n");
+			hud_crosshair_hit_color_r = pConsole->CreateVariable("hud_crosshair_hit_color_r","1",0,
+				"Crosshair hit color [red].\n"
+				"Usage: hud_crosshair_hit_color_r 0.5.\n"
+				"Default value is 1.\n");
+			hud_crosshair_hit_color_g = pConsole->CreateVariable("hud_crosshair_hit_color_g","0",0,
+				"Crosshair hit color [green].\n"
+				"Usage: hud_crosshair_hit_color_g 0.5.\n"
+				"Default value is 0.\n");
+			hud_crosshair_hit_color_b = pConsole->CreateVariable("hud_crosshair_hit_color_b","0",0,
+				"Crosshair hit color [blue].\n"
+				"Usage: hud_crosshair_hit_color_b 0.5.\n"
+				"Default value is 0.\n");
+			hud_crosshair_tlike = pConsole->CreateVariable("hud_crosshair_tlike","0",0,
+				"Enables/Disables T-Like crosshair.\n"
+				"Usage: hud_crosshair_tlike 1.\n"
+				"Default value is 0.\n");
+			hud_crosshair_thickness = pConsole->CreateVariable("hud_crosshair_thickness","1",0,
+				"Changes the thickness of the crosshair.\n"
+				"Usage: hud_crosshair_thickness 1.4.\n"
+				"Default value is 1.\n");
+			hud_crosshair_length = pConsole->CreateVariable("hud_crosshair_length","7",0,
+				"Changes the length of the crosshair.\n"
+				"Usage: hud_crosshair_length 4.5.\n"
+				"Default value is 7.\n");
+			hud_crosshair_spacing = pConsole->CreateVariable("hud_crosshair_spacing","2",0,
+				"Crosshair distance from the middle of the screen.\n"
+				"Usage: hud_crosshair_spacing -5.\n"
+				"Default value is 2.\n");
+			hud_crosshair_dot = pConsole->CreateVariable("hud_crosshair_dot","1",0,
+				"Hide or shows the crosshair's middle dot.\n"
+				"Usage: hud_crosshair_dot 0.\n"
+				"Default value is 1.\n");
 }
 
 void CXGame::ResetInputMap()
