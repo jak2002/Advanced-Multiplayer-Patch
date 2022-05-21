@@ -1297,7 +1297,8 @@ function BasicWeapon:DrawCrosshair(r,g,b,accuracy, xpos, ypos)
 
 	local shift = xcent * tan(0.1308997)/tan(Game:GetCameraFov()/2.0) * factor;
 
-	if (BasicWeapon.prevShift ~= nil) then
+
+	if (BasicWeapon.prevShift ~= nil and tonumber(hud_crosshair_smooth) == 1) then
 		shift = BasicWeapon.prevShift * 0.9 + shift * 0.1;
 	end
 	
@@ -1317,14 +1318,16 @@ function BasicWeapon:DrawCrosshair(r,g,b,accuracy, xpos, ypos)
 	local crosshairTexture = System:LoadImage("Textures/white.dds");
 
 	if (crosshairTexture) then
-		%System:DrawImageColor(crosshairTexture, xcent-2-shift, ycent, -7, 1, 4, r, g, b, fValue);
-		%System:DrawImageColor(crosshairTexture, xcent+2+shift, ycent, 7, 1, 4, r, g, b, fValue);
-		%System:DrawImageColor(crosshairTexture, xcent, ycent-2-shift, 1, -7, 4, r, g, b, fValue);
-		%System:DrawImageColor(crosshairTexture, xcent, ycent+2+shift, 1, 7, 4, r, g, b, fValue);
+		%System:DrawImageColor(crosshairTexture, xcent-2-shift, ycent, -7, tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
+		%System:DrawImageColor(crosshairTexture, xcent+2+shift + tonumber(hud_crosshair_thickness), ycent, 7, tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
+		if tonumber(hud_crosshair_tlike) == 0 then
+			%System:DrawImageColor(crosshairTexture, xcent, ycent-2-shift, tonumber(hud_crosshair_thickness), -7, 4, r, g, b, fValue);
+		end
+		%System:DrawImageColor(crosshairTexture, xcent, ycent+2+shift + tonumber(hud_crosshair_thickness), tonumber(hud_crosshair_thickness), 7, 4, r, g, b, fValue);
 	end
 
 	if (bDot ~= 0) then
-		%System:DrawImageColor(crosshairTexture, xcent, ycent, 1, 1, 4, r, g, b, fValue);
+		%System:DrawImageColor(crosshairTexture, xcent, ycent, tonumber(hud_crosshair_thickness), tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
 	end
 	
 	BasicWeapon.prevShift = shift;
@@ -1358,7 +1361,7 @@ function BasicWeapon.Client:OnEnhanceHUD(scale, bhit, xpos, ypos)
 					BasicWeapon.DrawCrosshair(self,0.25,0.25,0,stats.accuracy*scale, xpos, ypos);
 					--System:Log("Drawcrosshair called line 1335");
 				else
-					BasicWeapon.DrawCrosshair(self,1,1,0,stats.accuracy*scale, xpos, ypos);
+					BasicWeapon.DrawCrosshair(self,tonumber(hud_crosshair_color_r),tonumber(hud_crosshair_color_g),tonumber(hud_crosshair_color_b),stats.accuracy*scale, xpos, ypos);
 					--System:Log("Drawcrosshair called line 1337");
 				end
 			end
