@@ -1354,11 +1354,11 @@ function BasicWeapon.Client:OnEnhanceHUD(scale, bhit, xpos, ypos)
 		if ((stats.first_person or (myplayer.fireparams.draw_thirdperson~=nil and myplayer.fireparams.draw_thirdperson==1)) and myplayer.fireparams.HasCrosshair) then
 			if ((not ClientStuff.vlayers:IsActive("Binoculars")) and (((not ClientStuff.vlayers:IsActive("WeaponScope")) or (self.AimMode)) or self.ZoomForceCrosshair)) then
 				if(bhit and bhit>0)then
-					BasicWeapon.DrawCrosshair(self,1,0,0,stats.accuracy*scale, xpos, ypos);
+					BasicWeapon.DrawCrosshair(self,tonumber(hud_crosshair_hit_color_r),tonumber(hud_crosshair_hit_color_g),tonumber(hud_crosshair_hit_color_b),stats.accuracy*scale, xpos, ypos);
 
 					--System:Log("Drawcrosshair called line 1332");
 				elseif (stats.reloading or (stats.ammo_in_clip == 0 and stats.ammo == 0 and myplayer.fireparams.AmmoType ~= "Unlimited")) then
-					BasicWeapon.DrawCrosshair(self,0.25,0.25,0,stats.accuracy*scale, xpos, ypos);
+					BasicWeapon.DrawCrosshair(self,toNumberOrZero(hud_crosshair_color_r) * 0.25,toNumberOrZero(hud_crosshair_color_g) * 0.25,toNumberOrZero(hud_crosshair_color_b) * 0.25,stats.accuracy*scale, xpos, ypos);
 					--System:Log("Drawcrosshair called line 1335");
 				else
 					BasicWeapon.DrawCrosshair(self,tonumber(hud_crosshair_color_r),tonumber(hud_crosshair_color_g),tonumber(hud_crosshair_color_b),stats.accuracy*scale, xpos, ypos);
