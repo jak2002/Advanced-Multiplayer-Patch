@@ -1283,6 +1283,8 @@ function BasicPlayer:Server_OnDamage( hit )
 
 	BasicPlayer.SetDeathImpulse( self, hit );
 
+	if (hit.network ~= 1 and (hit.shooter and hit.shooter ~= self)) then return end
+
 	if (hit.damage_type == "normal" or hit.explosion or hit.damage_type == "healthonly") then
 --		System:Log("GameRules:OnDamage(hit) from BasicPlayer:Server_OnDamage");
 		GameRules:OnDamage(hit);
@@ -1351,10 +1353,10 @@ function BasicPlayer:Client_OnDamage( hit )
 --end
 
 	-- don't process building damage done on players at all
-	if (hit.damage_type ~= nil and hit.damage_type == "building") then
+	if (hit.damage_type ~= nil and hit.damage_type == "building" or (hit.network ~= 1 and hit.shooter)) and self == _localplayer then
+		-- printf("Nope")
 		return;
 	end
-	
 	--dont play client side damage effect if the explosion is not really damaging the player.
 	if (hit.explosion ~= nil) then
 		

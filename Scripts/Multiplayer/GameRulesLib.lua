@@ -1506,11 +1506,14 @@ GameRules.ClientCommandTable["CSD"]=function(String,ServerSlot,TokTable)
 	local damage = tonumber(TokTable[4])
 	local hit = {}
 	hit.target_material = {type = "body"} if TokTable[5] and TokTable[5] == "h" then hit.target_material.type = "head" end
-	hit.shooter = shooter hit.target = target hit.damage = damage
+	hit.shooter = shooter 
+	hit.target = target
+	hit.damage = damage
 	hit.weapon = hit.shooter.cnt.weapon;
 	hit.dir = hit.shooter:GetDirectionVector();
+	hit.network = 1
 	-- BasicWeapon.Server.OnHit(hit.weapon,hit)
-	BasicPlayer.Client_OnDamage(target, hit)
+	BasicPlayer.Server_OnDamage(target, hit)
 	-- GameRules:UsualDamageCalculation(hit)
 	GameRules:INPROGRESS_OnDamage(hit)
 	local bloodpos = target:GetBonePos("Bip01 Pelvis") if TokTable[5] and TokTable[5] == "h" then bloodpos = target:GetBonePos("Bip01 Head") end

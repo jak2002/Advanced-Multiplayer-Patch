@@ -1053,6 +1053,7 @@ function BasicWeapon.Client:OnHit( hit )
 		if hit.target_material and hit.target_material.type == "head" then
 			headshot = "h"
 		end
+		printf("CSD "..hit.shooter.id.." "..hit.target.id.." "..hit.damage.." "..headshot)
 		Client:SendCommand("CSD "..hit.shooter.id.." "..hit.target.id.." "..hit.damage.." "..headshot)
 	end
 	-- augment hit table with damage type
