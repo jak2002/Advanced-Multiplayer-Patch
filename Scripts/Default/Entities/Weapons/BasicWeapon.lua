@@ -105,6 +105,8 @@ BasicWeapon = {
 	temp_v1 = {x=0,y=0,z=0},
 	temp_v2 = {x=0,y=0,z=0},
 	vcolor1 = {1.0,1.0,1.0},
+
+	crosshairTexture = System:LoadImage("Textures/white.dds"),
 };
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function BasicWeapon:SyncVarCache(shooter)
@@ -1310,25 +1312,28 @@ function BasicWeapon:DrawCrosshair(r,g,b,accuracy, xpos, ypos)
 	end
 
 	local bDot = tonumber(hud_crosshair_dot);
-	
-	--%System:Draw2DLine(xcent-7-shift,ycent,xcent-2-shift,ycent,r,g,b, fValue);
-	--%System:Draw2DLine(xcent+2+shift,ycent,xcent+7+shift,ycent,r,g,b, fValue);
-	--%System:Draw2DLine(xcent,ycent-2-shift,xcent,ycent-7-shift,r,g,b, fValue);
-	--%System:Draw2DLine(xcent,ycent+2+shift,xcent,ycent+7+shift,r,g,b, fValue);
+	local bStandart = tonumber(hud_crosshair_default);
 
-	local crosshairTexture = System:LoadImage("Textures/white.dds");
-
-	if (crosshairTexture) then
+	if (self.crosshairTexture and bStandart == 0) then
 		%System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_spacing)-shift-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_thickness)*0.5, -tonumber(hud_crosshair_length), tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
 		%System:DrawImageColor(crosshairTexture, xcent+tonumber(hud_crosshair_spacing)+shift + tonumber(hud_crosshair_thickness)-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_length), tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
 		if tonumber(hud_crosshair_tlike) == 0 then
 			%System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_spacing)-shift-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_thickness), -tonumber(hud_crosshair_length), 4, r, g, b, fValue);
 		end
 		%System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_thickness)*0.5, ycent+tonumber(hud_crosshair_spacing)+shift + tonumber(hud_crosshair_thickness)-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_thickness), tonumber(hud_crosshair_length), 4, r, g, b, fValue);
-	end
 
-	if (bDot ~= 0) then
-		%System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_thickness), tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
+		if (bDot ~= 0) then
+			%System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_thickness), tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
+		end
+
+	else
+		%System:Draw2DLine(xcent-7-shift,ycent,xcent-2-shift,ycent,r,g,b, fValue);
+		%System:Draw2DLine(xcent+2+shift,ycent,xcent+7+shift,ycent,r,g,b, fValue);
+		%System:Draw2DLine(xcent,ycent-2-shift,xcent,ycent-7-shift,r,g,b, fValue);
+		%System:Draw2DLine(xcent,ycent+2+shift,xcent,ycent+7+shift,r,g,b, fValue);
+		--small dot in the centre of screen.
+		%System:Draw2DLine(xcent,ycent-0.5,xcent,ycent+0.5,r,g,b, fValue);
+		--System:Log("Lines have been drawn for crosshair at line 1303");
 	end
 	
 	BasicWeapon.prevShift = shift;

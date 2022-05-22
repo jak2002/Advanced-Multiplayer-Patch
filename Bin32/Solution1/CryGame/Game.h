@@ -623,6 +623,7 @@ public:
 	ICVar* hud_crosshair_length;
 	ICVar* hud_crosshair_spacing;
 	ICVar* hud_crosshair_dot;
+	ICVar* hud_crosshair_default;
 
 	ICVar* g_language;
 	ICVar* g_playerprofile;

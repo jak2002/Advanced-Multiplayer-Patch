@@ -3,11 +3,6 @@
 -- As references to these are kept please make sure that code using these
 -- references does not modify the content.
 ----------------------------------------------------------------------------------
-function regen()
-	_localplayer.cnt.health = _localplayer.cnt.max_health
-	_localplayer.cnt.armor = _localplayer.cnt.max_armor
-end
-
 g_Vectors =
 {
 	v000={x=0,y=0,z=0},

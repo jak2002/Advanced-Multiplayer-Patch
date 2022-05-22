@@ -1063,6 +1063,10 @@ void CXGame::InitConsoleVars()
 				"Hide or shows the crosshair's middle dot.\n"
 				"Usage: hud_crosshair_dot 0.\n"
 				"Default value is 1.\n");
+			hud_crosshair_default = pConsole->CreateVariable("hud_crosshair_default","1",0,
+				"Enables/Disables Classic FarCry crosshair.\n"
+				"Usage: hud_crosshair_default 1.\n"
+				"Default value is 1.\n");
 }
 
 void CXGame::ResetInputMap()
