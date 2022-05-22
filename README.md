@@ -39,4 +39,7 @@ CD Authorisation Check Disabled [ScriptObjectGame]
 
 Enhanced CSD System [ClientStuffLib, GameRulesLib, BasicWeapon]
 
--- Following variables have been updated: gr_HeadshotMultiplier = 4; gr_max_average_ping = 0; gr_RespawnTime = 10; gr_headshot_message_private = 0; [CreateVariable] 
+Following variables have been updated: gr_HeadshotMultiplier = 4; gr_max_average_ping = 0; gr_RespawnTime = 10; gr_headshot_message_private = 0; [CreateVariable]
+
+# Known issues
+Sometimes headshots may stop working due to hit.target_mateial stopping working properly
