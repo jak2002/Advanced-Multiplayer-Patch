@@ -249,6 +249,7 @@ enum eInVehiclestate
 		bool	onLadder;
 		bool	bModelHidden;
 
+		//sm1le: Новые статы
 		bool bSprinting;
 		bool bRunning;
 	};

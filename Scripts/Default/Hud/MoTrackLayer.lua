@@ -133,7 +133,6 @@ function MoTrackLayer:DrawOverlay()
 	end
 	
 	local GlobalFade=1;
-	local firstOne=1; -- scan only the first AI, closest to the center
 
 	for i,entity in MoTrackLayer.CurrEntities do
 		local f=entity.Fade/10;
@@ -145,7 +144,7 @@ function MoTrackLayer:DrawOverlay()
 				entity.bSndPlayed=1;
 				local Entity=System:GetEntity(entity.id);
 				if (Entity) then
-					if (Game:IsMultiplayer() and ClientStuff.bIsTeamBased) then
+					if (Game:IsMultiplayer() and ClientStuff.bIsTeamBased and tonumber(getglobal("gr_team_binocular")) ~= 0) then
 						Client:SendCommand("TBB "..entity.id.." ".._localplayer.id);
 					else
 						Entity.bShowOnRadar=1;
@@ -159,38 +158,6 @@ function MoTrackLayer:DrawOverlay()
 			OutFadeFactor=1-(entity.FadeOut/MoTrackLayer.FadeOutTime);
 		end
 		System:DrawImageColor(MoTrackLayer.Indicator, entity.Position.x-MoTrackLayer.TrackerSize/2-(1-f)*MoTrackLayer.MaxTrackerSize/2, entity.Position.y-MoTrackLayer.TrackerSize/4-(1-f)*MoTrackLayer.MaxTrackerSize/4, MoTrackLayer.TrackerSize+(1-f)*MoTrackLayer.MaxTrackerSize, (MoTrackLayer.TrackerSize+(1-f)*MoTrackLayer.MaxTrackerSize)/2, 4, 1, 1, 1, (f*f*f*f)*OutFadeFactor*GlobalFade*0.5);
-
-		--if (entity.bSndPlayed and firstOne==1) then
-			-- if the object has been tracked successfully,
-			-- and we haven't scanned one already
-			-- check if the player wants to scan the character 
-
-			--if ((_localplayer) and (_localplayer.cnt) and (_localplayer.cnt.use_pressed)) then
-				-- To scan the character, the player must put them in the center of their view 
-				-- in the binocular and press the fire button
-				--System:LogToConsole("FIRE WAS PRESSED - DIST FROM CENTER="..entity.DistFromCenter);
-
-				--if (entity.DistFromCenter<232) then
-				--	local ent=System:GetEntity(entity.id);		
-				--	local len = 0;
-				--	if (ent.Properties.specialInfo) then 
-				--		len=strlen(ent.Properties.specialInfo);
-				--		%Game:WriteHudString( 400-(len*8)*0.5, 300-16, ent.Properties.specialInfo ,1, 0, 0, 1, 16, 16);
-				--	end
-				--	len=strlen(ent:GetAIName());
-				--	%Game:WriteHudString( 400-(len*8)*0.5, 300+32, ent:GetAIName() ,1, 0, 0, 1, 16, 16);
-
-					--len=strlen(ent.Properties.equipEquipment);
-					--%Game:WriteHudString( 400-(len*8)*0.5, 300+48, ent.Properties.equipEquipment ,1, 0, 0, 1, 16, 16);
-
-					--len=strlen(ent.Properties.aicharacter_character);
-					--%Game:WriteHudString( 400-(len*8)*0.5, 300+48, ent.Properties.aicharacter_character ,1, 0, 0, 1, 16, 16);
-
-					--System:LogToConsole("SCANNING:"..ent.Properties.specialInfo);
-					--firstOne=0;
-				--end
-			--end
-		--end	
 	end
 end
 -------------------------------------------------------

@@ -1019,7 +1019,7 @@ int CScriptObjectGame::Reconnect(IFunctionHandler *pH)
 		m_pScriptSystem->PushFuncParam(this->GetScriptObject());
 		m_pScriptSystem->PushFuncParam(m_pGame->m_szLastAddress.c_str());
 		m_pScriptSystem->PushFuncParam((int)(m_pGame->m_bLastDoLateSwitch ? 1 : 0));
-		m_pScriptSystem->PushFuncParam((int)(m_pGame->m_bLastCDAuthentication ? 1 : 0));
+		m_pScriptSystem->PushFuncParam(0);
 		m_pScriptSystem->EndCall();
 	}
 	else
@@ -1679,6 +1679,7 @@ int CScriptObjectGame::Quit(IFunctionHandler *pH)
 {
 	CHECK_PARAMETERS(0);
 	//m_pConsole->Exit(NULL);
+
 	m_pSystem->Quit();
 	return pH->EndFunction();
 }

@@ -672,7 +672,7 @@ bool CXGame::Init(struct ISystem *pSystem,bool bDedicatedSrv,bool bInEditor,cons
 	// first load normal materials
 	m_XSurfaceMgr.LoadMaterials("scripts/materials");
 
-	// MOD File
+	//sm1le: MOD File
 	m_pScriptSystem->ExecuteFile("scripts/autoexec.lua");
  
 	if(!m_bDedicatedServer)

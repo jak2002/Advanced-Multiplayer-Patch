@@ -606,25 +606,6 @@ public:
 	ICVar* p_model;
 	ICVar* mp_model;
 	ICVar* p_always_run;
-
-	// sm1le: New Vars
-	ICVar* p_fov;
-	ICVar* hud_hitsound;
-
-	ICVar* hud_crosshair_smooth;
-	ICVar* hud_crosshair_color_r;
-	ICVar* hud_crosshair_color_g;
-	ICVar* hud_crosshair_color_b;
-	ICVar* hud_crosshair_hit_color_r;
-	ICVar* hud_crosshair_hit_color_g;
-	ICVar* hud_crosshair_hit_color_b;
-	ICVar* hud_crosshair_tlike;
-	ICVar* hud_crosshair_thickness;
-	ICVar* hud_crosshair_length;
-	ICVar* hud_crosshair_spacing;
-	ICVar* hud_crosshair_dot;
-	ICVar* hud_crosshair_default;
-
 	ICVar* g_language;
 	ICVar* g_playerprofile;
 	ICVar* g_serverprofile;
@@ -794,6 +775,24 @@ public:
 	ICVar* pl_JumpNegativeImpulse; //!< this represent the downward impulse power applied when the player reach the max height of the jump, 0 means no impulse.
 
 	ICVar* e_deformable_terrain; //!< the Cvar is created in cry3dengine, this is just a pointer
+
+	//sm1le: Новые переменные:
+	ICVar* p_fov;
+	ICVar* s_hitsounds;
+
+	ICVar* hud_crosshair_static;
+	ICVar* hud_crosshair_color_r;
+	ICVar* hud_crosshair_color_g;
+	ICVar* hud_crosshair_color_b;
+	ICVar* hud_crosshair_hit_color_r;
+	ICVar* hud_crosshair_hit_color_g;
+	ICVar* hud_crosshair_hit_color_b;
+	ICVar* hud_crosshair_tlike;
+	ICVar* hud_crosshair_thickness;
+	ICVar* hud_crosshair_length;
+	ICVar* hud_crosshair_spacing;
+	ICVar* hud_crosshair_dot;
+	ICVar* hud_crosshair_default;
 
 	float w_recoil_speed_up;
 	float w_recoil_speed_down;

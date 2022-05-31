@@ -1,10 +1,5 @@
-_Description_ = 
-"
-Special thanks to
-$6LNJ$1 - New MP Models
-"
-
-_Title_       = "Oxxy"
-_Version_     = "0.0.0.2"
-_Author_      = "$3smile$1 and $4CJ$1"
-_Website_     = "none"
+_Title_="Advanced Multiplayer Patch"
+_Author_="sm1le, CJ"
+_Website_ = "none"
+_Version_ = "0.0.0.1"
+_Description_="A patch for multiplayer that allows you to fully\nenjoy it."

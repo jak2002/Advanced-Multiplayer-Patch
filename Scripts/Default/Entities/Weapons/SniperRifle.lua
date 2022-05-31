@@ -290,13 +290,14 @@ function SniperRifle:DrawZoomOverlay( ZoomStep )
 	if ( SniperRifle.ZoomBackgroundTID ) then
 		-- [tiago] note image inversion, in order to achieve one-one texel to pixel mapping we must correct texture coordinates
 		-- also, texture wrap should be set to clamping mode... i hacked texture coordinates a bit to go around incorrect texture wrapping mode...
-		local fTexelW=1.0/512.0;
-		local fTexelH=1.0/512.0;
 
-		System:DrawImageColorCoords( SniperRifle.ZoomBackgroundTID, 400, 300, -400, -300, 4, 1, 1, 1, 1, fTexelW, fTexelH, 1-fTexelW, 1-fTexelH);
-		System:DrawImageColorCoords( SniperRifle.ZoomBackgroundTID, 400, 300, 400, -300, 4, 1, 1, 1, 1, fTexelW, fTexelH, 1-fTexelW, 1-fTexelH);
-		System:DrawImageColorCoords( SniperRifle.ZoomBackgroundTID, 400, 300, -400, 300, 4, 1, 1, 1, 1, fTexelW, fTexelH, 1-fTexelW, 1-fTexelH);
-		System:DrawImageColorCoords( SniperRifle.ZoomBackgroundTID, 400, 300, 400, 300, 4, 1, 1, 1, 1, fTexelW, fTexelH, 1-fTexelW, 1-fTexelH);
+		local fTexelW=(1.0/512.0) * Hud.blow_scope;
+		local fTexelH=(1.0/512.0) * Hud.blow_scope;
+
+		System:DrawImageColorCoords( SniperRifle.ZoomBackgroundTID, 400, 300, -400 * Hud.blow_scope, -300 * Hud.blow_scope, 4, 1, 1, 1, 1, fTexelW, fTexelH, 1-fTexelW, 1-fTexelH);
+		System:DrawImageColorCoords( SniperRifle.ZoomBackgroundTID, 400, 300, 400 * Hud.blow_scope, -300 * Hud.blow_scope, 4, 1, 1, 1, 1, fTexelW, fTexelH, 1-fTexelW, 1-fTexelH);
+		System:DrawImageColorCoords( SniperRifle.ZoomBackgroundTID, 400, 300, -400 * Hud.blow_scope, 300 * Hud.blow_scope, 4, 1, 1, 1, 1, fTexelW, fTexelH, 1-fTexelW, 1-fTexelH);
+		System:DrawImageColorCoords( SniperRifle.ZoomBackgroundTID, 400, 300, 400 * Hud.blow_scope, 300 * Hud.blow_scope, 4, 1, 1, 1, 1, fTexelW, fTexelH, 1-fTexelW, 1-fTexelH);
 	end
 
 	if ( SniperRifle.ZoomTID ) then

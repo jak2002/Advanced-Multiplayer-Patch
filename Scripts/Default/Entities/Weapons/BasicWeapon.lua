@@ -80,7 +80,8 @@ BasicWeapon = {
 	},
 	
 	--cantshoot_sprite: showed when you cant shot where you aiming at
-	cantshoot_sprite=System:LoadImage("Textures/hud/crosshair/cantshoot.dds"),	
+	cantshoot_sprite=System:LoadImage("Textures/hud/crosshair/cantshoot.dds"),
+	crosshairTexture=System:LoadImage("Textures/white.dds"),
 	
 	--weapons particle fx
 	Particletemp = {
@@ -105,8 +106,6 @@ BasicWeapon = {
 	temp_v1 = {x=0,y=0,z=0},
 	temp_v2 = {x=0,y=0,z=0},
 	vcolor1 = {1.0,1.0,1.0},
-
-	crosshairTexture = System:LoadImage("Textures/white.dds"),
 };
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function BasicWeapon:SyncVarCache(shooter)
@@ -301,8 +300,8 @@ function BasicWeapon.Client:OnUpdate(delta, shooter)
 	
 	if (shooter == _localplayer) then
 		local stats = shooter.cnt;
-
-		if ((stats.bRunning and not (stats.crouching or stats.pronning)) and ClientStuff.vlayers:IsActive("WeaponScope") and
+		
+		if ((stats.bRunning) and ClientStuff.vlayers:IsActive("WeaponScope") and
 				self.AimMode~=1 and (not shooter.theVehicle) and (not shooter.cnt.lock_weapon)) then
 			if (self.outOfScopeTime) then
 				if (_time > self.outOfScopeTime) then
@@ -341,7 +340,7 @@ function BasicWeapon.Client:OnUpdate(delta, shooter)
 		-- [marcok] please leave this code in
 		local transition;
 		if ((stats:IsSwimming() and stats:IsSwimming() ~= shooter.prevSwimming) or
-				(stats.running and (stats.moving or stats.running) ~= shooter.prevMoving)) then
+				((stats.moving or stats.running) and (stats.moving or stats.running) ~= shooter.prevMoving)) then
 			--System:Log("Transition");
 			transition = 1;
 		end
@@ -996,6 +995,10 @@ function BasicWeapon.Client:OnFire( Params )
 	if (self.DoesFTBSniping and (shooter==_localplayer)) then
 		FTBSniping.OnFire(FTBSniping);
 	end
+
+	if (shooter == _localplayer) then
+		Hud.blow_scope = 1.1;
+	end
 	
 	--filippo: apply view shake
 	if (CurFireParams.weapon_viewshake ~= nil and CurFireParams.weapon_viewshake > 0) then
@@ -1011,15 +1014,15 @@ function BasicWeapon.Client:OnFire( Params )
 end
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function BasicWeapon.Server:OnHit( hit )
+	--System:Log("BasicWeapon.Server:OnHit");
 	-- augment hit table with damage type
+
 	if (Game:IsMultiplayer()) then return end
 
-	if (Game:IsMultiplayer() == nil or (hit.target and hit.target.type ~= "Player")) then
-		if (hit.shooter.fireparams.damage_type) then
-			hit.damage_type = hit.shooter.fireparams.damage_type;
-		else
-			hit.damage_type = "normal";
-		end
+	if (hit.shooter.fireparams.damage_type) then
+		hit.damage_type = hit.shooter.fireparams.damage_type;
+	else
+		hit.damage_type = "normal";
 	end
 
 	if (hit.target_material) then
@@ -1032,12 +1035,14 @@ function BasicWeapon.Server:OnHit( hit )
 				end
 			end
 			if BasicPlayer.IsAlive(hit.target) then
-				Server:BroadcastCommand("FX", hit.pos, hit.normal, hit.shooter.id, 3);
-			else
-				Server:BroadcastCommand("FX", hit.pos, hit.normal, hit.shooter.id, 4);
+				if (hit.target_material.type ~= "head") then
+					Server:BroadcastCommand("FX ".."1", hit.pos, hit.normal, hit.shooter.id, 3);
+				else
+					Server:BroadcastCommand("FX ".."2", hit.pos, hit.normal, hit.shooter.id, 3);
+				end
 			end
 		end
-
+    
 		if ((hit.target_material.AI) and (hit.shooter~=nil)) then
 			AI:FreeSignal(1,"OnBulletRain",hit.pos, hit.target_material.AI.fImpactRadius,hit.shooter.id);	
 		end
@@ -1047,25 +1052,27 @@ end
 function BasicWeapon.Client:OnHit( hit )
 	local shooter = hit.shooter;
 	
-
-	if Game:IsMultiplayer() == 1 and shooter == _localplayer and hit.target and hit.target.type == "Player" and BasicPlayer.IsAlive(hit.target) then
-		-- Hud:AddMessage("I should hit")
-		-- Hud:AddMessage(tostring(hit.ipart))
-		local headshot = "b"
+	
+	if (Game:IsMultiplayer()) and (shooter == _localplayer) and (hit.target and hit.target.type == "Player") and (BasicPlayer.IsAlive(hit.target)) and (hit.target.invulnerabilityTimer == nil) then
+		local hit_pos = "b"
 		if hit.target_material and hit.target_material.type == "head" then
-			headshot = "h"
+			hit_pos = "h"
 		end
-		printf("CSD "..hit.shooter.id.." "..hit.target.id.." "..hit.damage.." "..headshot)
-		Client:SendCommand("CSD "..hit.shooter.id.." "..hit.target.id.." "..hit.damage.." "..headshot)
-	end
-	-- augment hit table with damage type
-	if Game:IsMultiplayer() == nil or (hit.target and hit.target.type ~= "Player") then
+
+		local hit_pos_x = format("%.2f", hit.pos.x);
+		local hit_pos_y = format("%.2f", hit.pos.y);
+		local hit_pos_z = format("%.2f", hit.pos.z);
+
+		Client:SendCommand("CSD "..hit.shooter.id.." "..hit.target.id.." "..hit.damage.." "..hit_pos.." "..hit_pos_x.." "..hit_pos_y.." "..hit_pos_z);
+	end -- Клиентский урон по игрокам
+
+	if (not Game:IsMultiplayer()) or (hit.target and hit.target.type ~= "Player") then -- Урон будет проходить, как обычно, если это не игрок
 		if (shooter.fireparams.damage_type) then
 			hit.damage_type = shooter.fireparams.damage_type;
 		else
 			hit.damage_type = "normal";
 		end
-		
+
 		if (hit.damage_type ~= "normal" and hit.damage_type ~= "building") then
 			hit.target_material = nil;
 		end
@@ -1278,7 +1285,6 @@ function BasicWeapon.Client:FireModeChange(Params)
 end
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function BasicWeapon:DrawCrosshair(r,g,b,accuracy, xpos, ypos)
-
 	local factor = 0;
 	if (_localplayer.entity_type == "spectator") then
 		if (_localplayer.cnt.GetHost) then
@@ -1300,8 +1306,10 @@ function BasicWeapon:DrawCrosshair(r,g,b,accuracy, xpos, ypos)
 
 	local shift = xcent * tan(0.1308997)/tan(Game:GetCameraFov()/2.0) * factor;
 
+	if (tonumber(hud_crosshair_static) ~= 0) then shift = 0 end
 
-	if (BasicWeapon.prevShift ~= nil and tonumber(hud_crosshair_smooth) == 1) then
+
+	if (BasicWeapon.prevShift ~= nil) then
 		shift = BasicWeapon.prevShift * 0.9 + shift * 0.1;
 	end
 	
@@ -1313,8 +1321,9 @@ function BasicWeapon:DrawCrosshair(r,g,b,accuracy, xpos, ypos)
 
 	local bDot = tonumber(hud_crosshair_dot);
 	local bStandart = tonumber(hud_crosshair_default);
+	local crosshairTexture = BasicWeapon.crosshairTexture;
 
-	if (self.crosshairTexture and bStandart == 0) then
+	if (crosshairTexture and bStandart == 0) then
 		%System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_spacing)-shift-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_thickness)*0.5, -tonumber(hud_crosshair_length), tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
 		%System:DrawImageColor(crosshairTexture, xcent+tonumber(hud_crosshair_spacing)+shift + tonumber(hud_crosshair_thickness)-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_length), tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
 		if tonumber(hud_crosshair_tlike) == 0 then

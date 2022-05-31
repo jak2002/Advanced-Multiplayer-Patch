@@ -439,7 +439,7 @@ MultiplayerClassDefiniton=
 
 	DefaultMultiPlayer=				-- team or non team mods
 	{
-		health		= 192, 			
+		health		= 192,
 		armor		= 50,
 		max_armor	= 100,
 

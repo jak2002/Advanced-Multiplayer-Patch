@@ -137,8 +137,8 @@ function ClientStuff:OnReset()
 	--if _localplayer and _localplayer.cnt and _localplayer.cnt.SwitchFlashLight then
 	--	_localplayer.cnt:SwitchFlashLight(0);
 	--end
-
-	Hud.ApplyFOV = "None";
+	
+	Hud.ApplyFOV = "N";
 end
 --------------------------------------------
 function ClientStuff:OnSetPlayer()    
@@ -312,13 +312,16 @@ ClientStuff.ServerCommandTable["FX"] = function(String,toktable,pos,normal,entit
 		System:Warning("OnRemoteEffect id="..tostring(entityid).." does not exist");
 		return 
 	end
+
+	local situation = 0;
+	if (toktable[2]) then situation = toktable[2] end
 	
 	local client = entity.Client;
 	-- check if we have a handler available
 	if (client and client.OnRemoteEffect) then
-		client.OnRemoteEffect(entity, toktable, pos, normal, userbyte);
+		client.OnRemoteEffect(entity, toktable, pos, normal, userbyte, situation);
 	elseif (entity.OnRemoteEffect) then
-		entity.OnRemoteEffect(entity, toktable, pos, normal, userbyte);
+		entity.OnRemoteEffect(entity, toktable, pos, normal, userbyte, situation);
 	end
 end
 

@@ -4,9 +4,8 @@ Script:LoadScript("scripts/Default/ClientStuff.lua");		-- derive functionality
 Script:LoadScript("SCRIPTS/MULTIPLAYER/MultiplayerClassDefiniton.lua");		-- global MultiplayerClassDefiniton
 
 ClientStuff.idScoreboard=nil;										-- scoreboard entity id
-
--- sm1le: New One
 ClientStuff.bIsTeamBased = nil;
+
 
 ---------------------------------------------------------------------------------
 -- This is called whenever an entity is spawned on the client
@@ -324,47 +323,6 @@ function ClientStuff:OnTextMessage(command, sendername, text)
 end
 
 
-ClientStuff.ServerCommandTable["MBB"]=function (String,TokTable)
-	-- Hud:AddMessage "gaysex"
-	if TokTable[2] then
-		if _localplayer.id == tonumber(TokTable[2])then
-			local hit = {}
-			local attacker
-			if TokTable[3] then
-				attacker = System:GetEntity(tonumber(TokTable[3]))
-				hit.dir = attacker:GetDirectionVector();
-			else
-				hit.dir = {x=1,y=1,z=1};
-			end
-			hit.damage = attacker.fireparams.damage
-			if TokTable[4] and TokTable[4] == "h" then
-				hit.damage = attacker.fireparams.damage * tonumber(getglobal("gr_HeadshotMultiplier"))
-			end
-			hit.network = 1
-			BasicPlayer.Client_OnDamage(_localplayer,hit)
-		end
-	end
-
-	if TokTable[3] then
-		if _localplayer.id == tonumber(TokTable[3]) then
-			Hud:PlayMultiplayerHitSound(TokTable[4]);
-		end
-	end
-end
-
--- Synched Server Mark
-ClientStuff.ServerCommandTable["SSM"]=function(String, TokTable)
-	local spotterTeam = TokTable[3];
-	local playerTeam = Game:GetEntityTeam(_localplayer.id);
-	local target = System:GetEntity(tonumber(TokTable[2]));
-
-	printf("Target Team:"..tostring(spotterTeam));
-	printf("Spotter Team:"..tostring(playerTeam));
-
-	if (spotterTeam ~= playerTeam) then return end
-	printf("SSM Done");
-	target.bShowOnRadar = 1;
-end
 ---------------------------------------------------------------------------------
 -- player killed player TargetEntityID,ShooterEntityID,situation=0/1/2,center=1/nil
 ClientStuff.ServerCommandTable["PKP"]=function(String,toktable)
@@ -405,9 +363,40 @@ ClientStuff.ServerCommandTable["PKP"]=function(String,toktable)
 	end
 end;
 
-
 function ClientStuff:OnUpdate()				
 	self.vlayers:Update();
 
 	self:UpdateScoreboard();
+end
+
+-- Mne Blyat' Bolno
+ClientStuff.ServerCommandTable["MBB"]=function (String,TokTable)
+	if (TokTable[2]) then
+		if (_localplayer.id == tonumber(TokTable[2])) then
+			local hit = {};
+			local attacker;
+			if (TokTable[3]) then
+				attacker = System:GetEntity(tonumber(TokTable[3]));
+				hit.dir = attacker:GetDirectionVector();
+			else
+				hit.dir = {x=1,y=1,z=1};
+			end
+			hit.damage = attacker.fireparams.damage
+			if (TokTable[4]) and (TokTable[4] == "h") then
+				hit.damage = attacker.fireparams.damage * tonumber(getglobal("gr_HeadshotMultiplier"));
+			end
+			hit.network = 1;
+			BasicPlayer.Client_OnDamage(_localplayer,hit);
+		end
+	end
+end
+
+-- Synched Server Mark
+ClientStuff.ServerCommandTable["SSM"]=function(String, TokTable)
+	local spotterTeam = TokTable[3];
+	local playerTeam = Game:GetEntityTeam(_localplayer.id);
+	local target = System:GetEntity(tonumber(TokTable[2]));
+
+	if (spotterTeam ~= playerTeam) then return end
+	target.bShowOnRadar = 1;
 end

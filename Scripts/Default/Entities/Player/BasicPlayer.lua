@@ -124,7 +124,7 @@ BasicPlayer =	 {
 	-- if land speed is greater than FallDmgS dammage will be applyed.
 	-- ammount of damage is (landSpeed - FallDmgS)*FallDmgK
 	-- speed = sqrt(2*9.8*height)
-	FallDmgS = 13.8, --8.5 
+	FallDmgS = 14, --8.5 
 	FallDmgK = 22, --30.15, 16 	
 
 	-- collision damage coefficient
@@ -488,8 +488,6 @@ function BasicPlayer:OnReset()
 	end
 
 	self:EnablePhysics(1);
-	
-	self.cnt:InitStaminaTable( self.StaminaTable );
 
 	self:DrawCharacter( 0,1 );
 
@@ -519,7 +517,6 @@ function BasicPlayer:OnReset()
 	self.hasJumped = 0;
 	self.lastStanceSound = 0;
 	--self.lastProne = 0;
-
 end
 
 -----------------------------------------------------------------------------------------------------------
@@ -648,6 +645,15 @@ function BasicPlayer:InitAllWeapons(forceInit)
 	-- of recently spawned weapons themself and call ScriptInitWeapon() for each
 	-- of them. Also, the player entity needs to call MakeWeaponAvailable() for
 	-- each weapon in his weapon pack
+
+	if (Game:IsMultiplayer()) and (tonumber(getglobal("gr_stamina")) == 0) then
+		local st_copy = new(self.StaminaTable);
+		st_copy.decoyRun=0;
+		st_copy.decoyJump=0;
+		self.cnt:InitStaminaTable(st_copy);
+	else
+		self.cnt:InitStaminaTable(self.StaminaTable);
+	end
 
 	--if (forceInit == 1) then
 		self.bAllWeaponsInititalized = nil;
@@ -1283,7 +1289,7 @@ function BasicPlayer:Server_OnDamage( hit )
 
 	BasicPlayer.SetDeathImpulse( self, hit );
 
-	if (hit.network ~= 1 and (hit.shooter and hit.shooter ~= self)) then return end
+	--if (hit.network ~= 1 and hit.target_material ~= nil) and (hit.shooter and hit.shooter ~= self) and (Game:IsMultiplayer()) then return end
 
 	if (hit.damage_type == "normal" or hit.explosion or hit.damage_type == "healthonly") then
 --		System:Log("GameRules:OnDamage(hit) from BasicPlayer:Server_OnDamage");
@@ -1339,24 +1345,15 @@ end
 -----------------------------------------------------------------------------------------------------------
 function BasicPlayer:Client_OnDamage( hit )
 
-  --System:LogToConsole("client damage "..hit.damage);
-  --System:LogToConsole("melee damage type "..Hud.meleeDamageType);
-
---System.LogToConsole("client damage "..hit.weapon_death_anim_id);
---System.LogToConsole("deathImp "..hit.dir.x.." "..hit.dir.y.." "..hit.dir.z  );
-
---if (type(hit) == "table") then
---System:LogToConsole( "It was tableHit!" );
---else
---System:LogToConsole( "It was valueHit!  "..hit );
---do return end
---end
-
 	-- don't process building damage done on players at all
-	if (hit.damage_type ~= nil and hit.damage_type == "building" or (hit.network ~= 1 and hit.shooter)) and self == _localplayer then
-		-- printf("Nope")
+	if (hit.damage_type ~= nil and hit.damage_type == "building") then
 		return;
 	end
+
+	if (hit.target_material ~= nil and Game:IsMultiplayer()) then
+		if (not hit.network) or (hit.network ~= 1) then return end
+	end
+	
 	--dont play client side damage effect if the explosion is not really damaging the player.
 	if (hit.explosion ~= nil) then
 		

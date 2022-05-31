@@ -102,6 +102,8 @@ Hud={
 	
 	pViewLayersTbl= {},
 	bActivateLayers=0,
+
+	blow_scope = 1,
 }
 
 	
@@ -749,6 +751,8 @@ function Hud:CommonInit()
 		StickyExplosive = { 56, 221, 50, 24},				
 		HandGrenade={167, 219, 22, 31},		-- grenade damage
 		BaseHandGrenade={167, 219, 22, 31},		-- grenade damage
+
+		Headshot = {110, 193, 24, 24},  -- Headshot
 				
 		VehicleMountedAutoMG = { 60, 133, 51, 21 },	-- mounted weapons
 		MountedMiniGun= { 60, 133, 51, 21 },	-- mounted weapons
@@ -769,10 +773,7 @@ function Hud:CommonInit()
 		FWDVehicle = { 345, 63, 76, 34 }, -- vehicle damage		
 		InflatableBoat = { 260, 142, 81, 32 }, -- vehicle damage		
 		BoatPatrol = { 260, 142, 81, 32 }, -- vehicle damage	
-		Boat = { 260, 142, 81, 32 }, -- vehicle damage		
-		
-		
-		Headshot = {110, 193, 24, 24},  -- Headshot
+		Boat = { 260, 142, 81, 32 }, -- vehicle damage							
 	}
 		
 						
@@ -1005,8 +1006,10 @@ function Hud:CommonInit()
 	Game:CreateVariable("g_ConcentrationFadeInTime",3);
 	Game:CreateVariable("g_ConcentrationFadeOutTime",5);
 
-	self.SndIdMPHit=Sound:LoadSound("Sounds/Multiplayer/hit.wav");
-	self.SndIdMPHitHead=Sound:LoadSound("Sounds/Multiplayer/head_hit.wav");		
+	self.SndIdMPHit=Sound:LoadSound("Sounds/Multiplayer/hit.wav");	
+	self.SndIdMPHitHead=Sound:LoadSound("Sounds/Multiplayer/hit_head.wav");
+	self.SndIdMPHitKill=Sound:LoadSound("Sounds/Multiplayer/hit_kill.wav");
+	
 	self.ProgressPreviousState=-1;
 	self.ProgressStateTime=0;
 	self.ProgressCurrentState=-1;
@@ -1028,14 +1031,18 @@ end
 -- plays some mp specific sound
 -------------------------------------------------------------------------
 
-function Hud:PlayMultiplayerHitSound(hitpos)
-	--temporary enabled
-	if (tonumber(hud_hitsound) == 0 and (not hitpos or _localplayer.fireparams.fire_mode_type == FireMode_Melee)) then return end
-
-	if (self.SndIdMPHitHead and Sound:IsPlaying(self.SndIdMPHitHead) == nil and hitpos == "h") then
-		Sound:PlaySound(self.SndIdMPHitHead);
-	elseif (self.SndIdMPHit and Sound:IsPlaying(self.SndIdMPHit) == nil) then
+function Hud:PlayMultiplayerHitSound(situation)
+	if (tonumber(s_hitsounds) == 0 or (_localplayer.fireparams.fire_mode_type == FireMode_Melee and not situation == 3)) then return end
+	-- Situations: 1 - hit, 2 - headshot, 3 - kill
+	if (self.SndIdMPHit and situation == 1) then
+		Sound:StopSound(self.SndIdMPHit);
 		Sound:PlaySound(self.SndIdMPHit);
+	elseif (self.SndIdMPHitHead and situation == 2) then
+		Sound:StopSound(self.SndIdMPHitHead);
+		Sound:PlaySound(self.SndIdMPHitHead);
+	elseif (self.SndIdMPHitKill and situation == 3) then
+		Sound:StopSound(self.SndIdMPHitKill);
+		Sound:PlaySound(self.SndIdMPHitKill);
 	end
 end
 
@@ -2366,7 +2373,7 @@ function Hud:DrawMessagesBox(tMsgList, xpos, ypos, killmsg)
 					local sit = msg.text.situation;
 					local txtKiller, txtKilled, txt;
 			
-					if (tonumber(sit) == 1) then -- 0 = normal kill, 1 = suicide, 2 = teamkill						
+					if (tonumber(sit) == 1) then -- 0 = normal kill, 1 = suicide, 2 = teamkill, 3 = headshot				
 						txtKiller = trg;
 						wpn = "Suicided";
 						txtKilled= nil;												
@@ -2395,9 +2402,7 @@ function Hud:DrawMessagesBox(tMsgList, xpos, ypos, killmsg)
 					end
 					
 					Game:WriteHudString(xpos, ypos-msg.curr_ypos, txtKiller, currColor.r, currColor.g, currColor.b, textalpha, 12, 12, 0);					
-					self:DrawKillIcon(xpos+strsizex+10, ypos-msg.curr_ypos+1, wpn, textalpha);
-
-									
+					self:DrawKillIcon(xpos+strsizex+10, ypos-msg.curr_ypos+1, wpn, textalpha);											
 
 					if(txtKilled) then						
 						local sx,sy=0, 0;					
@@ -2849,17 +2854,18 @@ end
 -------------------------------------
 
 function Hud:OnUpdateCommonHudElements()
+	if (self.ApplyFOV ~= tonumber(getglobal("p_fov")) and ZoomView) then
+		self.ApplyFOV = tonumber(getglobal("p_fov"));
+		
+		local fov = rad(tonumber(getglobal("p_fov")));
+		Game:SetCameraFov(fov);
+		ZoomView.NoZoom = fov;
+	end
+
 	local player=_localplayer;
 	--first draw crosshair
 	if hud_crosshair=="1" then
 		self:DrawCrosshair(player);
-	end
-
-	if (Hud.ApplyFOV ~= tonumber(p_fov)) then
-		Hud.ApplyFOV = tonumber(p_fov);
-		local radFov = rad(tonumber(p_fov));
-		Game:SetCameraFov(radFov);
-		ZoomView.NoZoom = radFov;
 	end
 	--stop here if player is a spectator
 	if (player.entity_type == "spectator") then return; end
@@ -3001,7 +3007,12 @@ function Hud:OnUpdateCommonHudElements()
 			self:DrawElement(765+(30-14)*0.5, 470+(24-14)*0.5, self.txi.motiontracker_signal, 1, 1, 1, self.curr_motiontrackerAlpha);	
 		end
 	end
-				
+
+	if (Hud.blow_scope > 1) and (Hud.blow_scope - _frametime * 0.4 > 1) then
+		Hud.blow_scope = Hud.blow_scope - _frametime * 0.4;
+	else
+		Hud.blow_scope = 1;
+	end	
 end
 
 

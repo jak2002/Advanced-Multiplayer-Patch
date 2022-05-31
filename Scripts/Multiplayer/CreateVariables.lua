@@ -161,3 +161,6 @@ Game:CreateVariable("sv_flood_protection_timeframe", 10);        -- x number of 
 -- client side flood protection variables
 Game:CreateVariable("cl_message_flood_protection", 1 );         -- client message flood protection on or off.
 Game:CreateVariable("cl_message_repeat", 3 );                   -- number of times a message can be repeated by other clients
+
+Game:CreateVariable("gr_team_binocular",1, "NetSynch");
+Game:CreateVariable("gr_stamina",1, "NetSynch");

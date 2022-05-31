@@ -1361,7 +1361,6 @@ function GameRules:UsualDamageCalculation(hit)
 	local target = hit.target;
 	local shooter = hit.shooter;
 	local damage = hit.damage;
-	--Hud:AddMessage "GameRules:UsualDamageCalculation(hit)"
 --	System:Log("\003 UsualDamageCalculation damage: "..hit.damage);
 	-- usually used for friendly fire
 	if self.IgnoreDamageBetween and self:IgnoreDamageBetween(target,shooter,hit)==1 then 
@@ -1489,54 +1488,6 @@ function GameRules:ResetPlayerScores(score, deaths)
 	--[end]
 end
 
-function GameRules:ClientSideHitreg(hit)
-	-- Client:SendCommand();
-end
-
-
--- Client-side damage
--- Usage: Client:SendCommand("CSD "..hit.shooter.id.." "..hit.target.id.." "..hit.damage.." ".."h")
-GameRules.ClientCommandTable["CSD"]=function(String,ServerSlot,TokTable)
-	-- Hud:AddMessage("Damage received "..tostring(TokTable[2]).." "..tostring(TokTable[3]).." "..tostring(TokTable[4]).." "..tostring(TokTable[5]))
-	-- Hud:AddMessage(String)
-	-- Hud:AddMessage(tostring(ServerSlot))
-	local shooter = System:GetEntity(tonumber(TokTable[2]))
-	if shooter == nil or BasicPlayer.IsAlive(shooter) == nil then return end
-	local target = System:GetEntity(tonumber(TokTable[3]))
-	local damage = tonumber(TokTable[4])
-	local hit = {}
-	hit.target_material = {type = "body"} if TokTable[5] and TokTable[5] == "h" then hit.target_material.type = "head" end
-	hit.shooter = shooter 
-	hit.target = target
-	hit.damage = damage
-	hit.weapon = hit.shooter.cnt.weapon;
-	hit.dir = hit.shooter:GetDirectionVector();
-	hit.network = 1
-	-- BasicWeapon.Server.OnHit(hit.weapon,hit)
-	BasicPlayer.Server_OnDamage(target, hit)
-	-- GameRules:UsualDamageCalculation(hit)
-	GameRules:INPROGRESS_OnDamage(hit)
-	local bloodpos = target:GetBonePos("Bip01 Pelvis") if TokTable[5] and TokTable[5] == "h" then bloodpos = target:GetBonePos("Bip01 Head") end
-	Server:BroadcastCommand("FX", bloodpos, hit.dir, hit.shooter.id, 3);
-	Server:BroadcastCommand("MBB "..hit.target.id.." "..hit.shooter.id.." "..TokTable[5]);
-end
-
--- Team Based Binocular
-GameRules.ClientCommandTable["TBB"]=function(String,ServerSlot,TokTable)
-	local target = tonumber(TokTable[2]);
-	local spotter = tonumber(TokTable[3]);
-
-	if (TokTable[3] == nil) then return end;
-
-	printf("Spotter Team:"..tostring(Game:GetEntityTeam(spotter)));
-	printf("Target Team:"..tostring(Game:GetEntityTeam(target)));
-
-	if (Game:GetEntityTeam(spotter) and Game:GetEntityTeam(spotter) ~= Game:GetEntityTeam(target)) then
-		printf("Sending SSM");
-		Server:BroadcastCommand("SSM "..target.." "..Game:GetEntityTeam(spotter));
-	end
-end
-
 -------------------------------------------------------------------------------
 -- private function to get the same score calculation in all mods
 -- most of a mods specific quirks are likely to go in here
@@ -1615,7 +1566,8 @@ function GameRules:UsualScoreCalculation( hit, damage_ret )
 			MPStatistics:AddStatisticsDataSSId(ss_shooter:GetId(),"nHeadshot",1);	-- successfully killed by headshot
 			SVplayerTrack:SetBySs(ss_shooter,"headshots", 1, 1);
 
-			situation = 3; -- Headshot
+			situation = 3;
+
 			--[new] headshot message
 			if toNumberOrZero(getglobal("gr_announce_headshot")) == 1 then
 				if toNumberOrZero(getglobal("gr_headshot_message_private")) == 1 then
@@ -1628,6 +1580,8 @@ function GameRules:UsualScoreCalculation( hit, damage_ret )
 		end
 		if damage_ret==1 then		
 			-- player was killed by enemy
+			Server:BroadcastCommand("FX ".."3", hit.pos, hit.normal, ss_shooter:GetPlayerId(), 4);
+
 			MPStatistics:AddStatisticsDataSSId(ss_shooter:GetId(),"nKill",1);
 			SVplayerTrack:SetWeaponKill(ss_shooter, weapon);
 			SVplayerTrack:SetBySs(ss_target, "deaths", 1, 1);
@@ -2221,7 +2175,6 @@ function GameRules:DoGameRulesLibTimer()
 			
 --			printf("SENT RTR! " .. GameRules.respawnCycleTimer);
 			Server:BroadcastCommand("RTR "..tostring(GameRules.respawnCycleTimer));
-			
 		else
 			--for server_slot,requested_classid in self.respawnList do
 			--	server_slot:SendText("@RespawningIn "..self.respawnCycleTimer, 1)
@@ -2432,4 +2385,49 @@ function GameRules:SetScoreboardEntryXY( iX, idClient, Value )
 	end
 end
 
+-- Client Side Damage
+GameRules.ClientCommandTable["CSD"]=function(String,ServerSlot,TokTable)
+	local shooter = System:GetEntity(tonumber(TokTable[2]))
 
+	if (shooter == nil) or (BasicPlayer.IsAlive(shooter) == nil) then return end
+
+	local target = System:GetEntity(tonumber(TokTable[3]));
+	local damage = tonumber(TokTable[4]);
+	local hit = {};
+	hit.target_material = {type = "body"};
+
+	local situation = 1;
+
+	if (TokTable[5]) and (TokTable[5] == "h") then hit.target_material.type = "head"; situation = 2 end
+
+	hit.shooter = shooter;
+	hit.target = target;
+	hit.damage = damage;
+	hit.weapon = hit.shooter.cnt.weapon;
+	hit.dir = hit.shooter:GetDirectionVector();
+	hit.network = 1;
+
+	BasicPlayer.Server_OnDamage(target, hit);
+	GameRules:INPROGRESS_OnDamage(hit);
+
+	local bloodpos = {
+		x = TokTable[6],
+		y = TokTable[7],
+		z = TokTable[8],
+	};
+
+	Server:BroadcastCommand("FX "..situation, bloodpos, hit.dir, hit.shooter.id, 3);
+	Server:BroadcastCommand("MBB "..hit.target.id.." "..hit.shooter.id.." "..TokTable[5]);
+end
+
+-- Team Based Binocular
+GameRules.ClientCommandTable["TBB"]=function(String,ServerSlot,TokTable)
+	local target = tonumber(TokTable[2]);
+	local spotter = tonumber(TokTable[3]);
+
+	if (TokTable[3] == nil) then return end
+
+	if (Game:GetEntityTeam(spotter) and Game:GetEntityTeam(spotter) ~= Game:GetEntityTeam(target)) then
+		Server:BroadcastCommand("SSM "..target.." "..Game:GetEntityTeam(spotter));
+	end
+end

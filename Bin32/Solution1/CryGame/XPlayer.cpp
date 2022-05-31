@@ -175,6 +175,8 @@ CPlayer::CPlayer(CXGame *pGame) :
 	m_stats.swimTime = 0.0f;
 	m_staminaClient = m_stats.stamina = 100;
 //		m_breathClient = m_stats.breath = 100;
+	m_stats.bSprinting = false;
+	m_stats.bRunning = false;
 
 	SetDimNormal();		
 	SetDimCrouch();
@@ -1552,18 +1554,19 @@ void CPlayer::ProcessMovements(CXEntityProcessingCmd &cmd, bool bScheduled)
 
 	int bJump = 0;
 
-	if (  (cmd.CheckAction(ACTION_WALK)^m_bAlwaysRun) &&
-		  (cmd.CheckAction(ACTION_MOVE_RIGHT)||cmd.CheckAction(ACTION_MOVE_LEFT) ||
-		   cmd.CheckAction(ACTION_MOVE_FORWARD)||cmd.CheckAction(ACTION_MOVE_BACKWARD)) && !m_stats.aiming)
+	if (  (	cmd.CheckAction(ACTION_WALK)^m_bAlwaysRun)&&
+				(	cmd.CheckAction(ACTION_MOVE_RIGHT)||cmd.CheckAction(ACTION_MOVE_LEFT) ||
+					cmd.CheckAction(ACTION_MOVE_FORWARD)||cmd.CheckAction(ACTION_MOVE_BACKWARD) ) &&
+					!m_stats.aiming )
 	{
 		if (!m_Running)
 		{
-			m_stats.bRunning = true;
 			// cannot run if in crouch mode
 			if (!m_stats.crouch&&!m_stats.prone&&!m_bSwimming)
 			{
 				GoStand();			
 				m_Running = true;
+				m_stats.bRunning = true;
 			}			
 		}
 		
@@ -1575,15 +1578,12 @@ void CPlayer::ProcessMovements(CXEntityProcessingCmd &cmd, bool bScheduled)
 			RestorePrevStence();
 		}
 
-		m_stats.bRunning = false;
-
 		m_Running = false;
 	}
 
 	if (m_Running)
 	{
-		if ((cmd.CheckAction(ACTION_RUNSPRINT) && m_stats.stamina>m_StaminaTable.DecoyRun*.5f ||
-		    cmd.CheckAction(ACTION_RUNSPRINT) && m_Sprinting && m_stats.stamina>1) && !m_stats.aiming)
+		if ( cmd.CheckAction(ACTION_RUNSPRINT) && m_stats.stamina>m_StaminaTable.DecoyRun*.5f || cmd.CheckAction(ACTION_RUNSPRINT) && m_Sprinting && m_stats.stamina>1 && !m_stats.aiming)
 		{
 			m_Sprinting = true;
 			m_stats.bSprinting = true;
@@ -1594,11 +1594,14 @@ void CPlayer::ProcessMovements(CXEntityProcessingCmd &cmd, bool bScheduled)
 			m_stats.bSprinting = false;
 		}
 		m_stats.running = true;
+		m_stats.bRunning = true;
 	}
 	else 
 	{
 		m_stats.running = false;
 		m_Sprinting = false;
+		m_stats.bSprinting = false;
+		m_stats.bRunning = false;
 	}
 
 	m_walkParams.fLeanTarget=0;
@@ -1628,6 +1631,8 @@ void CPlayer::ProcessMovements(CXEntityProcessingCmd &cmd, bool bScheduled)
 				m_walkParams.leanEnd=-1.0f;
 				m_walkParams.leanFactor=0.0f;
 				m_walkParams.leanDegree=m_LeanDegree;
+
+
 			}
 			m_walkParams.fLeanTarget=-1;
 			m_walkParams.leanSpeed=1.5f;

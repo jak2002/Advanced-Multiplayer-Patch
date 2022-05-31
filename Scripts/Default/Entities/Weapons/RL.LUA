@@ -172,10 +172,10 @@ function RL:DrawZoomOverlay( ZoomStep )
 			System:Draw2DLine(400   ,302, 400   ,302+45, 0, 0, 0, 1);
 	
 			-- [tiago] must adjust texel coordinates
-			local fTexelWidth=1.0/512.0;
-			local fTexelHeight=1.0/1024.0;
-			System:DrawImageColorCoords( RL.ZoomBackgroundTID, 0, 0, 400, 600, 4, 1, 1, 1, 1,  fTexelWidth, 1-fTexelHeight, 1-fTexelWidth, fTexelHeight);
-			System:DrawImageColorCoords( RL.ZoomBackgroundTID, 800, 0, -400, 600, 4, 1, 1, 1, 1,  fTexelWidth, 1-fTexelHeight, 1-fTexelWidth, fTexelHeight);
+			local fTexelWidth=1.0/512.0 * Hud.blow_scope;
+			local fTexelHeight=1.0/1024.0 * Hud.blow_scope;
+			System:DrawImageColorCoords( RL.ZoomBackgroundTID, 400, 0 + (600 - 600 * Hud.blow_scope) / 2, -400 * Hud.blow_scope, 600 * Hud.blow_scope, 4, 1, 1, 1, 1,  1-fTexelWidth, 1-fTexelHeight, fTexelWidth, fTexelHeight);
+			System:DrawImageColorCoords( RL.ZoomBackgroundTID, 400, 0 + (600 - 600 * Hud.blow_scope) / 2, 400 * Hud.blow_scope, 600 * Hud.blow_scope, 4, 1, 1, 1, 1,  1-fTexelWidth, 1-fTexelHeight, fTexelWidth, fTexelHeight);
 	
 		end
 	

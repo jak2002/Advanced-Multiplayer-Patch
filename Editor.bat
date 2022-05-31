@@ -1,3 +1,3 @@
 @echo off
-start ..\..\Bin32\Editor.exe -MOD:Oxxy
+start ..\..\Bin32\Editor.exe -MOD:MP -DEVMODE
 exit

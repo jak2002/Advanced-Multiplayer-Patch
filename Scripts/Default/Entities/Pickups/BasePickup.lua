@@ -543,38 +543,38 @@ function __PickWeapon(self,collider, entering)
 		self.hadFullSlots = 1;
 	end
 
-	if (self.hadFullSlots == 1 or has_weapon == 1) then
-		local ammo_amount  = self.Properties.Amount;
-		local ammo_amount2 = self.Properties.Amount2;
-
-		local apicked = %__PickAmmo(self,collider, entering, self.ammo_type, ammo_amount);
-		if (apicked==nil) then
-			self.Properties.Amount = ammo_amount;
-		else
-			self.Properties.Amount = apicked;
-		end
-
-		local apicked2 = %__PickAmmo(self,collider, entering, self.ammo_type2, ammo_amount2);
-		if (apicked2==nil) then
-			self.Properties.Amount2 = ammo_amount2;
-		else
-			self.Properties.Amount2 = apicked2;
-		end
-
-		if(self.soundobj and (not self.sound_played) and (apicked or apicked2)) then
-			local sound;
-			
-			if (type(self.soundtbl) == "table") then
-				sound = self.soundtbl[random(1,getn(self.soundtbl))];
-			else
-				sound = self.soundobj;
-			end
-			
-			Sound:SetSoundVolume(sound,255);
-			Sound:SetSoundPosition(sound,self:GetPos());
-			Sound:PlaySound(sound, 1);
-			self.sound_played=1;
-		end
+	if (self.hadFullSlots == 1 or has_weapon == 1) and (Game:IsMultiplayer() == 1) then
+		-- local ammo_amount  = self.Properties.Amount;
+		-- local ammo_amount2 = self.Properties.Amount2;
+-- 
+		-- local apicked = %__PickAmmo(self,collider, entering, self.ammo_type, ammo_amount);
+		-- if (apicked==nil) then
+			-- self.Properties.Amount = ammo_amount;
+		-- else
+			-- self.Properties.Amount = apicked;
+		-- end
+-- 
+		-- local apicked2 = %__PickAmmo(self,collider, entering, self.ammo_type2, ammo_amount2);
+		-- if (apicked2==nil) then
+			-- self.Properties.Amount2 = ammo_amount2;
+		-- else
+			-- self.Properties.Amount2 = apicked2;
+		-- end
+-- 
+		-- if(self.soundobj and (not self.sound_played) and (apicked or apicked2)) then
+			-- local sound;
+			-- 
+			-- if (type(self.soundtbl) == "table") then
+				-- sound = self.soundtbl[random(1,getn(self.soundtbl))];
+			-- else
+				-- sound = self.soundobj;
+			-- end
+			-- 
+			-- Sound:SetSoundVolume(sound,255);
+			-- Sound:SetSoundPosition(sound,self:GetPos());
+			-- Sound:PlaySound(sound, 1);
+			-- self.sound_played=1;
+		-- end
 
 		return;
 	end

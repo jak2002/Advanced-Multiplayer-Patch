@@ -159,7 +159,7 @@
 		</Configuration>
 		<Configuration
 			Name="Profile|Win32"
-			OutputDirectory="D:\Games\Far Cry\Mods\Oxxy\Bin32"
+			OutputDirectory="D:\Games\Far Cry\Mods\AMP\Bin32"
 			IntermediateDirectory="Profile"
 			ConfigurationType="2"
 			UseOfMFC="0"
