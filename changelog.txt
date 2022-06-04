@@ -25,6 +25,7 @@
 		gr_RespawnTime 	      = 10 [было 20]
 		gr_max_average_ping   = 0  [было 90]
 		gr_announce_headshot  = 0  [было 1]
+	Меню притерпело малые изменения.
 
 Баги:
 	В какой-то из запусков могут сломаться хедшоты. [Скорее всего проблема с hit.target_material.type]
