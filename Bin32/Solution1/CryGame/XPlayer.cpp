@@ -931,6 +931,9 @@ void CPlayer::UpdatePhysics(float fDeltaTime)
 		SetGravityOverride(0.0f);
 	}
 
+	if (m_JumpDelay > 0)
+	 	m_JumpDelay -= fDeltaTime;
+
 	// [Anton] - moved from ProcessMovements, since it should be called for remote clients in multiplayer
 	//	float	kwater;
 	//	int bSwimming = IsSwimming( kwater );
@@ -1402,7 +1405,7 @@ void CPlayer::ProcessMovements(CXEntityProcessingCmd &cmd, bool bScheduled)
 
 	if(!pClient || pClient->GetPlayerId()!=m_pEntity->GetId())
 		fTimeDelta=cmd.GetServerPhysDelta();
-	
+
 	if (!m_pVehicle && !m_pMountedWeapon && fTimeDelta>0)
 	{
 		pPhysEnt->StepBack(fTimeDelta);
@@ -1957,7 +1960,7 @@ void CPlayer::ProcessMovements(CXEntityProcessingCmd &cmd, bool bScheduled)
 		if (m_CurStance != eCrouch			
 				&& ((!m_stats.flying) || IsSwimming()) 
 				&& ((m_stats.stamina>m_StaminaTable.DecoyJump&&!m_stats.flying) || IsSwimming())
-				&& m_JumpAniLenght<=0
+				&& m_JumpDelay<=0
 				)
 		{
 			m_JumpHeight[0] = m_pGame->p_jump_walk_h->GetFVal();
@@ -1988,10 +1991,14 @@ void CPlayer::ProcessMovements(CXEntityProcessingCmd &cmd, bool bScheduled)
 				speedxyz[2] = jumpSpeedV;
 
 				// decrease stamina - jumping is not for free!
-				if((m_stats.stamina-=m_StaminaTable.DecoyJump)<0)
-					m_stats.stamina = 0;
+				//if((m_stats.stamina-=m_StaminaTable.DecoyJump)<0)
+					//m_stats.stamina = 0;
+
+				if (!m_bHasJumped && !m_stats.flying)
+					m_stats.stamina -= m_StaminaTable.DecoyJump;
 
 				m_bHasJumped = true;
+				m_JumpDelay = m_stats.fJumpDelay;
 			}
 			else
 			{
@@ -6052,6 +6059,7 @@ void	CPlayer::UpdateStamina( float dTime )
 			m_stats.stamina = 1.0f;
 	}
 	// update stamina (yellow bar)
+
 	else if( m_Sprinting )
 	{
 		if((m_stats.stamina -= dTime*m_StaminaTable.DecoyRun)<1.0f)

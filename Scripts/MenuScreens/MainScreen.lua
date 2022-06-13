@@ -21,7 +21,7 @@ UI.PageMainScreen =
 	end,
 
 	ShowConfirmation = function()
-		UI.YesNoBox(Localize("Quit"), Localize("QuitConfirmation"), UI.PageMainScreen.QuitYes);
+		Game:SendMessage("Quit-Yes");
 	end,
 }
 
@@ -31,7 +31,7 @@ AddUISideMenu(UI.PageMainScreen.GUI,
 	{ "Options", Localize("Options"), "Options", },
 	{ "Profiles", Localize("Profiles"), "Profiles", },
 	{ "Mods", Localize("Mods"), "Mods", },	
-	{ "Quit", Localize("Quit"), UI.PageMainScreen.ShowConfirmation, },	
+	{ "Quit", Localize("Quit"), UI.PageMainScreen.QuitYes, },	
 });
 
 UI:CreateScreenFromTable("MainScreen", UI.PageMainScreen.GUI);
@@ -61,7 +61,11 @@ UI.PageMainScreenInGame =
 	end,
 
 	ShowConfirmation = function()
-		UI.YesNoBox(Localize("Quit"), Localize("QuitConfirmation"), UI.PageMainScreen.QuitYes);
+		Game:SendMessage("Quit-Yes");
+	end,
+
+	Relaunch = function()
+		Game:SendMessage("Relaunch");
 	end,
 }
 
@@ -70,11 +74,10 @@ AddUISideMenu(UI.PageMainScreenInGame.GUI,
 	{ "Return", Localize("ReturnToGame"), "$Return$", },
 	{ "-", "-", "-", },	-- separator
 	{ "Multiplayer", Localize("Multiplayer"), "Multiplayer", },
-    	--{ "ServerAdmin", "Server Admin", "ServerAdmin",},
 	{ "Options", Localize("Options"), "Options", },
 	{ "Profiles", Localize("Profiles"), "Profiles", },
 	{ "Mods", Localize("Mods"), "Mods", },
-	{ "Quit", Localize("Quit"), UI.PageMainScreen.ShowConfirmation, },
+	{ "Quit", Localize("Quit"), UI.PageMainScreenInGame.QuitYes, },
 });
 
 UI:CreateScreenFromTable("MainScreenInGame", UI.PageMainScreenInGame.GUI);

@@ -776,24 +776,6 @@ public:
 
 	ICVar* e_deformable_terrain; //!< the Cvar is created in cry3dengine, this is just a pointer
 
-	//sm1le: Новые переменные:
-	ICVar* p_fov;
-	ICVar* s_hitsounds;
-
-	ICVar* hud_crosshair_static;
-	ICVar* hud_crosshair_color_r;
-	ICVar* hud_crosshair_color_g;
-	ICVar* hud_crosshair_color_b;
-	ICVar* hud_crosshair_hit_color_r;
-	ICVar* hud_crosshair_hit_color_g;
-	ICVar* hud_crosshair_hit_color_b;
-	ICVar* hud_crosshair_tlike;
-	ICVar* hud_crosshair_thickness;
-	ICVar* hud_crosshair_length;
-	ICVar* hud_crosshair_spacing;
-	ICVar* hud_crosshair_dot;
-	ICVar* hud_crosshair_default;
-
 	float w_recoil_speed_up;
 	float w_recoil_speed_down;
 	float w_recoil_max_degree;

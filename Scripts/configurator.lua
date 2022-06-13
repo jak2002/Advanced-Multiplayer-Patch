@@ -18,6 +18,22 @@ config = {
     },
 };
 
+Game:CreateVariable("p_fov", 90);
+Game:CreateVariable("s_hitsounds", 0);
+Game:CreateVariable("hud_crosshair_default", 0);
+Game:CreateVariable("hud_crosshair_static", 0);
+Game:CreateVariable("hud_crosshair_color_r", 1);
+Game:CreateVariable("hud_crosshair_color_g", 1);
+Game:CreateVariable("hud_crosshair_color_b", 0);
+Game:CreateVariable("hud_crosshair_hit_color_r", 1);
+Game:CreateVariable("hud_crosshair_hit_color_g", 0);
+Game:CreateVariable("hud_crosshair_hit_color_b", 0);
+Game:CreateVariable("hud_crosshair_tlike", 0);
+Game:CreateVariable("hud_crosshair_thickness", 1);
+Game:CreateVariable("hud_crosshair_length", 7);
+Game:CreateVariable("hud_crosshair_spacing", 2);
+Game:CreateVariable("hud_crosshair_dot", 1);
+
 function config:SaveConfig()
     local path  = "Mods/"..tostring(Game:GetCurrentModName()).."/".."config.cfg";
     local hfile = openfile(path, "w+");

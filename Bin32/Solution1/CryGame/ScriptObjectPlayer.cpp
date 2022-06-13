@@ -243,6 +243,7 @@ void CScriptObjectPlayer::InitializeTemplate(IScriptSystem *pSS)
 
 	RegisterProperty( "bSprinting",PROPERTY_TYPE_BOOL,offsetof(CPlayer,m_stats.bSprinting));
 	RegisterProperty( "bRunning",PROPERTY_TYPE_BOOL,offsetof(CPlayer,m_stats.bRunning));
+	RegisterProperty( "fJumpDelay",PROPERTY_TYPE_FLOAT,offsetof(CPlayer,m_stats.fJumpDelay));
 }
 
 //////////////////////////////////////////////////////////////////////////

@@ -252,6 +252,7 @@ enum eInVehiclestate
 		//sm1le: Новые статы
 		bool bSprinting;
 		bool bRunning;
+		float fJumpDelay;
 	};
 
 	Vec3 m_vDEBUGAIFIREANGLES;
@@ -792,6 +793,9 @@ protected:
 	bool	m_bGrenadeAnimation;
 	char	m_JumpStage;		// 0-nojump 1-jumpStart 2-jumpAir 3-jumpLand
 	float	m_JumpAniLenght;	// landing animation duration - to dealy stating of other anims
+
+	float 	m_JumpDelay;
+
 	float	m_LandTime;
 	float	m_FlyTime;
 	float	m_NotRunTime,m_NotRunTimeClient;

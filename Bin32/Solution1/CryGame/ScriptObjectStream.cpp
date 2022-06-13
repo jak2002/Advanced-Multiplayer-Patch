@@ -1,15 +1,15 @@
 
 //////////////////////////////////////////////////////////////////////
 //
-//	Crytek Source code 
+//	Crytek Source code
 //	Copyright (c) Crytek 2001-2004
-// 
+//
 //	File: ScriptObjectStream.cpp
 //
-//  Description: 
+//  Description:
 //		Implementation of the CScriptObjectStream class.
 //
-//	History: 
+//	History:
 //	- File Created by Alberto Demichelis, Martin Mittring
 //	- February 2005: Modified by Marco Corbetta for SDK release
 //

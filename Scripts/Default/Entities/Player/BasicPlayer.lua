@@ -1350,7 +1350,7 @@ function BasicPlayer:Client_OnDamage( hit )
 		return;
 	end
 
-	if (hit.target_material ~= nil and Game:IsMultiplayer()) then
+	if (hit.target_material ~= nil and Game:IsMultiplayer() and hit.explosion == nil) then
 		if (not hit.network) or (hit.network ~= 1) then return end
 	end
 	
