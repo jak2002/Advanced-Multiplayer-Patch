@@ -177,6 +177,8 @@ CPlayer::CPlayer(CXGame *pGame) :
 //		m_breathClient = m_stats.breath = 100;
 	m_stats.bSprinting = false;
 	m_stats.bRunning = false;
+	fCurJumpDelay = 0.0f;
+	m_stats.fJumpDelay = 0.0f;
 
 	SetDimNormal();		
 	SetDimCrouch();
@@ -901,6 +903,9 @@ void CPlayer::Update()
 	UpdateCharacterAnimations( ctx );
 	UpdateFireAnimations();
 	//	UpdateJumpAnimations();
+	
+	if (fCurJumpDelay > 0 && !m_stats.flying)
+		fCurJumpDelay -= m_pTimer->GetFrameTime();
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -930,9 +935,6 @@ void CPlayer::UpdatePhysics(float fDeltaTime)
 	{
 		SetGravityOverride(0.0f);
 	}
-
-	if (m_JumpDelay > 0)
-	 	m_JumpDelay -= fDeltaTime;
 
 	// [Anton] - moved from ProcessMovements, since it should be called for remote clients in multiplayer
 	//	float	kwater;
@@ -1956,12 +1958,11 @@ void CPlayer::ProcessMovements(CXEntityProcessingCmd &cmd, bool bScheduled)
 			GoStand(false);
 			cmd.RemoveAction(ACTION_JUMP);
 		}
-		else 
+		else
 		if (m_CurStance != eCrouch			
 				&& ((!m_stats.flying) || IsSwimming()) 
 				&& ((m_stats.stamina>m_StaminaTable.DecoyJump&&!m_stats.flying) || IsSwimming())
-				&& m_JumpDelay<=0
-				)
+				&& (fCurJumpDelay<=0 || IsAI()))
 		{
 			m_JumpHeight[0] = m_pGame->p_jump_walk_h->GetFVal();
 			m_JumpHeight[1] = m_pGame->p_jump_walk_h->GetFVal();
@@ -1998,7 +1999,9 @@ void CPlayer::ProcessMovements(CXEntityProcessingCmd &cmd, bool bScheduled)
 					m_stats.stamina -= m_StaminaTable.DecoyJump;
 
 				m_bHasJumped = true;
-				m_JumpDelay = m_stats.fJumpDelay;
+
+				if (!IsAI())
+					fCurJumpDelay = m_stats.fJumpDelay;
 			}
 			else
 			{

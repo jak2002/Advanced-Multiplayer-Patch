@@ -1033,7 +1033,7 @@ end
 -- plays some mp specific sound
 -------------------------------------------------------------------------
 function Hud:PlayMultiplayerHitSound(situation)
-	if (tonumber(s_hitsounds) == 0 or (_localplayer.fireparams.fire_mode_type == 2 and not situation == 3)) then return end
+	if (tonumber(s_hitsounds) == 0) then return end
 	-- Situations: 1 - hit, 2 - headshot, 3 - kill
 	if (self.SndIdMPHit and situation == 1) then
 		Sound:StopSound(self.SndIdMPHit);

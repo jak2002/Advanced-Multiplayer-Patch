@@ -374,7 +374,6 @@ function Player:OnReset()
 	self.JustLoaded=nil;	-- [lennert] this is a dirty hack because OnReset is called after OnLoad for not very clear reasons; this should be fixed !		
 
 	self.cnt:SetMoveParams(self.move_params);
-	self.cnt.fJumpDelay = tonumber(getglobal("gr_JumpDelay"));
 	BasicPlayer.OnReset(self)
 	AI:RegisterWithAI(self.id, AIOBJECT_PLAYER, self.Properties);
 	self:EnableUpdate(1);
