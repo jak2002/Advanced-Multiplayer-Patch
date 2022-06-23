@@ -727,6 +727,7 @@ bool CXGame::Init(struct ISystem *pSystem,bool bDedicatedSrv,bool bInEditor,cons
 	SetCursor(NULL);
 #endif
 
+	
 	DevModeInit();
 	m_bOK = true;	
 	e_deformable_terrain = NULL;
