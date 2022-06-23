@@ -380,7 +380,6 @@ function Player:OnReset()
 	self.cnt:SwitchFlashLight(0);
 end
 
-
 --------------------------------------------------------------------------------------------------------
 function Player:RegisterStates()
 	self:RegisterState( "Alive" );
@@ -413,7 +412,7 @@ function Player:LoadModel()
 				bLoadStandardModel=1;
 			end
 		end
-			
+
 
 		if bLoadStandardModel or not self:LoadCharacter(self.cnt.model,0) then
 			self:LoadCharacter("objects/characters/pmodels/hero/hero_mp.cgf",0);								-- if this model is not there load the default model
@@ -422,7 +421,7 @@ function Player:LoadModel()
 		self["model_loaded"]=1;
 		if(self.Properties.bHelmetOnStart==1)	then
 			self:LoadObject( "objects/characters/mercenaries/accessories/helmet.cgf", 0, 1 );
-		end	
+		end
 	end
 end
 
@@ -451,9 +450,16 @@ end
 function Player:Client_OnInit()
 	self:LoadModel();
 	BasicPlayer.Client_OnInit( self );
-	self.cnt:SetMoveParams(self.move_params);			
-end
+	self.cnt:SetMoveParams(self.move_params);
 
+	local model = tostring(getglobal("mp_helmetmodel"));
+	local player_id = tostring(self.id);
+
+	if (model and player_id) then
+		-- Get Helmet Model
+		Client:SendCommand("GHM "..model.." "..player_id);
+	end		
+end
 --------------------------------------------------------------------------------------------------------
 function Player:Client_OnRemoteEffect(toktable, pos, normal, userbyte, situation)
 --	System:Log("_FX: Setting effect: "..tostring(self.id).."("..tostring(userbyte)..")");

@@ -400,3 +400,14 @@ ClientStuff.ServerCommandTable["SSM"]=function(String, TokTable)
 	if (spotterTeam ~= playerTeam) then return end
 	target.bShowOnRadar = 1;
 end
+
+-- Set Helmet Model
+ClientStuff.ServerCommandTable["SHM"]=function(String, TokTable)
+	local model = TokTable[2];
+	local player = System:GetEntity(tonumber(TokTable[3]));
+
+	if (model and player) then
+		player:LoadObject(model,0,0);
+		player:AttachObjectToBone(0,"hat_bone",0,1);
+	end
+end

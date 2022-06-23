@@ -2431,3 +2431,17 @@ GameRules.ClientCommandTable["TBB"]=function(String,ServerSlot,TokTable)
 		Server:BroadcastCommand("SSM "..target.." "..Game:GetEntityTeam(spotter));
 	end
 end
+
+-- Get Helmet Model
+GameRules.ClientCommandTable["GHM"]=function(String,ServerSlot,TokTable)
+	local model = TokTable[2];
+	local player_id = TokTable[3];
+
+	-- Set only if it's in a table with "safe" models
+	for key,val in MPHelmetList do
+		if model == val.model then
+			-- Set Helmet Model
+			Server:BroadcastCommand("SHM "..model.." "..player_id);
+		end
+	end
+end

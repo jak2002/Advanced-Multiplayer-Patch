@@ -2,6 +2,7 @@ config = {
     vars = {
         "p_fov",
         "s_hitsounds",
+        "mp_helmetmodel",
         "hud_crosshair_static",
         "hud_crosshair_color_r",
         "hud_crosshair_color_g",
@@ -20,7 +21,8 @@ config = {
 
 Game:CreateVariable("p_fov", 90);
 Game:CreateVariable("s_hitsounds", 0);
-Game:CreateVariable("hud_crosshair_default", 0);
+Game:CreateVariable("mp_helmetmodel", 0);
+Game:CreateVariable("hud_crosshair_default", 1);
 Game:CreateVariable("hud_crosshair_static", 0);
 Game:CreateVariable("hud_crosshair_color_r", 1);
 Game:CreateVariable("hud_crosshair_color_g", 1);

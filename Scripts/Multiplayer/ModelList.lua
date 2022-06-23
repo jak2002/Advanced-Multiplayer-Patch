@@ -13,3 +13,14 @@ MPModelList=
 
 	{name="@MPModelEvilWorker", model="Objects/characters/workers/evil_worker/evil_worker_MP.cgf"},
 }
+
+MPHelmetList =
+{
+	{name="@MPHelmet"			, model = "objects/characters/mercenaries/accessories/helmet.cgf"},
+	{name="@MPHelmetArmy"		, model = "objects/characters/mercenaries/accessories/helmet_army.cgf"},
+	{name="@MPHelmetArmyCamo"	, model = "objects/characters/mercenaries/accessories/helmet_army_camo.cgf"},
+	{name="@MPHelmetArmyBlack"	, model = "objects/characters/mercenaries/accessories/helmet_army_black.cgf"},
+	{name="@MPHelmetIndoor"		, model = "objects/characters/mercenaries/accessories/helmet_indoor.cgf"},
+	{name="@MPHelmetIndoorHaki"	, model = "objects/characters/mercenaries/accessories/helmet_indoor_haki.cgf"},
+	{name="@MPHelmetNightVis"	, model = "objects/characters/mercenaries/accessories/helmet_nightvis.cgf"},
+}
