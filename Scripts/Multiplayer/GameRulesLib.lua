@@ -2409,7 +2409,7 @@ GameRules.ClientCommandTable["CSD"]=function(String,ServerSlot,TokTable)
 	hit.dir = hit.shooter:GetDirectionVector();
 	hit.network = 1;
 
-	BasicPlayer.Server_OnDamage(target, hit);
+	--BasicPlayer.Server_OnDamage(target, hit);
 	GameRules:INPROGRESS_OnDamage(hit);
 
 	local bloodpos = {
