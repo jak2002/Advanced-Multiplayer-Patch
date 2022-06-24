@@ -34,7 +34,7 @@ projectileDefinition = {
 	lifetime = 10000,
 	mark_terrain = 1,
 	force_objtype = 2,
-	projectileObject = "Objects/Pickups/explosive/explosive.cgf",
+	projectileObject = "Objects/Weapons/scouttool/scouttool_active.cgf",
 	projectileObjectScale = 1.0,
 }
 
