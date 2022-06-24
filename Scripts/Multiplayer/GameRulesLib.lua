@@ -218,6 +218,7 @@ function GameRules:SpawnPlayer(server_slot,classid,team,custom_properties)
 		SVplayerTrack:SetBySs(server_slot, "lastclass", locInitialPlayerProperties.sPlayerClass, 0);
 	end
 	local _model = server_slot:GetModel();
+	local _hatModel = server_slot:GetHatModel();
 	local team_color;
 	local rp;
 
@@ -284,8 +285,9 @@ function GameRules:SpawnPlayer(server_slot,classid,team,custom_properties)
 		pos=pos,
 		angles=ang,
 		model=_model,
+		hat_model = _hatModel,
 		color=team_color,
-		properties=custom_properties
+		properties=custom_properties,
 	})
 	
 	local oldid=server_slot:GetPlayerId();

@@ -1899,6 +1899,12 @@ void CXSystemBase::OnSpawnContainer( CEntityDesc &ed,IEntity *pEntity )
 			}
 		}
 
+		if(ed.sHatModel.length())
+		{
+			if (m_pGame->IsMultiplayer())
+				pPlayer->SetHatModel(ed.sHatModel.c_str());
+		}
+
 		pEntity->SetContainer(pPlayer);
 		pPlayer->SetColor(ed.vColor);
 	}

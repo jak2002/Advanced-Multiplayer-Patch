@@ -1052,6 +1052,11 @@ void CPlayer::SetPlayerModel( const string &model )
 	UpdateBonesPtrs();
 }
 
+void CPlayer::SetHatModel( const string &model )
+{		
+	m_strHatModel = model;
+}
+
 //////////////////////////////////////////////////////////////////////
 /*! Retrieves a weapon-info-structure for a certain weapon
 		@param nWeaponIndex weapon-id to retrieve from (negative value will return info of current weapon)

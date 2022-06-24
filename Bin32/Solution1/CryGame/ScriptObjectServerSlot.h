@@ -50,6 +50,7 @@ private:
 	int GetPlayerId(IFunctionHandler *pH);
 	int GetName(IFunctionHandler *pH);
 	int GetModel(IFunctionHandler *pH);
+	int GetHatModel(IFunctionHandler *pH);
 	int GetColor(IFunctionHandler *pH);
 	int SetGameState(IFunctionHandler *pH);
 	int SendText(IFunctionHandler *pH);

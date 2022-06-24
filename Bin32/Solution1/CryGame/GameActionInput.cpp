@@ -693,6 +693,8 @@ void CXGame::InitConsoleVars()
 		"\n"
 		"Usage: \n"
 		"");
+
+	mp_hatmodel= pConsole->CreateVariable("mp_hatmodel", "0", 0, "");
 	//////////////////////////////////////////////////////////////////////////
 
 	ICryPak	*pPak=m_pSystem->GetIPak();

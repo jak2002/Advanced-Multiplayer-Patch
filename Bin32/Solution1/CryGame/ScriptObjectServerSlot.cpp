@@ -49,6 +49,7 @@ void CScriptObjectServerSlot::InitializeTemplate(IScriptSystem *pSS)
 	REG_FUNC(CScriptObjectServerSlot,SetPlayerId);
 	REG_FUNC(CScriptObjectServerSlot,GetName);
 	REG_FUNC(CScriptObjectServerSlot,GetModel);
+	REG_FUNC(CScriptObjectServerSlot,GetHatModel);
 	REG_FUNC(CScriptObjectServerSlot,GetColor);
 	REG_FUNC(CScriptObjectServerSlot,SetGameState);
 	REG_FUNC(CScriptObjectServerSlot,SendText);
@@ -234,6 +235,17 @@ int CScriptObjectServerSlot::GetModel(IFunctionHandler *pH)
 		sModel=m_pSS->GetModel();
 
 	return pH->EndFunction(sModel);
+}
+
+int CScriptObjectServerSlot::GetHatModel(IFunctionHandler *pH)
+{
+	CHECK_PARAMETERS(0);
+	const char *sHatModel="";
+
+	if(m_pSS)
+		sHatModel = m_pSS->GetHatModel();
+
+	return pH->EndFunction(sHatModel);
 }
 
 //////////////////////////////////////////////////////////////////////

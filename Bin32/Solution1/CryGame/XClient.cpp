@@ -542,6 +542,22 @@ void CXClient::OnXContextSetup(CStream &stm)
 
 		// player classid
 		stm.Write(cl_playerclassid->GetIVal());
+
+		// mp_hatmodel
+		{
+			ICVar *hat_model;
+
+			if (m_pGame->IsMultiplayer())
+				hat_model = m_pGame->mp_hatmodel;		// multiplayer model
+
+			if(!hat_model->GetString())
+				stm.Write("0");
+			else
+			{
+				m_pLog->Log("mp_hatmodel = %s", hat_model->GetString());
+				stm.Write(hat_model->GetString());
+			}
+		}
 		
 		m_pLog->Log("SEND ContextReady");
 		m_pIClient->ContextReady(stm);

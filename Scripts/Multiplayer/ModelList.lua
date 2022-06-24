@@ -13,3 +13,24 @@ MPModelList=
 
 	{name="@MPModelEvilWorker", model="Objects/characters/workers/evil_worker/evil_worker_MP.cgf"},
 }
+
+MPHelmetList =
+{
+    {name="@MPHelmet"           , model = "objects/characters/mercenaries/accessories/helmet.cgf"},              -- 1
+    {name="@MPHelmetArmy"       , model = "objects/characters/mercenaries/accessories/helmet_army.cgf"},         -- 2
+    {name="@MPHelmetArmyCamo"   , model = "objects/characters/mercenaries/accessories/helmet_army_camo.cgf"},    -- 3
+    {name="@MPHelmetArmyBlack"  , model = "objects/characters/mercenaries/accessories/helmet_army_black.cgf"},   -- 4
+    {name="@MPHelmetIndoor"     , model = "objects/characters/mercenaries/accessories/helmet_indoor.cgf"},       -- 5
+    {name="@MPHelmetIndoorHaki" , model = "objects/characters/mercenaries/accessories/helmet_indoor_haki.cgf"},  -- 6
+    {name="@MPHelmetNightVis"   , model = "objects/characters/mercenaries/accessories/helmet_nightvis.cgf"},     -- 7
+    {name="@MPBeard"            , model = "objects/characters/mercenaries/accessories/beard.cgf"},               -- 8
+    {name="@MPGoggles"          , model = "objects/characters/mercenaries/accessories/goggles.cgf"},             -- 9
+    {name="@MPIrokez"           , model = "objects/characters/mercenaries/accessories/irokez.cgf"},              -- 10
+    {name="@MPCigarrette"       , model = "objects/characters/mercenaries/accessories/cigarrette.cgf"},          -- 11
+    {name="@MPSniperGlasses"    , model = "objects/characters/mercenaries/accessories/merc_sniper_glasses.cgf"}, -- 12
+    {name="@MPRearHat"          , model = "objects/characters/mercenaries/accessories/merc_rear_hat.cgf"},       -- 13
+    {name="@MPCoverHat"         , model = "objects/characters/mercenaries/accessories/merc_cover_hat.cgf"},      -- 14
+    {name="@MPEvilWorkerHat"    , model = "objects/characters/mercenaries/accessories/evil_worker_hat.cgf"},     -- 15
+    {name="@MPEarProtector"     , model = "objects/characters/mercenaries/accessories/earprotector.cgf"},        -- 16
+    {name="@MPComHat"           , model = "objects/characters/mercenaries/accessories/merc_defcomm_hat.cgf"},    -- 17
+}

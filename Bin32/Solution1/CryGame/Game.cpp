@@ -165,6 +165,7 @@ CXGame::CXGame()
 	m_pIngameDialogMgr = new CIngameDialogMgr();
 	m_pUISystem = 0;
 	mp_model = 0;
+	mp_hatmodel = 0;
 #if !defined(LINUX)
 	// to avoid all references to movie user in this file
 	m_pMovieUser = new CMovieUser(this);
@@ -273,14 +274,15 @@ CXGame::~CXGame()
 	cl_ThirdPersonOffsAngVert->Release();
 
 	cl_display_hud->Release();
-  cl_motiontracker->Release();
-  cl_hud_pickup_icons->Release();
-  cl_msg_notification->Release();
-  cl_hud_name->Release();
+  	cl_motiontracker->Release();
+  	cl_hud_pickup_icons->Release();
+  	cl_msg_notification->Release();
+  	cl_hud_name->Release();
 	ai_num_of_bots->Release();
 	p_name->Release();
 	p_model->Release();
 	mp_model->Release();
+	mp_hatmodel->Release();
 	p_color->Release();
 	p_always_run->Release();
 	g_language->Release();

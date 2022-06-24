@@ -294,6 +294,7 @@ int CScriptObjectServer::SpawnEntity(IFunctionHandler *pH)
 	const char* sEntityClassName;
 	const char *sName="";
 	const char *sModel="";
+	const char *sHatModel="";
 	EntityClass *pClass;
 	CEntityDesc ed;
 	Vec3 pos(0,0,0);
@@ -316,10 +317,15 @@ int CScriptObjectServer::SpawnEntity(IFunctionHandler *pH)
 
 		pED->GetValue("name",sName);
 		pED->GetValue("model",sModel);
+
+		pED->GetValue("hat_model",sHatModel);
+		m_pGame->GetSystem()->GetILog()->Log("Server: hat_model is %s", sHatModel);
+
 		if(pED->GetValue("properties",pProperties))
 		{
 			bproperties=true;
 		}
+
 		if(pED->GetValue("pos",o))
 		{
 			pos=o.Get();
@@ -386,6 +392,7 @@ int CScriptObjectServer::SpawnEntity(IFunctionHandler *pH)
 	ed.angles=angles;
 	ed.name=sName;
 	ed.sModel=sModel;
+	ed.sHatModel=sHatModel;
 	ed.id=requestedid;
 	if(bproperties)
 	{

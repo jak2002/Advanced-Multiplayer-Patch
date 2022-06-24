@@ -93,6 +93,8 @@ public:
 	float										scale;
 	void *									pUserData;			//! used during loading from XML
 
+	SafeString<256>					sHatModel;
+
 	IScriptObject *pProperties;
 	IScriptObject *pPropertiesInstance;
 	~CEntityDesc(){};
@@ -123,6 +125,7 @@ inline CEntityDesc::CEntityDesc()
 	pos(0,0,0);
 	scale = 1;
 	vColor=Vec3(1,1,1);	// default, colour not used
+	sHatModel= "";
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -140,6 +143,7 @@ inline CEntityDesc::CEntityDesc( int _id, const EntityClassId _ClassId )
 	pos(0,0,0);
 	scale = 1;
 	vColor=Vec3(1,1,1);	// default, colour not used
+	sHatModel= "";
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -156,6 +160,7 @@ inline CEntityDesc& CEntityDesc::operator=( const CEntityDesc &d )
 	pPropertiesInstance=d.pPropertiesInstance;
 	vColor=d.vColor;
 	scale = d.scale;
+	sHatModel= d.sHatModel;
 	return *this;
 }
 
@@ -209,6 +214,16 @@ inline bool CEntityDesc::Write( IBitStream *pIBitStream, CStream &stm )
 	else
 		stm.Write(false);
 
+	if(sHatModel.length())
+	{
+		stm.Write(true);
+		stm.Write(sHatModel);
+	}
+	else
+	{
+		stm.Write(false);
+	}
+
 	WRITE_COOKIE(stm);
 	return true;
 }
@@ -216,7 +231,7 @@ inline bool CEntityDesc::Write( IBitStream *pIBitStream, CStream &stm )
 //////////////////////////////////////////////////////////////////////////
 inline bool CEntityDesc::Read( IBitStream *pIBitStream, CStream &stm )
 {
-	bool bModel,bName,bPos,bTeamColor;
+	bool bModel,bName,bPos,bTeamColor,bHatModel;
 	static char sTemp[250];
 	VERIFY_COOKIE(stm);
 
@@ -256,6 +271,13 @@ inline bool CEntityDesc::Read( IBitStream *pIBitStream, CStream &stm )
 	}
 	else
 		vColor=Vec3(1,1,1);
+
+	stm.Read(bHatModel);
+	if(bHatModel)
+	{
+		stm.Read(sTemp,250);
+		sHatModel=sTemp;
+	}
 
 	VERIFY_COOKIE(stm);
 	return true;

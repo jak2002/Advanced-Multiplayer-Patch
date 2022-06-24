@@ -605,6 +605,7 @@ public:
 	ICVar* p_color;
 	ICVar* p_model;
 	ICVar* mp_model;
+	ICVar* mp_hatmodel;
 	ICVar* p_always_run;
 	ICVar* g_language;
 	ICVar* g_playerprofile;

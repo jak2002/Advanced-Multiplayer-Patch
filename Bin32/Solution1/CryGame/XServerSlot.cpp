@@ -328,6 +328,8 @@ void CXServerSlot::OnContextReady(CStream &stm)
 	stm.Read(m_strClientColor);						// client requested player color in non team base multiplayer mods
 	stm.Read(m_ClientRequestedClassId);		//
 
+	stm.Read(m_strPlayerHatModel);				// client requested hat model
+
 	char sTemp[65];
 	CXServerSlot::ConvertToValidPlayerName(sNewPlayerName.c_str(),sTemp,sizeof(sTemp));
 
@@ -706,6 +708,11 @@ const char *CXServerSlot::GetName()
 const char *CXServerSlot::GetModel()
 {
 	return m_strPlayerModel.c_str();
+}
+
+const char *CXServerSlot::GetHatModel()
+{
+	return m_strPlayerHatModel.c_str();
 }
 
 //////////////////////////////////////////////////////////////////////

@@ -293,6 +293,8 @@ public:
 
 	//! Set new character model for this player.
 	void	SetPlayerModel( const string &model );
+
+	void	SetHatModel( const string &model );
 	
 	//! Get character model of this player.
 
@@ -478,6 +480,7 @@ public:
 	{
 		desc.sModel=m_strModel.c_str();
 		desc.vColor=GetColor();
+		desc.sHatModel=m_strHatModel.c_str();
 	}
 	void EnterVehicle( CVehicle *pVehicle, eInVehiclestate state, const char *szHelperName);
 	void LeaveVehicle();
@@ -674,6 +677,7 @@ public:
 
 
 	string m_strModel;					//!< Name of player model.
+	string m_strHatModel;				//!< Name of player's hat model.
 	bool m_bFirstPerson;						//!< True when in first person mode. 
 	bool m_bFirstPersonLoaded;					//!< True when was saved in first person mode - set on loading. 
 

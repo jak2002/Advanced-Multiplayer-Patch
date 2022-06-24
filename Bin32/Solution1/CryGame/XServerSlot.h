@@ -102,6 +102,7 @@ public:
 	const char *GetName();
 	//! \return client requested player model
 	const char *GetModel();
+	const char *GetHatModel();
 	//! \return client requested player color in non team base multiplayer mods (string from the client)
 	const char *GetColor();
 
@@ -218,6 +219,7 @@ private:
 	string										m_strPlayerName;									//!< client requested player name
 	string										m_strPlayerModel;									//!< client requested player model
 	string										m_strClientColor;									//!< client requested player color in non team base multiplayer mods
+	string										m_strPlayerHatModel;								//!< client requested hat model
 
 	EntityId									m_wPlayerId;											//!<
 	float											m_fPlayTime;											//!< absolute time when ResetPlayTime() was called
