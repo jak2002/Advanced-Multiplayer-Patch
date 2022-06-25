@@ -327,7 +327,6 @@ void CXServerSlot::OnContextReady(CStream &stm)
 	stm.Read(m_strPlayerModel);						// client requested player model
 	stm.Read(m_strClientColor);						// client requested player color in non team base multiplayer mods
 	stm.Read(m_ClientRequestedClassId);		//
-
 	stm.Read(m_strPlayerHatModel);				// client requested hat model
 
 	char sTemp[65];

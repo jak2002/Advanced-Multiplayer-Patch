@@ -544,14 +544,14 @@ void CXClient::OnXContextSetup(CStream &stm)
 		stm.Write(cl_playerclassid->GetIVal());
 
 		// mp_hatmodel
+		if (m_pGame->IsMultiplayer())
 		{
 			ICVar *hat_model;
-
-			if (m_pGame->IsMultiplayer())
-				hat_model = m_pGame->mp_hatmodel;		// multiplayer model
+			
+			hat_model = m_pGame->mp_hatmodel;		// multiplayer model
 
 			if(!hat_model->GetString())
-				stm.Write("0");
+				stm.Write("");
 			else
 			{
 				m_pLog->Log("mp_hatmodel = %s", hat_model->GetString());
