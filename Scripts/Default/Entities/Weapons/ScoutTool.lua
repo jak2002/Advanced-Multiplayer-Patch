@@ -7,7 +7,8 @@ ScoutTool = {
 
 	PlayerSlowDown = 1.0,									-- factor to slow down the player when he holds that weapon
 	---------------------------------------------------
-	NoZoom=1,
+
+	c4_time = 1000,
 	---------------------------------------------------
 	switch_on_empty_ammo = 1,
 	
@@ -69,3 +70,19 @@ ScoutTool.anim_table[1]={
 		"Activate1"
 	},
 }
+
+function ScoutTool.Client:OnInit()
+	self.beepSound = Sound:LoadSound("Sounds/items/bombcount.wav");
+	BasicWeapon.Client.OnInit(self);
+end
+
+function ScoutTool:ZoomAsAltFire(shooter)
+	if (shooter.cnt.weapon.c4_time < 10000) then
+		shooter.cnt.weapon.c4_time = shooter.cnt.weapon.c4_time + 1000;
+	else
+		shooter.cnt.weapon.c4_time = 1000;
+	end
+
+	Hud:AddMessage("Timer: "..tostring(shooter.cnt.weapon.c4_time/1000).." seconds");
+	Sound:PlaySound(self.beepSound);
+end

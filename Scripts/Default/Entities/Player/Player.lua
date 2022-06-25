@@ -727,6 +727,12 @@ Player.EventHandlers={
 		local weapon = stats.weapon;
 				
 		if (weapon and (not weapon.NoZoom) and (not stats.reloading)) then
+
+			if (weapon.ZoomAsAltFire) and (Params==1) then
+				weapon:ZoomAsAltFire(self);
+				return;
+			end
+
 			local dead_switch = weapon.ZoomDeadSwitch;
 			if (stats.first_person and not self.fireparams.no_zoom) then
 				if(ClientStuff.vlayers:IsActive("WeaponScope"))then
