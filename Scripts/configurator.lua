@@ -2,6 +2,7 @@ config = {
     vars = {
         "p_fov",
         "s_hitsounds",
+        "mp_hatmodel",
         "hud_crosshair_static",
         "hud_crosshair_color_r",
         "hud_crosshair_color_g",
