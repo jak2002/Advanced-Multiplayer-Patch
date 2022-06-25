@@ -30,8 +30,14 @@ projectileDefinition = {
 		occlusion_res=32,
 		occlusion_inflate=2,
 	},
+    EngineSound = {
+        name = "Sounds/items/bombcount.wav",
+        minDist = 5,
+        maxDist = 100000,
+    },
 	
-	lifetime = 10000,
+	lifetime = 5000,
+    stick_to_vehicles = 1,
 	mark_terrain = 1,
 	force_objtype = 2,
 	projectileObject = "Objects/Weapons/scouttool/scouttool_active.cgf",

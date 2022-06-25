@@ -419,10 +419,12 @@ function Player:LoadModel()
 			self:LoadCharacter("objects/characters/pmodels/hero/hero_mp.cgf",0);								-- if this model is not there load the default model
 		end
 
-		local hatmodel = toNumberOrZero(self.cnt.hat_model)
-        if hatmodel > 0 and MPHelmetList[hatmodel] then
-            self:LoadObject(MPHelmetList[hatmodel].model,0,0);
-            self:AttachObjectToBone( 0,"hat_bone",0,1);                              -- if this model is not there load the default model
+        if Game:IsMultiplayer() then
+            local hatmodel = toNumberOrZero(self.cnt.hat_model)
+            if hatmodel > 0 and MPHelmetList[hatmodel] then
+                self:LoadObject(MPHelmetList[hatmodel].model,0,0);
+                self:AttachObjectToBone( 0,"hat_bone",0,1);                              -- if this model is not there load the default model
+            end
         end
 
 		self["model_loaded"]=1;
