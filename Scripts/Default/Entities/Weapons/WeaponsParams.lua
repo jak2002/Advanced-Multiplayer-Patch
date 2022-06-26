@@ -861,7 +861,7 @@ WeaponsParams={
 				hud_icon="auto",
 				accuracy_modifier_prone = 0.5,
 				accuracy_modifier_crouch = 0.7,		 
-			  recoil_modifier_standing = 1.0,
+			  	recoil_modifier_standing = 1.0,
 				
 				--view shaking: weapon_viewshake is the frequency of the shake, 
 				--		weapon_viewshake_amt is optional: if not present will be used an ammount equal to (weapon_viewshake*0.001)
@@ -880,10 +880,10 @@ WeaponsParams={
 				damage_type = "normal",
 				aim_improvement=0.02,
 				accuracy_decay_on_run=0.35,
-				min_accuracy=0.57,
-				max_accuracy=0.78,
+				min_accuracy=0.5,
+				max_accuracy=0.5,
 				reload_time=4,
-				fire_rate=0.1,
+				fire_rate=0.05,
 				distance=280,
 				damage=33,
 				damage_drop_per_meter=.04,
@@ -897,7 +897,7 @@ WeaponsParams={
 				hud_icon="auto",
 				accuracy_modifier_prone = 0.5,
 				accuracy_modifier_crouch = 0.7,		 
-        recoil_modifier_standing = 1,
+        		recoil_modifier_standing = 1,
 				accuracy_modifier_standing = 0.75,
 				
 				--view shaking: weapon_viewshake is the frequency of the shake, 
