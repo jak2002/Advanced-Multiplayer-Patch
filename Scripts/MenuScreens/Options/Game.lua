@@ -311,10 +311,11 @@ UI.PageOptionsGame=
             UI.PageOptionsGame.IDToModel = {};
             UI.PageOptionsGame.GUI.phat:Clear();
             UI.PageOptionsGame.GUI.phat:AddItem("@NoHat")
+            UI.PageOptionsGame.IDToHatModel = {};
             for i, Model in MPHelmetList do
                 if (Model.name and strlen(Model.name) > 0) then
                     local iIndex = UI.PageOptionsGame.GUI.phat:AddItem(Model.name);
-                    UI.PageOptionsGame.IDToModel[iIndex] = Model.model;
+                    UI.PageOptionsGame.IDToHatModel[iIndex] = Model.model;
 
                     if (strlower(Model.model) == strlower(getglobal("mp_hatmodel"))) then
                         iSelection = iIndex;
@@ -381,15 +382,21 @@ UI.PageOptionsGame=
 
 		local szName = UI.PageOptionsGame.IDToModel[iSelection];
 
-
 		if (szName and strlen(szName) > 0) then
 			local ModelView = UI.PageOptionsGame.GUI.modelview;
 			local ColorCombo = UI.PageOptionsGame.GUI.pcolor;
 
-			local bResult = ModelView:LoadModel(szName)
+			local hatIndex = UI.PageOptionsGame.GUI.phat:GetSelectionIndex() - 1;
+
+			local bResult = 0
+			if (MPHelmetList[hatIndex]) then
+				bResult = ModelView:LoadModel(szName, MPHelmetList[hatIndex].model);
+			else
+				bResult = ModelView:LoadModel(szName, "None");
+			end
 
 			if (bResult and tonumber(bResult) ~= 0) then
-				ModelView:SetAnimation("swalkfwd");
+				ModelView:SetAnimation("sidle");
 				ModelView:SetView(3.5);
 				ModelView:SetSecondShader("PlayerMaskModulate");
 

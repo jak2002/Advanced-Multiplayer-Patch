@@ -164,4 +164,4 @@ Game:CreateVariable("cl_message_repeat", 3 );                   -- number of tim
 
 Game:CreateVariable("gr_team_binocular",1, "NetSynch");
 Game:CreateVariable("gr_stamina",1, "NetSynch");
-Game:CreateVariable("gr_JumpDelay",0.4, "NetSynch");
+Game:CreateVariable("gr_JumpDelay",0.2, "NetSynch");

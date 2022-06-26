@@ -59,7 +59,7 @@ public:
 	int SetHAlign(int iAlign);
 	int GetHAlign();
 
-	int LoadModel(const string &szModelName);
+	int LoadModel(const string &szModelName, const string &szHatModelName = "None");
 	int ReleaseModel();
 	int StartAnimation(const string &szAnimationName);
 
@@ -141,7 +141,11 @@ private:
 	UISkinTexture			m_pTexture;
 
 	ICryCharInstance	*m_pModel;
-	string						m_szModelName;
+	string				m_szModelName;
+
+	IStatObj			*m_pHatModel;
+	string				m_szHatModelName;
+
 	float							m_fCameraDistance;
 	float							m_fCameraFov;
 	float							m_fModelRotation;
