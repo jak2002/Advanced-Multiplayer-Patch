@@ -59,7 +59,7 @@ public:
 	int SetHAlign(int iAlign);
 	int GetHAlign();
 
-	int LoadModel(const string &szModelName, const string &szHatModelName = "None");
+	int LoadModel(const string &szModelName);
 	int ReleaseModel();
 	int StartAnimation(const string &szAnimationName);
 
@@ -142,9 +142,6 @@ private:
 
 	ICryCharInstance	*m_pModel;
 	string				m_szModelName;
-
-	IStatObj			*m_pHatModel;
-	string				m_szHatModelName;
 
 	float							m_fCameraDistance;
 	float							m_fCameraFov;

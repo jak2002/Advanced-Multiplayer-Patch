@@ -18,7 +18,7 @@
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
   <WindowHeight>7980</WindowHeight>
-  <WindowWidth>21570</WindowWidth>
+  <WindowWidth>18900</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -102,96 +102,95 @@
     <Cell ss:StyleID="Default"><Data ss:Type="String">Снайпер</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MultiplayerHat</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Акссесуар</Data></Cell>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPHelmet</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Каска</Data></Cell>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPHelmetArmy</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Армейский шлем</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPHelmetArmyCamo</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Армейский шлем (Камуфляж)</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPHelmetArmyBlack</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Армейский шлем (Чёрный)</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPHelmetIndoor</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Шлем SWAT</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPHelmetIndoorHaki</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Шлем SWAT (Жёлтый)</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPHelmetNightVis</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Шлем с ПНВ</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPBeard</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Борода</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPGoggles</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Очки с ПНВ</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPIrokez</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Ирокез</Data></Cell>
    </Row>
    <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPSniperGlasses</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Солнечные очки</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPRearHat</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Шляпа</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPCoverHat</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Берет</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPEvilWorkerHat</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Шляпа рабочего</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPEarProtector</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Наушники</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPComHat</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Шляпа коммандира</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NoHat</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Без шляпы</Data></Cell>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
@@ -548,8 +547,8 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>3</ActiveRow>
-     <ActiveCol>1</ActiveCol>
+     <ActiveRow>15</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

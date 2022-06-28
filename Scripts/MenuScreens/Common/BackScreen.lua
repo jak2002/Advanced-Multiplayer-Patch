@@ -63,7 +63,7 @@ UI.PageBackScreen=
 
 			halign = UIALIGN_RIGHT,
 
-			text = "Build - 14.06.22\nby sm1le and CJ";
+			text = "Build - 28.06.22\nby sm1le and CJ";
 		},
 
 		Left=

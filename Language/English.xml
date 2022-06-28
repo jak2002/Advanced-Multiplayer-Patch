@@ -18,7 +18,7 @@
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
   <WindowHeight>7980</WindowHeight>
-  <WindowWidth>21570</WindowWidth>
+  <WindowWidth>18900</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -102,96 +102,95 @@
     <Cell ss:StyleID="Default"><Data ss:Type="String">Sniper</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MultiplayerHat</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Accessory</Data></Cell>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPHelmet</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Helmet</Data></Cell>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPHelmetArmy</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Army Helmet</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPHelmetArmyCamo</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Army Helmet (Camo)</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPHelmetArmyBlack</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Army Helmet (Black)</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPHelmetIndoor</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">SWAT Helmet</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPHelmetIndoorHaki</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">SWAT Helmet (Yellow)</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPHelmetNightVis</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">NVG Helmet</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPBeard</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Beard</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPGoggles</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">NV Goggles</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPIrokez</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Irokez</Data></Cell>
    </Row>
    <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPSniperGlasses</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Sunglasses</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPRearHat</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hat</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPCoverHat</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Beret</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPEvilWorkerHat</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Worker's hat</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPEarProtector</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Earprotector</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPComHat</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Comm Hat</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NoHat</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">No hat</Data></Cell>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
@@ -548,7 +547,8 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>3</ActiveRow>
+     <ActiveRow>21</ActiveRow>
+     <ActiveCol>1</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

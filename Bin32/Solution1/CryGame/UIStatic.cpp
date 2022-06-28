@@ -36,7 +36,6 @@ CUIStatic::CUIStatic()
 	m_fLineHeight(0),
 	m_fLineSpacing(0.0f),
 	m_pModel(0),
-	m_pHatModel(0),
   m_fAngle(0),
 	m_fCameraDistance(4.0f),
 	m_fCameraFov(35.0f * gf_PI / 180.0f),
@@ -355,12 +354,6 @@ int CUIStatic::Draw(int iPass)
 		m_pModel->Update();
 		m_pModel->Draw(pRenderParams,Vec3(zero));
 
-		if (m_pHatModel)
-		{
-			m_pHatModel->Render(pRenderParams, Vec3(zero));
-			m_pHatModel->Update();
-		}
-
 		pRenderer->EF_EndEf3D(SHDF_SORT);
 
 		// restore old settings
@@ -596,7 +589,7 @@ int CUIStatic::GetHAlign()
 }
 
 ////////////////////////////////////////////////////////////////////// 
-int CUIStatic::LoadModel(const string &szModelName, const string &szHatModelName)
+int CUIStatic::LoadModel(const string &szModelName)
 {
 	if (m_pModel)
 	{
@@ -605,12 +598,6 @@ int CUIStatic::LoadModel(const string &szModelName, const string &szHatModelName
 
 	m_pModel = m_pUISystem->GetISystem()->GetIAnimationSystem()->MakeCharacter(szModelName.c_str());
 	m_szModelName = szModelName;
-
-	if (szHatModelName != "None")
-	{
-		m_pHatModel = m_pUISystem->GetISystem()->GetI3DEngine()->MakeObject(szHatModelName.c_str());
-		m_szHatModelName = szHatModelName;
-	}
 
 	return (m_pModel ? 1 : 0);
 }
@@ -624,14 +611,7 @@ int CUIStatic::ReleaseModel()
 		m_pModel = 0;
 	}
 
-	if (m_pHatModel)
-	{
-		//m_pUISystem->GetISystem()->GetIAnimationSystem()->RemoveCharacter(m_pHatModel);
-		m_pHatModel = 0;
-	}
-
 	m_szModelName.clear();
-	m_szHatModelName.clear();
 
 	return 1;
 }
@@ -1201,25 +1181,19 @@ int CUIStatic::GetVScrollBar(IFunctionHandler *pH)
 ////////////////////////////////////////////////////////////////////// 
 int CUIStatic::LoadModel(IFunctionHandler *pH)
 {
-	CHECK_SCRIPT_FUNCTION_PARAMCOUNT(m_pScriptSystem, GetName().c_str(), LoadModel, 2);
+	CHECK_SCRIPT_FUNCTION_PARAMCOUNT(m_pScriptSystem, GetName().c_str(), LoadModel, 1);
 	CHECK_SCRIPT_FUNCTION_PARAMTYPE(m_pScriptSystem, GetName().c_str(), LoadModel, 1, svtString);
-	CHECK_SCRIPT_FUNCTION_PARAMTYPE(m_pScriptSystem, GetName().c_str(), LoadModel, 2, svtString);
 
 	char *szModelName;
-	char *szHatModelName;
 
 	pH->GetParam(1, szModelName);
-	pH->GetParam(2, szHatModelName);
 
 	if (m_pModel)
 	{
 		m_pModel = 0;
 	}
 
-	if (m_pHatModel)
-		m_pHatModel = 0;
-
-	if (LoadModel(szModelName, szHatModelName))
+	if (LoadModel(szModelName))
 	{
 		return pH->EndFunction(true);
 	}

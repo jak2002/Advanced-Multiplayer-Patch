@@ -386,14 +386,7 @@ UI.PageOptionsGame=
 			local ModelView = UI.PageOptionsGame.GUI.modelview;
 			local ColorCombo = UI.PageOptionsGame.GUI.pcolor;
 
-			local hatIndex = UI.PageOptionsGame.GUI.phat:GetSelectionIndex() - 1;
-
-			local bResult = 0
-			if (MPHelmetList[hatIndex]) then
-				bResult = ModelView:LoadModel(szName, MPHelmetList[hatIndex].model);
-			else
-				bResult = ModelView:LoadModel(szName, "None");
-			end
+			local bResult = ModelView:LoadModel(szName);
 
 			if (bResult and tonumber(bResult) ~= 0) then
 				ModelView:SetAnimation("sidle");
