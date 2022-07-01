@@ -218,7 +218,7 @@ OICWMP = {
 	MaxZoomSteps = 1,
 	ZoomSteps = { 3 },
 	---------------------------------------------------
-	PlayerSlowDown = 0.7,									-- factor to slow down the player when he holds that weapon
+	PlayerSlowDown = 0.9,									-- factor to slow down the player when he holds that weapon
 	---------------------------------------------------
 	ActivateSound = Sound:LoadSound("Sounds/Weapons/oicw/oicwact.wav",0,155),	-- sound to play when this weapon is selected
 	ZoomNoSway=1,
