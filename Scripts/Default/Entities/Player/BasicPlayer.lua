@@ -1407,7 +1407,7 @@ function BasicPlayer:Client_OnDamage( hit )
 		end
 										
 		-- [tiago]handle diferent screen damage fx's..
-		if(hit.damage>0 and self.cnt.health ~= 0) then	-- fix, since player continues to get damage after dead.. make sure no screen fx
+		if(hit.damage>0 and self.cnt.health ~= 0 and self.cnt.armor <= 0) then	-- fix, since player continues to get damage after dead.. make sure no screen fx
 			-- override previous hit damage indicators		
 			if(hit.falling) then
 				Hud.dmgindicator = bor( Hud.dmgindicator, 16 );
@@ -1430,9 +1430,9 @@ function BasicPlayer:Client_OnDamage( hit )
 				Hud.meleeDamageType=nil;				
 				Hud:OnMiscDamage(hit.damage);					
 				Hud:SetScreenDamageColor(0.0, 0.4, 0.1);
-			else			
-				Hud:OnMiscDamage(hit.damage/30.0);					
-				Hud:SetScreenDamageColor(0.9, 0.8, 0.8);
+            else
+                Hud:OnMiscDamage(hit.damage/30.0);                  
+                Hud:SetScreenDamageColor(0.9, 0.8, 0.8);
 			end
 		end
 		

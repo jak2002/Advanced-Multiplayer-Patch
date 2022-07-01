@@ -2049,26 +2049,36 @@ function Hud:DrawCrosshair(player)
 		FrameTime=FrameTime*0.75;
 		local fTexOffset=0.5/256;
 
+        local fR = 0.45
+        local fG = 0.1
+        local fB = 0
+
+        if (_localplayer.cnt.armor > 0) then
+            fR = 1
+            fG = 0.75
+            fB = 0
+        end
+
 		if(self.dmgfront>0)then
-			%System:DrawImageColorCoords(self.damage_icon_ud, 0, 0, 800, 90, 4, 0.45, 0.1, 0,  self.dmgfront, 1+fTexOffset, 1+fTexOffset, fTexOffset, fTexOffset);
+			%System:DrawImageColorCoords(self.damage_icon_ud, 0, 0, 800, 90, 4, fR, fG, fB,  self.dmgfront, 1+fTexOffset, 1+fTexOffset, fTexOffset, fTexOffset);
 			self.dmgfront=self.dmgfront-FrameTime;
 			if(self.dmgfront<0) then self.dmgfront=0 end
 		end
 
 		if(self.dmgback>0)then
-			%System:DrawImageColorCoords(self.damage_icon_ud, 0, 600-90, 800, 90, 4, 0.45, 0.1, 0, self.dmgback, fTexOffset, fTexOffset, 1+fTexOffset, 1+fTexOffset);
+			%System:DrawImageColorCoords(self.damage_icon_ud, 0, 600-90, 800, 90, 4, fR, fG, fB, self.dmgback, fTexOffset, fTexOffset, 1+fTexOffset, 1+fTexOffset);
 			self.dmgback=self.dmgback-FrameTime;
 			if(self.dmgback<0) then self.dmgback=0 end
 		end
 
 		if(self.dmgleft>0)then
-			%System:DrawImageColorCoords(self.damage_icon_lr, 0, 0, 90, 600, 4, 0.45, 0.1, 0, self.dmgleft, fTexOffset, fTexOffset, 1-fTexOffset, 1-fTexOffset);
+			%System:DrawImageColorCoords(self.damage_icon_lr, 0, 0, 90, 600, 4, fR, fG, fB, self.dmgleft, fTexOffset, fTexOffset, 1-fTexOffset, 1-fTexOffset);
 			self.dmgleft=self.dmgleft-FrameTime;
 			if(self.dmgleft<0) then self.dmgleft=0 end
 		end
 
 		if(self.dmgright>0)then
-			%System:DrawImageColorCoords(self.damage_icon_lr, 800-90, 0, 90, 600, 4, 0.45, 0.1, 0, self.dmgright, 1-fTexOffset, 1-fTexOffset, fTexOffset, fTexOffset);
+			%System:DrawImageColorCoords(self.damage_icon_lr, 800-90, 0, 90, 600, 4, fR, fG, fB, self.dmgright, 1-fTexOffset, 1-fTexOffset, fTexOffset, fTexOffset);
 			self.dmgright=self.dmgright-FrameTime;
 			if(self.dmgright<0) then self.dmgright=0 end
 		end
