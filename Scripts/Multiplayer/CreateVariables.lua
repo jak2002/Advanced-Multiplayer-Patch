@@ -5,7 +5,8 @@
 Game:CreateVariable("gr_ScoreLimit", 0);												--
 Game:CreateVariable("gr_TimeLimit", 20, "NetSynch");												-- in minutes
 Game:CreateVariable("gr_DamageScale", 1);												-- affects damage of all weapons
-Game:CreateVariable("gr_HeadshotMultiplier", 4);								-- normal damage X this variable for headshots. Default 2.
+Game:CreateVariable("gr_HeadshotMultiplier", 1);                                -- normal damage X this variable for headshots. Default 2.
+Game:CreateVariable("gr_DefaultHeadshotMultiplier", 4);								-- normal damage X this variable for headshots. Default 2.
 
 Game:CreateVariable("gr_NextMap", "");													-- e.g. "mp_airstrip"
 

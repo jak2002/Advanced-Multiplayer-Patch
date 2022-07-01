@@ -16,7 +16,7 @@ Shotgun = {
 	ZoomOverlayFunc=AimModeZoomHUD.DrawHUD,
 
 
-	HeadshotMultiplier = 0.25,
+	HeadshotMultiplier = 1,
 
 	---------------------------------------------------
 

@@ -1406,11 +1406,12 @@ function GameRules:UsualDamageCalculation(hit)
 	if(hit.target_material and hit.target_material.type=="head") then		-- HEAD SHOT
 	  	headshot=1;
      		if toNumberOrZero(getglobal("gr_HeadshotMultiplier"))~= nil then
-     			if (shooter.cnt.weapon.HeadshotMultiplier) then
-     				damage=damage*(tonumber(getglobal("gr_HeadshotMultiplier"))*shooter.cnt.weapon.HeadshotMultiplier);
-     			else
-     				damage=damage*tonumber(getglobal("gr_HeadshotMultiplier"))
-     			end
+                if (shooter.cnt.weapon.HeadshotMultiplier) then
+                    damage=damage*shooter.cnt.weapon.HeadshotMultiplier
+                else
+                    damage=damage*tonumber(getglobal("gr_DefaultHeadshotMultiplier"))
+                end
+                damage = damage * tonumber(getglobal("gr_HeadshotMultiplier"))
      		end
 	end
 	if toNumberOrZero(getglobal("gr_customdamagescale"))~=1 then
