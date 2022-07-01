@@ -2414,6 +2414,11 @@ GameRules.ClientCommandTable["CSD"]=function(String,ServerSlot,TokTable)
 	hit.dir = hit.shooter:GetDirectionVector();
 	hit.network = 1;
 
+    local userbyte = 3
+    if hit.target.cnt.armor > 0 and TokTable[5] ~= "h" then
+        userbyte = 5
+    end
+
 	--BasicPlayer.Server_OnDamage(target, hit);
 	GameRules:INPROGRESS_OnDamage(hit);
 
@@ -2423,7 +2428,8 @@ GameRules.ClientCommandTable["CSD"]=function(String,ServerSlot,TokTable)
 		z = TokTable[8],
 	};
 
-	Server:BroadcastCommand("FX "..situation, bloodpos, hit.dir, hit.shooter.id, 3);
+
+	Server:BroadcastCommand("FX "..situation, bloodpos, hit.dir, hit.shooter.id, userbyte);
 	Server:BroadcastCommand("MBB "..hit.target.id.." "..hit.shooter.id.." "..TokTable[5]);
 end
 

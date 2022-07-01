@@ -492,6 +492,21 @@ function Player:Client_OnRemoteEffect(toktable, pos, normal, userbyte, situation
 		if(self == _localplayer) then
 			Hud.hit=5;
 		end
+    elseif (userbyte == 5) then
+        if (Game:IsMultiplayer()) then
+            local hit = {};
+            hit.pos = pos;
+            hit.normal = normal;
+            hit.target_material = Materials["mat_armor"];
+            -- might be invulnerable!!
+            if (self.iPlayerEffect ~= 3) then
+                ExecuteMaterial_Particles( hit , "bullet_hit");
+            end
+        end
+
+        if(self == _localplayer) then
+            Hud.hit=5;
+        end
 	end
 
 	if (situation and (userbyte == 3 or userbyte == 4) and self == _localplayer) and (Game:IsMultiplayer()) then
