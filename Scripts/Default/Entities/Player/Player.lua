@@ -465,19 +465,21 @@ end
 --------------------------------------------------------------------------------------------------------
 function Player:Client_OnRemoteEffect(toktable, pos, normal, userbyte, situation)
 --	System:Log("_FX: Setting effect: "..tostring(self.id).."("..tostring(userbyte)..")");
-	if (userbyte == 0) then
+
+    local USERBYTE_NONE,USERBYTE_TEAMCOLOR,USERBYTE_GOD,USERBYTE_HIT,USERBYTE_KILL,USERBYTE_ARMOR = 0,1,2,3,4,5
+	if (userbyte == USERBYTE_NONE) then
 		-- set second shader to none
 		BasicPlayer.SecondShader_None(self);		
 	--	self.iPlayerEffect=1;
-	elseif (userbyte == 1) then
+	elseif (userbyte == USERBYTE_TEAMCOLOR) then
 		-- set second shader to apply team coloring
 		BasicPlayer.SecondShader_TeamColoring(self);		
 --		self.iPlayerEffect=2;
-	elseif (userbyte == 2) then
+	elseif (userbyte == USERBYTE_GOD) then
 		-- turn on invulnerability
 		BasicPlayer.SecondShader_Invulnerability(self,1,1,1,1);		
 --		self.iPlayerEffect=3;
-	elseif (userbyte == 3) then						-- target is alive 
+	elseif (userbyte == USERBYTE_HIT) then						-- target is alive 
 		if (Game:IsMultiplayer()) then
 			local hit = {};
 			hit.pos = pos;
@@ -492,7 +494,10 @@ function Player:Client_OnRemoteEffect(toktable, pos, normal, userbyte, situation
 		if(self == _localplayer) then
 			Hud.hit=5;
 		end
-    elseif (userbyte == 5) then
+    elseif (userbyte == USERBYTE_KILL) then
+
+
+    elseif (userbyte == USERBYTE_ARMOR) then
         if (Game:IsMultiplayer()) then
             local hit = {};
             hit.pos = pos;
@@ -509,7 +514,8 @@ function Player:Client_OnRemoteEffect(toktable, pos, normal, userbyte, situation
         end
 	end
 
-	if (situation and (userbyte == 3 or userbyte == 4) and self == _localplayer) and (Game:IsMultiplayer()) then
+
+	if (situation and (userbyte == USERBYTE_HIT or userbyte == USERBYTE_KILL) and self == _localplayer) and (Game:IsMultiplayer()) then
 		-- Situations: 1 - standart hit, 2 - headshot, 3 - kill
 		Hud:PlayMultiplayerHitSound(tonumber(situation));
 	end
