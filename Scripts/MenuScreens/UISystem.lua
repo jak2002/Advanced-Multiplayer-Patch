@@ -59,6 +59,7 @@ function UI:OnInit()
 	-- Load Options Screens
 	Script:LoadScript(szScriptFolder.."Options.lua", 1);
 	Script:LoadScript(szScriptFolder.."Options/Game.lua", 1);
+    Script:LoadScript(szScriptFolder.."Options/GameAdv.lua", 1);
 	Script:LoadScript(szScriptFolder.."Options/Control.lua", 1);
 	Script:LoadScript(szScriptFolder.."Options/Video.lua", 1);
 	Script:LoadScript(szScriptFolder.."Options/VideoAdv.lua", 1);

@@ -128,6 +128,22 @@ UI.PageOptionsGame=
             end,
         },
 
+        widget_advanced =
+        {
+            left = 208, top = 142 + 318 - 34,
+            width = 160,
+            skin = UI.skins.BottomMenuButton,
+            bordersides = "lrtb",
+
+            text = Localize( "AdvancedGameOptions" ),
+
+            tabstop = 13,
+
+            OnCommand = function( sender )
+                GotoPage( "GameAdvOptions" );
+            end,
+        },
+
         phattext=
         {
             skin = UI.skins.Label,
@@ -270,6 +286,7 @@ UI.PageOptionsGame=
 		},
 
 		OnActivate= function(Sender)
+
 			local playername = getglobal("p_name");
 
 			if (playername and strlen(playername) > 0) then

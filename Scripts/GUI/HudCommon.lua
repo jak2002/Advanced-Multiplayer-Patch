@@ -2053,7 +2053,7 @@ function Hud:DrawCrosshair(player)
         local fG = 0.1
         local fB = 0
 
-        if (_localplayer.cnt.armor > 0) then
+        if (_localplayer.cnt.armor and _localplayer.cnt.armor > 0) then
             fR = 1
             fG = 0.75
             fB = 0
