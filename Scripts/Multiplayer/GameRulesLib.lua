@@ -2454,7 +2454,9 @@ end
 -- 3 Hash
 GameRules.ClientCommandTable["CSH"]=function(String,ServerSlot,TokTable)
     local hashes = {
-        Game:GetMD5(ReadFile("scripts/anticheat.lua")), -- anticheat.lua
+        Game:GetMD5(ReadFile("scripts/anticheat.lua")),
+        Game:GetMD5(ReadFile("scripts/default/entities/weapons/basicweapon.lua")),
+        Game:GetMD5(ReadFile("scripts/default/entities/weapons/weaponsparams.lua")),
     }
     local id = tonumber(TokTable[2])
     local hash = tostring(TokTable[3])

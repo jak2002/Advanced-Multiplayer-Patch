@@ -49,7 +49,6 @@ function ClientStuff:OnInit()
 	self.vlayers:AddLayer("Binoculars",Binoculars);
 	self.vlayers:AddLayer("WeaponScope",WeaponScope);
 	self.vlayers:AddLayer("SmokeBlur",SmokeBlur);
-    Anticheat.Client:OnConnect()
 end
 
 --------------------------------------------
