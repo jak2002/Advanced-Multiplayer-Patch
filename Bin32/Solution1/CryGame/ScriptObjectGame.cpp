@@ -56,6 +56,8 @@
 	#include <sys/stat.h>
 #endif
 
+#include "md5.h"
+
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
@@ -318,6 +320,7 @@ void CScriptObjectGame::InitializeTemplate(IScriptSystem *pSS)
 	REG_FUNC(CScriptObjectGame,AddCommand);
 	REG_FUNC(CScriptObjectGame,EnableQuicksave);
 	REG_FUNC(CScriptObjectGame,GetServerIP);
+	REG_FUNC(CScriptObjectGame,GetMD5);
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -3838,4 +3841,23 @@ int CScriptObjectGame::GetServerIP(IFunctionHandler * pH)
 	}
 	
 	return pH->EndFunction(GetISystem()->GetINetwork()->GetUBIGameServerIP(true));
+}
+
+int CScriptObjectGame::GetMD5(IFunctionHandler * pH)
+{
+	CHECK_PARAMETERS(1);
+	const char *HashString;
+	pH->GetParam(1, HashString);
+
+	md5::md5_t md5;
+    md5.process(HashString, strlen(HashString));
+    md5.finish();
+
+    char str[MD5_STRING_SIZE];
+
+    md5.get_string(str);
+
+    const char* result = &str[0];
+
+    return pH->EndFunction(result);
 }

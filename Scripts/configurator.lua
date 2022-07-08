@@ -1,3 +1,4 @@
+-- Add here all the variables that you want to save in the config file of the mod
 config = {
     vars = {
         "p_fov",
@@ -19,9 +20,10 @@ config = {
     },
 };
 
+-- Creating new variables
 Game:CreateVariable("p_fov", 90);
 Game:CreateVariable("s_hitsounds", 0);
-Game:CreateVariable("hud_crosshair_default", 0);
+Game:CreateVariable("hud_crosshair_default", 1);
 Game:CreateVariable("hud_crosshair_static", 0);
 Game:CreateVariable("hud_crosshair_color_r", 1);
 Game:CreateVariable("hud_crosshair_color_g", 1);
@@ -49,6 +51,7 @@ function config:SaveConfig()
     end
 end
 
+-- Formats text (remove spaces and brackets)
 function config:format(str) str = gsub(str, "%s+", ""); str = gsub(str, '"', ""); return str end
 
 function config:LoadConfig()
@@ -68,6 +71,7 @@ function config:LoadConfig()
     end
 end
 
+-- Hooks to exit game functions
 Game._Quit = Game.Quit;
 function Game:Quit()
     config:SaveConfig();

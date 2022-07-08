@@ -2,9 +2,6 @@
 -- advanced video options menu page
 --
 ----------------------------------------------------------------------------------------------
-
-TEMP_OFF = 100
-
 UI.PageOptionsGameAdv =
 {
 	GUI =
@@ -13,27 +10,16 @@ UI.PageOptionsGameAdv =
             UI.PageOptionsGameAdv.GUI:DrawCrosshair()
         end,
 
-	--	sep_v =
-	--	{
-	--		skin = UI.skins.MenuBorder,
-
-	--		left = 510, top = 140,
-	--		width = 271, height = 319,
-	--		bordersides = "l",
-
-	--		zorder = -50,
-	--	},
-
-	--	sep_h0 =
-	--	{
-	--		skin = UI.skins.MenuBorder,
-
-	--		left = 510, top = 380,
-	--		width = 271, height = 123,
-	--		bordersides = "t",
-
-	--		zorder = -50,
-	--	},
+        PersonalConfigText=
+        {
+            skin = UI.skins.Label,
+            
+            left = 200, top = 110,
+            width = 400, 
+            halign = UIALIGN_LEFT,
+                        
+            text = Localize("PersonalConfig");
+        },
 
 
 		-- definition of "Back" button (takes user to back to basic video menu)
@@ -46,7 +32,7 @@ UI.PageOptionsGameAdv =
 
 			text = Localize( "BasicGameOptions" ),
 
-			tabstop = 26,
+			tabstop = 20,
 
 			OnCommand = function( sender )
 				GotoPage( "GameOptions" );
@@ -131,7 +117,7 @@ UI.PageOptionsGameAdv =
         {
             skin = UI.skins.HScrollBar,
 
-            left = 335+TEMP_OFF, top = 150,
+            left = 435, top = 150,
             width = 150, height = 24,
 
             tabstop = 5,
@@ -152,10 +138,10 @@ UI.PageOptionsGameAdv =
         {
             skin = UI.skins.HScrollBar,
 
-            left = 335+TEMP_OFF, top = 188,
+            left = 435, top = 188,
             width = 150, height = 24,
 
-            tabstop = 5,
+            tabstop = 6,
 
             OnChanged = function( sender )
                 UI.PageOptionsGameAdv.SetCHColor()
@@ -173,10 +159,10 @@ UI.PageOptionsGameAdv =
         {
             skin = UI.skins.HScrollBar,
 
-            left = 335+TEMP_OFF, top = 226,
+            left = 435, top = 226,
             width = 150, height = 24,
 
-            tabstop = 5,
+            tabstop = 7,
 
             OnChanged = function( sender )
                 UI.PageOptionsGameAdv.SetCHColor()
@@ -207,7 +193,7 @@ UI.PageOptionsGameAdv =
 
             skin = UI.skins.CheckBox,
 
-            tabstop = 4,
+            tabstop = 2,
 
             OnChanged=function(Sender)
                 if (Sender:GetChecked()) then
@@ -235,7 +221,7 @@ UI.PageOptionsGameAdv =
 
             skin = UI.skins.CheckBox,
 
-            tabstop = 4,
+            tabstop = 3,
 
             OnChanged=function(Sender)
                 if (Sender:GetChecked()) then
@@ -281,7 +267,7 @@ UI.PageOptionsGameAdv =
 
             skin = UI.skins.CheckBox,
 
-            tabstop = 4,
+            tabstop = 1,
 
             OnChanged=function(Sender)
                 if (Sender:GetChecked()) then
@@ -295,7 +281,7 @@ UI.PageOptionsGameAdv =
         separator=
         {
             skin = UI.skins.MenuBorder,
-            left = 490+TEMP_OFF, top = 141,
+            left = 590, top = 141,
             width = 2, height = 275,
             color = "0 0 0 0",
             bordersides = "l",
@@ -316,15 +302,17 @@ UI.PageOptionsGameAdv =
             skin = UI.skins.MenuBorder,
 
             left = 200, top = 415,
-            width = 580+TEMP_OFF, height = 243,
+            width = 680, height = 243,
             color = "0 0 0 0",
             bordersides = "t",
         },
 
         chcolormode=
         {
-            left = 335+TEMP_OFF, top = 264,
+            left = 435, top = 264,
             width = 150, height = 28,
+
+            tabstop = 8,
 
             skin = UI.skins.ComboBox,
 
@@ -337,7 +325,7 @@ UI.PageOptionsGameAdv =
         {
             skin = UI.skins.MenuBorder,
             left = 330, top = 298,
-            width = 161+TEMP_OFF, height = 2,
+            width = 261, height = 2,
             color = "0 0 0 0",
             bordersides = "t",
         },
@@ -347,10 +335,10 @@ UI.PageOptionsGameAdv =
         {
             skin = UI.skins.HScrollBar,
 
-            left = 335+TEMP_OFF, top = 308,
+            left = 435, top = 308,
             width = 150, height = 24,
 
-            tabstop = 5,
+            tabstop = 8,
 
             OnChanged = function( sender )
                 setglobal("hud_crosshair_length",UI.PageOptionsGameAdv.GUI.ch_length:GetValue() * 15)
@@ -368,10 +356,10 @@ UI.PageOptionsGameAdv =
         {
             skin = UI.skins.HScrollBar,
 
-            left = 335+TEMP_OFF, top = 344,
+            left = 435, top = 344,
             width = 150, height = 24,
 
-            tabstop = 5,
+            tabstop = 9,
 
             OnChanged = function( sender )
                 setglobal("hud_crosshair_thickness",UI.PageOptionsGameAdv.GUI.ch_thickness:GetValue() * 3)
@@ -389,10 +377,10 @@ UI.PageOptionsGameAdv =
         {
             skin = UI.skins.HScrollBar,
 
-            left = 335+TEMP_OFF, top = 405 - 24,
+            left = 435, top = 405 - 24,
             width = 150, height = 24,
 
-            tabstop = 5,
+            tabstop = 10,
 
             OnChanged = function( sender )
                 setglobal("hud_crosshair_spacing",UI.PageOptionsGameAdv.GUI.ch_spacing:GetValue() * 5)
@@ -411,7 +399,7 @@ UI.PageOptionsGameAdv =
             skin = UI.skins.CheckBox,
             left = 730, top = 146,--166,
 
-            tabstop = 7,
+            tabstop = 11,
 
             -- code specific for "Full Screen" check box (separated in user table)
         },
@@ -430,14 +418,14 @@ UI.PageOptionsGameAdv =
             left = 702, top = 186,
             width = 56,
 
-            tabstop = 1,
+            tabstop = 12,
             maxlength = 3,
             namesafe = 1,
             disallow = "\"'abcdefghijklmnopqrstuvwxyz;[]/\\,.-=`!@#$%^&*()+_{}:|?><~QWERTYUIOPASDFGHJKLZXCVBNM",
             OnChanged = function (Sender)
                 setglobal("p_fov",tonumber(UI.PageOptionsGameAdv.GUI.pfov:GetText()))
             end,
-            -- skin = UI.skins.HScrollBar,
+            -- skin = UI.skins.HScollBar,
 
             -- left = 608+30, top = 186,
             -- width = 150-30, height = 24,
@@ -709,5 +697,8 @@ end;
     --         %System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_thickness), tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
     --     end
 
-
+AddUISideMenu(UI.PageOptionsGameAdv.GUI,
+{
+    { "MainMenu", Localize("MainMenu"), "$MainScreen$", 0},
+});
 UI:CreateScreenFromTable( "GameAdvOptions", UI.PageOptionsGameAdv.GUI );

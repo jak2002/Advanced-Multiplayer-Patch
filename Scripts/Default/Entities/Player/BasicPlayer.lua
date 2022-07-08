@@ -1407,7 +1407,7 @@ function BasicPlayer:Client_OnDamage( hit )
 		end
 										
 		-- [tiago]handle diferent screen damage fx's..
-		if(hit.damage>0 and self.cnt.health ~= 0 and self.cnt.armor <= 0) then	-- fix, since player continues to get damage after dead.. make sure no screen fx
+		if(hit.damage>0 and self.cnt.health ~= 0) then	-- fix, since player continues to get damage after dead.. make sure no screen fx
 			-- override previous hit damage indicators		
 			if(hit.falling) then
 				Hud.dmgindicator = bor( Hud.dmgindicator, 16 );

@@ -32,4 +32,6 @@ MPHelmetList =
     {name="@MPEvilWorkerHat"    , model = "objects/characters/mercenaries/accessories/evil_worker_hat.cgf"},     -- 14
     {name="@MPEarProtector"     , model = "objects/characters/mercenaries/accessories/earprotector.cgf"},        -- 15
     {name="@MPComHat"           , model = "objects/characters/mercenaries/accessories/merc_defcomm_hat.cgf"},    -- 16
+    {name="@MPCroweHat"         , model = "objects/characters/mercenaries/accessories/crowe_hat.cgf"},           -- 17
+    {name="@MPLabAssistantHat"  , model = "objects/characters/mercenaries/accessories/lab_assistant_hat.cgf"},   -- 18
 }

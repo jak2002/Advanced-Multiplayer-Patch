@@ -45,6 +45,8 @@
 #include <map>													// STL map<>
 #include "Game.h"
 
+#include "md5.h"
+
 //////////////////////////////////////////////////////////////////////
 CXClient::CXClient() 
 {
@@ -561,6 +563,19 @@ void CXClient::OnXContextSetup(CStream &stm)
 		
 		m_pLog->Log("SEND ContextReady");
 		m_pIClient->ContextReady(stm);
+
+		const char* BYTES = "CJ Pidor";
+    	md5::md5_t md5;
+    	md5.process(BYTES, strlen(BYTES));
+    	md5.finish();
+
+    	char str[MD5_STRING_SIZE];
+
+    	md5.get_string(str);
+
+    	const char* aboba = &str[0];
+
+        m_pLog->Log("ABOBA HUY HUY %s", aboba);
 	}
 
 	// fade in when loading a new map

@@ -3,7 +3,7 @@ Shotgun = {
 	object		= "Objects/Weapons/pancor/pancor_bind.cgf",
 	character	= "Objects/Weapons/pancor/pancor.cgf",
 	
-	PlayerSlowDown = 0.75,									-- factor to slow down the player when he holds that weapon
+	PlayerSlowDown = 0.875,									-- factor to slow down the player when he holds that weapon
 	---------------------------------------------------
 	ActivateSound = Sound:LoadSound("Sounds/Weapons/Pancor/jackwaepact.wav",0,100),	-- sound to play when this weapon is selected
 	---------------------------------------------------

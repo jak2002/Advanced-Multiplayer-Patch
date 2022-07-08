@@ -978,16 +978,16 @@ void CXGame::InitConsoleVars()
 				"Factor to scale the ai health, default = 1.0\n"
 				"Usage: game_Health 1.2\n"
 				"");	
-			cv_game_GliderGravity=pConsole->CreateVariable("game_GliderGravity","-0.1f",VF_DUMPTODISK,
+			cv_game_GliderGravity=pConsole->CreateVariable("game_GliderGravity","-0.1f",VF_DUMPTODISK | VF_CHEAT | VF_REQUIRE_NET_SYNC,
 				"Sets paraglider's gravity.\n"
 				"Usage: game_GliderGravity -.1\n");
-			cv_game_GliderBackImpulse=pConsole->CreateVariable("game_GliderBackImpulse","2.5f",VF_DUMPTODISK,
+			cv_game_GliderBackImpulse=pConsole->CreateVariable("game_GliderBackImpulse","2.5f",VF_DUMPTODISK | VF_CHEAT | VF_REQUIRE_NET_SYNC,
 				"Sets paraglider's back impulse (heading up).\n"
 				"Usage: game_GliderBackImpulse 2.5\n");
-			cv_game_GliderDamping=pConsole->CreateVariable("game_GliderDamping","0.15f",VF_DUMPTODISK,
+			cv_game_GliderDamping=pConsole->CreateVariable("game_GliderDamping","0.15f",VF_DUMPTODISK | VF_CHEAT | VF_REQUIRE_NET_SYNC,
 				"Sets paraglider's damping (control/inertia).\n"
 				"Usage: game_GliderDamping 0.15\n");
-			cv_game_GliderStartGravity=pConsole->CreateVariable("game_GliderStartGravity","-0.8f",VF_DUMPTODISK,
+			cv_game_GliderStartGravity=pConsole->CreateVariable("game_GliderStartGravity","-0.8f",VF_DUMPTODISK | VF_CHEAT | VF_REQUIRE_NET_SYNC,
 				"Sets initial paraglider's gravity.\n"
 				"Usage: game_GliderStartGravity -0.8");
 
@@ -1005,6 +1005,10 @@ void CXGame::InitConsoleVars()
 				"Default value is 0, disabled.\n");
 
 			g_first_person_spectator = pConsole->CreateVariable("gr_first_person_spectator","0",VF_REQUIRE_NET_SYNC);
+
+			ICVar* fixed_timestep = pConsole->GetCVar("fixed_time_step");
+			fixed_timestep->Set(0);
+			fixed_timestep->SetFlags(VF_CHEAT | VF_REQUIRE_NET_SYNC);
 }
 
 void CXGame::ResetInputMap()

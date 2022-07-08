@@ -2053,12 +2053,6 @@ function Hud:DrawCrosshair(player)
         local fG = 0.1
         local fB = 0
 
-        if (_localplayer.cnt.armor and _localplayer.cnt.armor > 0) then
-            fR = 1
-            fG = 0.75
-            fB = 0
-        end
-
 		if(self.dmgfront>0)then
 			%System:DrawImageColorCoords(self.damage_icon_ud, 0, 0, 800, 90, 4, fR, fG, fB,  self.dmgfront, 1+fTexOffset, 1+fTexOffset, fTexOffset, fTexOffset);
 			self.dmgfront=self.dmgfront-FrameTime;

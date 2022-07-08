@@ -7,7 +7,7 @@
  xmlns:html="http://www.w3.org/TR/REC-html40">
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Author>tony</Author>
-  <LastAuthor>iirina</LastAuthor>
+  <LastAuthor>Ducha</LastAuthor>
   <Created>2004-02-20T14:34:57Z</Created>
   <LastSaved>2004-04-01T11:06:42Z</LastSaved>
   <Version>16.00</Version>
@@ -67,12 +67,9 @@
    <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#FF0000"/>
   </Style>
   <Style ss:ID="s70">
-   <Font ss:FontName="Arial"/>
-  </Style>
-  <Style ss:ID="s71">
    <Interior/>
   </Style>
-  <Style ss:ID="s72">
+  <Style ss:ID="s71">
    <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
    <Font ss:FontName="Arial" x:Family="Swiss"/>
    <Interior/>
@@ -194,6 +191,165 @@
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPCroweHat</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Шляпа Кроу</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">MPLabAssistantHat</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Медицинская шапка</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">CHDot</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Точка в центре</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">CHStatic</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Статичный</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">CHLength</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Длина</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">CHThickness</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Толщина</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">HitSounds</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Звуки попаданий</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Fov</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Угол обзора</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">CHSpacing</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Отступ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">TLikeCrosshair</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Т-Образный</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">BasicGameOptions</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Осн. настройки</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">AdvancedGameOptions</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Доп. настройки</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">CHColorDefault</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Цвет по умолчанию</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">CHColorOnHit</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Цвет при попадании</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">PersonalConfig</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Персональные настройки</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s69"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s69"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s69"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s69"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s69"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s69"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
     <Cell ss:StyleID="s67"/>
     <Cell ss:StyleID="s67"/>
     <Cell ss:StyleID="Default"/>
@@ -275,168 +431,7 @@
    </Row>
    <Row>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="s69"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="s69"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="s69"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="s69"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="s69"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="s69"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
     <Cell ss:StyleID="s71"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s72"/>
     <Cell ss:StyleID="Default"/>
    </Row>
    <Row>
@@ -510,8 +505,8 @@
     <Cell ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell ss:StyleID="s72"/>
-    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
     <Cell ss:StyleID="Default"/>
    </Row>
    <Row>
@@ -544,11 +539,12 @@
      x:Right="0.78740157499999996" x:Top="0.984251969"/>
    </PageSetup>
    <Selected/>
+   <TopRowVisible>15</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>15</ActiveRow>
-     <ActiveCol>3</ActiveCol>
+     <ActiveRow>35</ActiveRow>
+     <ActiveCol>2</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

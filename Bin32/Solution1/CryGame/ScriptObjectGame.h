@@ -204,6 +204,8 @@ public:
 	int LoadMOD(IFunctionHandler * pH);
 	int GetCurrentModName(IFunctionHandler * pH);
 
+	int GetMD5(IFunctionHandler * pH);
+
 private: 
 
 	CXGame *											m_pGame;

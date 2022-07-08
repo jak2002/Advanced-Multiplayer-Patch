@@ -197,7 +197,7 @@ BasePickup.Server={
 		if( not self:IsAvailable() ) then return end
 		
 		--self:SetUpdateType( eUT_PhysicsVisible );
-		self:SetUpdateType( eUT_Physics );
+		self:SetUpdateType( eUT_PhysicsVisible );
 		self:TrackColliders(1);
 
 		self:RegisterState("Active");
@@ -298,7 +298,7 @@ BasePickup.Client={
 		
 		if( not self:IsAvailable() ) then return end		
 		
-		self:SetUpdateType( eUT_Physics );
+		self:SetUpdateType( eUT_PhysicsVisible );
 		self:TrackColliders(1);
 		
 		self:RegisterState("Active");
