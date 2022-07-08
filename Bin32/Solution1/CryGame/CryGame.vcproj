@@ -395,15 +395,6 @@
 				RelativePath=".\CryGame.cpp">
 			</File>
 			<File
-				RelativePath=".\md5.cpp">
-			</File>
-			<File
-				RelativePath=".\md5.h">
-			</File>
-			<File
-				RelativePath=".\md5_loc.h">
-			</File>
-			<File
 				RelativePath=".\StdAfx.cpp">
 				<FileConfiguration
 					Name="Debug|Win32">
@@ -1453,6 +1444,19 @@
 					RelativePath="..\CryCommon\EntityDesc.h">
 				</File>
 			</Filter>
+		</Filter>
+		<Filter
+			Name="MD5"
+			Filter="">
+			<File
+				RelativePath=".\md5.cpp">
+			</File>
+			<File
+				RelativePath=".\md5.h">
+			</File>
+			<File
+				RelativePath=".\md5_loc.h">
+			</File>
 		</Filter>
 	</Files>
 	<Globals>

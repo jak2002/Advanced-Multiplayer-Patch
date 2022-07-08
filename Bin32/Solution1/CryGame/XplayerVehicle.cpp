@@ -686,22 +686,22 @@ void CXGame::InitVehicleCvars()
 	//Speedv		35000.0
 	//Speedturnmin	       5.0
 
-	b_dump = pConsole->CreateVariable("b_dump","2000.4", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
-	b_dumpRot = pConsole->CreateVariable("b_dumprot","9000.4", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
-	b_dumpV = pConsole->CreateVariable("b_dumpv","1500.4", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
-	b_dumpVH = pConsole->CreateVariable("b_dumpvh","10000.4", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
-	b_stand = pConsole->CreateVariable("b_stand","10000.5", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
-	b_turn = pConsole->CreateVariable("b_turn","12000.0", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
-	b_tilt = pConsole->CreateVariable("b_tilt","2.0", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
-	b_speedV = pConsole->CreateVariable("b_speedv","35000.0", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
-	b_accelerationV = pConsole->CreateVariable("b_accelerationv","100000.0", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
-	b_speedMinTurn = pConsole->CreateVariable("b_speedminturn","5.0", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
-	b_float = pConsole->CreateVariable("b_float","7", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
-	b_wscale = pConsole->CreateVariable("b_wscale","2.1", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
-	b_wscalew = pConsole->CreateVariable("b_wscalew","2.1", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
-	b_wmomentum = pConsole->CreateVariable("b_wmomentum","500.5", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
+	b_dump = pConsole->CreateVariable("b_dump","2000.4",0,"This variable is not used.");
+	b_dumpRot = pConsole->CreateVariable("b_dumprot","9000.4",0,"This variable is not used.");
+	b_dumpV = pConsole->CreateVariable("b_dumpv","1500.4",0,"This variable is not used.");
+	b_dumpVH = pConsole->CreateVariable("b_dumpvh","10000.4",0,"This variable is not used.");
+	b_stand = pConsole->CreateVariable("b_stand","10000.5",0,"This variable is not used.");
+	b_turn = pConsole->CreateVariable("b_turn","12000.0",0,"This variable is not used.");
+	b_tilt = pConsole->CreateVariable("b_tilt","2.0",0,"This variable is not used.");
+	b_speedV = pConsole->CreateVariable("b_speedv","35000.0",0,"This variable is not used.");
+	b_accelerationV = pConsole->CreateVariable("b_accelerationv","100000.0",0,"This variable is not used.");
+	b_speedMinTurn = pConsole->CreateVariable("b_speedminturn","5.0",0,"This variable is not used.");
+	b_float = pConsole->CreateVariable("b_float","7",0,"This variable is not used.");
+	b_wscale = pConsole->CreateVariable("b_wscale","2.1",0,"This variable is not used.");
+	b_wscalew = pConsole->CreateVariable("b_wscalew","2.1",0,"This variable is not used.");
+	b_wmomentum = pConsole->CreateVariable("b_wmomentum","500.5",0,"This variable is not used.");
 	
-	b_camera = pConsole->CreateVariable("b_camera","0", VF_REQUIRE_NET_SYNC|VF_CHEAT, "This variable is not used.");
+	b_camera = pConsole->CreateVariable("b_camera","0",0,"This variable is not used.");
 
 	p_CameraSmoothTime = pConsole->CreateVariable("p_camerasmoothtime",".6",0,"when entering/leaving vehicles.");
 	p_CameraSmoothScale = pConsole->CreateVariable("p_camerasmoothscale","5",0,"when driving vehicles.");

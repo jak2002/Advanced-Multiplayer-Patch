@@ -81,7 +81,7 @@
 typedef std::basic_string< TCHAR > tstring;
 typedef std::vector< TCHAR > tvector;
 #endif
-
+ 
 //////////////////////////////////////////////////////////////////////
 // Pointer to Global ISystem.
 static ISystem* gISystem = 0;

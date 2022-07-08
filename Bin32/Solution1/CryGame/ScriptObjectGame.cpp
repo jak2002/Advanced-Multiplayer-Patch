@@ -17,6 +17,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
+#include "md5.h"
 #if defined LINUX
 #include <sys/io.h>
 #else
@@ -55,8 +56,6 @@
 #else
 	#include <sys/stat.h>
 #endif
-
-#include "md5.h"
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
@@ -3845,19 +3844,19 @@ int CScriptObjectGame::GetServerIP(IFunctionHandler * pH)
 
 int CScriptObjectGame::GetMD5(IFunctionHandler * pH)
 {
+	// String to convert in MD5 Hash
 	CHECK_PARAMETERS(1);
-	const char *HashString;
-	pH->GetParam(1, HashString);
+	const char* StringToHash;
+	pH->GetParam(1, StringToHash);
 
+	// Converting
 	md5::md5_t md5;
-    md5.process(HashString, strlen(HashString));
+    md5.process(StringToHash, strlen(StringToHash));
     md5.finish();
-
     char str[MD5_STRING_SIZE];
 
+   	// Result
     md5.get_string(str);
-
     const char* result = &str[0];
-
     return pH->EndFunction(result);
 }

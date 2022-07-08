@@ -1,9 +1,10 @@
+#include "stdafx.h"
 /*
  * Local defines for the md5 functions.
  *
  * $Id: md5_loc.h,v 1.5 2010-05-07 13:58:18 gray Exp $
  */
-#include "stdafx.h"
+
 #ifndef __MD5_LOC_H__
 #define __MD5_LOC_H__
 
