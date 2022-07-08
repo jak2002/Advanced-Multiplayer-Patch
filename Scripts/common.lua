@@ -1162,6 +1162,25 @@ function LookAtFrom(ent1,ent2,pos)
 	ent2:SetAngles(ang)
 end
 
+-- Raw file read
+function ReadFile(file)
+    local path  = "Mods/"..tostring(Game:GetCurrentModName()).."/"..file;
+    local hfile = openfile(path, "r");
+
+    if (hfile == nil) then
+        printf("No such file %s",path)
+        return
+    end
+
+    local szLine = read(hfile, "*l");
+    local text = ""
+    while szLine ~= nil do
+        text = text..szLine
+        szLine = read(hfile,"*l")
+    end
+
+    return text
+end
 -------------------------------------------------------------------
 -- gloabl to indicate that a ui reload was requested commited by UI:Reload( ... ), will be reset by UI:Init()
 g_reload_ui = 0;

@@ -2444,3 +2444,25 @@ GameRules.ClientCommandTable["TBB"]=function(String,ServerSlot,TokTable)
 		Server:BroadcastCommand("SSM "..target.." "..Game:GetEntityTeam(spotter));
 	end
 end
+
+
+-- Compare Script Hash
+-- 1 CSH
+-- 2 ScriptID
+-- 3 Hash
+GameRules.ClientCommandTable["CSH"]=function(String,ServerSlot,TokTable)
+    local hashes = {
+        Game:GetMD5(ReadFile("scripts/anticheat.lua")), -- anticheat.lua
+    }
+    local id = tonumber(TokTable[2])
+    local hash = tostring(TokTable[3])
+    printf("SS: %s | ID: %s | Hash: %s",ServerSlot:GetId(),id,hash)
+    if not hashes[id] then
+        printf("SS %s tried to compare hash out of range (%s)",ServerSlot:GetId(),id)
+        GameRules:KickSlot(ServerSlot)
+    end
+    if hash ~= hashes[id] then
+        printf("SS %s failed to provide valid script hash for Script %s",ServerSlot:GetId(),id)
+        GameRules:KickSlot(ServerSlot)
+    end
+end
