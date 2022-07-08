@@ -820,6 +820,8 @@ function GameRules:OnClientConnect( server_slot, requested_classid )
 	--player login 
 	SVplayerTrack:OnConnect(server_slot);  
 	--[end]
+
+    server_slot:SendCommand("RSH")
 	
 end
 
