@@ -79,6 +79,6 @@ function Anticheat.Client:OnUpdate(dt)
     end
     -- the absolute shit explosion of a code, but works
     if tonumber(fixed_time_step) ~= 0 then
-        fixed_time_step = 0
+        System:Disconnect()
     end
 end
