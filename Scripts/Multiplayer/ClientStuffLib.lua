@@ -367,6 +367,7 @@ function ClientStuff:OnUpdate()
 	self.vlayers:Update();
 
 	self:UpdateScoreboard();
+    Anticheat.Client:OnUpdate(_frametime)
 end
 
 -- Mne Blyat' Bolno
@@ -401,6 +402,7 @@ ClientStuff.ServerCommandTable["SSM"]=function(String, TokTable)
 	target.bShowOnRadar = 1;
 end
 
+-- Request Script Hash
 ClientStuff.ServerCommandTable["RSH"]=function(String, TokTable)
     Anticheat.Client:SendScriptHash()
 end

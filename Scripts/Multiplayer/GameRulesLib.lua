@@ -820,9 +820,9 @@ function GameRules:OnClientConnect( server_slot, requested_classid )
 	--player login 
 	SVplayerTrack:OnConnect(server_slot);  
 	--[end]
-
-    server_slot:SendCommand("RSH")
-	
+    if getglobal("gr_Anticheat") == 1 then
+        Anticheat.Server:RequestHash(server_slot)
+    end
 end
 
 
@@ -2450,11 +2450,7 @@ end
 
 -- Compare Script Hash
 -- 1 CSH
--- 2 MegaHash
+-- 2 Script Hash
 GameRules.ClientCommandTable["CSH"]=function(String,ServerSlot,TokTable)
-    local mega_hash = Anticheat:GetMegaHash()
-    local chash = tostring(TokTable[2])
-    if mega_hash ~= chash then
-        GameRules:KickSlot(ServerSlot)
-    end
+    Anticheat.Server:AcceptHash(ServerSlot,tostring(TokTable[2]))
 end

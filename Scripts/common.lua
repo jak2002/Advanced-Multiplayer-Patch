@@ -125,6 +125,15 @@ function Localize(Token)
 	end
 end
 
+
+function print(...)
+    if type(arg[1]) == "table" then
+        for k,v in arg[1] do
+            System:LogToConsole(format("%s = %s",k,tostring(v) or "nil"))
+        end
+    end
+    System:LogToConsole(arg[1])
+end
 -------------------------------------------------------
 -- C like printf
 -------------------------------------------------------
