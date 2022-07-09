@@ -45,7 +45,7 @@ end
 --===============================================
 function Anticheat.Server:RequestHash(server_slot)
     server_slot:SendCommand("RSH")
-    local time = 3000 -- aboba
+    local time = 3000
     local id = server_slot:GetId()
     self.KickPlayer.Timers[id] = Game:SetTimer(self.KickPlayer,time,{ssid = id})
 end
@@ -74,7 +74,9 @@ end
 
 -- Called every frame on client by ClientStuff
 function Anticheat.Client:OnUpdate(dt)
-    if not System:IsDevModeEnable() then return end
+    if toNumberOrZero(getglobal("gr_Anticheat")) == 0 then
+        return
+    end
     -- the absolute shit explosion of a code, but works
     if tonumber(fixed_time_step) ~= 0 then
         fixed_time_step = 0
