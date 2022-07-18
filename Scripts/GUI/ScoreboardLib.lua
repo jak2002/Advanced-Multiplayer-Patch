@@ -2,7 +2,7 @@ ScoreBoardManager =
 {
 	messages = {},
 	visible = 0,
-	white_dot=System:LoadImage("Textures/hud/white_dot.tga")
+	white_dot=System:LoadImage("Textures/hud/white_dot.tga"),
 }
 -----------------------------------------------------------------------------
 -- add player score into score list
@@ -373,8 +373,6 @@ function ScoreBoardManager:RenderServerInfo(xpos, ypos, r, g, b, xScale, yScale)
 		if (not iColon) then
 			ipAddr = ipAddr..":"..getglobal("sv_port");
 		end
-		setglobal("g_LastIP", ipAddr);
-		setglobal("g_LastPort", getglobal("sv_port"));
 	else
 		ipAddr = getglobal("g_LastIP")..":"..getglobal("g_LastPort");
 	end

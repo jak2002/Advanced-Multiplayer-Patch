@@ -58,7 +58,9 @@ end
 --[new playertracking]
 SVplayerTrack:Init();
 --[end]
-
+local ipAdress = Game:GetServerIP();
+setglobal("g_LastIP", ipAdress);
+setglobal("g_LastPort", getglobal("sv_port"));
 --------------------------------------------------------------------
 -- Return Server Rules Table from 1..n
 -- Each Rule is a table from 1..2 with 1=rulename 2=value
