@@ -11,6 +11,4 @@ end
 
 -- Loading a configurator script for saving new variables
 Script:ReloadScript("Scripts/configurator.lua");
-Script:ReloadScript("Scripts/anticheat.lua");
-Anticheat:OnInit()
 config:LoadConfig();

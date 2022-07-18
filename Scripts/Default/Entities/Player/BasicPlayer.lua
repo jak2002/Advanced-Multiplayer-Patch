@@ -517,7 +517,7 @@ function BasicPlayer:OnReset()
 	self.hasJumped = 0;
 	self.lastStanceSound = 0;
 	--self.lastProne = 0;
-	self.cnt.fJumpDelay = tonumber(getglobal("gr_JumpDelay"));
+	self.cnt.fJumpDelay = 0.3;
 end
 
 -----------------------------------------------------------------------------------------------------------

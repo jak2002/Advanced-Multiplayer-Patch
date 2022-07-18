@@ -695,6 +695,10 @@ void CXGame::InitConsoleVars()
 		"");
 
 	mp_hatmodel= pConsole->CreateVariable("mp_hatmodel", "0", 0, "");
+
+	ICVar* fixed_timestep = pConsole->GetCVar("fixed_time_step");
+	fixed_timestep->Set(0);
+	fixed_timestep->SetFlags(VF_REQUIRE_NET_SYNC|VF_CHEAT|VF_READONLY);
 	//////////////////////////////////////////////////////////////////////////
 
 	ICryPak	*pPak=m_pSystem->GetIPak();

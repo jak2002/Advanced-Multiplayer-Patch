@@ -820,9 +820,6 @@ function GameRules:OnClientConnect( server_slot, requested_classid )
 	--player login 
 	SVplayerTrack:OnConnect(server_slot);  
 	--[end]
-    if tonumber(getglobal("gr_Anticheat")) == 1 then
-        Anticheat.Server:RequestHash(server_slot)
-    end
 end
 
 

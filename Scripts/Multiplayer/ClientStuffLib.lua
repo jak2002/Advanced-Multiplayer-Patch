@@ -367,7 +367,6 @@ function ClientStuff:OnUpdate()
 	self.vlayers:Update();
 
 	self:UpdateScoreboard();
-    Anticheat.Client:OnUpdate(_frametime)
 end
 
 -- Mne Blyat' Bolno
