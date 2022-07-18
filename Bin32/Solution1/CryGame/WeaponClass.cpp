@@ -756,6 +756,19 @@ void CWeaponClass::Update(CPlayer *pPlayer)
 int CWeaponClass::Fire(const Vec3d &origin, const Vec3d &angles, CPlayer *pPlayer, WeaponInfo &winfo, IPhysicalEntity *pIRedirected)
 {
 	FUNCTION_PROFILER( GetISystem(),PROFILE_GAME );
+
+	float fWaterLevel=m_rWeaponSystem.GetGame()->GetSystem()->GetI3DEngine()->GetWaterLevel(&origin);
+	m_ssoFireTable->BeginSetGetChain();
+	if (fWaterLevel>origin.z)
+	{
+		m_ssoFireTable->SetValueChain("underwater",0);
+		if (!m_fireParams.bShootUnderwater)
+			return 0;
+	}
+	else
+		m_ssoFireTable->SetToNullChain("underwater");
+	m_ssoFireTable->EndSetGetChain();
+
 #ifdef FIRE_DEBUG
 	CryLog("CWeaponClass::Fire");
 #endif
@@ -833,7 +846,6 @@ int CWeaponClass::Fire(const Vec3d &origin, const Vec3d &angles, CPlayer *pPlaye
 
 	m_ssoHitDirVec=dir;
 
-	float fWaterLevel=m_rWeaponSystem.GetGame()->GetSystem()->GetI3DEngine()->GetWaterLevel(&origin);
 	//BULDING PARAMS FOR WeaponScript:Fire
 	m_ssoFireTable->BeginSetGetChain();
 	m_ssoFireTable->SetValueChain("pos",m_ssoHitPosVec);
@@ -843,15 +855,6 @@ int CWeaponClass::Fire(const Vec3d &origin, const Vec3d &angles, CPlayer *pPlaye
 	m_ssoFireTable->SetValueChain("shooter",pIShooter->GetScriptObject());
 	m_ssoFireTable->SetValueChain("bullets", (int) iNumShots);
 	m_ssoFireTable->SetValueChain("fire_event_type", (int) ft);
-
-	if (fWaterLevel>origin.z)
-	{
-		m_ssoFireTable->SetValueChain("underwater",0);
-		if (!m_fireParams.bShootUnderwater)
-			return 0;
-	}
-	else
-		m_ssoFireTable->SetToNullChain("underwater");
 
 	m_ssoFireTable->EndSetGetChain();
 
