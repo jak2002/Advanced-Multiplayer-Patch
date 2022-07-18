@@ -1,0 +1,14 @@
+$AnimDir = .
+
+$AutoUnload = no
+$DelayLoad = no
+
+activate1 = scouttool_activate1.caf
+fire11 = scouttool_fire11.caf
+idle11 = scouttool_idle11.caf
+Deactivate1 = scouttool_activate1.caf
+swim = scouttool_Swim.caf
+grenade11 = scouttool_grenade11.caf
+
+$AutoUnload = yes
+$DelayLoad = yes

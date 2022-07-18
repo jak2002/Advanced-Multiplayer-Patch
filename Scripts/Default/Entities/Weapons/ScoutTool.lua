@@ -3,7 +3,7 @@ ScoutTool = {
 	-- Scout class specific tool
 	name			= "ScoutTool",
 	object		= "Objects/Weapons/scouttool/scouttool_active.cgf",
-	character	= "Objects/Weapons/scouttool/scouttool.cgf",	
+	character	= "Objects/Weapons/ScoutTool_MP/scouttool.cgf",	
 
 	PlayerSlowDown = 1.0,									-- factor to slow down the player when he holds that weapon
 	---------------------------------------------------

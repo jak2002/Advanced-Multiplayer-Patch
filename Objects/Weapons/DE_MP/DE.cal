@@ -1,0 +1,19 @@
+$AnimDir = .
+
+$AutoUnload = no
+$DelayLoad = no
+
+activate1 = DE_activate1.caf
+fidget11 = DE_fidget11.caf
+fidget21 = DE_fidget21.caf
+fire11 = DE_fire11.caf
+fire12 = DE_fire12.caf
+grenade11 = DE_grenade11.caf
+grenade12 = DE_grenade12.caf
+idle11 = DE_idle11.caf
+idle21 = DE_idle21.caf
+melee = DE_melee.caf
+reload1 = DE_reload1.caf
+
+$AutoUnload = yes
+$DelayLoad = yes
