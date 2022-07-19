@@ -1794,14 +1794,15 @@ void CXSystemBase::OnSpawn(IEntity *ent, CEntityDesc & ed)
 	}
 	
 	// FIXME [Alberto]
-	if(ed.pProperties)
-	{
-		ent->GetScriptObject()->SetValue("Properties",ed.pProperties);
-	}
-	if(ed.pPropertiesInstance)
-	{
-		ent->GetScriptObject()->SetValue("PropertiesInstance",ed.pPropertiesInstance);
-	}
+	// if(ed.pProperties)
+	// {
+	// 	ent->GetScriptObject()->SetValue("Properties",ed.pProperties);
+	// }
+	// if(ed.pPropertiesInstance)
+	// {
+	// 	ent->GetScriptObject()->SetValue("PropertiesInstance",ed.pPropertiesInstance);
+	// }
+	// sm1le: What
 
 	//SET THE entity_type/////////////////////////////////
 	if (m_pGame->GetPlayerSystem()->IsPlayerClass(ent->GetClassId()))
@@ -1899,10 +1900,9 @@ void CXSystemBase::OnSpawnContainer( CEntityDesc &ed,IEntity *pEntity )
 			}
 		}
 
-		if(ed.sHatModel.length())
+		if(ed.sHatModel.length() && m_pGame->IsMultiplayer())
 		{
-			if (m_pGame->IsMultiplayer())
-				pPlayer->SetHatModel(ed.sHatModel.c_str());
+			pPlayer->SetHatModel(ed.sHatModel.c_str());
 		}
 
 		pEntity->SetContainer(pPlayer);

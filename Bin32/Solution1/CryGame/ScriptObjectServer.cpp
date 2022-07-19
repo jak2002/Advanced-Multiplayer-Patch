@@ -318,9 +318,6 @@ int CScriptObjectServer::SpawnEntity(IFunctionHandler *pH)
 		pED->GetValue("name",sName);
 		pED->GetValue("model",sModel);
 
-		pED->GetValue("hat_model",sHatModel);
-		m_pGame->GetSystem()->GetILog()->Log("Server: hat_model is %s", sHatModel);
-
 		if(pED->GetValue("properties",pProperties))
 		{
 			bproperties=true;
@@ -341,6 +338,9 @@ int CScriptObjectServer::SpawnEntity(IFunctionHandler *pH)
 
 		if (pED->GetValue( "color",oCol ))
 			ed.vColor = oCol.Get();
+
+		if (pED->GetValue( "hat_model",sHatModel ))
+			pED->GetValue("hat_model",sHatModel);
 	}
 	else
 	{

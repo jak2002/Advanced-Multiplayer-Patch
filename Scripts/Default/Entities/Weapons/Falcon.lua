@@ -3,7 +3,7 @@ Falcon = {
 	-- Default weapon, loud and does not travel far but does the job
 	name			= "Falcon",
 	object		= "Objects/Weapons/de/de_bind.cgf",
-	character	= "Objects/Weapons/DE_MP/de.cgf",
+	character	= "Objects/Weapons/de/de.cgf",
 
 	PlayerSlowDown = 1.0,									-- factor to slow down the player when he holds that weapon
 	---------------------------------------------------

@@ -2445,11 +2445,3 @@ GameRules.ClientCommandTable["TBB"]=function(String,ServerSlot,TokTable)
 		Server:BroadcastCommand("SSM "..target.." "..Game:GetEntityTeam(spotter));
 	end
 end
-
-
--- Compare Script Hash
--- 1 CSH
--- 2 Script Hash
-GameRules.ClientCommandTable["CSH"]=function(String,ServerSlot,TokTable)
-    Anticheat.Server:AcceptHash(ServerSlot,tostring(TokTable[2]))
-end

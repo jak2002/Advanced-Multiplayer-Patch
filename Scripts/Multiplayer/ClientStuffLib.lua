@@ -400,8 +400,3 @@ ClientStuff.ServerCommandTable["SSM"]=function(String, TokTable)
 	if (spotterTeam ~= playerTeam) then return end
 	target.bShowOnRadar = 1;
 end
-
--- Request Script Hash
-ClientStuff.ServerCommandTable["RSH"]=function(String, TokTable)
-    Anticheat.Client:SendScriptHash()
-end
