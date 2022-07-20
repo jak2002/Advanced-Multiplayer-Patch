@@ -369,6 +369,7 @@ function ClientStuff:OnUpdate()
 	self:UpdateScoreboard();
 end
 
+-- @AMP
 -- Mne Blyat' Bolno
 ClientStuff.ServerCommandTable["MBB"]=function (String,TokTable)
 	if (TokTable[2]) then
@@ -391,6 +392,7 @@ ClientStuff.ServerCommandTable["MBB"]=function (String,TokTable)
 	end
 end
 
+-- @AMP
 -- Synched Server Mark
 ClientStuff.ServerCommandTable["SSM"]=function(String, TokTable)
 	local spotterTeam = TokTable[3];

@@ -170,9 +170,9 @@ SniperRifle = {
 		},
 
 		FireSounds = {
-			"Sounds/Weapons/aw50/aw50fire1.wav",
-			"Sounds/Weapons/aw50/aw50fire2.wav",
-			"Sounds/Weapons/aw50/aw50fire3.wav",
+			"Sounds/Weapons/aw50/FINAL_AW50_MONO_FIRE1.wav",
+			"Sounds/Weapons/aw50/FINAL_AW50_MONO_FIRE2.wav",
+			"Sounds/Weapons/aw50/FINAL_AW50_MONO_FIRE3.wav",
 		},
 		DrySound = "Sounds/Weapons/AW50/DryFire.wav",
 

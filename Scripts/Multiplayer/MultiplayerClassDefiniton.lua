@@ -436,7 +436,7 @@ MultiplayerClassDefiniton=
 		},
 	},
 	-----------------------------------------------------------------
-
+	-- @AMP
 	DefaultMultiPlayer=				-- team or non team mods
 	{
 		health		= 192,

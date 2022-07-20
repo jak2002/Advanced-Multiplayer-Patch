@@ -1,3 +1,4 @@
+-- @AMP
 -- This file executes when the game starts, but after main.lua! (replacement modexe.lua because it does not run in the editor)
 
 -- Selecting language

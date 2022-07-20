@@ -9,7 +9,7 @@
   <Author>tony</Author>
   <LastAuthor>Ducha</LastAuthor>
   <Created>2004-02-20T14:34:57Z</Created>
-  <LastSaved>2004-04-01T11:06:42Z</LastSaved>
+  <LastSaved>2022-07-20T13:14:01Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
@@ -256,167 +256,161 @@
     <Cell ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell><Data ss:Type="String">PressToJudge</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">Press ESC to judge your team killer.</Data></Cell>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">SpectatorNotAllow</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Spectating is not allowed in this game</Data></Cell>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">OtherTeamNotAllow</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">is not allowed to be in other team than</Data></Cell>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">CannotJoinRedTeam</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">cannot join ($4Red Team $o is locked)</Data></Cell>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">CannotJoinBlueTeam</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">cannot join ($2Blue Team $o is locked)</Data></Cell>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">VotingDisabled</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Voting is currently disabled.</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">KillingSpreeOf</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Killing spree of</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">KILLS</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">KILLS</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">EndedByBoat</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">was $4ended$6 by a BOAT</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">EndedByCar</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">was $4ended$6 by a CAR</Data></Cell>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">EndedOwnKillSpree</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">$4ended $6his own killing spree of $4</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">YouKilled</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">You killed</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">WithHeadshot</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">with a $4headshot</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">killed</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">killed</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">WasEndedBy</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">was $4ended$6 by</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">LastKillWith</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">last kill with</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">OnKillingSpree</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">is on a killing spree!</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">EndedByHisTeamMate</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">was $4ended$6 by his TEAMMATE</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">KickedFor</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">has been $3Kicked $ofor</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ToManyTeamKillsInMinute</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">minutes $o- too many teamkills.</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ToManyTKS</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Too many TKs</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">KickedToManyTeamKills</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">has been $3Kicked $o- too many teamkills.</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ForcedToSpectatorTeamKills</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">has been forced to $3Spectator $ofor too many teamkills. They can't join until next map</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ForTeamKilling</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">for teamkilling</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">CantJoinSnipersToMany</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">is not allowed to join as sniper. $6The maximum number of snipers is:</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ToSpectatorsToManySnipers</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">was moved to $3Spectators.$o Reason: Too many snipers on that team</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">CantJoinGruntsToMany</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">is not allowed to join as a grunt. $6The maximum number of grunts is:</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ToSpectatorsToManyGrunts</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">was moved to $3Spectators.$o Reason: Too many grunts on that team</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">CantJoinEngiToMany</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">is not allowed to join as an engineer. $6The maximum number of engineers is:</Data></Cell>
    </Row>
    <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ToSpectatorsToManyEngi</Data></Cell>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">was moved to $3Spectators.$o Reason: Too many engineers in that team</Data></Cell>
    </Row>
-   <Row>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="Default"/>
-   </Row>
-   <Row>
+   <Row ss:Index="69">
     <Cell ss:StyleID="s67"/>
     <Cell ss:StyleID="s71"/>
     <Cell ss:StyleID="Default"/>
@@ -526,11 +520,11 @@
      x:Right="0.78740157499999996" x:Top="0.984251969"/>
    </PageSetup>
    <Selected/>
-   <TopRowVisible>12</TopRowVisible>
+   <TopRowVisible>51</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>37</ActiveRow>
+     <ActiveRow>35</ActiveRow>
      <ActiveCol>2</ActiveCol>
     </Pane>
    </Panes>

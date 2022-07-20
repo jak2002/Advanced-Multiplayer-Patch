@@ -1,7 +1,5 @@
---
--- advanced video options menu page
---
-----------------------------------------------------------------------------------------------
+-- @AMP
+-- Advanced Game Options Menu Page
 UI.PageOptionsGameAdv =
 {
 	GUI =

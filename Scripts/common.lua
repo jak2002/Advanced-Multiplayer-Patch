@@ -1147,6 +1147,7 @@ function EntitiesDistSq(ent1,ent2)
 	return (LengthSqVector(delta));
 end
 
+-- @AMP
 -- Make ent2 look at ent1
 function LookAt(ent1,ent2)
 	local p1 = {}

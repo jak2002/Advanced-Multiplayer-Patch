@@ -1,6 +1,6 @@
 Shocker = {
 	name			= "Shocker",
-	object		= "Objects/Weapons/Shocker_MP/Shocker_bind.cgf",
+	object		= "Objects/Weapons/Shocker_AMP/Shocker_bind.cgf",
 	character	= "Objects/Weapons/Shocker/Shocker.cgf",
 	
 	-- factor to slow down the player when he holds that weapon

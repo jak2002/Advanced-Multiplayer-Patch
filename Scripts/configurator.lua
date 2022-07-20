@@ -1,3 +1,4 @@
+-- @AMP
 -- Add here all the variables that you want to save in the config file of the mod
 config = {
     vars = {

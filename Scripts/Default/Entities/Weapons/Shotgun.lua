@@ -1,7 +1,7 @@
 Shotgun = {
 	name			= "Shotgun",
 	object		= "Objects/Weapons/pancor/pancor_bind.cgf",
-	character	= "Objects/Weapons/Pancor_MP/pancor.cgf",
+	character	= "Objects/Weapons/Pancor_AMP/pancor.cgf",
 	
 	PlayerSlowDown = 0.875,									-- factor to slow down the player when he holds that weapon
 	---------------------------------------------------

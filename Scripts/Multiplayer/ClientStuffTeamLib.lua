@@ -1,7 +1,8 @@
 
 Script:LoadScript("scripts/Multiplayer/ClientStuffLib.lua");		-- derive functionality
 
--- sm1le: New One
+-- @AMP
+-- New One
 ClientStuff.bIsTeamBased = 1;
 
 -------------------------------------------------------------------------------
