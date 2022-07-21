@@ -63,6 +63,9 @@ public:
 	int ReleaseModel();
 	int StartAnimation(const string &szAnimationName);
 
+	int LoadHatModel(const string &szHatModelName);
+	int ReleaseHatModel();
+
 	static void InitializeTemplate(IScriptSystem *pScriptSystem);
 
 	//////////////////////////////////////////////////////////////////////
@@ -104,6 +107,9 @@ public:
 	int SetShader(IFunctionHandler *pH);
 	int SetSecondShader(IFunctionHandler *pH);
 
+	int LoadHatModel(IFunctionHandler *pH);
+	int ReleaseHatModel(IFunctionHandler *pH);
+
 private:
 
 	int GetLineMetrics(UIStaticLine *pLine, IFFont *pFont);
@@ -141,7 +147,10 @@ private:
 	UISkinTexture			m_pTexture;
 
 	ICryCharInstance	*m_pModel;
-	string				m_szModelName;
+	string						m_szModelName;
+
+	IStatObj					*m_pHatModel;
+	string						m_szHatModelName;
 
 	float							m_fCameraDistance;
 	float							m_fCameraFov;

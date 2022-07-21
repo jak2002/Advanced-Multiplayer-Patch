@@ -406,8 +406,13 @@ UI.PageOptionsGame=
 			local bResult = ModelView:LoadModel(szName);
 
 			if (bResult and tonumber(bResult) ~= 0) then
+				local hatSelectedIndex = UI.PageOptionsGame.GUI.phat:GetSelectionIndex() - 1;
+				ModelView:ReleaseHatModel();
+				if (MPHelmetList[hatSelectedIndex]) then
+					ModelView:LoadHatModel(MPHelmetList[hatSelectedIndex].model);
+				end
 				ModelView:SetAnimation("sidle");
-				ModelView:SetView(3.5);
+				ModelView:SetView(4.5);
 				ModelView:SetSecondShader("PlayerMaskModulate");
 
 				setglobal("mp_model", szName);
@@ -425,6 +430,8 @@ UI.PageOptionsGame=
 				ModelView:SetShaderFloat("ColorR", Color[1]);
 				ModelView:SetShaderFloat("ColorG", Color[2]);
 				ModelView:SetShaderFloat("ColorB", Color[3]);
+
+				ModelView:ReleaseHatModel();
 			end
 		end
 	end,

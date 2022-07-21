@@ -66,7 +66,7 @@
   <Style ss:ID="s69">
    <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#FF0000"/>
   </Style>
-  <Style ss:ID="s71">
+  <Style ss:ID="s70">
    <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
    <Font ss:FontName="Arial" x:Family="Swiss"/>
    <Interior/>
@@ -266,130 +266,100 @@
     <Cell ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">PressToJudge</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">Нажмите ESC, чтобы наказать убийцу своей команды.</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">SpectatorNotAllow</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">Зрители не допускаются в этой игре</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">OtherTeamNotAllow</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">не разрешено находиться в другой команде, тогда</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">CannotJoinRedTeam</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">нельзя присоединиться ($4Красная Команда $o заблокирована)</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">CannotJoinBlueTeam</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">нельзя присоединиться ($2Синия Команда $o заблокирована)</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">VotingDisabled</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">В настоящее время голосование отключено.</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">KillingSpreeOf</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">Серия убийств из</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">KILLS</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">УБИЙСТВ</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">EndedByBoat</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">была $4закончена$6 ЛОДКОЙ</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">EndedByCar</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">была $4закончена$6 МАШИНОЙ</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
     <Cell ss:StyleID="s69"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">EndedOwnKillSpree</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">$4закончил $6собственную серию убийств из $4</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">YouKilled</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">Вы убили</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">WithHeadshot</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">в $4голову</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">killed</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">убит</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">WasEndedBy</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">была $4закончена$6</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">LastKillWith</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">последнее убийство</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">OnKillingSpree</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">совершил серию убийств!</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">EndedByHisTeamMate</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">была $4закончена$6 игроком из его команды</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">KickedFor</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">был $3Кикнут $oза</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">ToManyTeamKillsInMinute</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">минут $o- слишком много убийств своей команды.</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">ToManyTKS</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">Слишком много TKs</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">KickedToManyTeamKills</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">был $3Кикнут $o- слишком много убийств своей команды.</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">ForcedToSpectatorTeamKills</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">был перемещён за $3Зрителей $oза большое количество убийств своей команды.\n Они не могут зайти пока не закончиться эта карта</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">ForTeamKilling</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">за убийство своих</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">CantJoinSnipersToMany</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">нельзя присоединиться, как снайпер. $6Максимальное количество снайперов:</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">ToSpectatorsToManySnipers</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">был перемещён за $3Зрителей.$o Причина: Слишком много снайперов в команде</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">CantJoinGruntsToMany</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">нельзя присоединиться, как штурмовик. $6Максимальное количество штурмовиков:</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">ToSpectatorsToManyGrunts</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">был перемещён за $3Зрителей.$o Причина: Слишком много штурмовиков в команде</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">CantJoinEngiToMany</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">нельзя присоединиться, как инженер. $6Максимальное количество инженеров:</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">ToSpectatorsToManyEngi</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="Default"><Data ss:Type="String">был перемещён за $3Зрителей.$o Причина: Слишком много инженеров в команде</Data></Cell>
+    <Cell ss:Index="3" ss:StyleID="Default"/>
    </Row>
    <Row>
     <Cell ss:StyleID="s67"/>
@@ -398,7 +368,7 @@
    </Row>
    <Row>
     <Cell ss:StyleID="s67"/>
-    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s70"/>
     <Cell ss:StyleID="Default"/>
    </Row>
    <Row>
@@ -472,8 +442,8 @@
     <Cell ss:StyleID="Default"/>
    </Row>
    <Row>
-    <Cell ss:StyleID="s71"/>
-    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
     <Cell ss:StyleID="Default"/>
    </Row>
    <Row>
@@ -506,11 +476,12 @@
      x:Right="0.78740157499999996" x:Top="0.984251969"/>
    </PageSetup>
    <Selected/>
-   <TopRowVisible>33</TopRowVisible>
+   <TopRowVisible>23</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>67</ActiveRow>
+     <ActiveRow>42</ActiveRow>
+     <ActiveCol>2</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

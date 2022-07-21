@@ -8,7 +8,7 @@
 //  Description: A Static Control 
 //
 //  History:
-//  - [3/6/2003]: File created by Mï¿½rcio Martins
+//  - [3/6/2003]: File created by Márcio Martins
 //	- February 2005: Modified by Marco Corbetta for SDK release
 //
 //////////////////////////////////////////////////////////////////////
@@ -350,9 +350,18 @@ int CUIStatic::Draw(int iPass)
 		pRenderer->EF_ClearLightsList();
 		pRenderer->EF_ADDDlight(&pLight);
 		pRenderer->EF_UpdateDLight(&pLight);
+
+		pRenderParams.dwFObjFlags  = FOB_IGNOREMATERIALAMBIENT;
+        pRenderParams.dwFObjFlags |= FOB_TRANS_MASK;
 		
 		m_pModel->Update();
 		m_pModel->Draw(pRenderParams,Vec3(zero));
+
+		if (m_pHatModel)
+		{
+			m_pHatModel->Update();
+			m_pHatModel->Render(pRenderParams,Vec3(zero));
+		}
 
 		pRenderer->EF_EndEf3D(SHDF_SORT);
 
@@ -595,7 +604,6 @@ int CUIStatic::LoadModel(const string &szModelName)
 	{
 		ReleaseModel();
 	}
-
 	m_pModel = m_pUISystem->GetISystem()->GetIAnimationSystem()->MakeCharacter(szModelName.c_str());
 	m_szModelName = szModelName;
 
@@ -610,8 +618,30 @@ int CUIStatic::ReleaseModel()
 		m_pUISystem->GetISystem()->GetIAnimationSystem()->RemoveCharacter(m_pModel);
 		m_pModel = 0;
 	}
-
 	m_szModelName.clear();
+
+	return 1;
+}
+
+int CUIStatic::LoadHatModel(const string &szHatModelName)
+{
+	ReleaseHatModel();
+
+	if (m_pModel)
+	{
+		m_pHatModel = m_pUISystem->GetISystem()->GetI3DEngine()->MakeObject(szHatModelName.c_str());
+		m_pModel->AttachToBone(m_pHatModel, m_pModel->GetModel()->GetBoneByName("hat_bone"));
+		m_szHatModelName = szHatModelName;
+	}
+
+	return (m_pHatModel ? 1 : 0);
+}
+
+int CUIStatic::ReleaseHatModel()
+{
+	m_pHatModel = 0;
+	m_pUISystem->GetISystem()->GetI3DEngine()->ReleaseObject(m_pHatModel);
+	m_szHatModelName.clear();
 
 	return 1;
 }
@@ -674,6 +704,8 @@ void CUIStatic::InitializeTemplate(IScriptSystem *pScriptSystem)
 	REGISTER_SCRIPTOBJECT_MEMBER(pScriptSystem, CUIStatic, SetShader);
 	REGISTER_SCRIPTOBJECT_MEMBER(pScriptSystem, CUIStatic, SetSecondShader);
 
+	REGISTER_SCRIPTOBJECT_MEMBER(pScriptSystem, CUIStatic, LoadHatModel);
+	REGISTER_SCRIPTOBJECT_MEMBER(pScriptSystem, CUIStatic, ReleaseHatModel);
 }
 
 ////////////////////////////////////////////////////////////////////// 
@@ -1209,6 +1241,39 @@ int CUIStatic::ReleaseModel(IFunctionHandler *pH)
 	CHECK_SCRIPT_FUNCTION_PARAMCOUNT(m_pScriptSystem, GetName().c_str(), ReleaseModel, 0);
 
 	ReleaseModel();
+
+	return pH->EndFunction();
+}
+
+int CUIStatic::LoadHatModel(IFunctionHandler *pH)
+{
+	CHECK_SCRIPT_FUNCTION_PARAMCOUNT(m_pScriptSystem, GetName().c_str(), LoadHatModel, 1);
+	CHECK_SCRIPT_FUNCTION_PARAMTYPE(m_pScriptSystem, GetName().c_str(), LoadHatModel, 1, svtString);
+
+	char *szHatModelName;
+
+	pH->GetParam(1, szHatModelName);
+
+	if (m_pHatModel)
+	{
+		m_pHatModel = 0;
+	}
+
+	if (LoadHatModel(szHatModelName))
+	{
+		return pH->EndFunction(true);
+	}
+	else
+	{
+		return pH->EndFunction(false);
+	}
+}
+
+int CUIStatic::ReleaseHatModel(IFunctionHandler *pH)
+{
+	CHECK_SCRIPT_FUNCTION_PARAMCOUNT(m_pScriptSystem, GetName().c_str(), ReleaseHatModel, 0);
+
+	ReleaseHatModel();
 
 	return pH->EndFunction();
 }

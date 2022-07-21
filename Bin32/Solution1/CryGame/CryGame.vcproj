@@ -506,10 +506,10 @@
 					RelativePath="UIScrollBar.h">
 				</File>
 				<File
-					RelativePath="UIStatic.cpp">
+					RelativePath=".\UIStatic.cpp">
 				</File>
 				<File
-					RelativePath="UIStatic.h">
+					RelativePath=".\UIStatic.h">
 				</File>
 				<File
 					RelativePath="UISystem.cpp">

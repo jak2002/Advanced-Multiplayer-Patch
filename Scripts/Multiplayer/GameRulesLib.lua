@@ -632,7 +632,7 @@ function GameRules:HandleJoinTeamRequest(server_slot,new_team)
 	
 	if toNumberOrZero(getglobal("gr_allow_spectators"))==0 then
 		if new_team=="spectators" then
-			server_slot:SendText("@SpectatorNotAllow");
+			server_slot:SendText("Spectating is not allowed in this game");
 			return;
 		end
 	end
@@ -643,7 +643,7 @@ function GameRules:HandleJoinTeamRequest(server_slot,new_team)
 	if forcedTeam ~="" then 
 		if new_team~="spectators" then
 			new_team=forcedTeam;
-			Server:BroadcastText(server_slot:GetName().."$o @OtherTeamNotAllow "..new_team);
+			Server:BroadcastText(server_slot:GetName().."$o is not allowed to be in other team than "..new_team);
 		end
 	end
 	
@@ -652,13 +652,13 @@ function GameRules:HandleJoinTeamRequest(server_slot,new_team)
 		if toNumberOrZero(getglobal("gr_forcebluejoin")) == 1 and SVcommands:ProtectedName(server_slot:GetName())~=1 then
 			if new_team == "red" then
 				new_team = "blue";
-				Server:BroadcastText(server_slot:GetName().."$o @CannotJoinRedTeam");
+				Server:BroadcastText(server_slot:GetName().."$o cannot join ($4Red Team $o is locked)");
 			end  
 		end
 		if toNumberOrZero(getglobal("gr_forceredjoin")) == 1 and SVcommands:ProtectedName(server_slot:GetName())~=1 then
 			if new_team == "blue" then
 				new_team = "red";
-				Server:BroadcastText(server_slot:GetName().."$o @CannotJoinBlueTeam");
+				Server:BroadcastText(server_slot:GetName().."$o cannot join ($2Blue Team $o is locked)");
 			end		
 		end
 	end
@@ -1274,7 +1274,7 @@ function GameRules:OnCallVote(server_slot, command, arg1)
 		if tonumber(getglobal("gr_allow_voting"))==1 then
 			self.voting_state:OnCallVote(server_slot, command, arg1);
 		else
-			server_slot:SendText("@VotingDisabled");
+			server_slot:SendText("Voting is currently disabled.");
 			return
 		end
 	end
@@ -1563,11 +1563,11 @@ function GameRules:UsualScoreCalculation( hit, damage_ret )
 		local targetstreak = SVplayerTrack:GetBySs(ss_target, "killstreak");
 		if (minstreak~=0) and (targetstreak>=minstreak) then
 			if (weapon=="Boat") then
-				Server:BroadcastText("$6@KillingSpreeOf $4"..targetstreak.." @KILLS $6("..ss_target:GetName().."$6) @EndedByBoat",2);
+				Server:BroadcastText("$6Killing spree of $4"..targetstreak.." KILLS $6("..ss_target:GetName().."$6) was $4ended$6 by a BOAT",2);
 			elseif (weapon=="Vehicle") then 
-				Server:BroadcastText("$6Killing spree of $4"..targetstreak.." @KILLS $6("..ss_target:GetName().."$6) @EndedByCar",2);
+				Server:BroadcastText("$6Killing spree of $4"..targetstreak.." KILLS $6("..ss_target:GetName().."$6) was $4ended$6 by a CAR",2);
 			else
-				Server:BroadcastText(ss_target:GetName().."@EndedOwnKillSpree"..targetstreak.." @KILLS",2);
+				Server:BroadcastText(ss_target:GetName().."$4ended $6his own killing spree of $4"..targetstreak.." KILLS",2);
 			end
 			
 		end
@@ -1581,9 +1581,9 @@ function GameRules:UsualScoreCalculation( hit, damage_ret )
 			--[new] headshot message
 			if toNumberOrZero(getglobal("gr_announce_headshot")) == 1 then
 				if toNumberOrZero(getglobal("gr_headshot_message_private")) == 1 then
-					ss_shooter:SendText("$6@YouKilled $o"..ss_target:GetName().."$6 @WithHeadshot",2);
+					ss_shooter:SendText("$6You killed $o"..ss_target:GetName().."$6 with a $4headshot",2);
 				else
-					Server:BroadcastText("$4>$2>$4> "..ss_shooter:GetName().."$6 @killed $o"..ss_target:GetName().."$6 @WithHeadshot $4<$2<$4<",2);
+					Server:BroadcastText("$4>$2>$4> "..ss_shooter:GetName().."$6 killed $o"..ss_target:GetName().."$6 with a $4headshot $4<$2<$4<",2);
 				end
 			end
 			--[end]
@@ -1614,19 +1614,19 @@ function GameRules:UsualScoreCalculation( hit, damage_ret )
 			local killstreak= SVplayerTrack:GetBySs(ss_shooter, "killstreak");
 			if (minstreak~=0) and (killstreak>=minstreak) then
 				if toNumberOrZero(getglobal("gr_killing_spree_display")) == 0 then  --display message at each kill
-					Server:BroadcastText(ss_shooter:GetName().."$6 @OnKillingSpree ($4"..killstreak.." @KILLS$6) (@LastKillWith $4"..weapon.."$6)",2);
+					Server:BroadcastText(ss_shooter:GetName().."$6 is on a killing spree! ($4"..killstreak.." KILLS$6) (last kill with $4"..weapon.."$6)",2);
 				end
 			end
 			local targetstreak = SVplayerTrack:GetBySs(ss_target, "killstreak");
 			if (minstreak~=0) and (targetstreak>=minstreak) then
-				Server:BroadcastText("$6@KillingSpreeOf $4"..targetstreak.." @KILLS $6("..ss_target:GetName().."$6) @WasEndedBy $o"..ss_shooter:GetName(),2);
+				Server:BroadcastText("$6Killing spree of $4"..targetstreak.." KILLS $6("..ss_target:GetName().."$6) was $4ended$6 by $o"..ss_shooter:GetName(),2);
 			end
 			
 		elseif damage_ret==3 then																									-- player was killed by a team member
    	  		situation = 2;
 
 			SVcommands:TKJudge(ss_target:GetId(),ss_shooter:GetId());
-			ss_target:SendText("@PressToJudge");
+			ss_target:SendText("Press ESC to judge your team killer.");
 
 			--delta = -1;
 			delta = 0;
@@ -1636,7 +1636,7 @@ function GameRules:UsualScoreCalculation( hit, damage_ret )
 
 			local targetstreak = SVplayerTrack:GetBySs(ss_target, "killstreak");
 			if (minstreak~=0) and (targetstreak>=minstreak) then
-				Server:BroadcastText("$6@KillingSpreeOf $4"..targetstreak.."$6 ("..ss_target:GetName().."$6) @EndedByHisTeamMate $o"..ss_shooter:GetName(),2);
+				Server:BroadcastText("$6Killing spree of $4"..targetstreak.."$6 ("..ss_target:GetName().."$6) was $4ended$6 by his TEAMMATE $o"..ss_shooter:GetName(),2);
 			end
 			--[end]
 		end
@@ -1712,12 +1712,12 @@ function GameRules:PunishforTK(cId,pId)
 				if(pb and pb==1) then 
 --System:LogAlways("In TK Punish Routine - Doing PB Kick");
 					local ntime = tonumber(getglobal("gr_teamkill_kick_time")); 
-					System:ExecuteCommand("pb_sv_kick \""..ss_criminal:GetName().."\" "..ntime.." @ToManyTKS"); 
-					Server:BroadcastText(ss_criminal:GetName().."$o @KickedFor $3"..ntime.." @ToManyTeamKillsInMinute",2);
+					System:ExecuteCommand("pb_sv_kick \""..ss_criminal:GetName().."\" "..ntime.." Too many TKs"); 
+					Server:BroadcastText(ss_criminal:GetName().."$o has been $3Kicked $ofor $3"..ntime.." minutes $o- too many teamkills.",2);
 				else 
 --System:LogAlways("In TK Punish Routine - Doing Standard Kick");
 					GameRules:KickSlot(ss_criminal) 
-					Server:BroadcastText(ss_criminal:GetName().."$o @KickedToManyTeamKills",2);
+					Server:BroadcastText(ss_criminal:GetName().."$o has been $3Kicked $o- too many teamkills.",2);
 				end
 			elseif tks>=toNumberOrZero(getglobal("gr_teamkill_force_spectate")) then
 --System:LogAlways("In TK Punish Routine - Doing Force to Spectator");
@@ -1727,7 +1727,7 @@ function GameRules:PunishforTK(cId,pId)
                                 --System:LogAlways(tostring(ss_criminal:GetId()).." spectators BRUTE FORCE");
                                 --GameRules:ChangeTeam(ss_criminal,"spectators",true);
 				--System:LogAlways(tostring(ss_criminal:GetId()).." -"..ss_criminal:GetName().."move to spectators ");
-				Server:BroadcastText(ss_criminal:GetName().."$o @ForcedToSpectatorTeamKills",2);
+				Server:BroadcastText(ss_criminal:GetName().."$o has been forced to $3Spectator $ofor too many teamkills. They can't join until next map",2);
 				--GameRules:Invoke("OnKill",ss_criminal);
 			elseif tks>freeKills then
 --System:LogAlways("In TK Punish Routine - Increasing Respawn Time");
@@ -1741,7 +1741,7 @@ function GameRules:PunishforTK(cId,pId)
 					PunishTime = PunishTime + tonumber(getglobal("gr_static_respawn"));  --add respawntime
 				end
 				if PunishTime>0 then
-				SVcommands:punishPlayer(ss_criminal:GetId().." "..PunishTime.." $4@ForTeamKilling");
+				SVcommands:punishPlayer(ss_criminal:GetId().." "..PunishTime.." $4for teamkilling");
 				--Server:BroadcastText(ss_criminal:GetName().."$o cannot join for $6"..PunishTime.."$o seconds. reason: Teamkilling",2);
 				end
 			end
@@ -2139,22 +2139,22 @@ function GameRules:DoGameRulesLibTimer()
 						local newClass=locInitialPlayerProperties.sPlayerClass;
 						local activeClass=GameRules:CountClass(server_slot, newClass, newteam);
 						if newClass=="Sniper" and activeClass>=tonumber(getglobal("gr_max_snipers")) then
-							server_slot:SendText(server_slot:GetName().."$4 @CantJoinSnipersToMany "..tonumber(getglobal("gr_max_snipers")));
+							server_slot:SendText(server_slot:GetName().."$4 is not allowed to join as sniper. $6The maximum number of snipers is: "..tonumber(getglobal("gr_max_snipers")));
 							newteam="spectators";
 							requested_classid=SPECTATOR_CLASS_ID;
-							Server:BroadcastText(server_slot:GetName().."$o @ToSpectatorsToManySnipers");
+							Server:BroadcastText(server_slot:GetName().."$o was moved to $3Spectators.$o Reason: Too many snipers on that team");
 						end
 						if newClass=="Grunt" and activeClass>=tonumber(getglobal("gr_max_grunts")) then
-							server_slot:SendText(server_slot:GetName().."$4 @CantJoinGruntsToMany "..tonumber(getglobal("gr_max_grunts")));
+							server_slot:SendText(server_slot:GetName().."$4 is not allowed to join as a grunt. $6The maximum number of grunts is: "..tonumber(getglobal("gr_max_grunts")));
 							newteam="spectators";
 							requested_classid=SPECTATOR_CLASS_ID;
-							Server:BroadcastText(server_slot:GetName().."$o @ToSpectatorsToManyGrunts");
+							Server:BroadcastText(server_slot:GetName().."$o was moved to $3Spectators.$o Reason: Too many grunts on that team");
 						end
 						if newClass=="Support" and activeClass>=tonumber(getglobal("gr_max_engineers")) then
-							server_slot:SendText(server_slot:GetName().."$4 @CantJoinEngiToMany "..tonumber(getglobal("gr_max_engineers")));
+							server_slot:SendText(server_slot:GetName().."$4 is not allowed to join as an engineer. $6The maximum number of engineers is: "..tonumber(getglobal("gr_max_engineers")));
 							newteam="spectators";
 							requested_classid=SPECTATOR_CLASS_ID;
-							Server:BroadcastText(server_slot:GetName().."$o @ToSpectatorsToManyEngi");
+							Server:BroadcastText(server_slot:GetName().."$o was moved to $3Spectators.$o Reason: Too many engineers in that team");
 						end
 					end
 					----				
