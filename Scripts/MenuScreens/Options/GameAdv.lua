@@ -19,24 +19,306 @@ UI.PageOptionsGameAdv =
             text = Localize("PersonalConfig");
         },
 
+        widget_back =
+        {
+            left = 208, top = 426,
+            width = 160,
+            skin = UI.skins.BottomMenuButton,
+            bordersides = "lrtb",
 
-		-- definition of "Back" button (takes user to back to basic video menu)
-		widget_back =
-		{
-			left = 208, top = 142 + 318 - 34,
-			width = 160,
-			skin = UI.skins.BottomMenuButton,
-			bordersides = "lrtb",
+            text = Localize( "BasicGameOptions" ),
 
-			text = Localize( "BasicGameOptions" ),
+            tabstop = 14,
 
-			tabstop = 20,
-
-			OnCommand = function( sender )
-				GotoPage( "GameOptions" );
+            OnCommand = function( sender )
+                GotoPage( "GameOptions" );
                 UI:ActivateScreen( "Options" );
-			end,
-		},
+            end,
+        },
+
+        ch_animated=
+        {
+            left = 210, top = 236,
+            width = 14, height = 14,
+
+            skin = UI.skins.CheckBox,
+
+            tabstop = 1,
+
+            OnChanged=function(Sender)
+                if (Sender:GetChecked()) then
+                    UI.PageOptionsGameAdv.GUI.shiftanimated = 1
+                else
+                    UI.PageOptionsGameAdv.GUI.shiftanimated = 0                    
+                end
+            end,
+        },
+
+        ch_tlike_text=
+        {
+            skin = UI.skins.Label,
+
+            left = 177, top = 264,
+            width = 112,
+
+            text=Localize("TLikeCrosshair"),
+        },
+        ch_tlike=
+        {
+            left = 297, top = 264,
+            width = 28, height = 28,
+
+            skin = UI.skins.CheckBox,
+
+            tabstop = 2,
+
+            OnChanged=function(Sender)
+                if (Sender:GetChecked()) then
+                    setglobal("hud_crosshair_tlike", 1);
+                else
+                    setglobal("hud_crosshair_tlike", 0);
+                end
+            end,
+        },
+
+        ch_dot_text=
+        {
+            skin = UI.skins.Label,
+
+            left = 177, top = 297,
+            width = 112,
+
+            text=Localize("CHDot"),
+        },
+        ch_dot=
+        {
+            left = 297, top = 297,
+            width = 28, height = 28,
+
+            skin = UI.skins.CheckBox,
+
+            tabstop = 3,
+
+            OnChanged=function(Sender)
+                if (Sender:GetChecked()) then
+                    setglobal("hud_crosshair_dot", 1);
+                else
+                    setglobal("hud_crosshair_dot", 0);
+                end
+            end,
+        },
+
+        ch_static_text=
+        {
+            skin = UI.skins.Label,
+
+            left = 177, top = 330,
+            width = 112,
+
+            text=Localize("CHStatic"),
+        },
+        ch_static=
+        {
+            left = 297, top = 330,
+            width = 28, height = 28,
+
+            skin = UI.skins.CheckBox,
+
+            tabstop = 4,
+
+            OnChanged=function(Sender)
+                if (Sender:GetChecked()) then
+                    setglobal("hud_crosshair_static", 1);
+                else
+                    setglobal("hud_crosshair_static", 0);
+                end
+            end,
+        },
+
+        chcolorr_text =
+        {
+            skin = UI.skins.Label,
+            left = 315, top = 150,
+            width = 112,
+
+            text = "R",
+        },
+        chcolorr =
+        {
+            skin = UI.skins.HScrollBar,
+
+            left = 435, top = 150,
+            width = 150, height = 24,
+
+            tabstop = 5,
+
+            OnChanged = function( sender )
+                UI.PageOptionsGameAdv.SetCHColor()
+            end,
+        },
+
+        chcolorg_text =
+        {
+            skin = UI.skins.Label,
+            left = 315, top = 188,
+            width = 112,
+
+            text = "G",
+        },
+        chcolorg =
+        {
+            skin = UI.skins.HScrollBar,
+
+            left = 435, top = 188,
+            width = 150, height = 24,
+
+            tabstop = 6,
+
+            OnChanged = function( sender )
+                UI.PageOptionsGameAdv.SetCHColor()
+            end,
+        },
+
+        chcolorb_text =
+        {
+            skin = UI.skins.Label,
+            left = 315, top = 226,
+            width = 112,
+
+            text = "B",
+        },
+        chcolorb =
+        {
+            skin = UI.skins.HScrollBar,
+
+            left = 435, top = 226,
+            width = 150, height = 24,
+
+            tabstop = 7,
+
+            OnChanged = function( sender )
+                UI.PageOptionsGameAdv.SetCHColor()
+            end,
+        },
+
+        chcolormode=
+        {
+            left = 435, top = 264,
+            width = 150, height = 28,
+
+            tabstop = 8,
+
+            skin = UI.skins.ComboBox,
+
+            OnChanged = function( Sender )
+                UI.PageOptionsGameAdv.GUI:SelectCHMode()
+            end,
+        },
+
+        ch_length_text =
+        {
+            skin = UI.skins.Label,
+            left = 315, top = 308,
+            width = 112,
+
+            text = Localize( "CHLength" ),
+        },
+        ch_length =
+        {
+            skin = UI.skins.HScrollBar,
+
+            left = 435, top = 308,
+            width = 150, height = 24,
+
+            tabstop = 9,
+
+            OnChanged = function( sender )
+                setglobal("hud_crosshair_length",UI.PageOptionsGameAdv.GUI.ch_length:GetValue() * 15)
+            end,
+        },
+
+        ch_thickness_text =
+        {
+            skin = UI.skins.Label,
+            left = 315, top = 344,
+            width = 112,
+
+            text = Localize( "CHThickness" ),
+        },
+        ch_thickness =
+        {
+            skin = UI.skins.HScrollBar,
+
+            left = 435, top = 344,
+            width = 150, height = 24,
+
+            tabstop = 10,
+
+            OnChanged = function( sender )
+                setglobal("hud_crosshair_thickness",UI.PageOptionsGameAdv.GUI.ch_thickness:GetValue() * 3)
+            end,
+        },
+
+        ch_spacing_text =
+        {
+            skin = UI.skins.Label,
+            left = 315, top = 381,
+            width = 112,
+
+            text = Localize( "CHSpacing" ),
+        },
+        ch_spacing =
+        {
+            skin = UI.skins.HScrollBar,
+
+            left = 435, top = 405 - 24,
+            width = 150, height = 24,
+
+            tabstop = 11,
+
+            OnChanged = function( sender )
+                setglobal("hud_crosshair_spacing",UI.PageOptionsGameAdv.GUI.ch_spacing:GetValue() * 5)
+            end,
+        },
+
+        hitsounds_text =
+        {
+            skin = UI.skins.Label,
+            left = 570, top = 144,
+            width = 152,
+
+            text = Localize( "HitSounds" ),
+        },
+        hitsounds =
+        {
+            skin = UI.skins.CheckBox,
+            left = 730, top = 146,
+
+            tabstop = 12,
+        },
+
+        pfov_text =
+        {
+            skin = UI.skins.Label,
+            left = 620, top = 184,
+            width = 80,
+
+            text = Localize( "Fov" ),        
+        },
+        pfov =
+        {
+            skin =   UI.skins.EditBox,
+            left = 702, top = 186,
+            width = 56,
+
+            tabstop = 13,
+            maxlength = 3,
+            namesafe = 1,
+            numeric = 1,
+            OnChanged = function (Sender)
+                setglobal("p_fov",tonumber(UI.PageOptionsGameAdv.GUI.pfov:GetText()))
+            end,
+        },
 
         widget_crosshair_bg =
         {
@@ -50,7 +332,6 @@ UI.PageOptionsGameAdv =
             color = "255 255 255 255",
             texrect = "0 0 128 128",
         },
-
         widget_crosshair_up =
         {
             skin = UI.skins.MenuStatic,
@@ -111,170 +392,6 @@ UI.PageOptionsGameAdv =
             color = "255 255 255 255",
             texrect = "0 0 128 128",
         },
-        chcolorr =
-        {
-            skin = UI.skins.HScrollBar,
-
-            left = 435, top = 150,
-            width = 150, height = 24,
-
-            tabstop = 5,
-
-            OnChanged = function( sender )
-                UI.PageOptionsGameAdv.SetCHColor()
-            end,
-        },
-        chcolorr_text =
-        {
-            skin = UI.skins.Label,
-            left = 315, top = 150,
-            width = 112,
-
-            text = "R",
-        },
-        chcolorg =
-        {
-            skin = UI.skins.HScrollBar,
-
-            left = 435, top = 188,
-            width = 150, height = 24,
-
-            tabstop = 6,
-
-            OnChanged = function( sender )
-                UI.PageOptionsGameAdv.SetCHColor()
-            end,
-        },
-        chcolorg_text =
-        {
-            skin = UI.skins.Label,
-            left = 315, top = 188,
-            width = 112,
-
-            text = "G",
-        },
-        chcolorb =
-        {
-            skin = UI.skins.HScrollBar,
-
-            left = 435, top = 226,
-            width = 150, height = 24,
-
-            tabstop = 7,
-
-            OnChanged = function( sender )
-                UI.PageOptionsGameAdv.SetCHColor()
-            end,
-        },
-        chcolorb_text =
-        {
-            skin = UI.skins.Label,
-            left = 315, top = 226,
-            width = 112,
-
-            text = "B",
-        },
-        ch_tlike_text=
-        {
-            skin = UI.skins.Label,
-
-            left = 177, top = 264,
-            width = 112,
-
-            text=Localize("TLikeCrosshair"),
-        },
-
-        ch_tlike=
-        {
-            left = 297, top = 264,
-            width = 28, height = 28,
-
-            skin = UI.skins.CheckBox,
-
-            tabstop = 2,
-
-            OnChanged=function(Sender)
-                if (Sender:GetChecked()) then
-                    setglobal("hud_crosshair_tlike", 1);
-                else
-                    setglobal("hud_crosshair_tlike", 0);
-                end
-            end,
-        },
-
-        ch_dot_text=
-        {
-            skin = UI.skins.Label,
-
-            left = 177, top = 297,
-            width = 112,
-
-            text=Localize("CHDot"),
-        },
-
-        ch_dot=
-        {
-            left = 297, top = 297,
-            width = 28, height = 28,
-
-            skin = UI.skins.CheckBox,
-
-            tabstop = 3,
-
-            OnChanged=function(Sender)
-                if (Sender:GetChecked()) then
-                    setglobal("hud_crosshair_dot", 1);
-                else
-                    setglobal("hud_crosshair_dot", 0);
-                end
-            end,
-        },
-
-        ch_static=
-        {
-            left = 297, top = 330,
-            width = 28, height = 28,
-
-            skin = UI.skins.CheckBox,
-
-            tabstop = 4,
-
-            OnChanged=function(Sender)
-                if (Sender:GetChecked()) then
-                    setglobal("hud_crosshair_static", 1);
-                else
-                    setglobal("hud_crosshair_static", 0);
-                end
-            end,
-        },
-
-        ch_static_text=
-        {
-            skin = UI.skins.Label,
-
-            left = 177, top = 330,
-            width = 112,
-
-            text=Localize("CHStatic"),
-        },
-
-        ch_animated=
-        {
-            left = 210, top = 250-14,
-            width = 14, height = 14,
-
-            skin = UI.skins.CheckBox,
-
-            tabstop = 1,
-
-            OnChanged=function(Sender)
-                if (Sender:GetChecked()) then
-                    UI.PageOptionsGameAdv.GUI.shiftanimated = 1
-                else
-                    UI.PageOptionsGameAdv.GUI.shiftanimated = 0                    
-                end
-            end,
-        },
 
         separator=
         {
@@ -284,7 +401,6 @@ UI.PageOptionsGameAdv =
             color = "0 0 0 0",
             bordersides = "l",
         },
-
         separator1=
         {
             skin = UI.skins.MenuBorder,
@@ -293,32 +409,15 @@ UI.PageOptionsGameAdv =
             color = "0 0 0 0",
             bordersides = "l",
         },
-
-
         separator3 =
         {
             skin = UI.skins.MenuBorder,
 
             left = 200, top = 415,
-            width = 680, height = 243,
+            width = 580, height = 5,
             color = "0 0 0 0",
             bordersides = "t",
         },
-
-        chcolormode=
-        {
-            left = 435, top = 264,
-            width = 150, height = 28,
-
-            tabstop = 8,
-
-            skin = UI.skins.ComboBox,
-
-            OnChanged = function( Sender )
-                UI.PageOptionsGameAdv.GUI:SelectCHMode()
-            end,
-        },
-
         separator2=
         {
             skin = UI.skins.MenuBorder,
@@ -327,132 +426,12 @@ UI.PageOptionsGameAdv =
             color = "0 0 0 0",
             bordersides = "t",
         },
-
-
-        ch_length =
-        {
-            skin = UI.skins.HScrollBar,
-
-            left = 435, top = 308,
-            width = 150, height = 24,
-
-            tabstop = 8,
-
-            OnChanged = function( sender )
-                setglobal("hud_crosshair_length",UI.PageOptionsGameAdv.GUI.ch_length:GetValue() * 15)
-            end,
-        },
-        ch_length_text =
-        {
-            skin = UI.skins.Label,
-            left = 315, top = 308,
-            width = 112,
-
-            text = Localize( "CHLength" ),
-        },
-        ch_thickness =
-        {
-            skin = UI.skins.HScrollBar,
-
-            left = 435, top = 344,
-            width = 150, height = 24,
-
-            tabstop = 9,
-
-            OnChanged = function( sender )
-                setglobal("hud_crosshair_thickness",UI.PageOptionsGameAdv.GUI.ch_thickness:GetValue() * 3)
-            end,
-        },
-        ch_thickness_text =
-        {
-            skin = UI.skins.Label,
-            left = 315, top = 344,
-            width = 112,
-
-            text = Localize( "CHThickness" ),
-        },
-        ch_spacing =
-        {
-            skin = UI.skins.HScrollBar,
-
-            left = 435, top = 405 - 24,
-            width = 150, height = 24,
-
-            tabstop = 10,
-
-            OnChanged = function( sender )
-                setglobal("hud_crosshair_spacing",UI.PageOptionsGameAdv.GUI.ch_spacing:GetValue() * 5)
-            end,
-        },
-        ch_spacing_text =
-        {
-            skin = UI.skins.Label,
-            left = 315, top = 381,
-            width = 112,
-
-            text = Localize( "CHSpacing" ),
-        },
-        hitsounds =
-        {
-            skin = UI.skins.CheckBox,
-            left = 730, top = 146,--166,
-
-            tabstop = 11,
-
-            -- code specific for "Full Screen" check box (separated in user table)
-        },
-
-        hitsounds_text =
-        {
-            skin = UI.skins.Label,
-            left = 570, top = 144,--164,
-            width = 152,
-
-            text = Localize( "HitSounds" ),
-        },
-        pfov =
-        {
-            skin =   UI.skins.EditBox,
-            left = 702, top = 186,
-            width = 56,
-
-            tabstop = 12,
-            maxlength = 3,
-            namesafe = 1,
-            disallow = "\"'abcdefghijklmnopqrstuvwxyz;[]/\\,.-=`!@#$%^&*()+_{}:|?><~QWERTYUIOPASDFGHJKLZXCVBNM",
-            OnChanged = function (Sender)
-                setglobal("p_fov",tonumber(UI.PageOptionsGameAdv.GUI.pfov:GetText()))
-            end,
-            -- skin = UI.skins.HScollBar,
-
-            -- left = 608+30, top = 186,
-            -- width = 150-30, height = 24,
-
-            -- tabstop = 5,
-
-            -- OnChanged = function( sender )
-            --     setglobal("p_fov", ceil(UI.PageOptionsGameAdv.GUI.pfov:GetValue() * 177 + 2))
-            --     UI.PageOptionsGameAdv.GUI.pfov_text:SetText( format("@Fov (%s)",getglobal("p_fov")) )
-            -- end,
-        },
-        pfov_text =
-        {
-            skin = UI.skins.Label,
-            left = 620, top = 184,--164,
-            width = 80,
-
-            text = Localize( "Fov" ),        
-        },
-		-- definition of "Apply" button (applies all changes of video options undertaken by user)
     },
     shift = 0,
     shiftanimated = 1,
     colormode = 1, -- 1 default ch color, 2 on hit ch color
-
-
 }
 
-UI.PageOptionsGameAdv.aboba = 0
 function UI.PageOptionsGameAdv.GUI:UpdateUpLine()
     local bg = UI.PageOptionsGameAdv.GUI.widget_crosshair_bg
     local line = UI.PageOptionsGameAdv.GUI.widget_crosshair_up
@@ -470,7 +449,6 @@ function UI.PageOptionsGameAdv.GUI:UpdateUpLine()
     ysize = ceil(ysize)
     local rect = x..","..y..","..xsize..","..ysize
     line:SetRect(rect)
-    -- %System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_spacing)-shift-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_thickness), -tonumber(hud_crosshair_length), 4, r, g, b, fValue);
 end
 
 
@@ -492,8 +470,6 @@ function UI.PageOptionsGameAdv.GUI:UpdateDownLine()
     ysize = ceil(ysize)
     local rect = x..","..y..","..xsize..","..ysize
     line:SetRect(rect)
---  %System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_thickness)*0.5, ycent+tonumber(hud_crosshair_spacing)+shift + tonumber(hud_crosshair_thickness)-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_thickness), tonumber(hud_crosshair_length), 4, r, g, b, fValue);
-
 end
 
 function UI.PageOptionsGameAdv.GUI:UpdateLeftLine()
@@ -513,7 +489,6 @@ function UI.PageOptionsGameAdv.GUI:UpdateLeftLine()
     ysize = ceil(ysize)
     local rect = x..","..y..","..xsize..","..ysize
     line:SetRect(rect)
---  %System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_spacing)-shift-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_thickness)*0.5, -tonumber(hud_crosshair_length), tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
 end
 
 function UI.PageOptionsGameAdv.GUI:UpdateRightLine()
@@ -535,8 +510,6 @@ function UI.PageOptionsGameAdv.GUI:UpdateRightLine()
     ysize = ceil(ysize)
     local rect = x..","..y..","..xsize..","..ysize
     line:SetRect(rect)
---  %System:DrawImageColor(crosshairTexture, xcent+tonumber(hud_crosshair_spacing)+shift + tonumber(hud_crosshair_thickness)-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_length), tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
-
 end
 
 function UI.PageOptionsGameAdv.GUI:UpdateDot()
@@ -556,7 +529,6 @@ function UI.PageOptionsGameAdv.GUI:UpdateDot()
     ysize = ceil(ysize)
     local rect = x..","..y..","..xsize..","..ysize
     line:SetRect(rect)
---  %System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_thickness), tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
 end
 
 function UI.PageOptionsGameAdv.GUI:DrawCrosshair()
@@ -625,8 +597,6 @@ function UI.PageOptionsGameAdv.GUI:OnActivate()
     UI.PageOptionsGameAdv.GUI.ch_length:SetValue(hud_crosshair_length / 15)
     UI.PageOptionsGameAdv.GUI.ch_spacing:SetValue(hud_crosshair_spacing / 5)
     UI.PageOptionsGameAdv.GUI.pfov:SetText(tostring(getglobal("p_fov")))
-
-
 end
 
 
@@ -682,18 +652,6 @@ function UI.PageOptionsGameAdv.HSVToRGB( hue, saturation, value )
         return value, p, q;
     end;
 end;
-
-    -- if (crosshairTexture and bStandart == 0) then
-    --     %System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_spacing)-shift-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_thickness)*0.5, -tonumber(hud_crosshair_length), tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
-    --     %System:DrawImageColor(crosshairTexture, xcent+tonumber(hud_crosshair_spacing)+shift + tonumber(hud_crosshair_thickness)-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_length), tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
-    --     if tonumber(hud_crosshair_tlike) == 0 then
-    --         %System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_spacing)-shift-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_thickness), -tonumber(hud_crosshair_length), 4, r, g, b, fValue);
-    --     end
-    --     %System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_thickness)*0.5, ycent+tonumber(hud_crosshair_spacing)+shift + tonumber(hud_crosshair_thickness)-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_thickness), tonumber(hud_crosshair_length), 4, r, g, b, fValue);
-
-    --     if (bDot ~= 0) then
-    --         %System:DrawImageColor(crosshairTexture, xcent-tonumber(hud_crosshair_thickness)*0.5, ycent-tonumber(hud_crosshair_thickness)*0.5, tonumber(hud_crosshair_thickness), tonumber(hud_crosshair_thickness), 4, r, g, b, fValue);
-    --     end
 
 AddUISideMenu(UI.PageOptionsGameAdv.GUI,
 {
