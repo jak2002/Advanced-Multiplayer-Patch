@@ -2419,7 +2419,7 @@ GameRules.ClientCommandTable["CSD"]=function(String,ServerSlot,TokTable)
 	hit.network = 1;
 
     local userbyte = 3
-    if hit.target.cnt.armor > 0 and TokTable[5] ~= "h" then
+    if hit.target.cnt.armor > 0 then
         userbyte = 5
     end
 
