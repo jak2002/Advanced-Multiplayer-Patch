@@ -647,10 +647,12 @@ function BasicPlayer:InitAllWeapons(forceInit)
 	-- of them. Also, the player entity needs to call MakeWeaponAvailable() for
 	-- each weapon in his weapon pack
 
-	if (Game:IsMultiplayer()) and (tonumber(getglobal("gr_stamina")) == 0) then
+	--@AMP
+	local staminaFactor = tonumber(getglobal("gr_stamina"));
+	if (Game:IsMultiplayer() and staminaFactor) then
 		local st_copy = new(self.StaminaTable);
-		st_copy.decoyRun=0;
-		st_copy.decoyJump=0;
+		st_copy.decoyRun=self.StaminaTable.decoyRun*staminaFactor;
+		st_copy.decoyJump=self.StaminaTable.decoyJump*staminaFactor;
 		self.cnt:InitStaminaTable(st_copy);
 	else
 		self.cnt:InitStaminaTable(self.StaminaTable);
