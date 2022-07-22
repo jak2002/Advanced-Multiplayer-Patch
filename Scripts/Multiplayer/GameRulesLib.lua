@@ -2410,7 +2410,8 @@ GameRules.ClientCommandTable["CSD"]=function(String,ServerSlot,TokTable)
 	local situation = 1;
 
 	if (TokTable[5]) and (TokTable[5] == "h") then
-		hit.target_material.type = "head"; situation = 2
+		hit.target_material.type = "head"
+        situation = 2
 	end
 
 	hit.shooter = shooter;
