@@ -372,25 +372,32 @@ end
 -- @AMP
 -- Mne Blyat' Bolno
 ClientStuff.ServerCommandTable["MBB"]=function (String,TokTable)
-	if (TokTable[2]) then
-		if (_localplayer.id == tonumber(TokTable[2])) then
-			local hit = {};
-			local attacker;
-			if (TokTable[3]) then
-				attacker = System:GetEntity(tonumber(TokTable[3]));
-				hit.dir = attacker:GetDirectionVector();
-			else
-				hit.dir = {x=1,y=1,z=1};
-			end
-			hit.damage = attacker.fireparams.damage
-			if (TokTable[4]) and (TokTable[4] == "h") then
-				hit.damage = attacker.fireparams.damage * tonumber(getglobal("gr_HeadshotMultiplier"));
-			end
-			hit.network = 1;
-			BasicPlayer.Client_OnDamage(_localplayer,hit);
-		end
+	local target = TokTable[2]
+	if (not target or not (_localplayr.id == target)) then
+		return
 	end
-end
+
+	local hit = {};
+	local attacker_id = TokTable[3];
+	local attacker = {}
+	if (attacker_id) then
+		attacker = System:GetEntity(tonumber(attacker_id));
+		hit.dir = attacker:GetDirectionVector();
+	else
+		hit.dir = {x=1,y=1,z=1};
+	end
+
+	hit.damage = attacker.fireparams.damage
+
+	local body_part = TokTable[4]
+	if (body_part and body_part == "h") then
+		hit.damage = attacker.fireparams.damage * tonumber(getglobal("gr_HeadshotMultiplier"));
+	end
+
+	hit.network = 1;
+	
+	BasicPlayer.Client_OnDamage(_localplayer,hit);
+	end
 
 -- @AMP
 -- Synched Server Mark

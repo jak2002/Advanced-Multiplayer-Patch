@@ -1353,6 +1353,7 @@ function BasicPlayer:Client_OnDamage( hit )
 		return;
 	end
 
+	-- @AMP
 	if (hit.target_material ~= nil and Game:IsMultiplayer() and hit.explosion == nil) then
 		if (not hit.network) or (hit.network ~= 1) then return end
 	end
@@ -1369,8 +1370,6 @@ function BasicPlayer:Client_OnDamage( hit )
 	end
 
 	BasicPlayer.SetDeathImpulse( self, hit );
-
-	--target_material
 
 	if (hit.damage>0) then
 		if(not Sound:IsPlaying(self.painSound)) then

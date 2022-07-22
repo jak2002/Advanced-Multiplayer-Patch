@@ -2402,6 +2402,7 @@ GameRules.ClientCommandTable["CSD"]=function(String,ServerSlot,TokTable)
 
 	if (shooter == nil) or (BasicPlayer.IsAlive(shooter) == nil) then return end
 
+	local body_part = TokTable[5]
 	local target = System:GetEntity(tonumber(TokTable[3]));
 	local damage = tonumber(TokTable[4]);
 	local hit = {};
@@ -2409,7 +2410,7 @@ GameRules.ClientCommandTable["CSD"]=function(String,ServerSlot,TokTable)
 
 	local situation = 1;
 
-	if (TokTable[5]) and (TokTable[5] == "h") then
+	if (body_part) and (body_part == "h") then
 		hit.target_material.type = "head"
 		situation = 2
 	end
@@ -2436,7 +2437,7 @@ GameRules.ClientCommandTable["CSD"]=function(String,ServerSlot,TokTable)
 
 
 	Server:BroadcastCommand("FX "..situation, bloodpos, hit.dir, hit.shooter.id, userbyte);
-	Server:BroadcastCommand("MBB "..hit.target.id.." "..hit.shooter.id.." "..TokTable[5]);
+	Server:BroadcastCommand("MBB "..hit.target.id.." "..hit.shooter.id.." "..body_part);
 end
 
 -- @AMP
