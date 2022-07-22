@@ -2411,7 +2411,7 @@ GameRules.ClientCommandTable["CSD"]=function(String,ServerSlot,TokTable)
 
 	if (TokTable[5]) and (TokTable[5] == "h") then
 		hit.target_material.type = "head"
-        situation = 2
+		situation = 2
 	end
 
 	hit.shooter = shooter;
@@ -2426,7 +2426,6 @@ GameRules.ClientCommandTable["CSD"]=function(String,ServerSlot,TokTable)
         userbyte = 5
     end
 
-	--BasicPlayer.Server_OnDamage(target, hit);
 	GameRules:INPROGRESS_OnDamage(hit);
 
 	local bloodpos = {
