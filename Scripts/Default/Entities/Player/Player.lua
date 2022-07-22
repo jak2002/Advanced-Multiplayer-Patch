@@ -465,7 +465,7 @@ end
 --------------------------------------------------------------------------------------------------------
 function Player:Client_OnRemoteEffect(toktable, pos, normal, userbyte, situation)
 --	System:Log("_FX: Setting effect: "..tostring(self.id).."("..tostring(userbyte)..")");
-
+	-- @AMP
     local USERBYTE_NONE,USERBYTE_TEAMCOLOR,USERBYTE_GOD,USERBYTE_HIT,USERBYTE_KILL,USERBYTE_ARMOR = 0,1,2,3,4,5
 	if (userbyte == USERBYTE_NONE) then
 		-- set second shader to none
@@ -494,9 +494,6 @@ function Player:Client_OnRemoteEffect(toktable, pos, normal, userbyte, situation
 		if(self == _localplayer) then
 			Hud.hit=5;
 		end
-    elseif (userbyte == USERBYTE_KILL) then
-
-
     elseif (userbyte == USERBYTE_ARMOR) then
         if (Game:IsMultiplayer()) then
             local hit = {};
