@@ -185,19 +185,19 @@ void CNetEntityInfo::Update(Vec3d v3dViewer)
 	Vec3d v3This=m_pEntity->GetPos();
 
 	// lower priority for more distant entities
-	{
-		float fDistance2=0;
+	// {
+	// 	float fDistance2=0;
 
-		if(!IsEquivalent(v3dViewer,v3This))
-			fDistance2 = (v3dViewer-(const Vec3d)v3This).len2();
+	// 	if(!IsEquivalent(v3dViewer,v3This))
+	// 		fDistance2 = (v3dViewer-(const Vec3d)v3This).len2();
 
-		float fVisibleRadius2=500*500;
+	// 	float fVisibleRadius2=500*500;
 
-		if(fDistance2>fVisibleRadius2)
-			m_nPriority=100;		// almost no udate
-		else
-			m_nPriority+=(unsigned int)cry_sqrtf(fVisibleRadius2-fDistance2);
-	}
+	// 	if(fDistance2>fVisibleRadius2)
+	// 		m_nPriority=100;		// almost no udate
+	// 	else
+	// 		m_nPriority+=(unsigned int)cry_sqrtf(fVisibleRadius2-fDistance2);
+	// }
 
 	// container gets the change to change the m_nPriority
 	if(pC)
