@@ -373,7 +373,7 @@ end
 -- Mne Blyat' Bolno
 ClientStuff.ServerCommandTable["MBB"]=function (String,TokTable)
 	local target = TokTable[2]
-	if (not target or not (_localplayr.id == target)) then
+	if (not target or not (_localplayer.id == target)) then
 		return
 	end
 
