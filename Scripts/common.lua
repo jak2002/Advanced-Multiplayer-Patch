@@ -1191,6 +1191,28 @@ function ReadFile(file)
 
     return text
 end
+
+-- function RotateVectorZ(x, y, angle)
+--     local a = rad(angle)
+--     return x * cos(a) - y * sin(a), x * sin(a) + y * cos(a)
+-- end
+
+function RotateVector(vecs,axis,angle)
+	local a = rad(angle)
+	local vec = new(vecs)
+	if axis == "z" then 
+	  vec.x = vec.x * cos(a) + vec.y * sin(a)
+	  vec.y = (vec.x * sin(a) - vec.y * cos(a)) * -1
+	elseif axis == "x" then
+    vec.y = vec.y * cos(a) - vec.y * sin(a)
+    vec.z = vec.z * sin(a) + vec.z * cos(a)
+  elseif axis == "y" then
+  	vec.x = vec.x * cos(a) + vec.x * sin(a)
+  	vec.z = -vec.z * sin(a) + vec.z * cos(a)
+  end
+  return vec
+end
+
 -------------------------------------------------------------------
 -- gloabl to indicate that a ui reload was requested commited by UI:Reload( ... ), will be reset by UI:Init()
 g_reload_ui = 0;

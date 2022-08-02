@@ -68,14 +68,37 @@ function BaseProjectile:Server_OnUpdate(dt)
 	local pos=self:GetPos();
 
     if self.stick_to_vehicles and type(status) == "table" and status.target then
-        if status.target.classname == "Buggy" then
-            status.target:Bind(self)
-            self:SetPos({x=0,y=2,z=1.35})
-        elseif status.target.classname == "FWDVehicle" then
-            status.target:Bind(self)
-            self:SetPos({x=0,y=2,z=1.4})
-        end
-    end
+
+           -- local cpos = new(status.target:GetPos())
+           --
+           -- local pos = new(self:GetPos())
+           -- local dist = sqrt(EntitiesDistSq(status.target,self))
+           -- FastDifferenceVectors(pos,cpos,pos)
+           -- local z = pos.z
+           -- NormalizeVector(pos)
+           --
+           -- status.target:Bind(self)
+           -- ScaleVectorInPlace(pos,dist)
+           -- pos.z = -z
+           -- local crot = status.target:GetAngles().z
+           -- local rot = crot+180
+           --
+           --
+           -- pos = RotateVector(pos,"z",rot)
+           --
+           -- self:SetPos(pos)
+           --
+
+        	if status.target.classname == "Buggy" then
+            	 status.target:Bind(self)
+          	  self:SetPos({x=0,y=2,z=1.35})
+        	elseif status.target.classname == "FWDVehicle" then
+          	  status.target:Bind(self)
+        	    self:SetPos({x=0,y=2,z=1.4})
+      	  end
+    	end
+
+
 
 	if (status and self.explodeOnContact == 1) then
 		self.isExploding = 1;
