@@ -700,12 +700,13 @@ void CPlayer::Update()
 	}
 
 	// FIXME - remove this after artists done with animation params tweaking
-	if(m_pGame->pa_forcerelax->GetIVal())
-	{
-		GoRelaxed();
-		m_pEntity->StartAnimation(0, NULL, 1, .15f);	// to stop all the fire animations
-	}
+	// if(m_pGame->pa_forcerelax->GetIVal())
+	// {
+	// 	GoRelaxed();
+	// 	m_pEntity->StartAnimation(0, NULL, 1, .15f);	// to stop all the fire animations
+	// }
 	// FIXME end
+	//@AMP: Thanks assholes
 
 	if(m_pGame->p_limp->GetIVal() == 0)			// no limping
 		m_stats.bIsLimping = false;
